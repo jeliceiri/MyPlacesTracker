@@ -1,7 +1,7 @@
 # MyPlaces Screens
 
 ## Login Screen
-![Login Screen](/Users/jk/IdeaProjects/MyPlacesTracker/DesignDocuments/Wireframes/MyPlaces-Login.png)
+![Login Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-Login.png)
 ## New User Sign-Up Screen
 ![New User Sign Up Screen](/Users/jk/IdeaProjects/MyPlacesTracker/DesignDocuments/Wireframes/MyPlaces-NewUserSignUp.png)
 ## Trips Screen
