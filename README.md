@@ -16,31 +16,31 @@ Maven
 ### ORM Framework
 Hibernate
 
-###Database
+### Database
 MySql 8.0.16
 
-###Security and Authentication
+### Security and Authentication
 Tomcat's JDBC Realm Authentication
 
-###CSS
+### CSS
 tbd
 
-###Data Validation
+### Data Validation
 tbd
 
-###Hosting
+### Hosting
 Amazon Weg Services (AWS)
 
-###Independent Research
+### Independent Research
 AWS Continuous Integration (CI),
 Google Maps API
 
-###Unit Testing
+### Unit Testing
 JUnit 5 with 80%+ code coverage
 
-###Web Services consumed using Java
+### Web Services consumed using Java
 Hospital Capacity and Health Information (Covid) tbd,
 NOAA for weather conditions
 
-##Design
+## Design
 [User Stories](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/UserStories.md)
