@@ -43,4 +43,4 @@ Hospital Capacity and Health Information (Covid) tbd,
 NOAA for weather conditions
 
 ##Design
-[User Stories](url)
+[User Stories](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/UserStories.md)
