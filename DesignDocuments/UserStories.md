@@ -34,11 +34,15 @@ As a signed in user, I can add a travel note to an existing trip. *
 
 **View Trip**
 
-As a signed in user, I can view destination and travel note information for an existing trip. *
+As a signed in user, I can view destination, hospital information, and travel note information for an existing trip. *
 
 **Edit Trip**
 
 As a signed in user, I can edit existing destination and travel note information for an existing trip. *
+
+**Save Trip File**
+
+As a signed in user, I can save trip information in a file on my device.  
 
 
 
