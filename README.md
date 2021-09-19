@@ -52,6 +52,7 @@ NOAA for weather conditions
 
 ## Design
 [User Stories](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/UserStories.md)
+
 [Screen Design](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Screens.md)
 
 ## [Project Plan](https://github.com/jeliceiri/MyPlacesTracker/blob/main/ProjectPlan.md)
