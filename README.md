@@ -12,6 +12,9 @@ MyPlaces can also save information to a file which can be viewed or printed in c
 
 ## Project Technologies/Techniques
 
+### Language
+Java
+
 ### Integrated Development Environment (IDE)
 IntelliJ IDEA 
 

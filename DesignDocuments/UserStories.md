@@ -1,4 +1,4 @@
-# User Stories (DRAFT)
+# User Stories 
 
 **Sign Up**
 
@@ -16,34 +16,46 @@ As a sign-in user, I can edit my personal profile information.
 
 As a user with an account, I can reset my password if it is forgotten.
 
-**Create New Trip**
+**Add New Trip**
 
-As a signed in user, I can create a new trip. *
+As a signed in user, I can add a new trip. *
+
+**View Trips**
+
+As a signed in user, I can view existing trips. *
+
+**Trip Info**
+
+As a signed in user, I can view the following information for an existing trip: 
+local hospital capacity, weather, and travel notes. *
+
+**Edit Trip**
+
+As a signed in user, I can edit and delete an existing trip. *
 
 **Search for Destination**
 
-As a signed in user, I can search for a destination.
+As a signed in user, I can search for a destination. *
 
-**Add Destination(s)**
+**Add Destination**
 
 As a signed in user, I can add a destination to an existing trip. *
+
+**Edit Destination**
+
+As a signed in user, I can update and delete a destination for an existing trip. *
 
 **Create Travel Note**
 
 As a signed in user, I can add a travel note to an existing trip. *
 
-**View Trip**
+**Edit Travel Note**
 
-As a signed in user, I can view destination, hospital information, and travel note information for an existing trip. *
+As a signed in user, I can update and delete a travel note for an existing trip. *
 
-**Edit Trip**
+**Save Trip To File**
 
-As a signed in user, I can edit existing destination and travel note information for an existing trip. *
-
-**Save Trip File**
-
-As a signed in user, I can save trip information in a file on my device.  
+As a signed in user, I can save trip information to a file on my device.  
 
 
-
-*Denotes MVP
+*Denotes Minimum Viable Product (MVP)
