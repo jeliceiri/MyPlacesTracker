@@ -10,7 +10,7 @@
 ![Trips Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-ViewTrips.png)
 
 ## Trip Info Screen
-![Trip Info Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-TripInfo.png)
+![Trip Info Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-ViewTripInfo.png)
 
 ## Add Trip Screen
 ![Add Trip Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-AddTrip.png)
