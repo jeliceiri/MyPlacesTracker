@@ -16,17 +16,17 @@
 ![Add Trip Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-AddTrip.png)
 
 ## Edit Trip Screen
-![Edit Trip Screen](/https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-EditTrip.png)
+![Edit Trip Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-EditTrip.png)
 
 ## Add Destination Screen
-![Add Destination Screen](/https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-AddDestination.png)
+![Add Destination Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-AddDestination.png)
 
 ## Edit Destination Screen
-![Edit Destination Screen](/https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-EditDestination.png)
+![Edit Destination Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-EditDestination.png)
 
 ## Add Travel Note Screen
-![Add Travel Note Screen](/https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-AddTravelNote.png)
+![Add Travel Note Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-AddTravelNote.png)
 
 ## Edit Travel Note Screen
-![Edit Travel Note Screen](/https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-EditTravelNote.png)
+![Edit Travel Note Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-EditTravelNote.png)
 
