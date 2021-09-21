@@ -1,6 +1,6 @@
 # Jill Eliceiri Individual Project
 
-This repository is the individual project for the final Java course at Madison College in the Fall 2021.
+This repository is the individual project for the final Java course at Madison College in the Fall 2021. The project is an innovative, data-driven Java application that solves a real world problem.
 ## Problem Statement
 Travelers need to have important information about the places that they plan to visit. 
 Sure, where you stay and how you get there are important, but also important is local health information and weather. 
