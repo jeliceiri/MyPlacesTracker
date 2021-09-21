@@ -7,7 +7,7 @@
 ![New User Sign Up Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-NewUserSignUp.png)
 
 ## Trips Screen
-![Trips Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-ViewTrips.png)
+![Trips Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-Trips.png)
 
 ## Trip Info Screen
 ![Trip Info Screen](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Wireframes/MyPlaces-TripInfo.png)
