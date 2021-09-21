@@ -6,26 +6,41 @@
 - [x] Add Link to Github Classroom Student Folder
 - [x] Create IntelliJ Project Structure
 - [x] Write Problem Statement and Obtain Instructors Permission
-- [x] Create IntelliJ Project Structure
 - [x] Explore Possible Web API's
-- [ ] List technologies and how they will be utilized
+- [X] List technologies and how they will be utilized
 - [x] Weekly Time Log
 
 ##  Week 4
-- [ ] Complete Project Plan
+- [X] Project Plan
 - [ ] Application Flow Design Document
+- [ ] Build Database and data access objects (DAOs)
+- [x] Select Web API's
+- [ ] Build Property Files, JSPSs, and Classes
+- [ ] Add Log4J, JUnit5, and Hibernate
 
 ##  Week 5
+- [ ] Improve unit testing
+- [ ] Hibernate one-to-many relationships
 
 ##  Week 6
+- [ ] Share project with peers
+- [ ] Give and receive feedback
+- [ ] Set up AWS account  
+- [ ] Deploy Application
+- [ ] Research AWS CI
 
 ##  Week 7
+- [ ] Add Java Security: authentication and access control
 
 ##  Week 8
+- [ ] Consume RESTful Web Services
 
 ##  Week 9
+- [ ] Build RESTful Web Services
 
 ##  Week 10
+- [ ] Make video presentation
+- [ ] Complete Time Log
 
 ##  Week 11
 
