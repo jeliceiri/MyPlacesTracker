@@ -34,7 +34,7 @@ Tomcat's JDBC Realm Authentication
 tbd
 
 ### Data Validation
-tbd
+Explore Hibernate's validation
 
 ### Hosting
 Amazon Weg Services (AWS)
