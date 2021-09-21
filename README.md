@@ -6,9 +6,9 @@ This repository will serve as an example for Madison College's Enterprise Java C
 Travelers need to have important information about the places that they plan to visit. 
 Sure, where you stay and how you get there are important, but also important is local health information and weather. 
 Trip planner sites like Google Travel provide useful information, but it takes you to external sites for weather and health information. 
-What happens if you or your loved one needs to visit a hospital for emergency services? Wouldn't it be useful to know vital information such as hospital capacity?
+What happens if you or your loved one needs to visit a hospital for emergency services? Wouldn't it be useful to know vital information such as nearby hospital ICU capacity?
 MyPlaces will have this current information in one useful location, along with the ability to write, view, and edit travel notes - which contain anything the traveler wants to store in them. 
-MyPlaces can also save information to a file which can be viewed or printed in case of no internet connection.  
+MyPlaces can also save information to a file which can be printed or viewed later in case of no internet connection.  
 
 ## Project Technologies/Techniques
 
@@ -40,14 +40,20 @@ tbd
 Amazon Weg Services (AWS)
 
 ### Independent Research
-AWS Continuous Integration (CI),
-Google Maps API
+AWS Continuous Integration (CI)
 
 ### Unit Testing
 JUnit 5 with 80%+ code coverage
 
 ### Web Services consumed using Java
-Hospital Capacity and Health Information (Covid) tbd,
+US ZIP Code API Tool 
+
+Federal Information Processing Standards (FIPS)
+
+The Covid Act Now API
+
+Google Maps API
+
 NOAA for weather conditions
 
 ## Design

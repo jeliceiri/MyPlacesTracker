@@ -27,15 +27,15 @@ As a signed in user, I can view existing trips. *
 **Trip Info**
 
 As a signed in user, I can view the following information for an existing trip: 
-local hospital capacity, weather, and travel notes. *
+nearby hospital ICU capacity*, weather, travel notes*, and other health related information.
 
 **Edit Trip**
 
-As a signed in user, I can edit and delete an existing trip. *
+As a signed in user, I can edit and delete an existing trip. 
 
 **Search for Destination**
 
-As a signed in user, I can search for a destination. *
+As a signed in user, I can search for a destination. 
 
 **Add Destination**
 
@@ -43,7 +43,7 @@ As a signed in user, I can add a destination to an existing trip. *
 
 **Edit Destination**
 
-As a signed in user, I can update and delete a destination for an existing trip. *
+As a signed in user, I can update and delete a destination for an existing trip. 
 
 **Create Travel Note**
 
