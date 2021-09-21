@@ -1,7 +1,6 @@
 # Jill Eliceiri Individual Project
 
-This repository will serve as an example for Madison College's Enterprise Java Class.
-
+This repository is the individual project for the final Java course at Madison College in the Fall 2021.
 ## Problem Statement
 Travelers need to have important information about the places that they plan to visit. 
 Sure, where you stay and how you get there are important, but also important is local health information and weather. 
