@@ -4,7 +4,6 @@
 - [x] Create Github Project Repository
 - [x] Create IntelliJ Project Structure
 - [x] Add Link to Github Classroom Student Folder
-- [x] Create IntelliJ Project Structure
 - [x] Write Problem Statement and Obtain Instructors Permission
 - [x] Explore Possible Web API's
 - [X] List technologies and how they will be utilized

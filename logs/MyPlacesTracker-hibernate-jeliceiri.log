@@ -1,0 +1,1 @@
+[DEBUG] 2021-09-25 13:23:13.586 [http-nio-8080-exec-1] TripDao - The list of trips [Trip {name='Winter Break', id=1}, Trip {name='Fall Tour', id=2}]
