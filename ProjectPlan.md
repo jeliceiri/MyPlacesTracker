@@ -28,7 +28,6 @@
 - [ ] Add JSPs to add and edit travel note
 - [ ] Build JUnit5 tests for travel note DAO
 - [ ] Add Hibernate one-to-many relationship
-- [ ] Select CSS framework
 - [ ] Weekly Time Log
 
 ##  Week 6
@@ -49,20 +48,24 @@
 
 ##  Week 8
 - [ ] Consume RESTful Web Service: US ZIP Code API Tool
-- [ ] Add dao to test API
+- [ ] Add dao for API
+- [ ] Add JUnit5 tests for API
 - [ ] Continue AWS CI
 - [ ] Weekly Time Log
 
 ##  Week 9
 - [ ] Consume RESTful Web Service: Federal Information Processing Standards (FIPS)
-- [ ] Add dao to test API
+- [ ] Add dao for API
+- [ ] Add JUnit5 tests for API
 - [ ] Prepare for Checkpoint 3
 - [ ] Implement AWS CI
 - [ ] Weekly Time Log
 
 ##  Week 10
 - [ ] Consume RESTful Web Service: The Covid Act Now API
-- [ ] Add dao to test API
+- [ ] Add dao for API
+- [ ] Add JUnit5 tests for API
+- [ ] Select CSS framework
 - [ ] Weekly Time Log
 
 ##  Week 11
@@ -70,17 +73,19 @@
 - [ ] Weekly Time Log
 
 ##  Week 12
-- [ ] Add Data Validation
+- [ ] Add data validation
 - [ ] Continue to implement CSS
 - [ ] Weekly Time Log
 
 ##  Week 13
 - [ ] Weekly Time Log
+- [ ] Continue to implement data validation
+- [ ] Continue to implement CSS
 - [ ] Prepare for code reviews
 
 ##  Week 14
 - [ ] Weekly Time Log
-- [ ] Individaul Project Code Reviews
+- [ ] Individaul project code reviews
 
 ##  Week 15
 - [ ] Create Video Presentation
