@@ -34,6 +34,7 @@ tbd: Bootstrap or Materialize
 
 ### Data Validation
 Explore Hibernate's validation
+
 Bootstrap Validator
 
 ### Hosting
