@@ -30,10 +30,11 @@ MySql 8.0.16
 Tomcat's JDBC Realm Authentication
 
 ### CSS
-tbd
+tbd: Bootstrap or Materialize
 
 ### Data Validation
 Explore Hibernate's validation
+Bootstrap Validator
 
 ### Hosting
 Amazon Weg Services (AWS)
@@ -51,9 +52,9 @@ Federal Information Processing Standards (FIPS)
 
 The Covid Act Now API
 
-Google Maps API
+Google Maps API (future version)
 
-NOAA for weather conditions
+NOAA for weather conditions (future version)
 
 ## Design
 [User Stories](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/UserStories.md)

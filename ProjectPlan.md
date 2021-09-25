@@ -12,43 +12,80 @@
 ##  Week 4
 - [X] Project Plan
 - [ ] Application Flow Design Document
-- [ ] Build Database and data access objects (DAOs)
+- [x] Build initial database with trip table 
+- [x] Build Trip entity and data access object (DAO)
+- [x] Add JSP to display trips
+- [ ] Add JSP to add a trip
+- [ ] Create test database
+- [ ] Build JUnit5 tests for trip DAO
 - [x] Select Web API's
-- [ ] Build Property Files, JSPSs, and Classes
-- [ ] Add Log4J, JUnit5, and Hibernate
+- [x] Add Log4J, JUnit5, and Hibernate
+- [x] Weekly Time Log
 
 ##  Week 5
-- [ ] Improve unit testing
-- [ ] Hibernate one-to-many relationships
+- [ ] Work on add travel note user story
+- [ ] Work on edit travel note user story
+- [ ] Add JSPs to add and edit travel note
+- [ ] Build JUnit5 tests for travel note DAO
+- [ ] Add Hibernate one-to-many relationship
+- [ ] Select CSS framework
+- [ ] Weekly Time Log
 
 ##  Week 6
+- [ ] Work on add destination user story
+- [ ] Add JSP to add destination
+- [ ] Build JUnit5 tests for destination DAO
 - [ ] Share project with peers
 - [ ] Give and receive feedback
 - [ ] Set up AWS account  
 - [ ] Deploy Application
-- [ ] Research AWS CI
+- [ ] Weekly Time Log
 
 ##  Week 7
+- [ ] Prepare for Checkpoint 2
 - [ ] Add Java Security: authentication and access control
+- [ ] Research AWS CI
+- [ ] Weekly Time Log
 
 ##  Week 8
-- [ ] Consume RESTful Web Services
+- [ ] Consume RESTful Web Service: US ZIP Code API Tool
+- [ ] Add dao to test API
+- [ ] Continue AWS CI
+- [ ] Weekly Time Log
 
 ##  Week 9
-- [ ] Build RESTful Web Services
+- [ ] Consume RESTful Web Service: Federal Information Processing Standards (FIPS)
+- [ ] Add dao to test API
+- [ ] Prepare for Checkpoint 3
+- [ ] Implement AWS CI
+- [ ] Weekly Time Log
 
 ##  Week 10
-- [ ] Make video presentation
-- [ ] Complete Time Log
+- [ ] Consume RESTful Web Service: The Covid Act Now API
+- [ ] Add dao to test API
+- [ ] Weekly Time Log
 
 ##  Week 11
+- [ ] Add CSS Framework
+- [ ] Weekly Time Log
 
 ##  Week 12
+- [ ] Add Data Validation
+- [ ] Continue to implement CSS
+- [ ] Weekly Time Log
 
 ##  Week 13
+- [ ] Weekly Time Log
+- [ ] Prepare for code reviews
 
 ##  Week 14
+- [ ] Weekly Time Log
+- [ ] Individaul Project Code Reviews
 
 ##  Week 15
+- [ ] Create Video Presentation
+- [ ] Weekly Time Log
 
 ##  Week 16
+- [ ] Submit Final Project
+- [ ] Weekly Time Log
