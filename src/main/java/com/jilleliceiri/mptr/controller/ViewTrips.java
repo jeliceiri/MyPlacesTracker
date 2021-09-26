@@ -1,6 +1,5 @@
 package com.jilleliceiri.mptr.controller;
 
-import com.jilleliceiri.mptr.entity.Trip;
 import com.jilleliceiri.mptr.persistence.TripDao;
 
 import javax.servlet.RequestDispatcher;
@@ -17,30 +16,10 @@ import java.io.IOException;
  */
 
 @WebServlet(
-        urlPatterns = {"/addTrip"}
+        urlPatterns = {"/viewTrips"}
 )
 
-public class AddTrip extends HttpServlet {
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        TripDao tripDao = new TripDao();
-
-        //String tripName = req.getParameter("addTrip");
-        //System.out.println(tripName);
-
-        Trip newTrip = new Trip(req.getParameter("addTrip"));
-
-        int id = tripDao.insertTrip(newTrip);
-        req.setAttribute("trips", tripDao.getAll());
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/trips.jsp");
-        dispatcher.forward(req, resp);
-    }
-
-
-
-    /*
+public class ViewTrips extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -51,14 +30,13 @@ public class AddTrip extends HttpServlet {
         //req.setAttribute("trips", tripDao.getAll());
         req.setAttribute("trips", tripDao.getAll());
 
-
+        /*
         if (newTripName != null){
             req.setAttribute("trips", tripDao.insertTrip(newTripName));
         } req.setAttribute("trips", tripDao.getAll());
+        */
 
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/trips.jsp");
         dispatcher.forward(req, resp);
     }
-    */
 }

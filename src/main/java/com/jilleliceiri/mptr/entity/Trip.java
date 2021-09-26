@@ -13,6 +13,10 @@ public class Trip {
     public Trip() {
     }
 
+    public Trip(String name) {
+        this.name = name;
+    }
+
     public Trip(int id, String name) {
         this.id = id;
         this.name = name;

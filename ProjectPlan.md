@@ -14,8 +14,10 @@
 - [ ] Application Flow Design Document
 - [x] Build initial database with trip table 
 - [x] Build Trip entity and data access object (DAO)
+- [x] Build servlet to view trips
+- [x] Build servlet to add a new trip
 - [x] Add JSP to display trips
-- [ ] Add JSP to add a trip
+- [x] Add JSP to add a trip
 - [ ] Create test database
 - [ ] Build JUnit5 tests for trip DAO
 - [x] Select Web API's
@@ -26,6 +28,8 @@
 - [ ] Work on add travel note user story
 - [ ] Work on edit travel note user story
 - [ ] Add JSPs to add and edit travel note
+- [ ] Build travel note entity and DAO
+- [ ] Build servlets to add/edit travel note
 - [ ] Build JUnit5 tests for travel note DAO
 - [ ] Add Hibernate one-to-many relationship
 - [ ] Weekly Time Log
@@ -33,6 +37,8 @@
 ##  Week 6
 - [ ] Work on add destination user story
 - [ ] Add JSP to add destination
+- [ ] Build servelt to add destination
+- [ ] Build destination entity and DAO
 - [ ] Build JUnit5 tests for destination DAO
 - [ ] Share project with peers
 - [ ] Give and receive feedback
@@ -42,6 +48,7 @@
 
 ##  Week 7
 - [ ] Prepare for Checkpoint 2
+- [ ] Build trip info jsp
 - [ ] Add Java Security: authentication and access control
 - [ ] Research AWS CI
 - [ ] Weekly Time Log

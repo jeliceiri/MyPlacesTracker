@@ -5,6 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -30,11 +31,14 @@ public class TripDao {
         return trips;
     }
 
-    public int insertTrip(String newTripName) {
-
-
-        return 0;
-
-
+    public int insertTrip(Trip newTrip) {
+        int id = 0;
+        logger.debug("Inserting: {}", newTrip);
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(newTrip);
+        transaction.commit();
+        session.close();
+        return id;
     }
 }
