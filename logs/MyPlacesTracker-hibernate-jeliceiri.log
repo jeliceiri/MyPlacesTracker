@@ -5059,3 +5059,6 @@
 [DEBUG] 2021-09-26 11:48:16.139 [http-nio-8080-exec-9] TripDao - The list of trips [Trip {name='Winter Break', id=1}, Trip {name='Fall Tour', id=2}, Trip {name='tripName', id=3}, Trip {name='Colour', id=4}, Trip {name='Test', id=5}, Trip {name='TEst2', id=6}, Trip {name='test3', id=7}]
 [DEBUG] 2021-09-26 11:49:31.198 [http-nio-8080-exec-2] TripDao - Inserting: Trip {name='TEst4', id=0}
 [DEBUG] 2021-09-26 11:49:31.248 [http-nio-8080-exec-2] TripDao - The list of trips [Trip {name='Winter Break', id=1}, Trip {name='Fall Tour', id=2}, Trip {name='tripName', id=3}, Trip {name='Colour', id=4}, Trip {name='Test', id=5}, Trip {name='TEst2', id=6}, Trip {name='test3', id=7}, Trip {name='TEst4', id=8}]
+[ERROR] 2021-09-26 12:35:48.599 [main] Database - java.sql.SQLSyntaxErrorException: Table 'test_my_places_tracker.trips' doesn't exist
+[DEBUG] 2021-09-26 12:42:23.896 [main] TripDao - The list of trips [Trip {name='Fall  Colour Tour', id=1}, Trip {name='Winter Break', id=2}, Trip {name='Spring in the South', id=3}]
+[DEBUG] 2021-09-26 12:44:48.356 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
