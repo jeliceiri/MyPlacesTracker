@@ -1,6 +1,6 @@
 package com.jilleliceiri.mptr.persistence;
 
-import com.jilleliceiri.mptr.entity.Trip;
+import com.jilleliceiri.mptr.entity.Destination;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -12,41 +12,33 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public class TripDao {
+public class DestinationDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
-    public List<Trip> getAll() {
+    public List<Destination> getAll() {
         Session session = sessionFactory.openSession();
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Trip> query = builder.createQuery( Trip.class );
-        Root<Trip> root = query.from( Trip.class );
-        List<Trip> trips = session.createQuery( query ).getResultList();
+        CriteriaQuery<Destination> query = builder.createQuery( Destination.class );
+        Root<Destination> root = query.from( Destination.class );
+        List<Destination> Destinations = session.createQuery( query ).getResultList();
 
-        logger.debug("The list of trips " + trips);
+        logger.debug("The list of Destinations " + Destinations);
         session.close();
 
-        return trips;
+        return Destinations;
     }
 
-    public int insertTrip(Trip newTrip) {
+    public int insertDestination(Destination newDestination) {
         int id = 0;
-        logger.debug("Inserting: {}", newTrip);
+        logger.debug("Inserting: {}", newDestination);
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        id = (int)session.save(newTrip);
+        id = (int)session.save(newDestination);
         transaction.commit();
         session.close();
         return id;
-    }
-
-    public Trip getById(int id) {
-        logger.debug("Searching for getById {}", id);
-        Session session = sessionFactory.openSession();
-        Trip trip = session.get( Trip.class, id );
-        session.close();
-        return trip;
     }
 }

@@ -5062,3 +5062,28 @@
 [ERROR] 2021-09-26 12:35:48.599 [main] Database - java.sql.SQLSyntaxErrorException: Table 'test_my_places_tracker.trips' doesn't exist
 [DEBUG] 2021-09-26 12:42:23.896 [main] TripDao - The list of trips [Trip {name='Fall  Colour Tour', id=1}, Trip {name='Winter Break', id=2}, Trip {name='Spring in the South', id=3}]
 [DEBUG] 2021-09-26 12:44:48.356 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
+[DEBUG] 2021-09-27 10:53:35.906 [main] TripDao - Searching for getById 1
+[DEBUG] 2021-09-27 11:06:53.168 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
+[DEBUG] 2021-09-27 11:07:09.582 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
+[DEBUG] 2021-09-27 11:07:09.689 [main] TripDao - Searching for getById 6
+[ERROR] 2021-09-28 20:01:41.488 [main] Database - java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_my_places_tracker`.`destinations`, CONSTRAINT `destinations_trips_id_fk` FOREIGN KEY (`trip_id`) REFERENCES `trips` (`id`))
+[DEBUG] 2021-09-28 20:01:41.495 [main] TripDao - Searching for getById 1
+[ERROR] 2021-09-28 20:02:37.838 [main] Database - java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_my_places_tracker`.`destinations`, CONSTRAINT `destinations_trips_id_fk` FOREIGN KEY (`trip_id`) REFERENCES `trips` (`id`))
+[DEBUG] 2021-09-28 20:02:37.843 [main] TripDao - Searching for getById 1
+[DEBUG] 2021-09-28 20:17:06.959 [main] TripDao - Searching for getById 1
+[DEBUG] 2021-09-28 20:19:16.536 [main] TripDao - Searching for getById 1
+[DEBUG] 2021-09-28 20:19:32.293 [main] TripDao - Searching for getById 1
+[DEBUG] 2021-09-28 20:19:52.528 [main] TripDao - Searching for getById 1
+[DEBUG] 2021-09-28 20:20:12.044 [main] TripDao - The list of trips [Trip {name='Fall  Colour Tour', id=1}, Trip {name='Winter Break', id=2}, Trip {name='Spring in the South', id=3}]
+[DEBUG] 2021-09-28 20:20:38.135 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
+[DEBUG] 2021-09-28 20:20:49.763 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
+[DEBUG] 2021-09-28 20:20:49.860 [main] TripDao - Searching for getById 10
+[DEBUG] 2021-09-28 20:23:06.273 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
+[DEBUG] 2021-09-28 20:23:06.371 [main] TripDao - Searching for getById 11
+[DEBUG] 2021-09-28 20:24:17.001 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
+[DEBUG] 2021-09-28 20:24:17.131 [main] TripDao - Searching for getById 12
+[DEBUG] 2021-09-28 20:24:37.112 [main] TripDao - The list of trips [Trip {name='Fall  Colour Tour', id=1}, Trip {name='Winter Break', id=2}, Trip {name='Spring in the South', id=3}]
+[DEBUG] 2021-09-28 20:24:37.177 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
+[DEBUG] 2021-09-28 20:24:37.244 [main] TripDao - Searching for getById 1
+[DEBUG] 2021-09-28 20:24:37.297 [main] TripDao - Inserting: Trip {name='Northern Summer', id=0}
+[DEBUG] 2021-09-28 20:24:37.305 [main] TripDao - Searching for getById 14
