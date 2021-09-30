@@ -14,6 +14,8 @@ import java.util.List;
 
 public class TripDao {
 
+    // TODO add a table in the JSP for all trips and destinations - watch displaying to jsp video
+
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
@@ -48,5 +50,32 @@ public class TripDao {
         Trip trip = session.get( Trip.class, id );
         session.close();
         return trip;
+    }
+
+    /**
+     * update Trip
+     * @param trip  Book to be inserted or updated
+     */
+    public void saveOrUpdate(Trip trip) {
+        logger.debug("SaveOrUpdating: {}", trip);
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.saveOrUpdate(trip);
+        transaction.commit();
+        session.close();
+
+    }
+    /**
+     * Delete a book
+     * @param trip Trip to be deleted
+     */
+    // TODO write test for this
+    public void delete(Trip trip) {
+        logger.debug("Deleting: {}", trip);
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(trip);
+        transaction.commit();
+        session.close();
     }
 }

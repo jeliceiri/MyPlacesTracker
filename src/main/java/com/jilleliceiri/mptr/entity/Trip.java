@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -131,11 +132,23 @@ public class Trip {
 
     @Override
     public String toString() {
-        return "Trip {" +
-                "name='" + name + '\'' +
-                ", id=" + id +
+        return "Trip{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", destinationSet=" + destinationSet +
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Trip trip = (Trip) o;
+        return id == trip.id && name.equals(trip.name);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
+    }
 }

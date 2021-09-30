@@ -1,0 +1,754 @@
+[DEBUG] 2021-09-30 07:33:32.724 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-09-30 07:33:32.731 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-09-30 07:33:32.738 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2021-09-30 07:33:32.810 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-09-30 07:33:32.812 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-09-30 07:33:33.017 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2021-09-30 07:33:33.017 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2021-09-30 07:33:33.022 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-09-30 07:33:33.276 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-09-30 07:33:33.298 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-09-30 07:33:33.299 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-09-30 07:33:33.315 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2021-09-30 07:33:33.347 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@54562ea6
+[DEBUG] 2021-09-30 07:33:33.347 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@54562ea6
+[DEBUG] 2021-09-30 07:33:33.348 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@54562ea6
+[DEBUG] 2021-09-30 07:33:33.348 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4a3be6a5
+[DEBUG] 2021-09-30 07:33:33.348 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@63718b93
+[DEBUG] 2021-09-30 07:33:33.349 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@60e21209
+[DEBUG] 2021-09-30 07:33:33.350 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4c2869a9
+[DEBUG] 2021-09-30 07:33:33.350 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4c2869a9
+[DEBUG] 2021-09-30 07:33:33.350 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4c2869a9
+[DEBUG] 2021-09-30 07:33:33.351 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@35835fa
+[DEBUG] 2021-09-30 07:33:33.351 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@35835fa
+[DEBUG] 2021-09-30 07:33:33.352 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@35835fa
+[DEBUG] 2021-09-30 07:33:33.353 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5e8604bf
+[DEBUG] 2021-09-30 07:33:33.353 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5e8604bf
+[DEBUG] 2021-09-30 07:33:33.353 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5e8604bf
+[DEBUG] 2021-09-30 07:33:33.353 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@546621c4
+[DEBUG] 2021-09-30 07:33:33.354 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@546621c4
+[DEBUG] 2021-09-30 07:33:33.354 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@546621c4
+[DEBUG] 2021-09-30 07:33:33.355 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7e9da981
+[DEBUG] 2021-09-30 07:33:33.355 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7e9da981
+[DEBUG] 2021-09-30 07:33:33.355 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7e9da981
+[DEBUG] 2021-09-30 07:33:33.356 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@476a736d
+[DEBUG] 2021-09-30 07:33:33.356 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@476a736d
+[DEBUG] 2021-09-30 07:33:33.356 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@476a736d
+[DEBUG] 2021-09-30 07:33:33.357 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@576c5536
+[DEBUG] 2021-09-30 07:33:33.357 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@576c5536
+[DEBUG] 2021-09-30 07:33:33.357 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@576c5536
+[DEBUG] 2021-09-30 07:33:33.357 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@159a48a6
+[DEBUG] 2021-09-30 07:33:33.357 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@159a48a6
+[DEBUG] 2021-09-30 07:33:33.358 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3cbcd8f3
+[DEBUG] 2021-09-30 07:33:33.358 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3cbcd8f3
+[DEBUG] 2021-09-30 07:33:33.359 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@7ec25216
+[DEBUG] 2021-09-30 07:33:33.359 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@7ec25216
+[DEBUG] 2021-09-30 07:33:33.360 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@4930539b
+[DEBUG] 2021-09-30 07:33:33.360 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3bb8aabc
+[DEBUG] 2021-09-30 07:33:33.361 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@287f7811
+[DEBUG] 2021-09-30 07:33:33.361 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@287f7811
+[DEBUG] 2021-09-30 07:33:33.361 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@3051e0b2
+[DEBUG] 2021-09-30 07:33:33.361 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@3051e0b2
+[DEBUG] 2021-09-30 07:33:33.372 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@7c3ebc6b
+[DEBUG] 2021-09-30 07:33:33.372 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7c3ebc6b
+[DEBUG] 2021-09-30 07:33:33.374 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1a3e5f23
+[DEBUG] 2021-09-30 07:33:33.374 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1a3e5f23
+[DEBUG] 2021-09-30 07:33:33.375 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@ec1b2e4
+[DEBUG] 2021-09-30 07:33:33.375 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@ec1b2e4
+[DEBUG] 2021-09-30 07:33:33.376 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4f8b4bd0
+[DEBUG] 2021-09-30 07:33:33.376 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4f8b4bd0
+[DEBUG] 2021-09-30 07:33:33.377 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7bbbb6a8
+[DEBUG] 2021-09-30 07:33:33.378 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7bbbb6a8
+[DEBUG] 2021-09-30 07:33:33.379 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@314ed053
+[DEBUG] 2021-09-30 07:33:33.379 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@314ed053
+[DEBUG] 2021-09-30 07:33:33.381 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5c748168
+[DEBUG] 2021-09-30 07:33:33.381 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5c748168
+[DEBUG] 2021-09-30 07:33:33.382 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@2f61f937
+[DEBUG] 2021-09-30 07:33:33.382 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@2f61f937
+[DEBUG] 2021-09-30 07:33:33.383 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@25b5c5e3
+[DEBUG] 2021-09-30 07:33:33.383 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@25b5c5e3
+[DEBUG] 2021-09-30 07:33:33.383 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@3047254d
+[DEBUG] 2021-09-30 07:33:33.383 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3047254d
+[DEBUG] 2021-09-30 07:33:33.384 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3047254d
+[DEBUG] 2021-09-30 07:33:33.385 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6f0cb5a1
+[DEBUG] 2021-09-30 07:33:33.385 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@c6e0f32
+[DEBUG] 2021-09-30 07:33:33.385 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@c6e0f32
+[DEBUG] 2021-09-30 07:33:33.385 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@c6e0f32
+[DEBUG] 2021-09-30 07:33:33.386 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7428de63
+[DEBUG] 2021-09-30 07:33:33.386 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@50f40653
+[DEBUG] 2021-09-30 07:33:33.386 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@50f40653
+[DEBUG] 2021-09-30 07:33:33.387 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@971e903
+[DEBUG] 2021-09-30 07:33:33.387 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@971e903
+[DEBUG] 2021-09-30 07:33:33.388 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@c6a6c1d
+[DEBUG] 2021-09-30 07:33:33.388 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@c6a6c1d
+[DEBUG] 2021-09-30 07:33:33.389 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@6e0cff20
+[DEBUG] 2021-09-30 07:33:33.389 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6e0cff20
+[DEBUG] 2021-09-30 07:33:33.389 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@66bacdbc
+[DEBUG] 2021-09-30 07:33:33.389 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@66bacdbc
+[DEBUG] 2021-09-30 07:33:33.390 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@7bb35cc6
+[DEBUG] 2021-09-30 07:33:33.390 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@616b241a
+[DEBUG] 2021-09-30 07:33:33.391 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@616b241a
+[DEBUG] 2021-09-30 07:33:33.391 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@616b241a
+[DEBUG] 2021-09-30 07:33:33.391 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@dcc6211
+[DEBUG] 2021-09-30 07:33:33.391 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@dcc6211
+[DEBUG] 2021-09-30 07:33:33.392 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@dcc6211
+[DEBUG] 2021-09-30 07:33:33.392 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@776802b0
+[DEBUG] 2021-09-30 07:33:33.393 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@6ee8dcd3
+[DEBUG] 2021-09-30 07:33:33.394 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@1cc9cfb2
+[DEBUG] 2021-09-30 07:33:33.394 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@1cc9cfb2
+[DEBUG] 2021-09-30 07:33:33.394 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@1cc9cfb2
+[DEBUG] 2021-09-30 07:33:33.395 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@17740dae
+[DEBUG] 2021-09-30 07:33:33.395 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@17740dae
+[DEBUG] 2021-09-30 07:33:33.395 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@17740dae
+[DEBUG] 2021-09-30 07:33:33.395 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@3c6aa04a
+[DEBUG] 2021-09-30 07:33:33.395 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@35835e65
+[DEBUG] 2021-09-30 07:33:33.396 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@6fd5717c
+[DEBUG] 2021-09-30 07:33:33.396 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6fd5717c
+[DEBUG] 2021-09-30 07:33:33.396 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@53ac845a
+[DEBUG] 2021-09-30 07:33:33.397 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@69da0b12
+[DEBUG] 2021-09-30 07:33:33.397 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@69da0b12
+[DEBUG] 2021-09-30 07:33:33.399 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@1ad8df52
+[DEBUG] 2021-09-30 07:33:33.399 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1ad8df52
+[DEBUG] 2021-09-30 07:33:33.400 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4393593c
+[DEBUG] 2021-09-30 07:33:33.400 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@9fec931
+[DEBUG] 2021-09-30 07:33:33.401 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@889d9e8
+[DEBUG] 2021-09-30 07:33:33.403 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@78b41097
+[DEBUG] 2021-09-30 07:33:33.403 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@78b41097
+[DEBUG] 2021-09-30 07:33:33.404 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6c65860d
+[DEBUG] 2021-09-30 07:33:33.404 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2d000e80
+[DEBUG] 2021-09-30 07:33:33.404 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7cf283e1
+[DEBUG] 2021-09-30 07:33:33.404 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@20e6c4dc
+[DEBUG] 2021-09-30 07:33:33.404 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@60737b23
+[DEBUG] 2021-09-30 07:33:33.404 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4d2a1da3
+[DEBUG] 2021-09-30 07:33:33.404 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@252f626c
+[DEBUG] 2021-09-30 07:33:33.404 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@33f98231
+[DEBUG] 2021-09-30 07:33:33.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-09-30 07:33:33.427 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-09-30 07:33:33.428 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-09-30 07:33:33.428 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-09-30 07:33:33.429 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-09-30 07:33:33.430 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-09-30 07:33:33.430 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-09-30 07:33:33.432 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-09-30 07:33:33.433 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-09-30 07:33:33.433 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-09-30 07:33:33.434 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-09-30 07:33:33.434 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-09-30 07:33:33.434 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-09-30 07:33:33.435 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-09-30 07:33:33.440 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_my_places_tracker
+[INFO ] 2021-09-30 07:33:33.440 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-09-30 07:33:33.440 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-09-30 07:33:33.552 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2021-09-30 07:33:34.184 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.26
+      major : 8
+      minor : 0
+[DEBUG] 2021-09-30 07:33:34.185 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2021-09-30 07:33:34.185 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2021-09-30 07:33:34.212 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2021-09-30 07:33:34.227 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2021-09-30 07:33:34.251 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-09-30 07:33:34.275 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-09-30 07:33:34.277 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@658255aa] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@25290bca]
+[DEBUG] 2021-09-30 07:33:34.329 [main] AnnotationBinder - Binding entity from annotated class: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-09-30 07:33:34.349 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-09-30 07:33:34.353 [main] EntityBinder - Import with entity name Trip
+[DEBUG] 2021-09-30 07:33:34.355 [main] EntityBinder - Bind entity com.jilleliceiri.mptr.entity.Trip on table trips
+[DEBUG] 2021-09-30 07:33:34.374 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-09-30 07:33:34.377 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-09-30 07:33:34.378 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Trip:id]
+[DEBUG] 2021-09-30 07:33:34.380 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-09-30 07:33:34.381 [main] PropertyBinder - Building property id
+[DEBUG] 2021-09-30 07:33:34.384 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-09-30 07:33:34.386 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='trip'}
+[DEBUG] 2021-09-30 07:33:34.386 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=destinationSet, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-09-30 07:33:34.387 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-09-30 07:33:34.394 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-09-30 07:33:34.394 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=destinationSet_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-09-30 07:33:34.394 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='destinationSet_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-09-30 07:33:34.395 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='trip'}
+[DEBUG] 2021-09-30 07:33:34.395 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='trip'}
+[DEBUG] 2021-09-30 07:33:34.396 [main] CollectionBinder - Collection role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:34.398 [main] PropertyBinder - Building property destinationSet
+[DEBUG] 2021-09-30 07:33:34.398 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=trip_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-09-30 07:33:34.398 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2021-09-30 07:33:34.398 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Trip:name]
+[DEBUG] 2021-09-30 07:33:34.398 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2021-09-30 07:33:34.398 [main] PropertyBinder - Building property name
+[DEBUG] 2021-09-30 07:33:34.399 [main] AnnotationBinder - Binding entity from annotated class: com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-09-30 07:33:34.399 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-09-30 07:33:34.400 [main] EntityBinder - Import with entity name Destination
+[DEBUG] 2021-09-30 07:33:34.400 [main] EntityBinder - Bind entity com.jilleliceiri.mptr.entity.Destination on table destinations
+[DEBUG] 2021-09-30 07:33:34.401 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(destinations), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-09-30 07:33:34.401 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-09-30 07:33:34.401 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Destination:id]
+[DEBUG] 2021-09-30 07:33:34.402 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-09-30 07:33:34.402 [main] PropertyBinder - Building property id
+[DEBUG] 2021-09-30 07:33:34.402 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-09-30 07:33:34.402 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(destinations), mappingColumn=city, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-09-30 07:33:34.402 [main] PropertyBinder - MetadataSourceProcessor property city with lazy=false
+[DEBUG] 2021-09-30 07:33:34.402 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Destination:city]
+[DEBUG] 2021-09-30 07:33:34.402 [main] SimpleValueBinder - building SimpleValue for city
+[DEBUG] 2021-09-30 07:33:34.402 [main] PropertyBinder - Building property city
+[DEBUG] 2021-09-30 07:33:34.402 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-09-30 07:33:34.402 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(destinations), mappingColumn=trip, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-09-30 07:33:34.403 [main] PropertyBinder - Building property trip
+[DEBUG] 2021-09-30 07:33:34.404 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-09-30 07:33:34.404 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2021-09-30 07:33:34.404 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-09-30 07:33:34.404 [main] SimpleValueBinder - Starting fillSimpleValue for city
+[DEBUG] 2021-09-30 07:33:34.408 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [trips]
+[DEBUG] 2021-09-30 07:33:34.408 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [destinations]
+[DEBUG] 2021-09-30 07:33:34.408 [main] CollectionSecondPass - Second pass for collection: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:34.409 [main] CollectionBinder - Binding a OneToMany: com.jilleliceiri.mptr.entity.Trip.destinationSet through a foreign key
+[DEBUG] 2021-09-30 07:33:34.409 [main] CollectionBinder - Mapping collection: com.jilleliceiri.mptr.entity.Trip.destinationSet -> destinations
+[DEBUG] 2021-09-30 07:33:34.410 [main] TableBinder - Retrieving property com.jilleliceiri.mptr.entity.Destination.trip
+[DEBUG] 2021-09-30 07:33:34.410 [main] CollectionSecondPass - Mapped collection key: trip_id, one-to-many: com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-09-30 07:33:34.410 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-09-30 07:33:34.412 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-09-30 07:33:34.443 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - SessionFactory name : null
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Statistics: disabled
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2021-09-30 07:33:34.444 [main] Settings - Default null ordering: NONE
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Query language substitutions: {}
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Named query checking : enabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Second-level cache: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - JDBC batch size: 15
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - JPA compliance - query : 
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2021-09-30 07:33:34.445 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2021-09-30 07:33:34.492 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2021-09-30 07:33:34.507 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2021-09-30 07:33:34.508 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/jk/IdeaProjects/MyPlacesTracker/target/test-classes:/Users/jk/IdeaProjects/MyPlacesTracker/target/classes:/Users/jk/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/jk/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/jk/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/jk/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/jk/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/jk/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/jk/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/jk/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/jk/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/jk/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/jk/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/jk/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/jk/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/jk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/jk/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/jk/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/jk/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/jk/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/jk/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/jk/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/jk/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/jk/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/jk/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/jk/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/jk/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/jk/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/jk/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jk/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/jk/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/Users/jk/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/Users/jk/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/jk/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/jk/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/jk/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://openjdk.java.net/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.jilleliceiri.mptr.persistence.TripDaoTest, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/jk, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2021-07-20, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, connection.password=Java2021!, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.12+8-LTS-237, user.name=jk, path.separator=:, hibernate.connection.username=****, os.version=11.5, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_my_places_tracker, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/y_/8stpl2p91kg5yxgcjmy0tv200000gn/T/, java.version=11.0.12, user.dir=/Users/jk/IdeaProjects/MyPlacesTracker, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@5eea5627, java.library.path=/Users/jk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.12+8-LTS-237, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://localhost:3306/test_my_places_tracker, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[DEBUG] 2021-09-30 07:33:34.527 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2021-09-30 07:33:34.527 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2021-09-30 07:33:34.528 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2021-09-30 07:33:34.528 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@658255aa] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@2e32fc22]
+[DEBUG] 2021-09-30 07:33:34.576 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Trip] is safe
+[DEBUG] 2021-09-30 07:33:34.576 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-09-30 07:33:34.594 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Trip] is safe
+[DEBUG] 2021-09-30 07:33:34.594 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-09-30 07:33:34.800 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Destination] is safe
+[DEBUG] 2021-09-30 07:33:34.801 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-09-30 07:33:34.801 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Destination] is safe
+[DEBUG] 2021-09-30 07:33:34.801 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-09-30 07:33:34.818 [main] AbstractCollectionPersister - Static SQL for collection: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:34.818 [main] AbstractCollectionPersister -  Row insert: update destinations set trip_id=? where id=?
+[DEBUG] 2021-09-30 07:33:34.818 [main] AbstractCollectionPersister -  Row update: update destinations set  where id=?
+[DEBUG] 2021-09-30 07:33:34.818 [main] AbstractCollectionPersister -  Row delete: update destinations set trip_id=null where trip_id=? and id=?
+[DEBUG] 2021-09-30 07:33:34.818 [main] AbstractCollectionPersister -  One-shot delete: update destinations set trip_id=null where trip_id=?
+[DEBUG] 2021-09-30 07:33:34.821 [main] AbstractEntityPersister - Static SQL for entity: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-09-30 07:33:34.822 [main] AbstractEntityPersister -  Version select: select id from trips where id =?
+[DEBUG] 2021-09-30 07:33:34.822 [main] AbstractEntityPersister -  Snapshot select: select trip_.id, trip_.trip_name as trip_nam2_1_ from trips trip_ where trip_.id=?
+[DEBUG] 2021-09-30 07:33:34.822 [main] AbstractEntityPersister -  Insert 0: insert into trips (trip_name, id) values (?, ?)
+[DEBUG] 2021-09-30 07:33:34.822 [main] AbstractEntityPersister -  Update 0: update trips set trip_name=? where id=?
+[DEBUG] 2021-09-30 07:33:34.822 [main] AbstractEntityPersister -  Delete 0: delete from trips where id=?
+[DEBUG] 2021-09-30 07:33:34.822 [main] AbstractEntityPersister -  Identity insert: insert into trips (trip_name) values (?)
+[DEBUG] 2021-09-30 07:33:34.844 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6e243175]
+[DEBUG] 2021-09-30 07:33:34.845 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet
+[DEBUG] 2021-09-30 07:33:34.848 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@46c10083]
+[DEBUG] 2021-09-30 07:33:34.849 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3c9ef6e9]
+[DEBUG] 2021-09-30 07:33:34.850 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet.city
+[DEBUG] 2021-09-30 07:33:34.850 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet.trip
+[DEBUG] 2021-09-30 07:33:34.850 [main] MetamodelGraphWalker - Property path deemed to be circular : destinationSet.trip
+[DEBUG] 2021-09-30 07:33:34.851 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2021-09-30 07:33:34.851 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-09-30 07:33:34.862 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-09-30 07:33:34.866 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Trip)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Trip)
+          - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:2>, path=com.jilleliceiri.mptr.entity.Trip.destinationSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Trip)
+          - SQL table alias mapping - trip0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(destinationSet)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+                - SQL table alias mapping - destinatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {trip_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.jilleliceiri.mptr.entity.Destination)
+                      - SQL table alias mapping - destinatio1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2021-09-30 07:33:34.867 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Trip [NONE]: select trip0_.id as id1_1_0_, trip0_.trip_name as trip_nam2_1_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-09-30 07:33:34.867 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@110b7837]
+[DEBUG] 2021-09-30 07:33:34.867 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet
+[DEBUG] 2021-09-30 07:33:34.868 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@78d23d6a]
+[DEBUG] 2021-09-30 07:33:34.868 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@626e0c86]
+[DEBUG] 2021-09-30 07:33:34.868 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet.city
+[DEBUG] 2021-09-30 07:33:34.868 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet.trip
+[DEBUG] 2021-09-30 07:33:34.868 [main] MetamodelGraphWalker - Property path deemed to be circular : destinationSet.trip
+[DEBUG] 2021-09-30 07:33:34.868 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2021-09-30 07:33:34.868 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-09-30 07:33:34.868 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-09-30 07:33:34.869 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Trip)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Trip)
+          - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:2>, path=com.jilleliceiri.mptr.entity.Trip.destinationSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Trip)
+          - SQL table alias mapping - trip0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(destinationSet)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+                - SQL table alias mapping - destinatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {trip_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.jilleliceiri.mptr.entity.Destination)
+                      - SQL table alias mapping - destinatio1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2021-09-30 07:33:34.869 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Trip [READ]: select trip0_.id as id1_1_0_, trip0_.trip_name as trip_nam2_1_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-09-30 07:33:34.879 [main] Loader - Static select for action ACTION_MERGE on entity com.jilleliceiri.mptr.entity.Trip: select trip0_.id as id1_1_1_, trip0_.trip_name as trip_nam2_1_1_, destinatio1_.trip_id as trip_id3_0_3_, destinatio1_.id as id1_0_3_, destinatio1_.id as id1_0_0_, destinatio1_.city as city2_0_0_, destinatio1_.trip_id as trip_id3_0_0_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-09-30 07:33:34.880 [main] Loader - Static select for action ACTION_REFRESH on entity com.jilleliceiri.mptr.entity.Trip: select trip0_.id as id1_1_1_, trip0_.trip_name as trip_nam2_1_1_, destinatio1_.trip_id as trip_id3_0_3_, destinatio1_.id as id1_0_3_, destinatio1_.id as id1_0_0_, destinatio1_.city as city2_0_0_, destinatio1_.trip_id as trip_id3_0_0_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-09-30 07:33:34.880 [main] AbstractEntityPersister - Static SQL for entity: com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-09-30 07:33:34.880 [main] AbstractEntityPersister -  Version select: select id from destinations where id =?
+[DEBUG] 2021-09-30 07:33:34.880 [main] AbstractEntityPersister -  Snapshot select: select destinatio_.id, destinatio_.city as city2_0_, destinatio_.trip_id as trip_id3_0_ from destinations destinatio_ where destinatio_.id=?
+[DEBUG] 2021-09-30 07:33:34.880 [main] AbstractEntityPersister -  Insert 0: insert into destinations (city, trip_id, id) values (?, ?, ?)
+[DEBUG] 2021-09-30 07:33:34.880 [main] AbstractEntityPersister -  Update 0: update destinations set city=?, trip_id=? where id=?
+[DEBUG] 2021-09-30 07:33:34.880 [main] AbstractEntityPersister -  Delete 0: delete from destinations where id=?
+[DEBUG] 2021-09-30 07:33:34.880 [main] AbstractEntityPersister -  Identity insert: insert into destinations (city, trip_id) values (?, ?)
+[DEBUG] 2021-09-30 07:33:34.880 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fbf26fc]
+[DEBUG] 2021-09-30 07:33:34.880 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2021-09-30 07:33:34.880 [main] MetamodelGraphWalker - Visiting attribute path : trip
+[DEBUG] 2021-09-30 07:33:34.881 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@662be9f7]
+[DEBUG] 2021-09-30 07:33:34.881 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet
+[DEBUG] 2021-09-30 07:33:34.881 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.destinationSet
+[DEBUG] 2021-09-30 07:33:34.881 [main] MetamodelGraphWalker - Visiting attribute path : trip.name
+[DEBUG] 2021-09-30 07:33:34.881 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-09-30 07:33:34.881 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-09-30 07:33:34.882 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Destination)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Destination)
+          - EntityAttributeFetchImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Destination.trip)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Destination)
+          - SQL table alias mapping - destinatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(trip)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.jilleliceiri.mptr.entity.Trip)
+                - SQL table alias mapping - trip1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2021-09-30 07:33:34.882 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Destination [NONE]: select destinatio0_.id as id1_0_0_, destinatio0_.city as city2_0_0_, destinatio0_.trip_id as trip_id3_0_0_, trip1_.id as id1_1_1_, trip1_.trip_name as trip_nam2_1_1_ from destinations destinatio0_ left outer join trips trip1_ on destinatio0_.trip_id=trip1_.id where destinatio0_.id=?
+[DEBUG] 2021-09-30 07:33:34.882 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2f9dda71]
+[DEBUG] 2021-09-30 07:33:34.882 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2021-09-30 07:33:34.882 [main] MetamodelGraphWalker - Visiting attribute path : trip
+[DEBUG] 2021-09-30 07:33:34.882 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7f5fcfe9]
+[DEBUG] 2021-09-30 07:33:34.882 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet
+[DEBUG] 2021-09-30 07:33:34.882 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.destinationSet
+[DEBUG] 2021-09-30 07:33:34.882 [main] MetamodelGraphWalker - Visiting attribute path : trip.name
+[DEBUG] 2021-09-30 07:33:34.882 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-09-30 07:33:34.882 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-09-30 07:33:34.882 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Destination)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Destination)
+          - EntityAttributeFetchImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Destination.trip)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Destination)
+          - SQL table alias mapping - destinatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(trip)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.jilleliceiri.mptr.entity.Trip)
+                - SQL table alias mapping - trip1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2021-09-30 07:33:34.882 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Destination [READ]: select destinatio0_.id as id1_0_0_, destinatio0_.city as city2_0_0_, destinatio0_.trip_id as trip_id3_0_0_, trip1_.id as id1_1_1_, trip1_.trip_name as trip_nam2_1_1_ from destinations destinatio0_ left outer join trips trip1_ on destinatio0_.trip_id=trip1_.id where destinatio0_.id=?
+[DEBUG] 2021-09-30 07:33:34.883 [main] Loader - Static select for action ACTION_MERGE on entity com.jilleliceiri.mptr.entity.Destination: select destinatio0_.id as id1_0_0_, destinatio0_.city as city2_0_0_, destinatio0_.trip_id as trip_id3_0_0_ from destinations destinatio0_ where destinatio0_.id=?
+[DEBUG] 2021-09-30 07:33:34.883 [main] Loader - Static select for action ACTION_REFRESH on entity com.jilleliceiri.mptr.entity.Destination: select destinatio0_.id as id1_0_0_, destinatio0_.city as city2_0_0_, destinatio0_.trip_id as trip_id3_0_0_ from destinations destinatio0_ where destinatio0_.id=?
+[DEBUG] 2021-09-30 07:33:34.886 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@14c99bf6]
+[DEBUG] 2021-09-30 07:33:34.886 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@266e9dda]
+[DEBUG] 2021-09-30 07:33:34.886 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2021-09-30 07:33:34.886 [main] MetamodelGraphWalker - Visiting attribute path : trip
+[DEBUG] 2021-09-30 07:33:34.886 [main] MetamodelGraphWalker - Property path deemed to be circular : trip
+[DEBUG] 2021-09-30 07:33:34.886 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-09-30 07:33:34.887 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-09-30 07:33:34.887 [main] LoadPlanTreePrinter - LoadPlan(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+    - Returns
+       - CollectionReturnImpl(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet, querySpaceUid=<gen:0>, path=[com.jilleliceiri.mptr.entity.Trip.destinationSet])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:1>, path=[com.jilleliceiri.mptr.entity.Trip.destinationSet].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+          - SQL table alias mapping - destinatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {trip_id3_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.jilleliceiri.mptr.entity.Destination)
+                - SQL table alias mapping - destinatio0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2021-09-30 07:33:34.888 [main] CollectionLoader - Static select for collection com.jilleliceiri.mptr.entity.Trip.destinationSet: select destinatio0_.trip_id as trip_id3_0_0_, destinatio0_.id as id1_0_0_, destinatio0_.id as id1_0_1_, destinatio0_.city as city2_0_1_, destinatio0_.trip_id as trip_id3_0_1_ from destinations destinatio0_ where destinatio0_.trip_id=?
+[DEBUG] 2021-09-30 07:33:34.910 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2021-09-30 07:33:34.910 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2021-09-30 07:33:34.910 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2021-09-30 07:33:34.913 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-09-30 07:33:34.913 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2021-09-30 07:33:34.914 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2021-09-30 07:33:34.914 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2021-09-30 07:33:34.915 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@39832280
+[DEBUG] 2021-09-30 07:33:34.917 [main] SessionFactoryRegistry - Registering SessionFactory: e9e8bc67-2292-4343-8a30-e7a47c10dc55 (<unnamed>)
+[DEBUG] 2021-09-30 07:33:34.917 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2021-09-30 07:33:35.020 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2021-09-30 07:33:35.043 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Trip as generatedAlias0
+[DEBUG] 2021-09-30 07:33:35.057 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@624b3544
+[DEBUG] 2021-09-30 07:33:35.085 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.jilleliceiri.mptr.entity.Trip as generatedAlias0
+[DEBUG] 2021-09-30 07:33:35.091 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-09-30 07:33:35.098 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  |  \-[IDENT] Node: 'jilleliceiri'
+       |     |  |  |  \-[IDENT] Node: 'mptr'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'Trip'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2021-09-30 07:33:35.116 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-09-30 07:33:35.128 [main] FromElement - FromClause{level=1} : com.jilleliceiri.mptr.entity.Trip (generatedAlias0) -> trip0_
+[DEBUG] 2021-09-30 07:33:35.129 [main] FromReferenceNode - Resolved : generatedAlias0 -> trip0_.id
+[DEBUG] 2021-09-30 07:33:35.130 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-09-30 07:33:35.130 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} trip0_.id ) ( FromClause{level=1} trips trip0_ ) )
+[DEBUG] 2021-09-30 07:33:35.136 [main] JoinProcessor - Using FROM fragment [trips trip0_]
+[DEBUG] 2021-09-30 07:33:35.136 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-09-30 07:33:35.136 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (trips)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'trip0_.id as id1_1_' {alias=generatedAlias0, className=com.jilleliceiri.mptr.entity.Trip, tableAlias=trip0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'trip0_.trip_name as trip_nam2_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[trip0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'trips trip0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=trips,tableAlias=trip0_,origin=null,columns={,className=com.jilleliceiri.mptr.entity.Trip}}
+
+[DEBUG] 2021-09-30 07:33:35.137 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-09-30 07:33:35.141 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.jilleliceiri.mptr.entity.Trip as generatedAlias0
+[DEBUG] 2021-09-30 07:33:35.141 [main] QueryTranslatorImpl - SQL: select trip0_.id as id1_1_, trip0_.trip_name as trip_nam2_1_ from trips trip0_
+[DEBUG] 2021-09-30 07:33:35.141 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-09-30 07:33:35.152 [main] SQL - select trip0_.id as id1_1_, trip0_.trip_name as trip_nam2_1_ from trips trip0_
+[DEBUG] 2021-09-30 07:33:35.168 [main] Loader - Result set row: 0
+[DEBUG] 2021-09-30 07:33:35.170 [main] Loader - Result row: EntityKey[com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-09-30 07:33:35.175 [main] Loader - Result set row: 1
+[DEBUG] 2021-09-30 07:33:35.175 [main] Loader - Result row: EntityKey[com.jilleliceiri.mptr.entity.Trip#2]
+[DEBUG] 2021-09-30 07:33:35.175 [main] Loader - Result set row: 2
+[DEBUG] 2021-09-30 07:33:35.175 [main] Loader - Result row: EntityKey[com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-09-30 07:33:35.176 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-09-30 07:33:35.176 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-09-30 07:33:35.176 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.182 [main] TwoPhaseLoad - Processing attribute `name` : value = Fall  Colour Tour
+[DEBUG] 2021-09-30 07:33:35.182 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#2]
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Processing attribute `name` : value = Winter Break
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#2]
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Processing attribute `name` : value = Spring in the South
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.183 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-09-30 07:33:35.185 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.185 [main] SQL - select destinatio0_.trip_id as trip_id3_0_0_, destinatio0_.id as id1_0_0_, destinatio0_.id as id1_0_1_, destinatio0_.city as city2_0_1_, destinatio0_.trip_id as trip_id3_0_1_ from destinations destinatio0_ where destinatio0_.trip_id=?
+[DEBUG] 2021-09-30 07:33:35.190 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.192 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-09-30 07:33:35.193 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.196 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-09-30 07:33:35.196 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Processing attribute `city` : value = Marco Island
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Processing attribute `city` : value = Ft Lauderdale
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.197 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-09-30 07:33:35.197 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.198 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.198 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.198 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.198 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-09-30 07:33:35.198 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-09-30 07:33:35.198 [main] SQL - select destinatio0_.trip_id as trip_id3_0_0_, destinatio0_.id as id1_0_0_, destinatio0_.id as id1_0_1_, destinatio0_.city as city2_0_1_, destinatio0_.trip_id as trip_id3_0_1_ from destinations destinatio0_ where destinatio0_.trip_id=?
+[DEBUG] 2021-09-30 07:33:35.199 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-09-30 07:33:35.199 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.199 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-09-30 07:33:35.199 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.200 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.200 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-09-30 07:33:35.200 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-09-30 07:33:35.200 [main] SQL - select destinatio0_.trip_id as trip_id3_0_0_, destinatio0_.id as id1_0_0_, destinatio0_.id as id1_0_1_, destinatio0_.city as city2_0_1_, destinatio0_.trip_id as trip_id3_0_1_ from destinations destinatio0_ where destinatio0_.trip_id=?
+[DEBUG] 2021-09-30 07:33:35.201 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-09-30 07:33:35.201 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-09-30 07:33:35.201 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-09-30 07:33:35.201 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-09-30 07:33:35.201 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-09-30 07:33:35.201 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-09-30 07:33:35.201 [main] TwoPhaseLoad - Processing attribute `city` : value = Aspen
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Processing attribute `city` : value = Munising
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.202 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-09-30 07:33:35.202 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.202 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-09-30 07:33:35.202 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.202 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.202 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-09-30 07:33:35.203 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.270 [main] SQL - select trip0_.id as id1_1_0_, trip0_.trip_name as trip_nam2_1_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-09-30 07:33:35.272 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-09-30 07:33:35.273 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-09-30 07:33:35.273 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.273 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-09-30 07:33:35.273 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-09-30 07:33:35.274 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Processing attribute `name` : value = Spring in the South
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Processing attribute `city` : value = Marco Island
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Processing attribute `city` : value = Ft Lauderdale
+[DEBUG] 2021-09-30 07:33:35.274 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.275 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-09-30 07:33:35.275 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.275 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-09-30 07:33:35.275 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.275 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.275 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.275 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.275 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#3
+[DEBUG] 2021-09-30 07:33:35.275 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.278 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-09-30 07:33:35.279 [main] TransactionImpl - begin
+[DEBUG] 2021-09-30 07:33:35.287 [main] TransactionImpl - committing
+[DEBUG] 2021-09-30 07:33:35.287 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-09-30 07:33:35.288 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-09-30 07:33:35.293 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3], was: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3] (initialized)
+[DEBUG] 2021-09-30 07:33:35.294 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 3 updates, 0 deletions to 3 objects
+[DEBUG] 2021-09-30 07:33:35.294 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2021-09-30 07:33:35.295 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-09-30 07:33:35.295 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Destination{trip=com.jilleliceiri.mptr.entity.Trip#3, city=Ft Lauderdale, id=4}
+[DEBUG] 2021-09-30 07:33:35.295 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Destination{trip=com.jilleliceiri.mptr.entity.Trip#3, city=Marco Island, id=3}
+[DEBUG] 2021-09-30 07:33:35.295 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Trip{name=New Trip Name, id=3, destinationSet=[com.jilleliceiri.mptr.entity.Destination#4, com.jilleliceiri.mptr.entity.Destination#3]}
+[DEBUG] 2021-09-30 07:33:35.298 [main] SQL - update trips set trip_name=? where id=?
+[DEBUG] 2021-09-30 07:33:35.302 [main] SQL - update destinations set city=?, trip_id=? where id=?
+[DEBUG] 2021-09-30 07:33:35.304 [main] SQL - update destinations set city=?, trip_id=? where id=?
+[DEBUG] 2021-09-30 07:33:35.308 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.309 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.309 [main] SQL - select trip0_.id as id1_1_0_, trip0_.trip_name as trip_nam2_1_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-09-30 07:33:35.310 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-09-30 07:33:35.311 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-09-30 07:33:35.311 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.311 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-09-30 07:33:35.311 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-09-30 07:33:35.311 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.311 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-09-30 07:33:35.311 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-09-30 07:33:35.311 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.311 [main] TwoPhaseLoad - Processing attribute `name` : value = New Trip Name
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Processing attribute `city` : value = Marco Island
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Processing attribute `city` : value = Ft Lauderdale
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.312 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-09-30 07:33:35.312 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.313 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-09-30 07:33:35.313 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.313 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.313 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#3
+[DEBUG] 2021-09-30 07:33:35.313 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.363 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-09-30 07:33:35.363 [main] TransactionImpl - begin
+[DEBUG] 2021-09-30 07:33:35.368 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-09-30 07:33:35.369 [main] SQL - insert into trips (trip_name) values (?)
+[DEBUG] 2021-09-30 07:33:35.373 [main] IdentifierGeneratorHelper - Natively generated identity: 20
+[DEBUG] 2021-09-30 07:33:35.373 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.374 [main] TransactionImpl - committing
+[DEBUG] 2021-09-30 07:33:35.374 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-09-30 07:33:35.374 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-09-30 07:33:35.374 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.destinationSet#20], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-09-30 07:33:35.375 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-09-30 07:33:35.375 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2021-09-30 07:33:35.375 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-09-30 07:33:35.375 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Trip{name=Northern Summer, id=20, destinationSet=[]}
+[DEBUG] 2021-09-30 07:33:35.377 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.377 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.379 [main] SQL - select trip0_.id as id1_1_0_, trip0_.trip_name as trip_nam2_1_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-09-30 07:33:35.381 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-09-30 07:33:35.381 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-09-30 07:33:35.381 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#20]
+[DEBUG] 2021-09-30 07:33:35.381 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#20]
+[DEBUG] 2021-09-30 07:33:35.381 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-09-30 07:33:35.381 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.381 [main] TwoPhaseLoad - Processing attribute `name` : value = Northern Summer
+[DEBUG] 2021-09-30 07:33:35.381 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.381 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#20]
+[DEBUG] 2021-09-30 07:33:35.381 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.382 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#20]
+[DEBUG] 2021-09-30 07:33:35.382 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.382 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.382 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#20
+[DEBUG] 2021-09-30 07:33:35.382 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.425 [main] SQL - select trip0_.id as id1_1_0_, trip0_.trip_name as trip_nam2_1_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-09-30 07:33:35.428 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-09-30 07:33:35.428 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-09-30 07:33:35.428 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-09-30 07:33:35.428 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-09-30 07:33:35.429 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-09-30 07:33:35.429 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Processing attribute `name` : value = Fall  Colour Tour
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Processing attribute `city` : value = Aspen
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Processing attribute `city` : value = Munising
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.429 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-09-30 07:33:35.429 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.429 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-09-30 07:33:35.429 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.430 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.430 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#1
+[DEBUG] 2021-09-30 07:33:35.430 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.467 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-09-30 07:33:35.468 [main] TransactionImpl - begin
+[DEBUG] 2021-09-30 07:33:35.468 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-09-30 07:33:35.469 [main] SQL - insert into trips (trip_name) values (?)
+[DEBUG] 2021-09-30 07:33:35.471 [main] IdentifierGeneratorHelper - Natively generated identity: 21
+[DEBUG] 2021-09-30 07:33:35.471 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.471 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-09-30 07:33:35.471 [main] SQL - insert into destinations (city, trip_id) values (?, ?)
+[DEBUG] 2021-09-30 07:33:35.473 [main] IdentifierGeneratorHelper - Natively generated identity: 13
+[DEBUG] 2021-09-30 07:33:35.473 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.473 [main] TransactionImpl - committing
+[DEBUG] 2021-09-30 07:33:35.473 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-09-30 07:33:35.473 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-09-30 07:33:35.473 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.destinationSet#21], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-09-30 07:33:35.474 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+[DEBUG] 2021-09-30 07:33:35.474 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2021-09-30 07:33:35.474 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-09-30 07:33:35.474 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Trip{name=Northern Summer, id=21, destinationSet=[com.jilleliceiri.mptr.entity.Destination#13]}
+[DEBUG] 2021-09-30 07:33:35.474 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Destination{trip=com.jilleliceiri.mptr.entity.Trip#21, city=Minneapolis, id=13}
+[DEBUG] 2021-09-30 07:33:35.475 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.475 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-09-30 07:33:35.476 [main] SQL - select trip0_.id as id1_1_0_, trip0_.trip_name as trip_nam2_1_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-09-30 07:33:35.477 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-09-30 07:33:35.478 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-09-30 07:33:35.478 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#21]
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#21]
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Processing attribute `name` : value = Northern Summer
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#21]
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#13]
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Processing attribute `city` : value = Minneapolis
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Processing attribute `trip` : value = 21
+[DEBUG] 2021-09-30 07:33:35.478 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-09-30 07:33:35.479 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#13]
+[DEBUG] 2021-09-30 07:33:35.479 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.479 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#21]
+[DEBUG] 2021-09-30 07:33:35.479 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-09-30 07:33:35.479 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-09-30 07:33:35.479 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#21
+[DEBUG] 2021-09-30 07:33:35.479 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

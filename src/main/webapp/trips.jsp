@@ -4,6 +4,7 @@
 <body>
 <h1>View Trips</h1>
 <div class="">
+
     <table class="table">
         <thead>
         <!--

@@ -3,6 +3,11 @@ package com.jilleliceiri.mptr.persistence;
 import com.jilleliceiri.mptr.entity.Destination;
 import com.jilleliceiri.mptr.entity.Trip;
 import com.jilleliceiri.mptr.test.util.Database;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,13 +15,34 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type Trip dao test.
+ */
 class TripDaoTest {
 
-    TripDao tripDao;
+    // TODO make Destination DAO test
 
+    /**
+     * The Trip dao.
+     */
+    TripDao tripDao;
+    /**
+     * The Generic dao.
+     */
+    GenericDao genericDao;
+    private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
+    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
+
+    /**
+     * Sets up.
+     */
     @BeforeEach
     void setUp() {
         tripDao = new TripDao();
+        genericDao = new GenericDao(Trip.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -26,34 +52,64 @@ class TripDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Trip retrievedTrip = tripDao.getById(1);
+        Trip retrievedTrip = (Trip)genericDao.getById(1);
         assertEquals("Fall  Colour Tour", retrievedTrip.getName());
         assertEquals(2, retrievedTrip.getDestinationSet().size());
     }
 
+    /**
+     * Verify saveOrUpdate successfully runs
+     */
+    @Test
+    void saveOrUpdateSuccess() {
+        String tripName = "New Trip Name";
+        // retrieve a trip to update
+        Trip tripToUpdate = (Trip)genericDao.getById(3);
+        // change the trip name
+        tripToUpdate.setName(tripName);
+        // save the changes
+        genericDao.saveOrUpdate(tripToUpdate);
+        // retrieve the same trip
+        Trip retrievedTrip = (Trip)genericDao.getById(3);
+        // verify changes were made
+        assertEquals(tripToUpdate, retrievedTrip);
+    }
+
+    /**
+     * Verify gets all successfully runs
+     */
     @Test
     void getAll() {
 
         // get all
-        List<Trip> trips = tripDao.getAll();
+        List<Trip> trips = genericDao.getAll();
 
         // verify 3 trips were returned
         assertEquals(3, trips.size());
     }
 
+    // TODO updateSuccess() test and write tripDoa.saveOrUpdate()
 
 
+    /**
+     * Verify insert trip successfully runs
+     */
     @Test
     void insertTripSuccess() {
-        // create a new book (use the constructor to set all values)
+        // create a new trip (use the constructor to set all values)
         Trip newTrip = new Trip("Northern Summer");
         // insert new book using dao
-        int id = tripDao.insertTrip(newTrip);
+        int id = genericDao.insert(newTrip);
         assertNotEquals(0,id);
         // retrieve trip
-        // compare trip
+        Trip retrievedTrip = (Trip)genericDao.getById(id);
+        // compare trips using all fields of entity
+        assertEquals(newTrip, retrievedTrip);
     }
 
+    /**
+     * Verify insert a trip with a destination successfully runs
+     */
     @Test
     void insertTripWithDestinationsSuccess() {
         // put destination on trip and trip on destination
@@ -64,13 +120,10 @@ class TripDaoTest {
         newTrip.addDestination(destination);
 
         // insert new trip using dao
-        int id = tripDao.insertTrip(newTrip);
-        // TODO get by ID method
-        Trip insertedTrip = tripDao.getById(id);
-        assertNotEquals(0,id);
-        // verify destination is in there
-        assertEquals(1, insertedTrip.getDestinationSet().size());
-        // retrieve trip
-        // compare trip
+        int id = genericDao.insert(newTrip);
+        // retrieve the inserted trip
+        Trip insertedTrip = (Trip)genericDao.getById(id);
+        // compare trips using all fields of entity
+        assertTrue(insertedTrip.equals(newTrip));
     }
 }

@@ -20,6 +20,8 @@ import java.io.IOException;
         urlPatterns = {"/addTrip"}
 )
 
+// TODO write property loader interface like adv java
+
 public class AddTrip extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Table(name = "destinations")
 public class Destination {
 
-    // TODO change trip database
+    // TODO add new instance variables: zip code, hospital capacity, fips code
     // TODO add DestinationDao tests, add generic dao,
     // TODO will need another dao test on entity for delete?
 
