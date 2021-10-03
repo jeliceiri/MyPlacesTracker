@@ -1,0 +1,1404 @@
+[DEBUG] 2021-10-03 17:00:51.491 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-10-03 17:00:51.506 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-10-03 17:00:51.512 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2021-10-03 17:00:51.647 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-10-03 17:00:51.649 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-10-03 17:00:51.816 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2021-10-03 17:00:51.817 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2021-10-03 17:00:51.820 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-10-03 17:00:51.992 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-10-03 17:00:52.015 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-10-03 17:00:52.016 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-10-03 17:00:52.035 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2021-10-03 17:00:52.072 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@15f2eda3
+[DEBUG] 2021-10-03 17:00:52.072 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@15f2eda3
+[DEBUG] 2021-10-03 17:00:52.072 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@15f2eda3
+[DEBUG] 2021-10-03 17:00:52.073 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@62566842
+[DEBUG] 2021-10-03 17:00:52.073 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@5edf2821
+[DEBUG] 2021-10-03 17:00:52.074 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@11bd803
+[DEBUG] 2021-10-03 17:00:52.075 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2e2f720
+[DEBUG] 2021-10-03 17:00:52.075 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2e2f720
+[DEBUG] 2021-10-03 17:00:52.075 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2e2f720
+[DEBUG] 2021-10-03 17:00:52.076 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@1431267b
+[DEBUG] 2021-10-03 17:00:52.076 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@1431267b
+[DEBUG] 2021-10-03 17:00:52.076 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1431267b
+[DEBUG] 2021-10-03 17:00:52.077 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@20749d9
+[DEBUG] 2021-10-03 17:00:52.078 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@20749d9
+[DEBUG] 2021-10-03 17:00:52.078 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@20749d9
+[DEBUG] 2021-10-03 17:00:52.079 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@58e85c6f
+[DEBUG] 2021-10-03 17:00:52.079 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@58e85c6f
+[DEBUG] 2021-10-03 17:00:52.079 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@58e85c6f
+[DEBUG] 2021-10-03 17:00:52.080 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3bec2275
+[DEBUG] 2021-10-03 17:00:52.080 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3bec2275
+[DEBUG] 2021-10-03 17:00:52.080 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@3bec2275
+[DEBUG] 2021-10-03 17:00:52.081 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@58b67519
+[DEBUG] 2021-10-03 17:00:52.081 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@58b67519
+[DEBUG] 2021-10-03 17:00:52.081 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@58b67519
+[DEBUG] 2021-10-03 17:00:52.082 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7aead3af
+[DEBUG] 2021-10-03 17:00:52.082 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7aead3af
+[DEBUG] 2021-10-03 17:00:52.082 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7aead3af
+[DEBUG] 2021-10-03 17:00:52.083 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@ce9b9a9
+[DEBUG] 2021-10-03 17:00:52.083 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@ce9b9a9
+[DEBUG] 2021-10-03 17:00:52.084 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@563a89b5
+[DEBUG] 2021-10-03 17:00:52.084 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@563a89b5
+[DEBUG] 2021-10-03 17:00:52.085 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@66ad7bf0
+[DEBUG] 2021-10-03 17:00:52.085 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@66ad7bf0
+[DEBUG] 2021-10-03 17:00:52.085 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@9a6fbc0
+[DEBUG] 2021-10-03 17:00:52.086 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@bd1111a
+[DEBUG] 2021-10-03 17:00:52.087 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@38c2c309
+[DEBUG] 2021-10-03 17:00:52.087 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@38c2c309
+[DEBUG] 2021-10-03 17:00:52.087 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@6145b81e
+[DEBUG] 2021-10-03 17:00:52.087 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@6145b81e
+[DEBUG] 2021-10-03 17:00:52.095 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@99407c2
+[DEBUG] 2021-10-03 17:00:52.095 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@99407c2
+[DEBUG] 2021-10-03 17:00:52.097 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@65eabaab
+[DEBUG] 2021-10-03 17:00:52.097 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@65eabaab
+[DEBUG] 2021-10-03 17:00:52.099 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@3c4262d1
+[DEBUG] 2021-10-03 17:00:52.099 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@3c4262d1
+[DEBUG] 2021-10-03 17:00:52.100 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@6a282fdd
+[DEBUG] 2021-10-03 17:00:52.101 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@6a282fdd
+[DEBUG] 2021-10-03 17:00:52.102 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@280d9edc
+[DEBUG] 2021-10-03 17:00:52.103 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@280d9edc
+[DEBUG] 2021-10-03 17:00:52.104 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@6bf13698
+[DEBUG] 2021-10-03 17:00:52.104 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@6bf13698
+[DEBUG] 2021-10-03 17:00:52.106 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@19058533
+[DEBUG] 2021-10-03 17:00:52.106 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@19058533
+[DEBUG] 2021-10-03 17:00:52.108 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@4ca8dbfa
+[DEBUG] 2021-10-03 17:00:52.108 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@4ca8dbfa
+[DEBUG] 2021-10-03 17:00:52.110 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@71cb3139
+[DEBUG] 2021-10-03 17:00:52.110 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@71cb3139
+[DEBUG] 2021-10-03 17:00:52.111 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@5f780a86
+[DEBUG] 2021-10-03 17:00:52.111 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5f780a86
+[DEBUG] 2021-10-03 17:00:52.111 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5f780a86
+[DEBUG] 2021-10-03 17:00:52.113 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@34819867
+[DEBUG] 2021-10-03 17:00:52.114 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@1da4b6b3
+[DEBUG] 2021-10-03 17:00:52.115 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1da4b6b3
+[DEBUG] 2021-10-03 17:00:52.115 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1da4b6b3
+[DEBUG] 2021-10-03 17:00:52.115 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@34fe326d
+[DEBUG] 2021-10-03 17:00:52.116 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@3bae64d0
+[DEBUG] 2021-10-03 17:00:52.116 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@3bae64d0
+[DEBUG] 2021-10-03 17:00:52.118 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5d7835a8
+[DEBUG] 2021-10-03 17:00:52.118 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5d7835a8
+[DEBUG] 2021-10-03 17:00:52.119 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@39008c9f
+[DEBUG] 2021-10-03 17:00:52.119 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@39008c9f
+[DEBUG] 2021-10-03 17:00:52.120 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@173f73e7
+[DEBUG] 2021-10-03 17:00:52.121 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@173f73e7
+[DEBUG] 2021-10-03 17:00:52.122 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@396e6d9
+[DEBUG] 2021-10-03 17:00:52.122 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@396e6d9
+[DEBUG] 2021-10-03 17:00:52.122 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@e48bf9a
+[DEBUG] 2021-10-03 17:00:52.124 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@387bf2d9
+[DEBUG] 2021-10-03 17:00:52.124 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@387bf2d9
+[DEBUG] 2021-10-03 17:00:52.124 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@387bf2d9
+[DEBUG] 2021-10-03 17:00:52.125 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7c447c76
+[DEBUG] 2021-10-03 17:00:52.125 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7c447c76
+[DEBUG] 2021-10-03 17:00:52.125 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7c447c76
+[DEBUG] 2021-10-03 17:00:52.126 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@11ebb1b6
+[DEBUG] 2021-10-03 17:00:52.127 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@6009bea
+[DEBUG] 2021-10-03 17:00:52.128 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@431f1eaf
+[DEBUG] 2021-10-03 17:00:52.128 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@431f1eaf
+[DEBUG] 2021-10-03 17:00:52.128 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@431f1eaf
+[DEBUG] 2021-10-03 17:00:52.129 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@56078cea
+[DEBUG] 2021-10-03 17:00:52.129 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@56078cea
+[DEBUG] 2021-10-03 17:00:52.129 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@56078cea
+[DEBUG] 2021-10-03 17:00:52.130 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@7026b7ee
+[DEBUG] 2021-10-03 17:00:52.130 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@43f61afb
+[DEBUG] 2021-10-03 17:00:52.131 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@367b22e5
+[DEBUG] 2021-10-03 17:00:52.132 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@367b22e5
+[DEBUG] 2021-10-03 17:00:52.133 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@55e3d6c3
+[DEBUG] 2021-10-03 17:00:52.134 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@3cff0139
+[DEBUG] 2021-10-03 17:00:52.134 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3cff0139
+[DEBUG] 2021-10-03 17:00:52.136 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@6f4ade6e
+[DEBUG] 2021-10-03 17:00:52.136 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6f4ade6e
+[DEBUG] 2021-10-03 17:00:52.137 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@86733
+[DEBUG] 2021-10-03 17:00:52.137 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@7fc7c4a
+[DEBUG] 2021-10-03 17:00:52.139 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@49c8f6e8
+[DEBUG] 2021-10-03 17:00:52.142 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@2324bfe7
+[DEBUG] 2021-10-03 17:00:52.142 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@2324bfe7
+[DEBUG] 2021-10-03 17:00:52.143 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@46cb98a3
+[DEBUG] 2021-10-03 17:00:52.143 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3ffb3598
+[DEBUG] 2021-10-03 17:00:52.143 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4da9f723
+[DEBUG] 2021-10-03 17:00:52.143 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3b2f4a93
+[DEBUG] 2021-10-03 17:00:52.143 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@213bd3d5
+[DEBUG] 2021-10-03 17:00:52.143 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@470a659f
+[DEBUG] 2021-10-03 17:00:52.143 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@451882b2
+[DEBUG] 2021-10-03 17:00:52.143 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4a23350
+[DEBUG] 2021-10-03 17:00:52.184 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-10-03 17:00:52.185 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-10-03 17:00:52.185 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-10-03 17:00:52.186 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-10-03 17:00:52.186 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-10-03 17:00:52.187 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-10-03 17:00:52.187 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-10-03 17:00:52.189 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-10-03 17:00:52.190 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-10-03 17:00:52.190 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-10-03 17:00:52.191 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-10-03 17:00:52.191 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-10-03 17:00:52.191 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-10-03 17:00:52.192 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-10-03 17:00:52.197 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_my_places_tracker
+[INFO ] 2021-10-03 17:00:52.197 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-10-03 17:00:52.197 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-10-03 17:00:52.299 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2021-10-03 17:00:52.902 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.26
+      major : 8
+      minor : 0
+[DEBUG] 2021-10-03 17:00:52.902 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2021-10-03 17:00:52.902 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2021-10-03 17:00:52.923 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2021-10-03 17:00:52.944 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2021-10-03 17:00:52.968 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-10-03 17:00:53.005 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-10-03 17:00:53.008 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@529c2a9a] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3c87fdf2]
+[DEBUG] 2021-10-03 17:00:53.078 [main] AnnotationBinder - Binding entity from annotated class: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-10-03 17:00:53.104 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-10-03 17:00:53.108 [main] EntityBinder - Import with entity name Trip
+[DEBUG] 2021-10-03 17:00:53.111 [main] EntityBinder - Bind entity com.jilleliceiri.mptr.entity.Trip on table trips
+[DEBUG] 2021-10-03 17:00:53.137 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.140 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-10-03 17:00:53.143 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Trip:id]
+[DEBUG] 2021-10-03 17:00:53.145 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-10-03 17:00:53.147 [main] PropertyBinder - Building property id
+[DEBUG] 2021-10-03 17:00:53.150 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-10-03 17:00:53.152 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='trip'}
+[DEBUG] 2021-10-03 17:00:53.152 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=destinationSet, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.154 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.167 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.168 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=destinationSet_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.168 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='destinationSet_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-10-03 17:00:53.169 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='trip'}
+[DEBUG] 2021-10-03 17:00:53.170 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='trip'}
+[DEBUG] 2021-10-03 17:00:53.170 [main] CollectionBinder - Collection role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:53.172 [main] PropertyBinder - Building property destinationSet
+[DEBUG] 2021-10-03 17:00:53.172 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=trip_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.173 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2021-10-03 17:00:53.173 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Trip:name]
+[DEBUG] 2021-10-03 17:00:53.173 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2021-10-03 17:00:53.173 [main] PropertyBinder - Building property name
+[DEBUG] 2021-10-03 17:00:53.173 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='trip'}
+[DEBUG] 2021-10-03 17:00:53.173 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=noteSet, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.173 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.173 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.174 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(trips), mappingColumn=noteSet_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.174 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='noteSet_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-10-03 17:00:53.174 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='trip'}
+[DEBUG] 2021-10-03 17:00:53.174 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='trip'}
+[DEBUG] 2021-10-03 17:00:53.174 [main] CollectionBinder - Collection role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:53.174 [main] PropertyBinder - Building property noteSet
+[DEBUG] 2021-10-03 17:00:53.175 [main] AnnotationBinder - Binding entity from annotated class: com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-10-03 17:00:53.175 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-10-03 17:00:53.175 [main] EntityBinder - Import with entity name Destination
+[DEBUG] 2021-10-03 17:00:53.175 [main] EntityBinder - Bind entity com.jilleliceiri.mptr.entity.Destination on table destinations
+[DEBUG] 2021-10-03 17:00:53.177 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(destinations), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.177 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-10-03 17:00:53.177 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Destination:id]
+[DEBUG] 2021-10-03 17:00:53.177 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-10-03 17:00:53.177 [main] PropertyBinder - Building property id
+[DEBUG] 2021-10-03 17:00:53.177 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-10-03 17:00:53.178 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(destinations), mappingColumn=city, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.178 [main] PropertyBinder - MetadataSourceProcessor property city with lazy=false
+[DEBUG] 2021-10-03 17:00:53.178 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Destination:city]
+[DEBUG] 2021-10-03 17:00:53.178 [main] SimpleValueBinder - building SimpleValue for city
+[DEBUG] 2021-10-03 17:00:53.178 [main] PropertyBinder - Building property city
+[DEBUG] 2021-10-03 17:00:53.178 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-10-03 17:00:53.178 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(destinations), mappingColumn=trip, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.180 [main] PropertyBinder - Building property trip
+[DEBUG] 2021-10-03 17:00:53.180 [main] AnnotationBinder - Binding entity from annotated class: com.jilleliceiri.mptr.entity.Note
+[DEBUG] 2021-10-03 17:00:53.181 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-10-03 17:00:53.181 [main] EntityBinder - Import with entity name Note
+[DEBUG] 2021-10-03 17:00:53.181 [main] EntityBinder - Bind entity com.jilleliceiri.mptr.entity.Note on table notes
+[DEBUG] 2021-10-03 17:00:53.182 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(notes), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.182 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-10-03 17:00:53.182 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Note:id]
+[DEBUG] 2021-10-03 17:00:53.182 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-10-03 17:00:53.182 [main] PropertyBinder - Building property id
+[DEBUG] 2021-10-03 17:00:53.182 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-10-03 17:00:53.182 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(notes), mappingColumn=description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.182 [main] PropertyBinder - MetadataSourceProcessor property description with lazy=false
+[DEBUG] 2021-10-03 17:00:53.182 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Note:description]
+[DEBUG] 2021-10-03 17:00:53.183 [main] SimpleValueBinder - building SimpleValue for description
+[DEBUG] 2021-10-03 17:00:53.183 [main] PropertyBinder - Building property description
+[DEBUG] 2021-10-03 17:00:53.183 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(notes), mappingColumn=name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.183 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2021-10-03 17:00:53.183 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.jilleliceiri.mptr.entity.Note:name]
+[DEBUG] 2021-10-03 17:00:53.183 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2021-10-03 17:00:53.183 [main] PropertyBinder - Building property name
+[DEBUG] 2021-10-03 17:00:53.183 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-10-03 17:00:53.183 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(notes), mappingColumn=trip, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-03 17:00:53.183 [main] PropertyBinder - Building property trip
+[DEBUG] 2021-10-03 17:00:53.184 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-10-03 17:00:53.184 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2021-10-03 17:00:53.185 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-10-03 17:00:53.185 [main] SimpleValueBinder - Starting fillSimpleValue for city
+[DEBUG] 2021-10-03 17:00:53.185 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-10-03 17:00:53.185 [main] SimpleValueBinder - Starting fillSimpleValue for description
+[DEBUG] 2021-10-03 17:00:53.185 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2021-10-03 17:00:53.190 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [trips]
+[DEBUG] 2021-10-03 17:00:53.190 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [destinations]
+[DEBUG] 2021-10-03 17:00:53.190 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [notes]
+[DEBUG] 2021-10-03 17:00:53.190 [main] CollectionSecondPass - Second pass for collection: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:53.191 [main] CollectionBinder - Binding a OneToMany: com.jilleliceiri.mptr.entity.Trip.destinationSet through a foreign key
+[DEBUG] 2021-10-03 17:00:53.192 [main] CollectionBinder - Mapping collection: com.jilleliceiri.mptr.entity.Trip.destinationSet -> destinations
+[DEBUG] 2021-10-03 17:00:53.193 [main] TableBinder - Retrieving property com.jilleliceiri.mptr.entity.Destination.trip
+[DEBUG] 2021-10-03 17:00:53.193 [main] CollectionSecondPass - Mapped collection key: trip_id, one-to-many: com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-10-03 17:00:53.193 [main] CollectionSecondPass - Second pass for collection: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:53.193 [main] CollectionBinder - Binding a OneToMany: com.jilleliceiri.mptr.entity.Trip.noteSet through a foreign key
+[DEBUG] 2021-10-03 17:00:53.193 [main] CollectionBinder - Mapping collection: com.jilleliceiri.mptr.entity.Trip.noteSet -> notes
+[DEBUG] 2021-10-03 17:00:53.193 [main] TableBinder - Retrieving property com.jilleliceiri.mptr.entity.Note.trip
+[DEBUG] 2021-10-03 17:00:53.194 [main] CollectionSecondPass - Mapped collection key: trip_id, one-to-many: com.jilleliceiri.mptr.entity.Note
+[DEBUG] 2021-10-03 17:00:53.194 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-10-03 17:00:53.197 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-10-03 17:00:53.198 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-10-03 17:00:53.198 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-10-03 17:00:53.234 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2021-10-03 17:00:53.235 [main] Settings - SessionFactory name : null
+[DEBUG] 2021-10-03 17:00:53.235 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2021-10-03 17:00:53.235 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2021-10-03 17:00:53.235 [main] Settings - Statistics: disabled
+[DEBUG] 2021-10-03 17:00:53.235 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2021-10-03 17:00:53.235 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Default null ordering: NONE
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Query language substitutions: {}
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Named query checking : enabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Second-level cache: disabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2021-10-03 17:00:53.236 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - JDBC batch size: 15
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - JPA compliance - query : 
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2021-10-03 17:00:53.237 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2021-10-03 17:00:53.287 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2021-10-03 17:00:53.306 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2021-10-03 17:00:53.306 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/jk/IdeaProjects/MyPlacesTracker/target/test-classes:/Users/jk/IdeaProjects/MyPlacesTracker/target/classes:/Users/jk/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/jk/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/jk/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/jk/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/jk/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/jk/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/jk/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/jk/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/jk/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/jk/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/jk/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/jk/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/jk/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/jk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/jk/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/jk/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/jk/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/jk/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/jk/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/jk/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/jk/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/jk/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/jk/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/jk/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/jk/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/jk/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/jk/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/jk/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jk/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/jk/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/Users/jk/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/Users/jk/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/jk/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/jk/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/jk/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, coverage.ignore.private.constructor.util.class=true, java.vendor.url=https://openjdk.java.net/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 @w@/private/var/folders/y_/8stpl2p91kg5yxgcjmy0tv200000gn/T/idea_working_dirs_junit.tmp @/private/var/folders/y_/8stpl2p91kg5yxgcjmy0tv200000gn/T/idea_junit.tmp -socket53875, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/jk, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2021-07-20, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, idea.new.sampling.coverage=true, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, connection.password=Java2021!, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.12+8-LTS-237, user.name=jk, path.separator=:, hibernate.connection.username=****, os.version=11.5, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_my_places_tracker, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/y_/8stpl2p91kg5yxgcjmy0tv200000gn/T/, java.version=11.0.12, user.dir=/Users/jk/IdeaProjects/MyPlacesTracker, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@2e43c38d, java.library.path=/Users/jk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.12+8-LTS-237, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://localhost:3306/test_my_places_tracker, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[DEBUG] 2021-10-03 17:00:53.333 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2021-10-03 17:00:53.333 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2021-10-03 17:00:53.334 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2021-10-03 17:00:53.334 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@529c2a9a] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@554188ac]
+[DEBUG] 2021-10-03 17:00:53.406 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Trip] is safe
+[DEBUG] 2021-10-03 17:00:53.406 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-10-03 17:00:53.423 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Trip] is safe
+[DEBUG] 2021-10-03 17:00:53.423 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-10-03 17:00:53.636 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Note] is safe
+[DEBUG] 2021-10-03 17:00:53.651 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Note
+[DEBUG] 2021-10-03 17:00:53.652 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Note] is safe
+[DEBUG] 2021-10-03 17:00:53.653 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Note
+[DEBUG] 2021-10-03 17:00:53.666 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Destination] is safe
+[DEBUG] 2021-10-03 17:00:53.666 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-10-03 17:00:53.666 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.jilleliceiri.mptr.entity.Destination] is safe
+[DEBUG] 2021-10-03 17:00:53.666 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-10-03 17:00:53.686 [main] AbstractCollectionPersister - Static SQL for collection: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:53.686 [main] AbstractCollectionPersister -  Row insert: update destinations set trip_id=? where id=?
+[DEBUG] 2021-10-03 17:00:53.686 [main] AbstractCollectionPersister -  Row update: update destinations set  where id=?
+[DEBUG] 2021-10-03 17:00:53.686 [main] AbstractCollectionPersister -  Row delete: update destinations set trip_id=null where trip_id=? and id=?
+[DEBUG] 2021-10-03 17:00:53.687 [main] AbstractCollectionPersister -  One-shot delete: update destinations set trip_id=null where trip_id=?
+[DEBUG] 2021-10-03 17:00:53.687 [main] AbstractCollectionPersister - Static SQL for collection: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:53.687 [main] AbstractCollectionPersister -  Row insert: update notes set trip_id=? where id=?
+[DEBUG] 2021-10-03 17:00:53.687 [main] AbstractCollectionPersister -  Row update: update notes set  where id=?
+[DEBUG] 2021-10-03 17:00:53.687 [main] AbstractCollectionPersister -  Row delete: update notes set trip_id=null where trip_id=? and id=?
+[DEBUG] 2021-10-03 17:00:53.687 [main] AbstractCollectionPersister -  One-shot delete: update notes set trip_id=null where trip_id=?
+[DEBUG] 2021-10-03 17:00:53.690 [main] AbstractEntityPersister - Static SQL for entity: com.jilleliceiri.mptr.entity.Trip
+[DEBUG] 2021-10-03 17:00:53.691 [main] AbstractEntityPersister -  Version select: select id from trips where id =?
+[DEBUG] 2021-10-03 17:00:53.691 [main] AbstractEntityPersister -  Snapshot select: select trip_.id, trip_.trip_name as trip_nam2_2_ from trips trip_ where trip_.id=?
+[DEBUG] 2021-10-03 17:00:53.691 [main] AbstractEntityPersister -  Insert 0: insert into trips (trip_name, id) values (?, ?)
+[DEBUG] 2021-10-03 17:00:53.691 [main] AbstractEntityPersister -  Update 0: update trips set trip_name=? where id=?
+[DEBUG] 2021-10-03 17:00:53.691 [main] AbstractEntityPersister -  Delete 0: delete from trips where id=?
+[DEBUG] 2021-10-03 17:00:53.691 [main] AbstractEntityPersister -  Identity insert: insert into trips (trip_name) values (?)
+[DEBUG] 2021-10-03 17:00:53.717 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1a914089]
+[DEBUG] 2021-10-03 17:00:53.718 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet
+[DEBUG] 2021-10-03 17:00:53.722 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@19b5214b]
+[DEBUG] 2021-10-03 17:00:53.724 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6750e381]
+[DEBUG] 2021-10-03 17:00:53.725 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet.city
+[DEBUG] 2021-10-03 17:00:53.725 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet.trip
+[DEBUG] 2021-10-03 17:00:53.725 [main] MetamodelGraphWalker - Property path deemed to be circular : destinationSet.trip
+[DEBUG] 2021-10-03 17:00:53.726 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2021-10-03 17:00:53.726 [main] MetamodelGraphWalker - Visiting attribute path : noteSet
+[DEBUG] 2021-10-03 17:00:53.726 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@46a8c2b4]
+[DEBUG] 2021-10-03 17:00:53.726 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4f664bee]
+[DEBUG] 2021-10-03 17:00:53.726 [main] MetamodelGraphWalker - Visiting attribute path : noteSet.description
+[DEBUG] 2021-10-03 17:00:53.726 [main] MetamodelGraphWalker - Visiting attribute path : noteSet.name
+[DEBUG] 2021-10-03 17:00:53.726 [main] MetamodelGraphWalker - Visiting attribute path : noteSet.trip
+[DEBUG] 2021-10-03 17:00:53.726 [main] MetamodelGraphWalker - Property path deemed to be circular : noteSet.trip
+[DEBUG] 2021-10-03 17:00:53.726 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-03 17:00:53.740 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-03 17:00:53.747 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Trip)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Trip)
+          - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:2>, path=com.jilleliceiri.mptr.entity.Trip.destinationSet.<elements>)
+          - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.noteSet, querySpaceUid=<gen:3>, path=com.jilleliceiri.mptr.entity.Trip.noteSet)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Note, querySpaceUid=<gen:4>, path=com.jilleliceiri.mptr.entity.Trip.noteSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Trip)
+          - SQL table alias mapping - trip0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(destinationSet)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+                - SQL table alias mapping - destinatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {trip_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.jilleliceiri.mptr.entity.Destination)
+                      - SQL table alias mapping - destinatio1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+          - JOIN (JoinDefinedByMetadata(noteSet)) : <gen:0> -> <gen:3>
+             - CollectionQuerySpaceImpl(uid=<gen:3>, collection=com.jilleliceiri.mptr.entity.Trip.noteSet)
+                - SQL table alias mapping - noteset2_
+                - alias suffix - 3_
+                - suffixed key columns - {trip_id4_1_3_}
+                - entity-element alias suffix - 4_
+                - 4_entity-element suffixed key columns - id1_1_4_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:3> -> <gen:4>
+                   - EntityQuerySpaceImpl(uid=<gen:4>, entity=com.jilleliceiri.mptr.entity.Note)
+                      - SQL table alias mapping - noteset2_
+                      - alias suffix - 4_
+                      - suffixed key columns - {id1_1_4_}
+
+[DEBUG] 2021-10-03 17:00:53.749 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Trip [NONE]: select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:53.749 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@cbf1997]
+[DEBUG] 2021-10-03 17:00:53.749 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet
+[DEBUG] 2021-10-03 17:00:53.749 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5faeeb56]
+[DEBUG] 2021-10-03 17:00:53.749 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5396eeb1]
+[DEBUG] 2021-10-03 17:00:53.750 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet.city
+[DEBUG] 2021-10-03 17:00:53.750 [main] MetamodelGraphWalker - Visiting attribute path : destinationSet.trip
+[DEBUG] 2021-10-03 17:00:53.750 [main] MetamodelGraphWalker - Property path deemed to be circular : destinationSet.trip
+[DEBUG] 2021-10-03 17:00:53.750 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2021-10-03 17:00:53.750 [main] MetamodelGraphWalker - Visiting attribute path : noteSet
+[DEBUG] 2021-10-03 17:00:53.750 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5fdd97c1]
+[DEBUG] 2021-10-03 17:00:53.750 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b5a19ed]
+[DEBUG] 2021-10-03 17:00:53.750 [main] MetamodelGraphWalker - Visiting attribute path : noteSet.description
+[DEBUG] 2021-10-03 17:00:53.750 [main] MetamodelGraphWalker - Visiting attribute path : noteSet.name
+[DEBUG] 2021-10-03 17:00:53.750 [main] MetamodelGraphWalker - Visiting attribute path : noteSet.trip
+[DEBUG] 2021-10-03 17:00:53.750 [main] MetamodelGraphWalker - Property path deemed to be circular : noteSet.trip
+[DEBUG] 2021-10-03 17:00:53.750 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-03 17:00:53.751 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-03 17:00:53.751 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Trip)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Trip)
+          - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:2>, path=com.jilleliceiri.mptr.entity.Trip.destinationSet.<elements>)
+          - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.noteSet, querySpaceUid=<gen:3>, path=com.jilleliceiri.mptr.entity.Trip.noteSet)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Note, querySpaceUid=<gen:4>, path=com.jilleliceiri.mptr.entity.Trip.noteSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Trip)
+          - SQL table alias mapping - trip0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(destinationSet)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+                - SQL table alias mapping - destinatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {trip_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.jilleliceiri.mptr.entity.Destination)
+                      - SQL table alias mapping - destinatio1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+          - JOIN (JoinDefinedByMetadata(noteSet)) : <gen:0> -> <gen:3>
+             - CollectionQuerySpaceImpl(uid=<gen:3>, collection=com.jilleliceiri.mptr.entity.Trip.noteSet)
+                - SQL table alias mapping - noteset2_
+                - alias suffix - 3_
+                - suffixed key columns - {trip_id4_1_3_}
+                - entity-element alias suffix - 4_
+                - 4_entity-element suffixed key columns - id1_1_4_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:3> -> <gen:4>
+                   - EntityQuerySpaceImpl(uid=<gen:4>, entity=com.jilleliceiri.mptr.entity.Note)
+                      - SQL table alias mapping - noteset2_
+                      - alias suffix - 4_
+                      - suffixed key columns - {id1_1_4_}
+
+[DEBUG] 2021-10-03 17:00:53.751 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Trip [READ]: select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:53.764 [main] Loader - Static select for action ACTION_MERGE on entity com.jilleliceiri.mptr.entity.Trip: select trip0_.id as id1_2_1_, trip0_.trip_name as trip_nam2_2_1_, destinatio1_.trip_id as trip_id3_0_3_, destinatio1_.id as id1_0_3_, destinatio1_.id as id1_0_0_, destinatio1_.city as city2_0_0_, destinatio1_.trip_id as trip_id3_0_0_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:53.765 [main] Loader - Static select for action ACTION_REFRESH on entity com.jilleliceiri.mptr.entity.Trip: select trip0_.id as id1_2_1_, trip0_.trip_name as trip_nam2_2_1_, destinatio1_.trip_id as trip_id3_0_3_, destinatio1_.id as id1_0_3_, destinatio1_.id as id1_0_0_, destinatio1_.city as city2_0_0_, destinatio1_.trip_id as trip_id3_0_0_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:53.765 [main] AbstractEntityPersister - Static SQL for entity: com.jilleliceiri.mptr.entity.Note
+[DEBUG] 2021-10-03 17:00:53.765 [main] AbstractEntityPersister -  Version select: select id from notes where id =?
+[DEBUG] 2021-10-03 17:00:53.765 [main] AbstractEntityPersister -  Snapshot select: select note_.id, note_.description as descript2_1_, note_.name as name3_1_, note_.trip_id as trip_id4_1_ from notes note_ where note_.id=?
+[DEBUG] 2021-10-03 17:00:53.765 [main] AbstractEntityPersister -  Insert 0: insert into notes (description, name, trip_id, id) values (?, ?, ?, ?)
+[DEBUG] 2021-10-03 17:00:53.765 [main] AbstractEntityPersister -  Update 0: update notes set description=?, name=?, trip_id=? where id=?
+[DEBUG] 2021-10-03 17:00:53.765 [main] AbstractEntityPersister -  Delete 0: delete from notes where id=?
+[DEBUG] 2021-10-03 17:00:53.765 [main] AbstractEntityPersister -  Identity insert: insert into notes (description, name, trip_id) values (?, ?, ?)
+[DEBUG] 2021-10-03 17:00:53.765 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5e193ef5]
+[DEBUG] 2021-10-03 17:00:53.765 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2021-10-03 17:00:53.765 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2021-10-03 17:00:53.766 [main] MetamodelGraphWalker - Visiting attribute path : trip
+[DEBUG] 2021-10-03 17:00:53.766 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@21274afe]
+[DEBUG] 2021-10-03 17:00:53.766 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet
+[DEBUG] 2021-10-03 17:00:53.766 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@115c946b]
+[DEBUG] 2021-10-03 17:00:53.766 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@79ca7bea]
+[DEBUG] 2021-10-03 17:00:53.767 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet.city
+[DEBUG] 2021-10-03 17:00:53.767 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet.trip
+[DEBUG] 2021-10-03 17:00:53.767 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.destinationSet.trip
+[DEBUG] 2021-10-03 17:00:53.767 [main] MetamodelGraphWalker - Visiting attribute path : trip.name
+[DEBUG] 2021-10-03 17:00:53.767 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet
+[DEBUG] 2021-10-03 17:00:53.767 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.noteSet
+[DEBUG] 2021-10-03 17:00:53.767 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-03 17:00:53.767 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-03 17:00:53.768 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Note)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Note, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Note)
+          - EntityAttributeFetchImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Note.trip)
+             - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet, querySpaceUid=<gen:2>, path=com.jilleliceiri.mptr.entity.Note.trip.destinationSet)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:3>, path=com.jilleliceiri.mptr.entity.Note.trip.destinationSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Note)
+          - SQL table alias mapping - note0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(trip)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.jilleliceiri.mptr.entity.Trip)
+                - SQL table alias mapping - trip1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+                - JOIN (JoinDefinedByMetadata(destinationSet)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+                      - SQL table alias mapping - destinatio2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {trip_id3_0_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_0_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.jilleliceiri.mptr.entity.Destination)
+                            - SQL table alias mapping - destinatio2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+
+[DEBUG] 2021-10-03 17:00:53.768 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Note [NONE]: select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, destinatio2_.trip_id as trip_id3_0_2_, destinatio2_.id as id1_0_2_, destinatio2_.id as id1_0_3_, destinatio2_.city as city2_0_3_, destinatio2_.trip_id as trip_id3_0_3_ from notes note0_ left outer join trips trip1_ on note0_.trip_id=trip1_.id left outer join destinations destinatio2_ on trip1_.id=destinatio2_.trip_id where note0_.id=?
+[DEBUG] 2021-10-03 17:00:53.768 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e43f049]
+[DEBUG] 2021-10-03 17:00:53.768 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2021-10-03 17:00:53.768 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2021-10-03 17:00:53.768 [main] MetamodelGraphWalker - Visiting attribute path : trip
+[DEBUG] 2021-10-03 17:00:53.768 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@755a7218]
+[DEBUG] 2021-10-03 17:00:53.768 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet
+[DEBUG] 2021-10-03 17:00:53.768 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5122e4bf]
+[DEBUG] 2021-10-03 17:00:53.768 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@23e61112]
+[DEBUG] 2021-10-03 17:00:53.768 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet.city
+[DEBUG] 2021-10-03 17:00:53.768 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet.trip
+[DEBUG] 2021-10-03 17:00:53.768 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.destinationSet.trip
+[DEBUG] 2021-10-03 17:00:53.769 [main] MetamodelGraphWalker - Visiting attribute path : trip.name
+[DEBUG] 2021-10-03 17:00:53.769 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet
+[DEBUG] 2021-10-03 17:00:53.769 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.noteSet
+[DEBUG] 2021-10-03 17:00:53.769 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-03 17:00:53.769 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-03 17:00:53.769 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Note)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Note, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Note)
+          - EntityAttributeFetchImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Note.trip)
+             - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet, querySpaceUid=<gen:2>, path=com.jilleliceiri.mptr.entity.Note.trip.destinationSet)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:3>, path=com.jilleliceiri.mptr.entity.Note.trip.destinationSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Note)
+          - SQL table alias mapping - note0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(trip)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.jilleliceiri.mptr.entity.Trip)
+                - SQL table alias mapping - trip1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+                - JOIN (JoinDefinedByMetadata(destinationSet)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+                      - SQL table alias mapping - destinatio2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {trip_id3_0_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_0_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.jilleliceiri.mptr.entity.Destination)
+                            - SQL table alias mapping - destinatio2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+
+[DEBUG] 2021-10-03 17:00:53.769 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Note [READ]: select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, destinatio2_.trip_id as trip_id3_0_2_, destinatio2_.id as id1_0_2_, destinatio2_.id as id1_0_3_, destinatio2_.city as city2_0_3_, destinatio2_.trip_id as trip_id3_0_3_ from notes note0_ left outer join trips trip1_ on note0_.trip_id=trip1_.id left outer join destinations destinatio2_ on trip1_.id=destinatio2_.trip_id where note0_.id=?
+[DEBUG] 2021-10-03 17:00:53.770 [main] Loader - Static select for action ACTION_MERGE on entity com.jilleliceiri.mptr.entity.Note: select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_ from notes note0_ where note0_.id=?
+[DEBUG] 2021-10-03 17:00:53.770 [main] Loader - Static select for action ACTION_REFRESH on entity com.jilleliceiri.mptr.entity.Note: select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_ from notes note0_ where note0_.id=?
+[DEBUG] 2021-10-03 17:00:53.770 [main] AbstractEntityPersister - Static SQL for entity: com.jilleliceiri.mptr.entity.Destination
+[DEBUG] 2021-10-03 17:00:53.770 [main] AbstractEntityPersister -  Version select: select id from destinations where id =?
+[DEBUG] 2021-10-03 17:00:53.770 [main] AbstractEntityPersister -  Snapshot select: select destinatio_.id, destinatio_.city as city2_0_, destinatio_.trip_id as trip_id3_0_ from destinations destinatio_ where destinatio_.id=?
+[DEBUG] 2021-10-03 17:00:53.770 [main] AbstractEntityPersister -  Insert 0: insert into destinations (city, trip_id, id) values (?, ?, ?)
+[DEBUG] 2021-10-03 17:00:53.770 [main] AbstractEntityPersister -  Update 0: update destinations set city=?, trip_id=? where id=?
+[DEBUG] 2021-10-03 17:00:53.770 [main] AbstractEntityPersister -  Delete 0: delete from destinations where id=?
+[DEBUG] 2021-10-03 17:00:53.770 [main] AbstractEntityPersister -  Identity insert: insert into destinations (city, trip_id) values (?, ?)
+[DEBUG] 2021-10-03 17:00:53.770 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@27f71195]
+[DEBUG] 2021-10-03 17:00:53.770 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2021-10-03 17:00:53.770 [main] MetamodelGraphWalker - Visiting attribute path : trip
+[DEBUG] 2021-10-03 17:00:53.770 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6238d5e0]
+[DEBUG] 2021-10-03 17:00:53.771 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet
+[DEBUG] 2021-10-03 17:00:53.771 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.destinationSet
+[DEBUG] 2021-10-03 17:00:53.771 [main] MetamodelGraphWalker - Visiting attribute path : trip.name
+[DEBUG] 2021-10-03 17:00:53.771 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet
+[DEBUG] 2021-10-03 17:00:53.771 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2c8b8de0]
+[DEBUG] 2021-10-03 17:00:53.771 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4fb57fb3]
+[DEBUG] 2021-10-03 17:00:53.771 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet.description
+[DEBUG] 2021-10-03 17:00:53.771 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet.name
+[DEBUG] 2021-10-03 17:00:53.771 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet.trip
+[DEBUG] 2021-10-03 17:00:53.771 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.noteSet.trip
+[DEBUG] 2021-10-03 17:00:53.771 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-03 17:00:53.771 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-03 17:00:53.772 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Destination)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Destination)
+          - EntityAttributeFetchImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Destination.trip)
+             - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.noteSet, querySpaceUid=<gen:2>, path=com.jilleliceiri.mptr.entity.Destination.trip.noteSet)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Note, querySpaceUid=<gen:3>, path=com.jilleliceiri.mptr.entity.Destination.trip.noteSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Destination)
+          - SQL table alias mapping - destinatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(trip)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.jilleliceiri.mptr.entity.Trip)
+                - SQL table alias mapping - trip1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+                - JOIN (JoinDefinedByMetadata(noteSet)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=com.jilleliceiri.mptr.entity.Trip.noteSet)
+                      - SQL table alias mapping - noteset2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {trip_id4_1_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_1_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.jilleliceiri.mptr.entity.Note)
+                            - SQL table alias mapping - noteset2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_1_3_}
+
+[DEBUG] 2021-10-03 17:00:53.772 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Destination [NONE]: select destinatio0_.id as id1_0_0_, destinatio0_.city as city2_0_0_, destinatio0_.trip_id as trip_id3_0_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, noteset2_.trip_id as trip_id4_1_2_, noteset2_.id as id1_1_2_, noteset2_.id as id1_1_3_, noteset2_.description as descript2_1_3_, noteset2_.name as name3_1_3_, noteset2_.trip_id as trip_id4_1_3_ from destinations destinatio0_ left outer join trips trip1_ on destinatio0_.trip_id=trip1_.id left outer join notes noteset2_ on trip1_.id=noteset2_.trip_id where destinatio0_.id=?
+[DEBUG] 2021-10-03 17:00:53.772 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@527937d0]
+[DEBUG] 2021-10-03 17:00:53.772 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2021-10-03 17:00:53.772 [main] MetamodelGraphWalker - Visiting attribute path : trip
+[DEBUG] 2021-10-03 17:00:53.772 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6c2a95d5]
+[DEBUG] 2021-10-03 17:00:53.772 [main] MetamodelGraphWalker - Visiting attribute path : trip.destinationSet
+[DEBUG] 2021-10-03 17:00:53.772 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.destinationSet
+[DEBUG] 2021-10-03 17:00:53.772 [main] MetamodelGraphWalker - Visiting attribute path : trip.name
+[DEBUG] 2021-10-03 17:00:53.773 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet
+[DEBUG] 2021-10-03 17:00:53.773 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3f048c86]
+[DEBUG] 2021-10-03 17:00:53.773 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@255d9277]
+[DEBUG] 2021-10-03 17:00:53.773 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet.description
+[DEBUG] 2021-10-03 17:00:53.773 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet.name
+[DEBUG] 2021-10-03 17:00:53.773 [main] MetamodelGraphWalker - Visiting attribute path : trip.noteSet.trip
+[DEBUG] 2021-10-03 17:00:53.773 [main] MetamodelGraphWalker - Property path deemed to be circular : trip.noteSet.trip
+[DEBUG] 2021-10-03 17:00:53.773 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-03 17:00:53.773 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-03 17:00:53.774 [main] LoadPlanTreePrinter - LoadPlan(entity=com.jilleliceiri.mptr.entity.Destination)
+    - Returns
+       - EntityReturnImpl(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:0>, path=com.jilleliceiri.mptr.entity.Destination)
+          - EntityAttributeFetchImpl(entity=com.jilleliceiri.mptr.entity.Trip, querySpaceUid=<gen:1>, path=com.jilleliceiri.mptr.entity.Destination.trip)
+             - CollectionAttributeFetchImpl(collection=com.jilleliceiri.mptr.entity.Trip.noteSet, querySpaceUid=<gen:2>, path=com.jilleliceiri.mptr.entity.Destination.trip.noteSet)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Note, querySpaceUid=<gen:3>, path=com.jilleliceiri.mptr.entity.Destination.trip.noteSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.jilleliceiri.mptr.entity.Destination)
+          - SQL table alias mapping - destinatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(trip)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.jilleliceiri.mptr.entity.Trip)
+                - SQL table alias mapping - trip1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+                - JOIN (JoinDefinedByMetadata(noteSet)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=com.jilleliceiri.mptr.entity.Trip.noteSet)
+                      - SQL table alias mapping - noteset2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {trip_id4_1_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_1_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.jilleliceiri.mptr.entity.Note)
+                            - SQL table alias mapping - noteset2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_1_3_}
+
+[DEBUG] 2021-10-03 17:00:53.774 [main] EntityLoader - Static select for entity com.jilleliceiri.mptr.entity.Destination [READ]: select destinatio0_.id as id1_0_0_, destinatio0_.city as city2_0_0_, destinatio0_.trip_id as trip_id3_0_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, noteset2_.trip_id as trip_id4_1_2_, noteset2_.id as id1_1_2_, noteset2_.id as id1_1_3_, noteset2_.description as descript2_1_3_, noteset2_.name as name3_1_3_, noteset2_.trip_id as trip_id4_1_3_ from destinations destinatio0_ left outer join trips trip1_ on destinatio0_.trip_id=trip1_.id left outer join notes noteset2_ on trip1_.id=noteset2_.trip_id where destinatio0_.id=?
+[DEBUG] 2021-10-03 17:00:53.774 [main] Loader - Static select for action ACTION_MERGE on entity com.jilleliceiri.mptr.entity.Destination: select destinatio0_.id as id1_0_0_, destinatio0_.city as city2_0_0_, destinatio0_.trip_id as trip_id3_0_0_ from destinations destinatio0_ where destinatio0_.id=?
+[DEBUG] 2021-10-03 17:00:53.774 [main] Loader - Static select for action ACTION_REFRESH on entity com.jilleliceiri.mptr.entity.Destination: select destinatio0_.id as id1_0_0_, destinatio0_.city as city2_0_0_, destinatio0_.trip_id as trip_id3_0_0_ from destinations destinatio0_ where destinatio0_.id=?
+[DEBUG] 2021-10-03 17:00:53.779 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@403364e9]
+[DEBUG] 2021-10-03 17:00:53.779 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@447521e]
+[DEBUG] 2021-10-03 17:00:53.780 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2021-10-03 17:00:53.780 [main] MetamodelGraphWalker - Visiting attribute path : trip
+[DEBUG] 2021-10-03 17:00:53.780 [main] MetamodelGraphWalker - Property path deemed to be circular : trip
+[DEBUG] 2021-10-03 17:00:53.780 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-03 17:00:53.781 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-03 17:00:53.781 [main] LoadPlanTreePrinter - LoadPlan(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+    - Returns
+       - CollectionReturnImpl(collection=com.jilleliceiri.mptr.entity.Trip.destinationSet, querySpaceUid=<gen:0>, path=[com.jilleliceiri.mptr.entity.Trip.destinationSet])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Destination, querySpaceUid=<gen:1>, path=[com.jilleliceiri.mptr.entity.Trip.destinationSet].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.jilleliceiri.mptr.entity.Trip.destinationSet)
+          - SQL table alias mapping - destinatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {trip_id3_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.jilleliceiri.mptr.entity.Destination)
+                - SQL table alias mapping - destinatio0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2021-10-03 17:00:53.781 [main] CollectionLoader - Static select for collection com.jilleliceiri.mptr.entity.Trip.destinationSet: select destinatio0_.trip_id as trip_id3_0_0_, destinatio0_.id as id1_0_0_, destinatio0_.id as id1_0_1_, destinatio0_.city as city2_0_1_, destinatio0_.trip_id as trip_id3_0_1_ from destinations destinatio0_ where destinatio0_.trip_id=?
+[DEBUG] 2021-10-03 17:00:53.781 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@72c4a3aa]
+[DEBUG] 2021-10-03 17:00:53.781 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e495414]
+[DEBUG] 2021-10-03 17:00:53.782 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2021-10-03 17:00:53.782 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2021-10-03 17:00:53.782 [main] MetamodelGraphWalker - Visiting attribute path : trip
+[DEBUG] 2021-10-03 17:00:53.782 [main] MetamodelGraphWalker - Property path deemed to be circular : trip
+[DEBUG] 2021-10-03 17:00:53.782 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-03 17:00:53.782 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-03 17:00:53.782 [main] LoadPlanTreePrinter - LoadPlan(collection=com.jilleliceiri.mptr.entity.Trip.noteSet)
+    - Returns
+       - CollectionReturnImpl(collection=com.jilleliceiri.mptr.entity.Trip.noteSet, querySpaceUid=<gen:0>, path=[com.jilleliceiri.mptr.entity.Trip.noteSet])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.jilleliceiri.mptr.entity.Note, querySpaceUid=<gen:1>, path=[com.jilleliceiri.mptr.entity.Trip.noteSet].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.jilleliceiri.mptr.entity.Trip.noteSet)
+          - SQL table alias mapping - noteset0_
+          - alias suffix - 0_
+          - suffixed key columns - {trip_id4_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.jilleliceiri.mptr.entity.Note)
+                - SQL table alias mapping - noteset0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2021-10-03 17:00:53.782 [main] CollectionLoader - Static select for collection com.jilleliceiri.mptr.entity.Trip.noteSet: select noteset0_.trip_id as trip_id4_1_0_, noteset0_.id as id1_1_0_, noteset0_.id as id1_1_1_, noteset0_.description as descript2_1_1_, noteset0_.name as name3_1_1_, noteset0_.trip_id as trip_id4_1_1_ from notes noteset0_ where noteset0_.trip_id=?
+[DEBUG] 2021-10-03 17:00:53.813 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2021-10-03 17:00:53.813 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2021-10-03 17:00:53.813 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2021-10-03 17:00:53.816 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-10-03 17:00:53.816 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2021-10-03 17:00:53.817 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2021-10-03 17:00:53.817 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2021-10-03 17:00:53.818 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@1ec88aa1
+[DEBUG] 2021-10-03 17:00:53.820 [main] SessionFactoryRegistry - Registering SessionFactory: 7f787ec4-e386-4b90-aed5-5ccb76cdaa05 (<unnamed>)
+[DEBUG] 2021-10-03 17:00:53.820 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2021-10-03 17:00:53.943 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2021-10-03 17:00:53.959 [main] SQL - select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, destinatio2_.trip_id as trip_id3_0_2_, destinatio2_.id as id1_0_2_, destinatio2_.id as id1_0_3_, destinatio2_.city as city2_0_3_, destinatio2_.trip_id as trip_id3_0_3_ from notes note0_ left outer join trips trip1_ on note0_.trip_id=trip1_.id left outer join destinations destinatio2_ on trip1_.id=destinatio2_.trip_id where note0_.id=?
+[DEBUG] 2021-10-03 17:00:53.984 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:53.986 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:53.996 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.005 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.005 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.005 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.006 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.006 [main] TwoPhaseLoad - Processing attribute `description` : value = Henry - 203-203-2938
+[DEBUG] 2021-10-03 17:00:54.006 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.006 [main] TwoPhaseLoad - Processing attribute `name` : value = Travel Guide
+[DEBUG] 2021-10-03 17:00:54.006 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.007 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.007 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.008 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.008 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.008 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.008 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.008 [main] TwoPhaseLoad - Processing attribute `name` : value = Fall  Colour Tour
+[DEBUG] 2021-10-03 17:00:54.008 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.008 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.008 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.010 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.010 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.010 [main] TwoPhaseLoad - Processing attribute `city` : value = Aspen
+[DEBUG] 2021-10-03 17:00:54.010 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.010 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.010 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.010 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.010 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.011 [main] TwoPhaseLoad - Processing attribute `city` : value = Munising
+[DEBUG] 2021-10-03 17:00:54.011 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.011 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.011 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.011 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.011 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.011 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.011 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.012 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.013 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.013 [main] SQL - select noteset0_.trip_id as trip_id4_1_0_, noteset0_.id as id1_1_0_, noteset0_.id as id1_1_1_, noteset0_.description as descript2_1_1_, noteset0_.name as name3_1_1_, noteset0_.trip_id as trip_id4_1_1_ from notes noteset0_ where noteset0_.trip_id=?
+[DEBUG] 2021-10-03 17:00:54.015 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.015 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.015 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.015 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.015 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.016 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.016 [main] TwoPhaseLoad - Processing attribute `description` : value = 2021 Fall Colour Tour St.
+[DEBUG] 2021-10-03 17:00:54.016 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.016 [main] TwoPhaseLoad - Processing attribute `name` : value = ABC Hotel
+[DEBUG] 2021-10-03 17:00:54.016 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.016 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.016 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.016 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.016 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.016 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.016 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.016 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.016 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-10-03 17:00:54.017 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Note#2
+[DEBUG] 2021-10-03 17:00:54.017 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.036 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-10-03 17:00:54.036 [main] TransactionImpl - begin
+[DEBUG] 2021-10-03 17:00:54.046 [main] TransactionImpl - committing
+[DEBUG] 2021-10-03 17:00:54.047 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-10-03 17:00:54.047 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-10-03 17:00:54.048 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-10-03 17:00:54.048 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-10-03 17:00:54.049 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-10-03 17:00:54.049 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Note{trip=com.jilleliceiri.mptr.entity.Trip#1, name=Travel Guide, description=Henry - 203-203-2938, id=2}
+[DEBUG] 2021-10-03 17:00:54.055 [main] SQL - delete from notes where id=?
+[DEBUG] 2021-10-03 17:00:54.060 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.061 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.061 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2021-10-03 17:00:54.061 [main] SQL - select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, destinatio2_.trip_id as trip_id3_0_2_, destinatio2_.id as id1_0_2_, destinatio2_.id as id1_0_3_, destinatio2_.city as city2_0_3_, destinatio2_.trip_id as trip_id3_0_3_ from notes note0_ left outer join trips trip1_ on note0_.trip_id=trip1_.id left outer join destinations destinatio2_ on trip1_.id=destinatio2_.trip_id where note0_.id=?
+[DEBUG] 2021-10-03 17:00:54.063 [main] CollectionLoadContext - No collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.063 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.063 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Note#2
+[DEBUG] 2021-10-03 17:00:54.063 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.116 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Note as generatedAlias0
+[DEBUG] 2021-10-03 17:00:54.133 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@1a17dd6f
+[DEBUG] 2021-10-03 17:00:54.168 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.jilleliceiri.mptr.entity.Note as generatedAlias0
+[DEBUG] 2021-10-03 17:00:54.176 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-10-03 17:00:54.227 [main] SQL - select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, destinatio2_.trip_id as trip_id3_0_2_, destinatio2_.id as id1_0_2_, destinatio2_.id as id1_0_3_, destinatio2_.city as city2_0_3_, destinatio2_.trip_id as trip_id3_0_3_ from notes note0_ left outer join trips trip1_ on note0_.trip_id=trip1_.id left outer join destinations destinatio2_ on trip1_.id=destinatio2_.trip_id where note0_.id=?
+[DEBUG] 2021-10-03 17:00:54.228 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.229 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.229 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.230 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.230 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.230 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.230 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.230 [main] TwoPhaseLoad - Processing attribute `description` : value = Henry - 203-203-2938
+[DEBUG] 2021-10-03 17:00:54.230 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.230 [main] TwoPhaseLoad - Processing attribute `name` : value = Travel Guide
+[DEBUG] 2021-10-03 17:00:54.230 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.230 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.230 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Processing attribute `name` : value = Fall  Colour Tour
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Processing attribute `city` : value = Aspen
+[DEBUG] 2021-10-03 17:00:54.231 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.232 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.232 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.232 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.232 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.232 [main] TwoPhaseLoad - Processing attribute `city` : value = Munising
+[DEBUG] 2021-10-03 17:00:54.232 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.232 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.232 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.232 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.232 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.232 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.232 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.232 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.233 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.233 [main] SQL - select noteset0_.trip_id as trip_id4_1_0_, noteset0_.id as id1_1_0_, noteset0_.id as id1_1_1_, noteset0_.description as descript2_1_1_, noteset0_.name as name3_1_1_, noteset0_.trip_id as trip_id4_1_1_ from notes noteset0_ where noteset0_.trip_id=?
+[DEBUG] 2021-10-03 17:00:54.234 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.234 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.234 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.235 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.235 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.235 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.235 [main] TwoPhaseLoad - Processing attribute `description` : value = 2021 Fall Colour Tour St.
+[DEBUG] 2021-10-03 17:00:54.235 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.235 [main] TwoPhaseLoad - Processing attribute `name` : value = ABC Hotel
+[DEBUG] 2021-10-03 17:00:54.235 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.235 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.235 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.235 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.235 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.235 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.235 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.235 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.236 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-10-03 17:00:54.236 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Note#2
+[DEBUG] 2021-10-03 17:00:54.236 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.237 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-10-03 17:00:54.237 [main] TransactionImpl - begin
+[DEBUG] 2021-10-03 17:00:54.239 [main] TransactionImpl - committing
+[DEBUG] 2021-10-03 17:00:54.239 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-10-03 17:00:54.239 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-10-03 17:00:54.240 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2021-10-03 17:00:54.240 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-10-03 17:00:54.241 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-10-03 17:00:54.241 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Note{trip=com.jilleliceiri.mptr.entity.Trip#1, name=New Note Name, description=Henry - 203-203-2938, id=2}
+[DEBUG] 2021-10-03 17:00:54.241 [main] SQL - update notes set description=?, name=?, trip_id=? where id=?
+[DEBUG] 2021-10-03 17:00:54.246 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.247 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.248 [main] SQL - select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, destinatio2_.trip_id as trip_id3_0_2_, destinatio2_.id as id1_0_2_, destinatio2_.id as id1_0_3_, destinatio2_.city as city2_0_3_, destinatio2_.trip_id as trip_id3_0_3_ from notes note0_ left outer join trips trip1_ on note0_.trip_id=trip1_.id left outer join destinations destinatio2_ on trip1_.id=destinatio2_.trip_id where note0_.id=?
+[DEBUG] 2021-10-03 17:00:54.250 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.251 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.251 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.251 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.252 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.252 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.252 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.252 [main] TwoPhaseLoad - Processing attribute `description` : value = Henry - 203-203-2938
+[DEBUG] 2021-10-03 17:00:54.252 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.252 [main] TwoPhaseLoad - Processing attribute `name` : value = New Note Name
+[DEBUG] 2021-10-03 17:00:54.252 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.252 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.252 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Processing attribute `name` : value = Fall  Colour Tour
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Processing attribute `city` : value = Aspen
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.253 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.254 [main] TwoPhaseLoad - Processing attribute `city` : value = Munising
+[DEBUG] 2021-10-03 17:00:54.254 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.254 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.254 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.254 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.254 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.254 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.254 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.254 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.254 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.254 [main] SQL - select noteset0_.trip_id as trip_id4_1_0_, noteset0_.id as id1_1_0_, noteset0_.id as id1_1_1_, noteset0_.description as descript2_1_1_, noteset0_.name as name3_1_1_, noteset0_.trip_id as trip_id4_1_1_ from notes noteset0_ where noteset0_.trip_id=?
+[DEBUG] 2021-10-03 17:00:54.256 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.256 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.256 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.256 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.256 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.257 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.257 [main] TwoPhaseLoad - Processing attribute `description` : value = 2021 Fall Colour Tour St.
+[DEBUG] 2021-10-03 17:00:54.257 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.257 [main] TwoPhaseLoad - Processing attribute `name` : value = ABC Hotel
+[DEBUG] 2021-10-03 17:00:54.257 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.257 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.257 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.257 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.257 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.257 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.257 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.257 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.257 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-10-03 17:00:54.257 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Note#2
+[DEBUG] 2021-10-03 17:00:54.257 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.289 [main] SQL - select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, destinatio2_.trip_id as trip_id3_0_2_, destinatio2_.id as id1_0_2_, destinatio2_.id as id1_0_3_, destinatio2_.city as city2_0_3_, destinatio2_.trip_id as trip_id3_0_3_ from notes note0_ left outer join trips trip1_ on note0_.trip_id=trip1_.id left outer join destinations destinatio2_ on trip1_.id=destinatio2_.trip_id where note0_.id=?
+[DEBUG] 2021-10-03 17:00:54.290 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.290 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.291 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.291 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.291 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.291 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.291 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.291 [main] TwoPhaseLoad - Processing attribute `description` : value = 2021 Fall Colour Tour St.
+[DEBUG] 2021-10-03 17:00:54.291 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.291 [main] TwoPhaseLoad - Processing attribute `name` : value = ABC Hotel
+[DEBUG] 2021-10-03 17:00:54.291 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.291 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Processing attribute `name` : value = Fall  Colour Tour
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Processing attribute `city` : value = Aspen
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Processing attribute `city` : value = Munising
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.292 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.292 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.293 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.293 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.293 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.293 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.293 [main] SQL - select noteset0_.trip_id as trip_id4_1_0_, noteset0_.id as id1_1_0_, noteset0_.id as id1_1_1_, noteset0_.description as descript2_1_1_, noteset0_.name as name3_1_1_, noteset0_.trip_id as trip_id4_1_1_ from notes noteset0_ where noteset0_.trip_id=?
+[DEBUG] 2021-10-03 17:00:54.294 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.294 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.294 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.294 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.295 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.295 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.295 [main] TwoPhaseLoad - Processing attribute `description` : value = Henry - 203-203-2938
+[DEBUG] 2021-10-03 17:00:54.295 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.295 [main] TwoPhaseLoad - Processing attribute `name` : value = Travel Guide
+[DEBUG] 2021-10-03 17:00:54.295 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.295 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.295 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.295 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.295 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.295 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.295 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.295 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.295 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-10-03 17:00:54.296 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Note#1
+[DEBUG] 2021-10-03 17:00:54.296 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.326 [main] SQL - select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:54.328 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.329 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.329 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-10-03 17:00:54.329 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#2]
+[DEBUG] 2021-10-03 17:00:54.330 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#2]
+[DEBUG] 2021-10-03 17:00:54.330 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.330 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.330 [main] TwoPhaseLoad - Processing attribute `name` : value = Winter Break
+[DEBUG] 2021-10-03 17:00:54.330 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.330 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.330 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.330 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#2]
+[DEBUG] 2021-10-03 17:00:54.330 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.330 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-10-03 17:00:54.330 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.330 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.330 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#2]
+[DEBUG] 2021-10-03 17:00:54.330 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.330 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.330 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#2
+[DEBUG] 2021-10-03 17:00:54.330 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.332 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-10-03 17:00:54.332 [main] TransactionImpl - begin
+[DEBUG] 2021-10-03 17:00:54.337 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-10-03 17:00:54.338 [main] SQL - insert into notes (description, name, trip_id) values (?, ?, ?)
+[DEBUG] 2021-10-03 17:00:54.343 [main] IdentifierGeneratorHelper - Natively generated identity: 43
+[DEBUG] 2021-10-03 17:00:54.343 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.344 [main] TransactionImpl - committing
+[DEBUG] 2021-10-03 17:00:54.344 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-10-03 17:00:54.344 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-10-03 17:00:54.344 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-10-03 17:00:54.344 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-10-03 17:00:54.344 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-10-03 17:00:54.344 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Note{trip=com.jilleliceiri.mptr.entity.Trip#2, name=insert New Note, description=description, id=43}
+[DEBUG] 2021-10-03 17:00:54.345 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.346 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.347 [main] SQL - select note0_.id as id1_1_0_, note0_.description as descript2_1_0_, note0_.name as name3_1_0_, note0_.trip_id as trip_id4_1_0_, trip1_.id as id1_2_1_, trip1_.trip_name as trip_nam2_2_1_, destinatio2_.trip_id as trip_id3_0_2_, destinatio2_.id as id1_0_2_, destinatio2_.id as id1_0_3_, destinatio2_.city as city2_0_3_, destinatio2_.trip_id as trip_id3_0_3_ from notes note0_ left outer join trips trip1_ on note0_.trip_id=trip1_.id left outer join destinations destinatio2_ on trip1_.id=destinatio2_.trip_id where note0_.id=?
+[DEBUG] 2021-10-03 17:00:54.349 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.349 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.349 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#43]
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Processing attribute `description` : value = description
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Processing attribute `name` : value = insert New Note
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Processing attribute `trip` : value = 2
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#43]
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#2]
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Processing attribute `name` : value = Winter Break
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.350 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#2]
+[DEBUG] 2021-10-03 17:00:54.350 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.350 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-10-03 17:00:54.350 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.350 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.351 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#2]
+[DEBUG] 2021-10-03 17:00:54.351 [main] SQL - select noteset0_.trip_id as trip_id4_1_0_, noteset0_.id as id1_1_0_, noteset0_.id as id1_1_1_, noteset0_.description as descript2_1_1_, noteset0_.name as name3_1_1_, noteset0_.trip_id as trip_id4_1_1_ from notes noteset0_ where noteset0_.trip_id=?
+[DEBUG] 2021-10-03 17:00:54.352 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.jilleliceiri.mptr.entity.Trip.noteSet#2]
+[DEBUG] 2021-10-03 17:00:54.352 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.352 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#2]
+[DEBUG] 2021-10-03 17:00:54.352 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.352 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#2]
+[DEBUG] 2021-10-03 17:00:54.352 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.352 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.352 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-10-03 17:00:54.353 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Note#43
+[DEBUG] 2021-10-03 17:00:54.353 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.389 [main] SQL - select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:54.391 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.391 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.391 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-10-03 17:00:54.392 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#2]
+[DEBUG] 2021-10-03 17:00:54.392 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#2]
+[DEBUG] 2021-10-03 17:00:54.392 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.392 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.392 [main] TwoPhaseLoad - Processing attribute `name` : value = Winter Break
+[DEBUG] 2021-10-03 17:00:54.392 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.392 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.392 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.392 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#2]
+[DEBUG] 2021-10-03 17:00:54.392 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.392 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-10-03 17:00:54.392 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.392 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.392 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#2]
+[DEBUG] 2021-10-03 17:00:54.392 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.393 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.393 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#2
+[DEBUG] 2021-10-03 17:00:54.393 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.394 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-10-03 17:00:54.394 [main] TransactionImpl - begin
+[DEBUG] 2021-10-03 17:00:54.396 [main] TransactionImpl - committing
+[DEBUG] 2021-10-03 17:00:54.396 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-10-03 17:00:54.396 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-10-03 17:00:54.401 [main] Collections - Collection dereferenced: [com.jilleliceiri.mptr.entity.Trip.destinationSet#2]
+[DEBUG] 2021-10-03 17:00:54.401 [main] Collections - Collection dereferenced: [com.jilleliceiri.mptr.entity.Trip.noteSet#2]
+[DEBUG] 2021-10-03 17:00:54.401 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-10-03 17:00:54.401 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 2 removals to 2 collections
+[DEBUG] 2021-10-03 17:00:54.401 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-10-03 17:00:54.401 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Trip{name=Winter Break, noteSet=[], id=2, destinationSet=[]}
+[DEBUG] 2021-10-03 17:00:54.402 [main] SQL - delete from trips where id=?
+[DEBUG] 2021-10-03 17:00:54.404 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.404 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.404 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2021-10-03 17:00:54.405 [main] SQL - select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:54.406 [main] CollectionLoadContext - No collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.406 [main] CollectionLoadContext - No collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.407 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.407 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#2
+[DEBUG] 2021-10-03 17:00:54.407 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.433 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-10-03 17:00:54.433 [main] TransactionImpl - begin
+[DEBUG] 2021-10-03 17:00:54.434 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-10-03 17:00:54.434 [main] SQL - insert into trips (trip_name) values (?)
+[DEBUG] 2021-10-03 17:00:54.435 [main] IdentifierGeneratorHelper - Natively generated identity: 70
+[DEBUG] 2021-10-03 17:00:54.436 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.436 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-10-03 17:00:54.436 [main] SQL - insert into notes (description, name, trip_id) values (?, ?, ?)
+[DEBUG] 2021-10-03 17:00:54.438 [main] IdentifierGeneratorHelper - Natively generated identity: 44
+[DEBUG] 2021-10-03 17:00:54.438 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.438 [main] TransactionImpl - committing
+[DEBUG] 2021-10-03 17:00:54.438 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-10-03 17:00:54.438 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-10-03 17:00:54.440 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.destinationSet#70], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-10-03 17:00:54.440 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.noteSet#70], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-10-03 17:00:54.440 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+[DEBUG] 2021-10-03 17:00:54.440 [main] AbstractFlushingEventListener - Flushed: 2 (re)creations, 0 updates, 0 removals to 2 collections
+[DEBUG] 2021-10-03 17:00:54.440 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-10-03 17:00:54.440 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Trip{name=New Trip, noteSet=[com.jilleliceiri.mptr.entity.Note#44], id=70, destinationSet=[]}
+[DEBUG] 2021-10-03 17:00:54.440 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Note{trip=com.jilleliceiri.mptr.entity.Trip#70, name=New Note, description=New Note Description, id=44}
+[DEBUG] 2021-10-03 17:00:54.442 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.442 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.443 [main] SQL - select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:54.444 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.444 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.445 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#70]
+[DEBUG] 2021-10-03 17:00:54.445 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#70]
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#70]
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Processing attribute `name` : value = New Trip
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#70]
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#44]
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Processing attribute `description` : value = New Note Description
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Processing attribute `name` : value = New Note
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Processing attribute `trip` : value = 70
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.445 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#44]
+[DEBUG] 2021-10-03 17:00:54.445 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.446 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#70]
+[DEBUG] 2021-10-03 17:00:54.446 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.446 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.446 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#70]
+[DEBUG] 2021-10-03 17:00:54.446 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.446 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.446 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#70
+[DEBUG] 2021-10-03 17:00:54.446 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.472 [main] SQL - select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:54.474 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.474 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.474 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-10-03 17:00:54.475 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#3]
+[DEBUG] 2021-10-03 17:00:54.475 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.475 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.475 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-10-03 17:00:54.475 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#3]
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Processing attribute `name` : value = Spring in the South
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Processing attribute `city` : value = Marco Island
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-10-03 17:00:54.475 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.476 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-10-03 17:00:54.476 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-10-03 17:00:54.476 [main] TwoPhaseLoad - Processing attribute `city` : value = Ft Lauderdale
+[DEBUG] 2021-10-03 17:00:54.476 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.476 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-10-03 17:00:54.476 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.476 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-10-03 17:00:54.476 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.476 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-10-03 17:00:54.476 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.476 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.476 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#3]
+[DEBUG] 2021-10-03 17:00:54.476 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.476 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.476 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#3
+[DEBUG] 2021-10-03 17:00:54.476 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.477 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-10-03 17:00:54.477 [main] TransactionImpl - begin
+[DEBUG] 2021-10-03 17:00:54.479 [main] TransactionImpl - committing
+[DEBUG] 2021-10-03 17:00:54.479 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-10-03 17:00:54.479 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-10-03 17:00:54.479 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3], was: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3] (initialized)
+[DEBUG] 2021-10-03 17:00:54.479 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.noteSet#3], was: [com.jilleliceiri.mptr.entity.Trip.noteSet#3] (initialized)
+[DEBUG] 2021-10-03 17:00:54.480 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 3 updates, 0 deletions to 3 objects
+[DEBUG] 2021-10-03 17:00:54.480 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+[DEBUG] 2021-10-03 17:00:54.480 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-10-03 17:00:54.480 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Destination{trip=com.jilleliceiri.mptr.entity.Trip#3, city=Ft Lauderdale, id=4}
+[DEBUG] 2021-10-03 17:00:54.480 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Destination{trip=com.jilleliceiri.mptr.entity.Trip#3, city=Marco Island, id=3}
+[DEBUG] 2021-10-03 17:00:54.480 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Trip{name=New Trip Name, noteSet=[], id=3, destinationSet=[com.jilleliceiri.mptr.entity.Destination#3, com.jilleliceiri.mptr.entity.Destination#4]}
+[DEBUG] 2021-10-03 17:00:54.480 [main] SQL - update trips set trip_name=? where id=?
+[DEBUG] 2021-10-03 17:00:54.481 [main] SQL - update destinations set city=?, trip_id=? where id=?
+[DEBUG] 2021-10-03 17:00:54.482 [main] SQL - update destinations set city=?, trip_id=? where id=?
+[DEBUG] 2021-10-03 17:00:54.484 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.484 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.485 [main] SQL - select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:54.486 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.486 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.487 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-10-03 17:00:54.487 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#3]
+[DEBUG] 2021-10-03 17:00:54.487 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.487 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.487 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-10-03 17:00:54.487 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#3]
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Processing attribute `name` : value = New Trip Name
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#3]
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-10-03 17:00:54.487 [main] TwoPhaseLoad - Processing attribute `city` : value = Marco Island
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#3]
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Processing attribute `city` : value = Ft Lauderdale
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Processing attribute `trip` : value = 3
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.488 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#4]
+[DEBUG] 2021-10-03 17:00:54.488 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.488 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#3]
+[DEBUG] 2021-10-03 17:00:54.488 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.488 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.488 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#3]
+[DEBUG] 2021-10-03 17:00:54.488 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.489 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.489 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#3
+[DEBUG] 2021-10-03 17:00:54.489 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.515 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-10-03 17:00:54.516 [main] TransactionImpl - begin
+[DEBUG] 2021-10-03 17:00:54.517 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-10-03 17:00:54.517 [main] SQL - insert into trips (trip_name) values (?)
+[DEBUG] 2021-10-03 17:00:54.518 [main] IdentifierGeneratorHelper - Natively generated identity: 71
+[DEBUG] 2021-10-03 17:00:54.518 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.519 [main] TransactionImpl - committing
+[DEBUG] 2021-10-03 17:00:54.519 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-10-03 17:00:54.519 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-10-03 17:00:54.519 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.destinationSet#71], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-10-03 17:00:54.519 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.noteSet#71], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-10-03 17:00:54.519 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-10-03 17:00:54.519 [main] AbstractFlushingEventListener - Flushed: 2 (re)creations, 0 updates, 0 removals to 2 collections
+[DEBUG] 2021-10-03 17:00:54.519 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-10-03 17:00:54.519 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Trip{name=Northern Summer, noteSet=[], id=71, destinationSet=[]}
+[DEBUG] 2021-10-03 17:00:54.520 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.521 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.521 [main] SQL - select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:54.523 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.523 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.523 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#71]
+[DEBUG] 2021-10-03 17:00:54.523 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#71]
+[DEBUG] 2021-10-03 17:00:54.523 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#71]
+[DEBUG] 2021-10-03 17:00:54.523 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.523 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.523 [main] TwoPhaseLoad - Processing attribute `name` : value = Northern Summer
+[DEBUG] 2021-10-03 17:00:54.523 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.523 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.523 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.524 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#71]
+[DEBUG] 2021-10-03 17:00:54.524 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.524 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#71]
+[DEBUG] 2021-10-03 17:00:54.524 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.524 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.524 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#71]
+[DEBUG] 2021-10-03 17:00:54.524 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.524 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.524 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#71
+[DEBUG] 2021-10-03 17:00:54.524 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.549 [main] SQL - select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:54.551 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.551 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.552 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.552 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.552 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-10-03 17:00:54.552 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.553 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.553 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.553 [main] ResultSetProcessorImpl - Starting ResultSet row #2
+[DEBUG] 2021-10-03 17:00:54.553 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.553 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.554 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.554 [main] ResultSetProcessorImpl - Starting ResultSet row #3
+[DEBUG] 2021-10-03 17:00:54.554 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.554 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.554 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Processing attribute `name` : value = Fall  Colour Tour
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#1]
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Processing attribute `city` : value = Aspen
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#1]
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Processing attribute `description` : value = 2021 Fall Colour Tour St.
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Processing attribute `name` : value = ABC Hotel
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.554 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#1]
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Processing attribute `description` : value = Henry - 203-203-2938
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Processing attribute `name` : value = Travel Guide
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Note#2]
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Processing attribute `city` : value = Munising
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Processing attribute `trip` : value = 1
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.555 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#2]
+[DEBUG] 2021-10-03 17:00:54.555 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.556 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#1]
+[DEBUG] 2021-10-03 17:00:54.556 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.556 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.556 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#1]
+[DEBUG] 2021-10-03 17:00:54.556 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.556 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.556 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#1
+[DEBUG] 2021-10-03 17:00:54.556 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.581 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-10-03 17:00:54.581 [main] TransactionImpl - begin
+[DEBUG] 2021-10-03 17:00:54.582 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-10-03 17:00:54.583 [main] SQL - insert into trips (trip_name) values (?)
+[DEBUG] 2021-10-03 17:00:54.584 [main] IdentifierGeneratorHelper - Natively generated identity: 72
+[DEBUG] 2021-10-03 17:00:54.584 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.585 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-10-03 17:00:54.585 [main] SQL - insert into destinations (city, trip_id) values (?, ?)
+[DEBUG] 2021-10-03 17:00:54.586 [main] IdentifierGeneratorHelper - Natively generated identity: 25
+[DEBUG] 2021-10-03 17:00:54.586 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.587 [main] TransactionImpl - committing
+[DEBUG] 2021-10-03 17:00:54.587 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-10-03 17:00:54.587 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-10-03 17:00:54.587 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.destinationSet#72], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-10-03 17:00:54.587 [main] Collections - Collection found: [com.jilleliceiri.mptr.entity.Trip.noteSet#72], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-10-03 17:00:54.587 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+[DEBUG] 2021-10-03 17:00:54.587 [main] AbstractFlushingEventListener - Flushed: 2 (re)creations, 0 updates, 0 removals to 2 collections
+[DEBUG] 2021-10-03 17:00:54.587 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-10-03 17:00:54.588 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Destination{trip=com.jilleliceiri.mptr.entity.Trip#72, city=Minneapolis, id=25}
+[DEBUG] 2021-10-03 17:00:54.588 [main] EntityPrinter - com.jilleliceiri.mptr.entity.Trip{name=Northern Summer, noteSet=[], id=72, destinationSet=[com.jilleliceiri.mptr.entity.Destination#25]}
+[DEBUG] 2021-10-03 17:00:54.589 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.590 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.590 [main] SQL - select trip0_.id as id1_2_0_, trip0_.trip_name as trip_nam2_2_0_, destinatio1_.trip_id as trip_id3_0_1_, destinatio1_.id as id1_0_1_, destinatio1_.id as id1_0_2_, destinatio1_.city as city2_0_2_, destinatio1_.trip_id as trip_id3_0_2_, noteset2_.trip_id as trip_id4_1_3_, noteset2_.id as id1_1_3_, noteset2_.id as id1_1_4_, noteset2_.description as descript2_1_4_, noteset2_.name as name3_1_4_, noteset2_.trip_id as trip_id4_1_4_ from trips trip0_ left outer join destinations destinatio1_ on trip0_.id=destinatio1_.trip_id left outer join notes noteset2_ on trip0_.id=noteset2_.trip_id where trip0_.id=?
+[DEBUG] 2021-10-03 17:00:54.592 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-10-03 17:00:54.592 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-10-03 17:00:54.593 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.jilleliceiri.mptr.entity.Trip.destinationSet#72]
+[DEBUG] 2021-10-03 17:00:54.593 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.jilleliceiri.mptr.entity.Trip.noteSet#72]
+[DEBUG] 2021-10-03 17:00:54.593 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Trip#72]
+[DEBUG] 2021-10-03 17:00:54.593 [main] TwoPhaseLoad - Processing attribute `destinationSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.593 [main] TwoPhaseLoad - Attribute (`destinationSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.593 [main] TwoPhaseLoad - Processing attribute `name` : value = Northern Summer
+[DEBUG] 2021-10-03 17:00:54.593 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.593 [main] TwoPhaseLoad - Processing attribute `noteSet` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-03 17:00:54.593 [main] TwoPhaseLoad - Attribute (`noteSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.594 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Trip#72]
+[DEBUG] 2021-10-03 17:00:54.594 [main] TwoPhaseLoad - Resolving attributes for [com.jilleliceiri.mptr.entity.Destination#25]
+[DEBUG] 2021-10-03 17:00:54.594 [main] TwoPhaseLoad - Processing attribute `city` : value = Minneapolis
+[DEBUG] 2021-10-03 17:00:54.594 [main] TwoPhaseLoad - Attribute (`city`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.594 [main] TwoPhaseLoad - Processing attribute `trip` : value = 72
+[DEBUG] 2021-10-03 17:00:54.594 [main] TwoPhaseLoad - Attribute (`trip`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-03 17:00:54.594 [main] TwoPhaseLoad - Done materializing entity [com.jilleliceiri.mptr.entity.Destination#25]
+[DEBUG] 2021-10-03 17:00:54.594 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.594 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.destinationSet#72]
+[DEBUG] 2021-10-03 17:00:54.594 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.destinationSet
+[DEBUG] 2021-10-03 17:00:54.594 [main] CollectionLoadContext - 1 collections were found in result set for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.594 [main] CollectionLoadContext - Collection fully initialized: [com.jilleliceiri.mptr.entity.Trip.noteSet#72]
+[DEBUG] 2021-10-03 17:00:54.594 [main] CollectionLoadContext - 1 collections initialized for role: com.jilleliceiri.mptr.entity.Trip.noteSet
+[DEBUG] 2021-10-03 17:00:54.594 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-10-03 17:00:54.594 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.jilleliceiri.mptr.entity.Trip#72
+[DEBUG] 2021-10-03 17:00:54.594 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-03 17:00:54.623 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Trip as generatedAlias0
+[DEBUG] 2021-10-03 17:00:54.624 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.jilleliceiri.mptr.entity.Trip as generatedAlias0
+[DEBUG] 2021-10-03 17:00:54.625 [main] ErrorTracker - throwQueryException() : no errors

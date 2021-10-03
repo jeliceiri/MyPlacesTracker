@@ -284,3 +284,258 @@
 [DEBUG] 2021-10-03 16:07:23.272 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
 [DEBUG] 2021-10-03 16:07:23.282 [main] GenericDao - Searching for getById 42
 [DEBUG] 2021-10-03 16:07:23.358 [main] GenericDao - The list of types [Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}, Trip{id=2, name='Winter Break', destinationSet=[]}, Trip{id=3, name='Spring in the South', destinationSet=[Destination{city='Ft Lauderdale'}, Destination{city='Marco Island'}]}]
+[DEBUG] 2021-10-03 16:34:35.772 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:34:35.865 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:34:35.901 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:34:36.048 [main] GenericDao - The list of types [Note{id=1, name='ABC Hotel', description='2021 Fall Colour Tour St.', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}, Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}]
+[DEBUG] 2021-10-03 16:34:36.101 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:34:36.108 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Munising'}, Destination{city='Aspen'}]}}
+[DEBUG] 2021-10-03 16:34:36.115 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:34:36.161 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:34:36.213 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:34:36.217 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 16:34:36.227 [main] GenericDao - Searching for getById 25
+[DEBUG] 2021-10-03 16:34:36.274 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:34:36.280 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 16:34:36.288 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:34:36.332 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 16:34:36.339 [main] GenericDao - Searching for getById 43
+[DEBUG] 2021-10-03 16:34:36.384 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:34:36.389 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Marco Island'}, Destination{city='Ft Lauderdale'}]}
+[DEBUG] 2021-10-03 16:34:36.396 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:34:36.437 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 16:34:36.443 [main] GenericDao - Searching for getById 44
+[DEBUG] 2021-10-03 16:34:36.470 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:34:36.505 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 16:34:36.512 [main] GenericDao - Searching for getById 45
+[DEBUG] 2021-10-03 16:34:36.552 [main] GenericDao - The list of types [Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}, Trip{id=2, name='Winter Break', destinationSet=[]}, Trip{id=3, name='Spring in the South', destinationSet=[Destination{city='Marco Island'}, Destination{city='Ft Lauderdale'}]}]
+[DEBUG] 2021-10-03 16:35:05.763 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:35:05.960 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:35:06.030 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:35:06.331 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:35:06.355 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:35:06.369 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:35:06.448 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:35:06.504 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:35:06.510 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 16:35:06.525 [main] GenericDao - Searching for getById 27
+[DEBUG] 2021-10-03 16:35:06.577 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:35:06.583 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 16:35:06.593 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:35:06.641 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 16:35:06.651 [main] GenericDao - Searching for getById 46
+[DEBUG] 2021-10-03 16:35:06.684 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:35:06.691 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Marco Island'}, Destination{city='Ft Lauderdale'}]}
+[DEBUG] 2021-10-03 16:35:06.701 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:35:06.734 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 16:35:06.741 [main] GenericDao - Searching for getById 47
+[DEBUG] 2021-10-03 16:35:06.777 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:35:06.818 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 16:35:06.827 [main] GenericDao - Searching for getById 48
+[DEBUG] 2021-10-03 16:43:20.057 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:43:20.261 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:43:20.309 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:43:20.528 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:43:20.540 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:43:20.551 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:43:20.603 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:43:20.655 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:43:20.660 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 16:43:20.694 [main] GenericDao - Searching for getById 29
+[DEBUG] 2021-10-03 16:43:20.739 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:43:20.744 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 16:43:20.755 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:43:20.800 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 16:43:20.810 [main] GenericDao - Searching for getById 49
+[DEBUG] 2021-10-03 16:43:20.849 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:43:20.854 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Marco Island'}, Destination{city='Ft Lauderdale'}]}
+[DEBUG] 2021-10-03 16:43:20.861 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:43:20.889 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 16:43:20.893 [main] GenericDao - Searching for getById 50
+[DEBUG] 2021-10-03 16:43:20.918 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:43:20.941 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 16:43:20.947 [main] GenericDao - Searching for getById 51
+[DEBUG] 2021-10-03 16:45:36.952 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:45:37.130 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:45:37.189 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:45:37.411 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:45:37.430 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Munising'}, Destination{city='Aspen'}]}}
+[DEBUG] 2021-10-03 16:45:37.442 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:45:37.506 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:45:37.570 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:45:37.577 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 16:45:37.597 [main] GenericDao - Searching for getById 31
+[DEBUG] 2021-10-03 16:45:37.654 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:45:37.662 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 16:45:37.677 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:45:37.734 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 16:45:37.752 [main] GenericDao - Searching for getById 52
+[DEBUG] 2021-10-03 16:45:37.807 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:45:37.815 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Marco Island'}, Destination{city='Ft Lauderdale'}]}
+[DEBUG] 2021-10-03 16:45:37.826 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:45:37.869 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 16:45:37.877 [main] GenericDao - Searching for getById 53
+[DEBUG] 2021-10-03 16:45:37.917 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:45:37.952 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 16:45:37.961 [main] GenericDao - Searching for getById 54
+[DEBUG] 2021-10-03 16:48:21.141 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:48:21.299 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:48:21.352 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:48:21.541 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:48:21.554 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Munising'}, Destination{city='Aspen'}]}}
+[DEBUG] 2021-10-03 16:48:21.564 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:48:21.623 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:48:21.682 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:48:21.688 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 16:48:21.704 [main] GenericDao - Searching for getById 33
+[DEBUG] 2021-10-03 16:48:21.752 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:48:21.757 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 16:48:21.766 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:48:21.810 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 16:48:21.820 [main] GenericDao - Searching for getById 55
+[DEBUG] 2021-10-03 16:48:21.853 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:48:21.858 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Ft Lauderdale'}, Destination{city='Marco Island'}]}
+[DEBUG] 2021-10-03 16:48:21.865 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:48:21.895 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 16:48:21.901 [main] GenericDao - Searching for getById 56
+[DEBUG] 2021-10-03 16:48:21.926 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:48:21.951 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 16:48:21.957 [main] GenericDao - Searching for getById 57
+[DEBUG] 2021-10-03 16:49:26.240 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:49:26.409 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:49:26.458 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:49:26.651 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:49:26.662 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Munising'}, Destination{city='Aspen'}]}}
+[DEBUG] 2021-10-03 16:49:26.671 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:49:26.722 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:49:26.764 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:49:26.768 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 16:49:26.780 [main] GenericDao - Searching for getById 35
+[DEBUG] 2021-10-03 16:49:26.812 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:49:26.817 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 16:49:26.826 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:49:26.852 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 16:49:26.862 [main] GenericDao - Searching for getById 58
+[DEBUG] 2021-10-03 16:49:26.891 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:49:26.897 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Ft Lauderdale'}, Destination{city='Marco Island'}]}
+[DEBUG] 2021-10-03 16:49:26.904 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:49:26.934 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 16:49:26.940 [main] GenericDao - Searching for getById 59
+[DEBUG] 2021-10-03 16:49:26.966 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:49:26.995 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 16:49:27.002 [main] GenericDao - Searching for getById 60
+[DEBUG] 2021-10-03 16:52:26.575 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:26.670 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Munising'}, Destination{city='Aspen'}]}}
+[DEBUG] 2021-10-03 16:52:26.708 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:26.902 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:26.911 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:52:26.920 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:26.989 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:52:27.042 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:27.046 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 16:52:27.058 [main] GenericDao - Searching for getById 37
+[DEBUG] 2021-10-03 16:52:27.108 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:27.112 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 16:52:27.120 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:27.167 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 16:52:27.176 [main] GenericDao - Searching for getById 61
+[DEBUG] 2021-10-03 16:52:27.223 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:52:27.230 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Marco Island'}, Destination{city='Ft Lauderdale'}]}
+[DEBUG] 2021-10-03 16:52:27.240 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:52:27.281 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 16:52:27.286 [main] GenericDao - Searching for getById 62
+[DEBUG] 2021-10-03 16:52:27.331 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:52:27.372 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 16:52:27.379 [main] GenericDao - Searching for getById 63
+[DEBUG] 2021-10-03 16:52:56.708 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:56.873 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:52:56.918 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:57.113 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:57.126 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Munising'}, Destination{city='Aspen'}]}}
+[DEBUG] 2021-10-03 16:52:57.135 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:57.201 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:52:57.252 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:57.257 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 16:52:57.272 [main] GenericDao - Searching for getById 39
+[DEBUG] 2021-10-03 16:52:57.327 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:57.332 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 16:52:57.345 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:52:57.392 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 16:52:57.403 [main] GenericDao - Searching for getById 64
+[DEBUG] 2021-10-03 16:52:57.447 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:52:57.454 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Ft Lauderdale'}, Destination{city='Marco Island'}]}
+[DEBUG] 2021-10-03 16:52:57.461 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:52:57.505 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 16:52:57.512 [main] GenericDao - Searching for getById 65
+[DEBUG] 2021-10-03 16:52:57.559 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:52:57.608 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 16:52:57.616 [main] GenericDao - Searching for getById 66
+[DEBUG] 2021-10-03 16:59:32.028 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:59:32.227 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 16:59:32.275 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:59:32.486 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:59:32.497 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Munising'}, Destination{city='Aspen'}]}}
+[DEBUG] 2021-10-03 16:59:32.506 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:59:32.561 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:59:32.615 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:59:32.620 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 16:59:32.635 [main] GenericDao - Searching for getById 41
+[DEBUG] 2021-10-03 16:59:32.683 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:59:32.687 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 16:59:32.696 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 16:59:32.725 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 16:59:32.733 [main] GenericDao - Searching for getById 67
+[DEBUG] 2021-10-03 16:59:32.760 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:59:32.764 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Marco Island'}, Destination{city='Ft Lauderdale'}]}
+[DEBUG] 2021-10-03 16:59:32.770 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 16:59:32.796 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 16:59:32.800 [main] GenericDao - Searching for getById 68
+[DEBUG] 2021-10-03 16:59:32.825 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 16:59:32.852 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 16:59:32.861 [main] GenericDao - Searching for getById 69
+[DEBUG] 2021-10-03 17:00:53.860 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:00:54.020 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 17:00:54.061 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:00:54.226 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:00:54.237 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Munising'}, Destination{city='Aspen'}]}}
+[DEBUG] 2021-10-03 17:00:54.248 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:00:54.288 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 17:00:54.325 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:00:54.331 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 17:00:54.347 [main] GenericDao - Searching for getById 43
+[DEBUG] 2021-10-03 17:00:54.389 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:00:54.394 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 17:00:54.405 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:00:54.432 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 17:00:54.442 [main] GenericDao - Searching for getById 70
+[DEBUG] 2021-10-03 17:00:54.472 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 17:00:54.477 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Marco Island'}, Destination{city='Ft Lauderdale'}]}
+[DEBUG] 2021-10-03 17:00:54.484 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 17:00:54.515 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 17:00:54.521 [main] GenericDao - Searching for getById 71
+[DEBUG] 2021-10-03 17:00:54.549 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 17:00:54.580 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 17:00:54.590 [main] GenericDao - Searching for getById 72
+[DEBUG] 2021-10-03 17:07:04.309 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:07:04.502 [main] GenericDao - Deleting: Note{id=2, name='Travel Guide', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 17:07:04.557 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:07:04.872 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:07:04.882 [main] GenericDao - SaveOrUpdating: Note{id=2, name='New Note Name', description='Henry - 203-203-2938', trip=Trip{id=1, name='Fall  Colour Tour', destinationSet=[Destination{city='Aspen'}, Destination{city='Munising'}]}}
+[DEBUG] 2021-10-03 17:07:04.893 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:07:04.946 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 17:07:04.991 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:07:04.995 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-03 17:07:05.008 [main] GenericDao - Searching for getById 45
+[DEBUG] 2021-10-03 17:07:05.063 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:07:05.068 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-03 17:07:05.079 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-03 17:07:05.121 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-03 17:07:05.129 [main] GenericDao - Searching for getById 73
+[DEBUG] 2021-10-03 17:07:05.157 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 17:07:05.162 [main] GenericDao - SaveOrUpdating: Trip{id=3, name='New Trip Name', destinationSet=[Destination{city='Marco Island'}, Destination{city='Ft Lauderdale'}]}
+[DEBUG] 2021-10-03 17:07:05.169 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-03 17:07:05.194 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-03 17:07:05.198 [main] GenericDao - Searching for getById 74
+[DEBUG] 2021-10-03 17:07:05.223 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-03 17:07:05.254 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[Destination{city='Minneapolis'}]}
+[DEBUG] 2021-10-03 17:07:05.261 [main] GenericDao - Searching for getById 75

@@ -6,9 +6,7 @@ import com.jilleliceiri.mptr.entity.Trip;
 import com.jilleliceiri.mptr.test.util.Database;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -25,7 +23,7 @@ class TripDaoTest {
     /**
      * The Generic dao.
      */
-    GenericDao genericDao;
+    GenericDao tripDao;
     private final Logger logger = LogManager.getLogger(this.getClass());
     /**
      * The Session factory.
@@ -37,7 +35,7 @@ class TripDaoTest {
      */
     @BeforeEach
     void setUp() {
-        genericDao = new GenericDao(Trip.class);
+        tripDao = new GenericDao(Trip.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -47,7 +45,7 @@ class TripDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Trip retrievedTrip = (Trip)genericDao.getById(1);
+        Trip retrievedTrip = (Trip) tripDao.getById(1);
         assertEquals("Fall  Colour Tour", retrievedTrip.getName());
         assertEquals(2, retrievedTrip.getDestinationSet().size());
     }
@@ -56,7 +54,7 @@ class TripDaoTest {
      */
     @Test
     void getAllTripsSuccess(){
-        List<Trip> trips = genericDao.getAll();
+        List<Trip> trips = tripDao.getAll();
         assertEquals(3, trips.size());
     }
 
@@ -65,8 +63,8 @@ class TripDaoTest {
      */
     @Test
     void deleteSuccess(){
-        genericDao.delete(genericDao.getById(2));
-        assertNull(genericDao.getById(2));
+        tripDao.delete(tripDao.getById(2));
+        assertNull(tripDao.getById(2));
     }
 
     /**
@@ -76,13 +74,13 @@ class TripDaoTest {
     void saveOrUpdateSuccess() {
         String tripName = "New Trip Name";
         // retrieve a trip to update
-        Trip tripToUpdate = (Trip)genericDao.getById(3);
+        Trip tripToUpdate = (Trip) tripDao.getById(3);
         // change the trip name
         tripToUpdate.setName(tripName);
         // save the changes
-        genericDao.saveOrUpdate(tripToUpdate);
+        tripDao.saveOrUpdate(tripToUpdate);
         // retrieve the same trip
-        Trip retrievedTrip = (Trip)genericDao.getById(3);
+        Trip retrievedTrip = (Trip) tripDao.getById(3);
         // verify changes were made
         assertEquals(tripToUpdate, retrievedTrip);
     }
@@ -96,10 +94,10 @@ class TripDaoTest {
         // create a new trip (use the constructor to set all values)
         Trip newTrip = new Trip("Northern Summer");
         // insert new book using dao
-        int id = genericDao.insert(newTrip);
+        int id = tripDao.insert(newTrip);
         assertNotEquals(0,id);
         // retrieve trip
-        Trip retrievedTrip = (Trip)genericDao.getById(id);
+        Trip retrievedTrip = (Trip) tripDao.getById(id);
         // compare trips using all fields of entity
         assertEquals(newTrip, retrievedTrip);
     }
@@ -117,9 +115,9 @@ class TripDaoTest {
         newTrip.addDestination(destination);
 
         // insert new trip using dao
-        int id = genericDao.insert(newTrip);
+        int id = tripDao.insert(newTrip);
         // retrieve the inserted trip
-        Trip insertedTrip = (Trip)genericDao.getById(id);
+        Trip insertedTrip = (Trip) tripDao.getById(id);
         // compare trips using all fields of entity
         assertTrue(insertedTrip.equals(newTrip));
     }
@@ -138,9 +136,9 @@ class TripDaoTest {
         newTrip.addNote(newNote);
 
         // insert new trip using dao
-        int id = genericDao.insert(newTrip);
+        int id = tripDao.insert(newTrip);
         // retrieve the inserted trip
-        Trip insertedTrip = (Trip)genericDao.getById(id);
+        Trip insertedTrip = (Trip) tripDao.getById(id);
         // compare trips using all fields of entity
         assertTrue(insertedTrip.equals(newTrip));
     }

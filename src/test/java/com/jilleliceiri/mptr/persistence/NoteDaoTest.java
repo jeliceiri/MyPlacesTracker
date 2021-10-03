@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class NoteDaoTest {
 
-    GenericDao genericDao;
+    GenericDao noteDao;
     GenericDao tripDao;
 
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -27,7 +27,7 @@ public class NoteDaoTest {
      */
     @BeforeEach
     void setUp() {
-        genericDao = new GenericDao(Note.class);
+        noteDao = new GenericDao(Note.class);
         tripDao = new GenericDao(Trip.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -38,7 +38,7 @@ public class NoteDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Note retrievedNote = (Note)genericDao.getById(1);
+        Note retrievedNote = (Note)noteDao.getById(1);
         assertEquals("ABC Hotel", retrievedNote.getName());
         assertEquals("2021 Fall Colour Tour St.", retrievedNote.getDescription());
         assertEquals(1, retrievedNote.getTrip().getId());
@@ -49,7 +49,7 @@ public class NoteDaoTest {
      */
     @Test
     void getAllNotesSuccess(){
-        List<Note> notes = genericDao.getAll();
+        List<Note> notes = noteDao.getAll();
         assertEquals(2, notes.size());
     }
 
@@ -60,13 +60,13 @@ public class NoteDaoTest {
     void saveOrUpdateSuccess() {
         String noteName = "New Note Name";
         // retrieve a note to update
-        Note noteToUpdate = (Note)genericDao.getById(2);
+        Note noteToUpdate = (Note)noteDao.getById(2);
         // change the note name
         noteToUpdate.setName(noteName);
         // save the changes
-        genericDao.saveOrUpdate(noteToUpdate);
+        noteDao.saveOrUpdate(noteToUpdate);
         // retrieve the same note
-        Note retrievedNote = (Note)genericDao.getById(2);
+        Note retrievedNote = (Note)noteDao.getById(2);
         // verify changes were made
         assertEquals(noteToUpdate, retrievedNote);
     }
@@ -81,10 +81,10 @@ public class NoteDaoTest {
         // create a new note (use the constructor to set all values)
         Note newNote = new Note("insert New Note", "description", retrievedTrip);
         // insert new note using dao
-        int id = genericDao.insert(newNote);
+        int id = noteDao.insert(newNote);
         assertNotEquals(0,id);
         // retrieve note
-        Note retrievedNote = (Note)genericDao.getById(id);
+        Note retrievedNote = (Note)noteDao.getById(id);
         // compare notes using all fields of entity
         assertEquals(newNote, retrievedNote);
     }
@@ -94,7 +94,7 @@ public class NoteDaoTest {
      */
     @Test
     void deleteSuccess(){
-        genericDao.delete(genericDao.getById(2));
-        assertNull(genericDao.getById(2));
+        noteDao.delete(noteDao.getById(2));
+        assertNull(noteDao.getById(2));
     }
 }
