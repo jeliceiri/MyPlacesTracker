@@ -1,6 +1,7 @@
 package com.jilleliceiri.mptr.controller;
 
-import com.jilleliceiri.mptr.persistence.TripDao;
+import com.jilleliceiri.mptr.entity.Trip;
+import com.jilleliceiri.mptr.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -24,11 +25,9 @@ public class ViewTrips extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         //String newTripName = req.getParameter("newTripName");
+        GenericDao genericDao = new GenericDao(Trip.class);
 
-        TripDao tripDao = new TripDao();
-
-        //req.setAttribute("trips", tripDao.getAll());
-        req.setAttribute("trips", tripDao.getAll());
+        req.setAttribute("trips", genericDao.getAll());
 
         /*
         if (newTripName != null){

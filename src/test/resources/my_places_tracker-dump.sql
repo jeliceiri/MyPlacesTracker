@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.26, for macos11 (x86_64)
 --
--- Host: 127.0.0.1    Database: my_places_tracker
+-- Host: 127.0.0.1    Database: test_my_places_tracker
 -- ------------------------------------------------------
 -- Server version	8.0.26
 
@@ -44,6 +44,35 @@ INSERT INTO `destinations` (`id`, `city`, `trip_id`) VALUES (1,'Aspen',1),(2,'Mu
 UNLOCK TABLES;
 
 --
+-- Table structure for table `notes`
+--
+
+DROP TABLE IF EXISTS `notes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `notes` (
+                         `id` int NOT NULL AUTO_INCREMENT,
+                         `name` varchar(100) NOT NULL,
+                         `description` varchar(200) DEFAULT NULL,
+                         `trip_id` int DEFAULT NULL,
+                         PRIMARY KEY (`id`),
+                         UNIQUE KEY `notes_id_uindex` (`id`),
+                         KEY `notes_trips_id_fk` (`trip_id`),
+                         CONSTRAINT `notes_trips_id_fk` FOREIGN KEY (`trip_id`) REFERENCES `trips` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `notes`
+--
+
+LOCK TABLES `notes` WRITE;
+/*!40000 ALTER TABLE `notes` DISABLE KEYS */;
+INSERT INTO `notes` (`id`, `name`, `description`, `trip_id`) VALUES (1,'ABC Hotel','293-203-1048',1),(2,'Travel Guide','Henry - 203-203-2938',1);
+/*!40000 ALTER TABLE `notes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `trips`
 --
 
@@ -76,4 +105,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-09-28 20:14:32
+-- Dump completed on 2021-10-03 11:56:42

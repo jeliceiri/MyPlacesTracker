@@ -1,7 +1,7 @@
 package com.jilleliceiri.mptr.controller;
 
 import com.jilleliceiri.mptr.entity.Trip;
-import com.jilleliceiri.mptr.persistence.TripDao;
+import com.jilleliceiri.mptr.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -26,15 +26,12 @@ public class AddTrip extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        TripDao tripDao = new TripDao();
-
-        //String tripName = req.getParameter("addTrip");
-        //System.out.println(tripName);
-
+        GenericDao genericDao = new GenericDao(Trip.class);
+        // TODO use generic dao
         Trip newTrip = new Trip(req.getParameter("addTrip"));
 
-        int id = tripDao.insertTrip(newTrip);
-        req.setAttribute("trips", tripDao.getAll());
+        int id = genericDao.insert(newTrip);
+        req.setAttribute("trips", genericDao.getAll());
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/trips.jsp");
         dispatcher.forward(req, resp);

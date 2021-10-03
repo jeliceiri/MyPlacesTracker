@@ -18,6 +18,7 @@
 
         <mapping class ="com.jilleliceiri.mptr.entity.Trip"/>
         <mapping class ="com.jilleliceiri.mptr.entity.Destination"/>
+        <mapping class ="com.jilleliceiri.mptr.entity.Note"/>
     </session-factory>
 
 </hibernate-configuration>

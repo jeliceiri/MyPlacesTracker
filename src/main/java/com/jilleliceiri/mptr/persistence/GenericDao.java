@@ -39,6 +39,24 @@ public class GenericDao <T> {
         return SessionFactoryProvider.getSessionFactory().openSession();
     }
 
+    /**
+     * Gets all entities
+     *
+     * @return all entities
+     */
+    public List<T> getAll() {
+        Session session = getSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery( type);
+        Root<T> root = query.from(type );
+        List<T> list = session.createQuery( query ).getResultList();
+
+        logger.debug("The list of types " + list);
+        session.close();
+
+        return list;
+    }
 
     /**
      * Retrieves an entity by id
@@ -100,24 +118,5 @@ public class GenericDao <T> {
         transaction.commit();
         session.close();
 
-    }
-
-    /**
-     * Gets all entities
-     *
-     * @return all entities
-     */
-    public List<T> getAll() {
-        Session session = getSession();
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<T> query = builder.createQuery( type);
-        Root<T> root = query.from(type );
-        List<T> list = session.createQuery( query ).getResultList();
-
-        logger.debug("The list of types " + list);
-        session.close();
-
-        return list;
     }
 }

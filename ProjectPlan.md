@@ -18,20 +18,21 @@
 - [x] Build servlet to add a new trip
 - [x] Add JSP to display trips
 - [x] Add JSP to add a trip
-- [ ] Create test database
-- [ ] Build JUnit5 tests for trip DAO
+- [x] Create test database
+- [x] Build JUnit5 tests for trip DAO
 - [x] Select Web API's
 - [x] Add Log4J, JUnit5, and Hibernate
 - [x] Weekly Time Log
 
 ##  Week 5
+- [ ] Add Hibernate one-to-many relationships
 - [ ] Work on add travel note user story
 - [ ] Work on edit travel note user story
 - [ ] Add JSPs to add and edit travel note
+- [ ] Add jquery data table
 - [ ] Build travel note entity and DAO
 - [ ] Build servlets to add/edit travel note
 - [ ] Build JUnit5 tests for travel note DAO
-- [ ] Add Hibernate one-to-many relationship
 - [ ] Weekly Time Log
 
 ##  Week 6

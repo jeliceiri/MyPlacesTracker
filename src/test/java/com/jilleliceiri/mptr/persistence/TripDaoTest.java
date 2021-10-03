@@ -1,6 +1,7 @@
 package com.jilleliceiri.mptr.persistence;
 
 import com.jilleliceiri.mptr.entity.Destination;
+import com.jilleliceiri.mptr.entity.Note;
 import com.jilleliceiri.mptr.entity.Trip;
 import com.jilleliceiri.mptr.test.util.Database;
 import org.apache.logging.log4j.LogManager;
@@ -20,12 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class TripDaoTest {
 
-    // TODO make Destination DAO test
 
-    /**
-     * The Trip dao.
-     */
-    TripDao tripDao;
     /**
      * The Generic dao.
      */
@@ -41,20 +37,36 @@ class TripDaoTest {
      */
     @BeforeEach
     void setUp() {
-        tripDao = new TripDao();
         genericDao = new GenericDao(Trip.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
 
     /**
-     * Verifies getById successfully runs.
+     * Verifies getById successfully runs
      */
     @Test
     void getByIdSuccess() {
         Trip retrievedTrip = (Trip)genericDao.getById(1);
         assertEquals("Fall  Colour Tour", retrievedTrip.getName());
         assertEquals(2, retrievedTrip.getDestinationSet().size());
+    }
+    /**
+     * Verifies getAll trips successfully runs
+     */
+    @Test
+    void getAllTripsSuccess(){
+        List<Trip> trips = genericDao.getAll();
+        assertEquals(3, trips.size());
+    }
+
+    /**
+     * Vefify delete trip successfully runs
+     */
+    @Test
+    void deleteSuccess(){
+        genericDao.delete(genericDao.getById(2));
+        assertNull(genericDao.getById(2));
     }
 
     /**
@@ -74,21 +86,6 @@ class TripDaoTest {
         // verify changes were made
         assertEquals(tripToUpdate, retrievedTrip);
     }
-
-    /**
-     * Verify gets all successfully runs
-     */
-    @Test
-    void getAll() {
-
-        // get all
-        List<Trip> trips = genericDao.getAll();
-
-        // verify 3 trips were returned
-        assertEquals(3, trips.size());
-    }
-
-    // TODO updateSuccess() test and write tripDoa.saveOrUpdate()
 
 
     /**
@@ -126,4 +123,26 @@ class TripDaoTest {
         // compare trips using all fields of entity
         assertTrue(insertedTrip.equals(newTrip));
     }
+
+    /**
+     * Verify insert a trip with a note successfully runs
+     */
+    @Test
+    void insertTripWithNotesSuccess() {
+        // put note on trip and trip on note
+        Trip newTrip = new Trip("New Trip");
+        String noteName = "New Note";
+        String noteDescription = "New Note Description";
+        Note newNote = new Note(noteName, noteDescription, newTrip);
+        // nice to have method that does the set destinations
+        newTrip.addNote(newNote);
+
+        // insert new trip using dao
+        int id = genericDao.insert(newTrip);
+        // retrieve the inserted trip
+        Trip insertedTrip = (Trip)genericDao.getById(id);
+        // compare trips using all fields of entity
+        assertTrue(insertedTrip.equals(newTrip));
+    }
+
 }
