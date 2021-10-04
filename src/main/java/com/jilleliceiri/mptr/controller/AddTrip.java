@@ -26,12 +26,12 @@ public class AddTrip extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        GenericDao genericDao = new GenericDao(Trip.class);
+        GenericDao tripDao = new GenericDao(Trip.class);
         // TODO use generic dao
         Trip newTrip = new Trip(req.getParameter("addTrip"));
 
-        int id = genericDao.insert(newTrip);
-        req.setAttribute("trips", genericDao.getAll());
+        int id = tripDao.insert(newTrip);
+        req.setAttribute("trips", tripDao.getAll());
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/trips.jsp");
         dispatcher.forward(req, resp);

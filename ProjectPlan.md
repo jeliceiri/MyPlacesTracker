@@ -27,15 +27,15 @@
 ##  Week 5
 - [x] Add Hibernate one-to-many relationships
 - [x] Work on add travel note user story
-- [ ] Work on edit travel note user story
+- [x] Work on edit travel note user story
 - [x] Add JSP to add travel note
-- [ ] Add JSP to edit travel note
+- [x] Add JSP to edit travel note
 - [ ] Add jquery data table
 - [x] Build travel note entity and DAO
 - [x] Build servlets to add travel note
-- [ ] Build servlets to edit travel note
+- [x] Build servlets to edit travel note
 - [x] Build JUnit5 tests for travel note DAO
-- [ ] Weekly Time Log
+- [x] Weekly Time Log
 
 ##  Week 6
 - [ ] Work on add destination user story

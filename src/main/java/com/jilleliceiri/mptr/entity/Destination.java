@@ -101,8 +101,9 @@ public class Destination {
     @Override
     public String toString() {
         return "Destination{" +
-                "city='" + city + '\'' +
+                "id=" + id +
+                ", city='" + city + '\'' +
+                ", trip=" + trip +
                 '}';
     }
-
 }

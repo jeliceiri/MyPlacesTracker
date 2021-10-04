@@ -5,7 +5,7 @@
 <h1>${tripInfo.getName()} Info</h1>
 <h2>Destinations</h2>
 <div class="">
-    <form action="/tripInfo" class="" method="post">
+    <form action="tripInfo" class="" method="post">
         <table class="table">
             <thead>
             <th>City</th>
@@ -15,38 +15,43 @@
                 <c:forEach var="destination" items="${destinationSet}">
                 <tr>
                     <td>${destination.getCity()}</td>
-                    <td>Placeholder}</td>
+                    <td>Placeholder</td>
                 </tr>
                 </c:forEach>
             </tbody>
         </table>
     </form>
     <div class="">
-        <h2>Travel Notes: </h2>
-        <table id="" class="" >
-            <tbody>
-            <form action="forwardToEditNote" class="" method="post">
-            <c:forEach var="note" items="${noteSet}">
+        <h2>Travel Notes </h2>
+            <table class="table">
+                <thead>
 
-                <tr>
-                    <td>
-                        <button type="submit" name="submit" class="">${note.name}</button>
-                    </td>
-                    <td>
-                        <input type="hidden" class="" id="editTripID" name="editTripID" value="${tripInfo.getId()}" >
-                    </td>
 
-                </tr>
-                <tr>
-                    <td>${note.description}</td>
-                </tr>
+                <th>Note Name</th>
+                <th>Note Description</th>
+                <th></th>
 
-            </c:forEach>
-            </form>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                <c:forEach var="note" items="${noteSet}">
+                <form action="forwardToEditNote" class="" method="post">
+                    <tr>
+                        <td>${note.getName()}</td>
+                        <td>${note.getDescription()}</td>
+
+                        <td><input type="hidden" id="noteId" name="noteId" value="${note.getId()}"></td>
+                        <td><button type="submit" name="submit" class="">Edit</button></td>
+
+                    </tr>
+                </form>
+                </c:forEach>
+                </tbody>
+            </table>
+
     </div>
 </div>
+
+
 <div>
 <form action="forwardToAddNote" class="" method="post">
 <input type="hidden" class="" id="tripID" name="tripID" value="${tripInfo.getId()}" >
