@@ -43,7 +43,7 @@ public class NoteDaoTest {
         assertEquals("2021 Fall Colour Tour St.", retrievedNote.getDescription());
         assertEquals(1, retrievedNote.getTrip().getId());
     }
-// TODO LOGS
+
     /**
      * Verifies getAll notes successfully runs
      */

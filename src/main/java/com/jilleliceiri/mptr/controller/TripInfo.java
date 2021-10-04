@@ -1,5 +1,7 @@
 package com.jilleliceiri.mptr.controller;
 
+import com.jilleliceiri.mptr.entity.Destination;
+import com.jilleliceiri.mptr.entity.Note;
 import com.jilleliceiri.mptr.entity.Trip;
 import com.jilleliceiri.mptr.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -12,6 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A servlet to add a trip
@@ -30,17 +34,21 @@ public class TripInfo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
+        // get the tripID, turn it into a trip, and send it to the TripInfo jsp
         GenericDao genericDao = new GenericDao(Trip.class);
-        //Trip newTrip = tripDao.getById(req.getParameter("tripID"));
+
         int id = (Integer.parseInt(req.getParameter("tripID")));
-        //Trip getTrip = tripDao.getById(Integer.parseInt(req.getParameter("tripID")));
         logger.debug("Getting Trip ID: {}", id);
-        System.out.println(id);
-        // get destination set and send it?
-        req.setAttribute("tripInfo", genericDao.getById(id));
+        Trip tripInfo = new Trip();
+        tripInfo = (Trip)genericDao.getById(id);
+        req.setAttribute("tripInfo", tripInfo);
+        List<Note> notes = new ArrayList(tripInfo.getNoteSet());
+        List<Destination> destinations = new ArrayList(tripInfo.getDestinationSet());
+        // THIS WORKS req.setAttribute("tripInfo", genericDao.getById(id));
         // TODO get destination set and setAttribute on request so that the tripInfo can iterate over the destinations
-        // TODO will need to finish destination entity and dao/generic dao
+        req.setAttribute("noteSet", notes);
+        req.setAttribute("destinationSet", destinations);
+
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/tripInfo.jsp");
         dispatcher.forward(req, resp);

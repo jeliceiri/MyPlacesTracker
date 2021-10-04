@@ -17,23 +17,25 @@ import java.io.IOException;
  */
 
 @WebServlet(
-        urlPatterns = {"/addTrip"}
+        urlPatterns = {"/forwardToAddNote"}
 )
 
 // TODO write property loader interface like adv java
 
-public class AddTrip extends HttpServlet {
+public class ForwardToAddNote extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        // TODO work on this class
+        // get the tripID, turn it into a trip, and send it to the AddNoteJSP
         GenericDao genericDao = new GenericDao(Trip.class);
-        // TODO use generic dao
-        Trip newTrip = new Trip(req.getParameter("addTrip"));
-
-        int id = genericDao.insert(newTrip);
-        req.setAttribute("trips", genericDao.getAll());
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/trips.jsp");
+        int id = (Integer.parseInt(req.getParameter("tripID")));
+        Trip trip = new Trip();
+        trip = (Trip)genericDao.getById(id);
+        req.setAttribute("trip", trip);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/addNote.jsp");
         dispatcher.forward(req, resp);
+
     }
 }
+

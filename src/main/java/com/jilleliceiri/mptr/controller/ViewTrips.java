@@ -29,12 +29,6 @@ public class ViewTrips extends HttpServlet {
 
         req.setAttribute("trips", genericDao.getAll());
 
-        /*
-        if (newTripName != null){
-            req.setAttribute("trips", tripDao.insertTrip(newTripName));
-        } req.setAttribute("trips", tripDao.getAll());
-        */
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/trips.jsp");
         dispatcher.forward(req, resp);
     }

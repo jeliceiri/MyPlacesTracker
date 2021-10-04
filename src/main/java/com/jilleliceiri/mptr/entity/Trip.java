@@ -133,6 +133,24 @@ public class Trip {
     }
 
     /**
+     * Gets note set.
+     *
+     * @return the note set
+     */
+    public Set<Note> getNoteSet() {
+        return noteSet;
+    }
+
+    /**
+     * Sets note set.
+     *
+     * @param noteSet the note set
+     */
+    public void setNoteSet(Set<Note> noteSet) {
+        this.noteSet = noteSet;
+    }
+
+    /**
      * Add note.
      *
      * @param newNote the new note
