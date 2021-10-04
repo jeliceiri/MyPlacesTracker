@@ -35,18 +35,17 @@ public class EditNote extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao noteDao = new GenericDao(Note.class);
-        int id = (Integer.parseInt(req.getParameter("noteId")));
-        logger.debug("EditNote the id is {}", id );
-        // might remove id
 
         // retrieve note
         Note note = (Note)noteDao.getById(Integer.parseInt(req.getParameter("noteId")));
+        Trip trip;
+        trip = note.getTrip();
+
+        List<Note> notes = new ArrayList(trip.getNoteSet());
+        List<Destination> destinations = new ArrayList(trip.getDestinationSet());
 
         // check if delete or update button was pressed
-        if (req.getParameter("submit").equals("deleteNote")) {
-            noteDao.delete(note);
-        } else {
-
+        if (req.getParameter("submit").equals("editNote")) {
             //Note note = (Note)noteDao.getById(Integer.parseInt(req.getParameter("noteId")));
             String name = req.getParameter("noteName");
             String description = req.getParameter("noteDescription");
@@ -64,16 +63,17 @@ public class EditNote extends HttpServlet {
             note.setDescription(description);
             noteDao.saveOrUpdate(note);
         }
-        // TODO need to think about what to do if this is already deleted!
-        // Get the trip from this note and send its list of notes and destinations to tripsInfo.jsp
-        Trip trip;
-        trip = note.getTrip();
+        if (req.getParameter("submit").equals("deleteNote")) {
+            noteDao.delete(note);
+            // do i need to delete more?
+            notes.remove(note);
+        }
 
-        List<Note> notes = new ArrayList(trip.getNoteSet());
-        List<Destination> destinations = new ArrayList(trip.getDestinationSet());
+        // Send the trip's list of notes and destinations to tripsInfo.jsp
         req.setAttribute("tripInfo", trip);
         req.setAttribute("noteSet", notes);
         req.setAttribute("destinationSet", destinations);
+        logger.debug("The noteSet {}", notes);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/tripInfo.jsp");
         dispatcher.forward(req, resp);
     }

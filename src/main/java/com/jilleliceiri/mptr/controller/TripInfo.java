@@ -34,7 +34,6 @@ public class TripInfo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // TODO check the arraylist names here and somewhere else
         // get the tripID, turn it into a trip, and send it to the TripInfo jsp
         GenericDao genericDao = new GenericDao(Trip.class);
 
@@ -43,16 +42,12 @@ public class TripInfo extends HttpServlet {
         Trip tripInfo = new Trip();
         tripInfo = (Trip)genericDao.getById(id);
         req.setAttribute("tripInfo", tripInfo);
-        // maybe this isn't working - too much info in note array list
         List<Note> notes = new ArrayList(tripInfo.getNoteSet());
         List<Destination> destinations = new ArrayList(tripInfo.getDestinationSet());
-        // THIS WORKS req.setAttribute("tripInfo", genericDao.getById(id));
-        // TODO get destination set and setAttribute on request so that the tripInfo can iterate over the destinations
         logger.debug("The list of notes: {}", notes);
         logger.debug("The list of destinations: {}", destinations);
         req.setAttribute("noteSet", notes);
         req.setAttribute("destinationSet", destinations);
-
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/tripInfo.jsp");
         dispatcher.forward(req, resp);

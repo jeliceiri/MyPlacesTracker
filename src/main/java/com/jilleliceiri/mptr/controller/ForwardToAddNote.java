@@ -26,7 +26,6 @@ public class ForwardToAddNote extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // TODO work on this class
         // get the tripID, turn it into a trip, and send it to the AddNoteJSP
         GenericDao genericDao = new GenericDao(Trip.class);
         int id = (Integer.parseInt(req.getParameter("tripID")));

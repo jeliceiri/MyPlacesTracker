@@ -46,6 +46,7 @@ public class AddNote extends HttpServlet {
         noteDao.insert(newNote);
 
         List<Note> notes = new ArrayList(trip.getNoteSet());
+        notes.add(newNote);
         List<Destination> destinations = new ArrayList(trip.getDestinationSet());
 
         // go back to tripinfo

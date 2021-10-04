@@ -27,7 +27,6 @@ public class AddTrip extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao tripDao = new GenericDao(Trip.class);
-        // TODO use generic dao
         Trip newTrip = new Trip(req.getParameter("addTrip"));
 
         int id = tripDao.insert(newTrip);

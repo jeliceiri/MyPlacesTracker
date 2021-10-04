@@ -2494,3 +2494,498 @@
 [DEBUG] 2021-10-04 13:11:09.079 [http-nio-8080-exec-4] GenericDao - Searching for getById 3
 [DEBUG] 2021-10-04 13:11:09.084 [http-nio-8080-exec-4] TripInfo - The list of notes: []
 [DEBUG] 2021-10-04 13:11:09.084 [http-nio-8080-exec-4] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@723c341f=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@7337c363=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 13:32:36.264 [http-nio-8080-exec-6] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 13:32:48.329 [http-nio-8080-exec-7] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 13:32:48.335 [http-nio-8080-exec-7] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Note@d886cf9=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:32:55.768 [http-nio-8080-exec-8] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 13:32:55.773 [http-nio-8080-exec-8] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Note@1fc5e52c=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:33:06.133 [http-nio-8080-exec-9] ForwardToEditNote - ForwardToEditNote the id is 15
+[DEBUG] 2021-10-04 13:33:06.133 [http-nio-8080-exec-9] GenericDao - Searching for getById 15
+[DEBUG] 2021-10-04 13:33:06.140 [http-nio-8080-exec-9] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@9f6db72=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:38:34.503 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:38:34.638 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@165614f5=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:38:34.683 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:38:34.925 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:38:34.935 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@537ca28e=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:38:34.944 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:38:35.005 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 13:38:35.052 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:38:35.056 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 13:38:35.068 [main] GenericDao - Searching for getById 157
+[DEBUG] 2021-10-04 13:38:35.119 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:38:35.122 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 13:38:35.127 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:38:35.147 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 13:38:35.153 [main] GenericDao - Searching for getById 241
+[DEBUG] 2021-10-04 13:38:35.174 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 13:38:35.177 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@2bdb5e0f=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:38:35.185 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 13:38:35.209 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 13:38:35.214 [main] GenericDao - Searching for getById 242
+[DEBUG] 2021-10-04 13:38:35.236 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 13:38:35.257 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@85ab964=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:38:35.264 [main] GenericDao - Searching for getById 243
+[DEBUG] 2021-10-04 13:39:06.765 [http-nio-8080-exec-10] TripInfo - Getting Trip ID: 9
+[DEBUG] 2021-10-04 13:39:06.766 [http-nio-8080-exec-10] GenericDao - Searching for getById 9
+[DEBUG] 2021-10-04 13:39:06.773 [http-nio-8080-exec-10] TripInfo - The list of notes: [Note{id=10, name='note1', description='note1d', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}, Note{id=9, name='New', description='NewD', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}, Note{id=11, name='note2', description='note2d', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}]
+[DEBUG] 2021-10-04 13:39:06.784 [http-nio-8080-exec-10] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 13:39:13.208 [http-nio-8080-exec-2] ForwardToEditNote - ForwardToEditNote the id is 10
+[DEBUG] 2021-10-04 13:39:13.209 [http-nio-8080-exec-2] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 13:39:13.218 [http-nio-8080-exec-2] ForwardToEditNote - ForwardToEditNote the note is Note{id=10, name='note1', description='note1d', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}
+[DEBUG] 2021-10-04 13:39:29.038 [http-nio-8080-exec-3] EditNote - EditNote the id is 10
+[DEBUG] 2021-10-04 13:39:29.039 [http-nio-8080-exec-3] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 13:39:29.048 [http-nio-8080-exec-3] GenericDao - SaveOrUpdating: Note{id=10, name='note10', description='desc10', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}
+[DEBUG] 2021-10-04 13:39:32.959 [http-nio-8080-exec-4] ForwardToEditNote - ForwardToEditNote the id is 10
+[DEBUG] 2021-10-04 13:39:32.959 [http-nio-8080-exec-4] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 13:39:32.965 [http-nio-8080-exec-4] ForwardToEditNote - ForwardToEditNote the note is Note{id=10, name='note10', description='desc10', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}
+[DEBUG] 2021-10-04 13:39:35.629 [http-nio-8080-exec-5] EditNote - EditNote the id is 10
+[DEBUG] 2021-10-04 13:39:35.629 [http-nio-8080-exec-5] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 13:39:35.637 [http-nio-8080-exec-5] GenericDao - Deleting: Note{id=10, name='note10', description='desc10', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}
+[DEBUG] 2021-10-04 13:39:40.403 [http-nio-8080-exec-6] EditNote - EditNote the id is 10
+[DEBUG] 2021-10-04 13:39:40.403 [http-nio-8080-exec-6] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 13:39:40.406 [http-nio-8080-exec-6] GenericDao - Deleting: null
+[DEBUG] 2021-10-04 13:39:46.991 [http-nio-8080-exec-7] ForwardToEditNote - ForwardToEditNote the id is 10
+[DEBUG] 2021-10-04 13:39:46.991 [http-nio-8080-exec-7] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 13:39:46.994 [http-nio-8080-exec-7] ForwardToEditNote - ForwardToEditNote the note is null
+[DEBUG] 2021-10-04 13:39:51.655 [http-nio-8080-exec-8] TripInfo - Getting Trip ID: 9
+[DEBUG] 2021-10-04 13:39:51.655 [http-nio-8080-exec-8] GenericDao - Searching for getById 9
+[DEBUG] 2021-10-04 13:39:51.663 [http-nio-8080-exec-8] TripInfo - The list of notes: [Note{id=9, name='New', description='NewD', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}, Note{id=11, name='note2', description='note2d', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}]
+[DEBUG] 2021-10-04 13:39:51.663 [http-nio-8080-exec-8] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 13:43:25.960 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:43:26.059 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@40a1b6d4=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:43:26.101 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:43:26.296 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:43:26.304 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@1de7f898=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:43:26.313 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:43:26.361 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 13:43:26.412 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:43:26.417 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 13:43:26.428 [main] GenericDao - Searching for getById 159
+[DEBUG] 2021-10-04 13:43:26.479 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:43:26.483 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 13:43:26.491 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:43:26.525 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 13:43:26.532 [main] GenericDao - Searching for getById 244
+[DEBUG] 2021-10-04 13:43:26.553 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 13:43:26.557 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@451816fd=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:43:26.564 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 13:43:26.587 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 13:43:26.591 [main] GenericDao - Searching for getById 245
+[DEBUG] 2021-10-04 13:43:26.616 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 13:43:26.641 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@561d88ee=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:43:26.651 [main] GenericDao - Searching for getById 246
+[DEBUG] 2021-10-04 13:45:58.433 [http-nio-8080-exec-2] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 13:45:58.434 [http-nio-8080-exec-2] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 13:45:58.449 [http-nio-8080-exec-2] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@67c660cf=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@6b55c36=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@62a6983c=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 13:45:58.467 [http-nio-8080-exec-2] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@4c494bd0=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@523f3374=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 13:46:02.132 [http-nio-8080-exec-3] ForwardToEditNote - ForwardToEditNote the id is 2
+[DEBUG] 2021-10-04 13:46:02.132 [http-nio-8080-exec-3] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:46:02.139 [http-nio-8080-exec-3] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@237d2603=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:46:06.004 [http-nio-8080-exec-4] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:46:06.011 [http-nio-8080-exec-4] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@3db386ef=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 13:46:13.287 [http-nio-8080-exec-5] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:46:21.888 [http-nio-8080-exec-6] TripInfo - Getting Trip ID: 9
+[DEBUG] 2021-10-04 13:46:21.888 [http-nio-8080-exec-6] GenericDao - Searching for getById 9
+[DEBUG] 2021-10-04 13:46:21.892 [http-nio-8080-exec-6] TripInfo - The list of notes: [Note{id=9, name='New', description='NewD', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}, Note{id=11, name='note2', description='note2d', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}]
+[DEBUG] 2021-10-04 13:46:21.892 [http-nio-8080-exec-6] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 13:46:30.176 [http-nio-8080-exec-7] TripInfo - Getting Trip ID: 3
+[DEBUG] 2021-10-04 13:46:30.176 [http-nio-8080-exec-7] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 13:46:30.183 [http-nio-8080-exec-7] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@544e8717=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@6b73cae7=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 13:46:30.186 [http-nio-8080-exec-7] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@543d2c5e=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@6a44f84d=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 13:46:33.218 [http-nio-8080-exec-8] TripInfo - Getting Trip ID: 2
+[DEBUG] 2021-10-04 13:46:33.218 [http-nio-8080-exec-8] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 13:46:33.226 [http-nio-8080-exec-8] TripInfo - The list of notes: [Note{id=13, name='13', description='A', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=12, name='12N', description='12NN', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=5, name='Name5', description='Desc5', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=8, name='8', description='8', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=14, name='Add', description='Add', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}]
+[DEBUG] 2021-10-04 13:46:33.226 [http-nio-8080-exec-8] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 13:46:35.960 [http-nio-8080-exec-9] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 13:46:35.960 [http-nio-8080-exec-9] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 13:46:35.966 [http-nio-8080-exec-9] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@256c28c0=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@1a788193=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 13:46:35.974 [http-nio-8080-exec-9] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@46bacfbd=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@3a1793ed=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:12:53.318 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:12:53.422 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@165614f5=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:12:53.460 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:12:53.656 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:12:53.667 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@35e2b89f=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:12:53.678 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:12:53.726 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:12:53.777 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:12:53.781 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:12:53.793 [main] GenericDao - Searching for getById 161
+[DEBUG] 2021-10-04 15:12:53.845 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:12:53.848 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 15:12:53.856 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:12:53.880 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 15:12:53.887 [main] GenericDao - Searching for getById 247
+[DEBUG] 2021-10-04 15:12:53.909 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:12:53.912 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@2bdb5e0f=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:12:53.920 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:12:53.944 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 15:12:53.948 [main] GenericDao - Searching for getById 248
+[DEBUG] 2021-10-04 15:12:53.968 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:12:53.991 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@12365bd8=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:12:53.996 [main] GenericDao - Searching for getById 249
+[DEBUG] 2021-10-04 15:13:21.705 [http-nio-8080-exec-10] TripInfo - Getting Trip ID: 2
+[DEBUG] 2021-10-04 15:13:21.707 [http-nio-8080-exec-10] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:13:21.716 [http-nio-8080-exec-10] TripInfo - The list of notes: [Note{id=13, name='13', description='A', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=12, name='12N', description='12NN', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=5, name='Name5', description='Desc5', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=8, name='8', description='8', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=14, name='Add', description='Add', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}]
+[DEBUG] 2021-10-04 15:13:21.725 [http-nio-8080-exec-10] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 15:13:25.233 [http-nio-8080-exec-1] ForwardToEditNote - ForwardToEditNote the id is 13
+[DEBUG] 2021-10-04 15:13:25.234 [http-nio-8080-exec-1] GenericDao - Searching for getById 13
+[DEBUG] 2021-10-04 15:13:25.244 [http-nio-8080-exec-1] ForwardToEditNote - ForwardToEditNote the note is Note{id=13, name='13', description='A', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:13:29.677 [http-nio-8080-exec-3] GenericDao - Searching for getById 13
+[DEBUG] 2021-10-04 15:13:29.685 [http-nio-8080-exec-3] GenericDao - SaveOrUpdating: Note{id=13, name='13', description='AA', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:13:37.290 [http-nio-8080-exec-4] ForwardToEditNote - ForwardToEditNote the id is 13
+[DEBUG] 2021-10-04 15:13:37.291 [http-nio-8080-exec-4] GenericDao - Searching for getById 13
+[DEBUG] 2021-10-04 15:13:37.301 [http-nio-8080-exec-4] ForwardToEditNote - ForwardToEditNote the note is Note{id=13, name='13', description='AA', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:13:38.503 [http-nio-8080-exec-5] GenericDao - Searching for getById 13
+[DEBUG] 2021-10-04 15:13:38.510 [http-nio-8080-exec-5] GenericDao - Deleting: Note{id=13, name='13', description='AA', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:13:47.609 [http-nio-8080-exec-6] GenericDao - Searching for getById 13
+[DEBUG] 2021-10-04 15:13:53.634 [http-nio-8080-exec-7] ForwardToEditNote - ForwardToEditNote the id is 13
+[DEBUG] 2021-10-04 15:13:53.634 [http-nio-8080-exec-7] GenericDao - Searching for getById 13
+[DEBUG] 2021-10-04 15:13:53.637 [http-nio-8080-exec-7] ForwardToEditNote - ForwardToEditNote the note is null
+[DEBUG] 2021-10-04 15:13:57.994 [http-nio-8080-exec-8] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 15:13:57.994 [http-nio-8080-exec-8] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:13:58.001 [http-nio-8080-exec-8] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@7560ebb0=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@34dd1a9b=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:13:58.010 [http-nio-8080-exec-8] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@3b9931b9=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@4328803c=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:14:01.546 [http-nio-8080-exec-9] TripInfo - Getting Trip ID: 2
+[DEBUG] 2021-10-04 15:14:01.546 [http-nio-8080-exec-9] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:14:01.554 [http-nio-8080-exec-9] TripInfo - The list of notes: [Note{id=12, name='12N', description='12NN', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=5, name='Name5', description='Desc5', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=8, name='8', description='8', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=14, name='Add', description='Add', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}]
+[DEBUG] 2021-10-04 15:14:01.554 [http-nio-8080-exec-9] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 15:14:05.727 [http-nio-8080-exec-10] TripInfo - Getting Trip ID: 3
+[DEBUG] 2021-10-04 15:14:05.727 [http-nio-8080-exec-10] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:14:05.734 [http-nio-8080-exec-10] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@c6b7e9d=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@66b2324b=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:14:05.737 [http-nio-8080-exec-10] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@3f6c250f=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@377a502=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:14:15.608 [http-nio-8080-exec-1] TripInfo - Getting Trip ID: 9
+[DEBUG] 2021-10-04 15:14:15.608 [http-nio-8080-exec-1] GenericDao - Searching for getById 9
+[DEBUG] 2021-10-04 15:14:15.614 [http-nio-8080-exec-1] TripInfo - The list of notes: [Note{id=9, name='New', description='NewD', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}, Note{id=11, name='note2', description='note2d', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}]
+[DEBUG] 2021-10-04 15:14:15.614 [http-nio-8080-exec-1] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 15:36:46.764 [http-nio-8080-exec-3] ForwardToEditNote - ForwardToEditNote the id is 11
+[DEBUG] 2021-10-04 15:36:46.765 [http-nio-8080-exec-3] GenericDao - Searching for getById 11
+[DEBUG] 2021-10-04 15:36:46.772 [http-nio-8080-exec-3] ForwardToEditNote - ForwardToEditNote the note is Note{id=11, name='note2', description='note2d', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:36:52.274 [http-nio-8080-exec-4] GenericDao - Searching for getById 11
+[DEBUG] 2021-10-04 15:36:52.282 [http-nio-8080-exec-4] GenericDao - SaveOrUpdating: Note{id=11, name='11', description='11', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:36:57.172 [http-nio-8080-exec-5] ForwardToEditNote - ForwardToEditNote the id is 11
+[DEBUG] 2021-10-04 15:36:57.172 [http-nio-8080-exec-5] GenericDao - Searching for getById 11
+[DEBUG] 2021-10-04 15:36:57.178 [http-nio-8080-exec-5] ForwardToEditNote - ForwardToEditNote the note is Note{id=11, name='11', description='11', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:37:00.656 [http-nio-8080-exec-6] GenericDao - Searching for getById 11
+[DEBUG] 2021-10-04 15:37:00.662 [http-nio-8080-exec-6] GenericDao - Deleting: Note{id=11, name='11', description='11', trip=Trip{id=9, name='New Trip 10-3-2021', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:39:06.373 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:39:06.485 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@2b79c8ff=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:39:06.528 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:39:06.793 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:39:06.803 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@63db743d=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:39:06.812 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:39:06.869 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:39:06.911 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:39:06.915 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:39:06.926 [main] GenericDao - Searching for getById 163
+[DEBUG] 2021-10-04 15:39:06.966 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:39:06.970 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 15:39:06.977 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:39:06.996 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 15:39:07.002 [main] GenericDao - Searching for getById 250
+[DEBUG] 2021-10-04 15:39:07.026 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:39:07.030 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@45cd8607=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:39:07.037 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:39:07.061 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 15:39:07.068 [main] GenericDao - Searching for getById 251
+[DEBUG] 2021-10-04 15:39:07.091 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:39:07.115 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@44384b4a=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:39:07.121 [main] GenericDao - Searching for getById 252
+[DEBUG] 2021-10-04 15:40:36.975 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:40:37.179 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@165614f5=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:40:37.233 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:40:37.622 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:40:37.634 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@35e2b89f=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:40:37.649 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:40:37.736 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:40:37.797 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:40:37.802 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:40:37.821 [main] GenericDao - Searching for getById 165
+[DEBUG] 2021-10-04 15:40:37.905 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:40:37.913 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 15:40:37.923 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:40:37.974 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 15:40:37.985 [main] GenericDao - Searching for getById 253
+[DEBUG] 2021-10-04 15:40:38.037 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:40:38.046 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@2bdb5e0f=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:40:38.055 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:40:38.095 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 15:40:38.103 [main] GenericDao - Searching for getById 254
+[DEBUG] 2021-10-04 15:40:38.143 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:40:38.184 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@49cb5030=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:40:38.192 [main] GenericDao - Searching for getById 255
+[DEBUG] 2021-10-04 15:41:06.661 [http-nio-8080-exec-1] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 15:41:06.663 [http-nio-8080-exec-1] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:41:06.671 [http-nio-8080-exec-1] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@72bc3eda=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@403ee73=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:41:06.688 [http-nio-8080-exec-1] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@341deffb=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@75eaa7c5=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:41:09.980 [http-nio-8080-exec-2] ForwardToEditNote - ForwardToEditNote the id is 4
+[DEBUG] 2021-10-04 15:41:09.980 [http-nio-8080-exec-2] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 15:41:09.987 [http-nio-8080-exec-2] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@43659caf=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:41:14.001 [http-nio-8080-exec-3] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 15:41:14.011 [http-nio-8080-exec-3] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@44868619=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:41:14.056 [http-nio-8080-exec-3] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@44868619=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@189a458e=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:45:04.758 [http-nio-8080-exec-6] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 15:45:04.758 [http-nio-8080-exec-6] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:45:04.763 [http-nio-8080-exec-6] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@60ed20d9=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@462b9a4=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:45:04.766 [http-nio-8080-exec-6] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@5d92e530=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@370d4fd0=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:45:50.141 [http-nio-8080-exec-8] ForwardToEditNote - ForwardToEditNote the id is 3
+[DEBUG] 2021-10-04 15:45:50.141 [http-nio-8080-exec-8] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:45:50.149 [http-nio-8080-exec-8] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@7a7712e0=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:45:53.199 [http-nio-8080-exec-9] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:45:53.204 [http-nio-8080-exec-9] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@436814ac=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:45:53.213 [http-nio-8080-exec-9] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@436814ac=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@342a5330=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:49:24.404 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:49:24.506 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@40a1b6d4=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:49:24.545 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:49:24.747 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:49:24.755 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@6b6def36=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:49:24.766 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:49:24.826 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:49:24.879 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:49:24.884 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 15:49:24.896 [main] GenericDao - Searching for getById 167
+[DEBUG] 2021-10-04 15:49:24.946 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:49:24.951 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 15:49:24.958 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 15:49:24.994 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 15:49:25.002 [main] GenericDao - Searching for getById 256
+[DEBUG] 2021-10-04 15:49:25.054 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:49:25.059 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@45cd8607=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:49:25.069 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:49:25.100 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 15:49:25.105 [main] GenericDao - Searching for getById 257
+[DEBUG] 2021-10-04 15:49:25.135 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:49:25.169 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@44384b4a=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:49:25.179 [main] GenericDao - Searching for getById 258
+[DEBUG] 2021-10-04 15:49:54.319 [http-nio-8080-exec-1] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 15:49:54.322 [http-nio-8080-exec-1] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:49:54.333 [http-nio-8080-exec-1] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@91dde8a=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@398d6bd2=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:49:54.350 [http-nio-8080-exec-1] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@3a6182d1=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@ba21335=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:49:56.235 [http-nio-8080-exec-2] ForwardToEditNote - ForwardToEditNote the id is 3
+[DEBUG] 2021-10-04 15:49:56.235 [http-nio-8080-exec-2] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:49:56.244 [http-nio-8080-exec-2] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@40f075f8=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:50:00.084 [http-nio-8080-exec-3] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:50:00.092 [http-nio-8080-exec-3] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@59ac5f1=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:50:00.140 [http-nio-8080-exec-3] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@59ac5f1=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@624d8298=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:50:02.600 [http-nio-8080-exec-5] ForwardToEditNote - ForwardToEditNote the id is 3
+[DEBUG] 2021-10-04 15:50:02.600 [http-nio-8080-exec-5] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:50:02.611 [http-nio-8080-exec-5] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@5f36ee46=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:50:03.835 [http-nio-8080-exec-6] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:50:03.842 [http-nio-8080-exec-6] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@6b58d2fc=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:50:03.862 [http-nio-8080-exec-6] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@6b58d2fc=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@4538dfd4=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:51:44.824 [http-nio-8080-exec-8] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:51:54.718 [http-nio-8080-exec-9] ForwardToEditNote - ForwardToEditNote the id is 3
+[DEBUG] 2021-10-04 15:51:54.719 [http-nio-8080-exec-9] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 15:51:54.721 [http-nio-8080-exec-9] ForwardToEditNote - ForwardToEditNote the note is null
+[DEBUG] 2021-10-04 15:51:58.845 [http-nio-8080-exec-10] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 15:51:58.845 [http-nio-8080-exec-10] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:51:58.852 [http-nio-8080-exec-10] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@79b3fdd6=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:51:58.857 [http-nio-8080-exec-10] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@2f2e58d6=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@6f7c1d87=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:52:45.221 [http-nio-8080-exec-2] ForwardToEditNote - ForwardToEditNote the id is 4
+[DEBUG] 2021-10-04 15:52:45.221 [http-nio-8080-exec-2] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 15:52:45.227 [http-nio-8080-exec-2] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@71e15cf5=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:52:52.576 [http-nio-8080-exec-3] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 15:52:52.584 [http-nio-8080-exec-3] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@125271ec=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:52:52.594 [http-nio-8080-exec-3] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@125271ec=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 15:52:57.332 [http-nio-8080-exec-4] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:53:03.201 [http-nio-8080-exec-5] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:53:03.208 [http-nio-8080-exec-5] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Note@487ea1c9=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 15:53:10.563 [http-nio-8080-exec-6] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 15:53:10.569 [http-nio-8080-exec-6] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Note@4f6ca7b4=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:07.670 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:02:07.774 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@165614f5=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:07.814 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:02:08.007 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:02:08.014 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@537ca28e=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:08.022 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:02:08.079 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:02:08.127 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:02:08.131 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 16:02:08.144 [main] GenericDao - Searching for getById 169
+[DEBUG] 2021-10-04 16:02:08.190 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:02:08.193 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 16:02:08.201 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:02:08.225 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 16:02:08.232 [main] GenericDao - Searching for getById 259
+[DEBUG] 2021-10-04 16:02:08.254 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 16:02:08.258 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@3a588b5f=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:08.264 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 16:02:08.286 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 16:02:08.291 [main] GenericDao - Searching for getById 260
+[DEBUG] 2021-10-04 16:02:08.312 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:02:08.340 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@61d2f267=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:08.349 [main] GenericDao - Searching for getById 261
+[DEBUG] 2021-10-04 16:02:37.266 [http-nio-8080-exec-10] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 16:02:37.268 [http-nio-8080-exec-10] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:02:37.277 [http-nio-8080-exec-10] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@27335d80=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@3f2ed163=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@4cafad09=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:02:37.301 [http-nio-8080-exec-10] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@146af7ec=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@581e6e24=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:02:39.360 [http-nio-8080-exec-1] ForwardToEditNote - ForwardToEditNote the id is 4
+[DEBUG] 2021-10-04 16:02:39.361 [http-nio-8080-exec-1] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 16:02:39.370 [http-nio-8080-exec-1] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@1b2a898a=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:45.854 [http-nio-8080-exec-3] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 16:02:45.863 [http-nio-8080-exec-3] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@5539de50=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:45.906 [http-nio-8080-exec-3] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@5539de50=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@c34a89b=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@32d730c0=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:02:47.752 [http-nio-8080-exec-4] ForwardToEditNote - ForwardToEditNote the id is 4
+[DEBUG] 2021-10-04 16:02:47.752 [http-nio-8080-exec-4] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 16:02:47.762 [http-nio-8080-exec-4] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@6396286f=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:48.947 [http-nio-8080-exec-5] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 16:02:48.956 [http-nio-8080-exec-5] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@65bfc0e7=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:48.979 [http-nio-8080-exec-5] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@5637ef8e=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@20eb3250=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:02:54.134 [http-nio-8080-exec-6] ForwardToEditNote - ForwardToEditNote the id is 18
+[DEBUG] 2021-10-04 16:02:54.134 [http-nio-8080-exec-6] GenericDao - Searching for getById 18
+[DEBUG] 2021-10-04 16:02:54.140 [http-nio-8080-exec-6] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@740e4dd6=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:59.077 [http-nio-8080-exec-7] GenericDao - Searching for getById 18
+[DEBUG] 2021-10-04 16:02:59.087 [http-nio-8080-exec-7] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@355b478d=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:02:59.098 [http-nio-8080-exec-7] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@355b478d=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@65997348=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:03:00.683 [http-nio-8080-exec-8] ForwardToEditNote - ForwardToEditNote the id is 17
+[DEBUG] 2021-10-04 16:03:00.683 [http-nio-8080-exec-8] GenericDao - Searching for getById 17
+[DEBUG] 2021-10-04 16:03:00.691 [http-nio-8080-exec-8] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@67bfca56=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:03:06.805 [http-nio-8080-exec-9] GenericDao - Searching for getById 17
+[DEBUG] 2021-10-04 16:03:06.815 [http-nio-8080-exec-9] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@262b4d55=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:03:06.826 [http-nio-8080-exec-9] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@262b4d55=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@432d27f5=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:03:24.194 [http-nio-8080-exec-10] ForwardToEditNote - ForwardToEditNote the id is 17
+[DEBUG] 2021-10-04 16:03:24.194 [http-nio-8080-exec-10] GenericDao - Searching for getById 17
+[DEBUG] 2021-10-04 16:03:24.201 [http-nio-8080-exec-10] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@1aae025e=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:03:26.016 [http-nio-8080-exec-1] GenericDao - Searching for getById 17
+[DEBUG] 2021-10-04 16:03:26.022 [http-nio-8080-exec-1] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@7cb7d9e7=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:03:26.029 [http-nio-8080-exec-1] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@53f545c0=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:32:48.362 [http-nio-8080-exec-3] ForwardToEditNote - ForwardToEditNote the id is 17
+[DEBUG] 2021-10-04 16:32:48.367 [http-nio-8080-exec-3] GenericDao - Searching for getById 17
+[DEBUG] 2021-10-04 16:32:48.370 [http-nio-8080-exec-3] ForwardToEditNote - ForwardToEditNote the note is null
+[DEBUG] 2021-10-04 16:32:52.186 [http-nio-8080-exec-4] GenericDao - Searching for getById 18
+[DEBUG] 2021-10-04 16:32:52.190 [http-nio-8080-exec-4] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@90398c6=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:32:52.197 [http-nio-8080-exec-4] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@90398c6=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:32:55.916 [http-nio-8080-exec-5] ForwardToEditNote - ForwardToEditNote the id is 18
+[DEBUG] 2021-10-04 16:32:55.916 [http-nio-8080-exec-5] GenericDao - Searching for getById 18
+[DEBUG] 2021-10-04 16:32:55.924 [http-nio-8080-exec-5] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@2a08423d=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:32:59.841 [http-nio-8080-exec-6] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 16:33:03.931 [http-nio-8080-exec-7] ForwardToEditNote - ForwardToEditNote the id is 4
+[DEBUG] 2021-10-04 16:33:03.932 [http-nio-8080-exec-7] GenericDao - Searching for getById 4
+[DEBUG] 2021-10-04 16:33:03.934 [http-nio-8080-exec-7] ForwardToEditNote - ForwardToEditNote the note is null
+[DEBUG] 2021-10-04 16:35:02.651 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:35:02.765 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@40a1b6d4=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:35:02.808 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:35:03.027 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:35:03.035 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@63db743d=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:35:03.043 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:35:03.087 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:35:03.128 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:35:03.131 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 16:35:03.144 [main] GenericDao - Searching for getById 171
+[DEBUG] 2021-10-04 16:35:03.191 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:35:03.196 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 16:35:03.204 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:35:03.238 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 16:35:03.247 [main] GenericDao - Searching for getById 262
+[DEBUG] 2021-10-04 16:35:03.274 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 16:35:03.281 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@45cd8607=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:35:03.289 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 16:35:03.313 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 16:35:03.318 [main] GenericDao - Searching for getById 263
+[DEBUG] 2021-10-04 16:35:03.341 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:35:03.364 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@5f883d90=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:35:03.372 [main] GenericDao - Searching for getById 264
+[DEBUG] 2021-10-04 16:35:45.085 [http-nio-8080-exec-2] GenericDao - Inserting: Trip{id=0, name='AddTripName', destinationSet=[]}
+[DEBUG] 2021-10-04 16:35:47.684 [http-nio-8080-exec-3] TripInfo - Getting Trip ID: 10
+[DEBUG] 2021-10-04 16:35:47.685 [http-nio-8080-exec-3] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 16:35:47.693 [http-nio-8080-exec-3] TripInfo - The list of notes: []
+[DEBUG] 2021-10-04 16:35:47.693 [http-nio-8080-exec-3] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 16:35:54.473 [http-nio-8080-exec-4] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 16:36:07.152 [http-nio-8080-exec-5] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 16:36:07.158 [http-nio-8080-exec-5] GenericDao - Inserting: Note{id=0, name='AddNoteName', description='AddDesc', trip=Trip{id=10, name='AddTripName', destinationSet=[]}}
+[DEBUG] 2021-10-04 16:36:17.238 [http-nio-8080-exec-7] TripInfo - Getting Trip ID: 10
+[DEBUG] 2021-10-04 16:36:17.238 [http-nio-8080-exec-7] GenericDao - Searching for getById 10
+[DEBUG] 2021-10-04 16:36:17.243 [http-nio-8080-exec-7] TripInfo - The list of notes: [Note{id=19, name='AddNoteName', description='AddDesc', trip=Trip{id=10, name='AddTripName', destinationSet=[]}}]
+[DEBUG] 2021-10-04 16:36:17.244 [http-nio-8080-exec-7] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 16:38:53.387 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:38:53.516 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@165614f5=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:38:53.573 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:38:53.843 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:38:53.851 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@4c063cb9=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:38:53.860 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:38:53.915 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:38:53.958 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:38:53.963 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 16:38:53.975 [main] GenericDao - Searching for getById 173
+[DEBUG] 2021-10-04 16:38:54.027 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:38:54.031 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 16:38:54.039 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:38:54.074 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 16:38:54.083 [main] GenericDao - Searching for getById 265
+[DEBUG] 2021-10-04 16:38:54.107 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 16:38:54.111 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@3a588b5f=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:38:54.117 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 16:38:54.143 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 16:38:54.147 [main] GenericDao - Searching for getById 266
+[DEBUG] 2021-10-04 16:38:54.170 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:38:54.196 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@49cb5030=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:38:54.214 [main] GenericDao - Searching for getById 267
+[DEBUG] 2021-10-04 16:39:23.692 [http-nio-8080-exec-1] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 16:39:23.694 [http-nio-8080-exec-1] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:39:23.703 [http-nio-8080-exec-1] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@1b62bd80=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:39:23.715 [http-nio-8080-exec-1] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@2bf11399=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@6fb4ac4d=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:39:27.052 [http-nio-8080-exec-2] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:39:32.027 [http-nio-8080-exec-4] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:39:32.032 [http-nio-8080-exec-4] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Note@4e035f3c=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:39:39.269 [http-nio-8080-exec-6] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 16:39:39.270 [http-nio-8080-exec-6] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:39:39.277 [http-nio-8080-exec-6] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@4df8a197=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@55ed6e27=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:39:39.280 [http-nio-8080-exec-6] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@4595d7c0=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@2901c466=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:42:32.343 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:42:32.463 [main] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@40a1b6d4=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:42:32.500 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:42:32.722 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:42:32.729 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@63db743d=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:42:32.737 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:42:32.805 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:42:32.860 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:42:32.865 [main] GenericDao - Inserting: Note{id=0, name='insert New Note', description='description', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}
+[DEBUG] 2021-10-04 16:42:32.876 [main] GenericDao - Searching for getById 175
+[DEBUG] 2021-10-04 16:42:32.912 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:42:32.915 [main] GenericDao - Deleting: Trip{id=2, name='Winter Break', destinationSet=[]}
+[DEBUG] 2021-10-04 16:42:32.924 [main] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:42:32.946 [main] GenericDao - Inserting: Trip{id=0, name='New Trip', destinationSet=[]}
+[DEBUG] 2021-10-04 16:42:32.952 [main] GenericDao - Searching for getById 268
+[DEBUG] 2021-10-04 16:42:32.974 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 16:42:32.978 [main] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Trip@45cd8607=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:42:32.985 [main] GenericDao - Searching for getById 3
+[DEBUG] 2021-10-04 16:42:33.008 [main] GenericDao - Inserting: Trip{id=0, name='Northern Summer', destinationSet=[]}
+[DEBUG] 2021-10-04 16:42:33.012 [main] GenericDao - Searching for getById 269
+[DEBUG] 2021-10-04 16:42:33.034 [main] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:42:33.062 [main] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Trip@4239262e=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:42:33.068 [main] GenericDao - Searching for getById 270
+[DEBUG] 2021-10-04 16:43:01.183 [http-nio-8080-exec-1] TripInfo - Getting Trip ID: 1
+[DEBUG] 2021-10-04 16:43:01.184 [http-nio-8080-exec-1] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:43:01.191 [http-nio-8080-exec-1] TripInfo - The list of notes: [[!!!com.jilleliceiri.mptr.entity.Note@239b3ae5=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@1849a5d3=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:43:01.207 [http-nio-8080-exec-1] TripInfo - The list of destinations: [[!!!com.jilleliceiri.mptr.entity.Destination@ae09cc6=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Destination@6f4530e9=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:43:03.454 [http-nio-8080-exec-2] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:43:10.193 [http-nio-8080-exec-3] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:43:10.201 [http-nio-8080-exec-3] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Note@462e943d=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:43:13.197 [http-nio-8080-exec-5] ForwardToEditNote - ForwardToEditNote the id is 21
+[DEBUG] 2021-10-04 16:43:13.197 [http-nio-8080-exec-5] GenericDao - Searching for getById 21
+[DEBUG] 2021-10-04 16:43:13.203 [http-nio-8080-exec-5] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@5c99149d=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:43:27.020 [http-nio-8080-exec-6] GenericDao - Searching for getById 21
+[DEBUG] 2021-10-04 16:43:27.032 [http-nio-8080-exec-6] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@19aa3873=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:43:27.060 [http-nio-8080-exec-6] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@51224631=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@19aa3873=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@5bd49ec=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:43:31.012 [http-nio-8080-exec-7] ForwardToEditNote - ForwardToEditNote the id is 18
+[DEBUG] 2021-10-04 16:43:31.012 [http-nio-8080-exec-7] GenericDao - Searching for getById 18
+[DEBUG] 2021-10-04 16:43:31.021 [http-nio-8080-exec-7] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@40c83a78=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:43:36.989 [http-nio-8080-exec-8] GenericDao - Searching for getById 18
+[DEBUG] 2021-10-04 16:43:37.001 [http-nio-8080-exec-8] GenericDao - SaveOrUpdating: [!!!com.jilleliceiri.mptr.entity.Note@b3e470e=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:43:37.010 [http-nio-8080-exec-8] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@ff49043=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@4a5f65fe=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@b3e470e=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:43:38.868 [http-nio-8080-exec-9] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:43:45.192 [http-nio-8080-exec-10] GenericDao - Searching for getById 1
+[DEBUG] 2021-10-04 16:43:45.202 [http-nio-8080-exec-10] GenericDao - Inserting: [!!!com.jilleliceiri.mptr.entity.Note@9a50d1a=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:43:49.087 [http-nio-8080-exec-1] ForwardToEditNote - ForwardToEditNote the id is 22
+[DEBUG] 2021-10-04 16:43:49.087 [http-nio-8080-exec-1] GenericDao - Searching for getById 22
+[DEBUG] 2021-10-04 16:43:49.094 [http-nio-8080-exec-1] ForwardToEditNote - ForwardToEditNote the note is [!!!com.jilleliceiri.mptr.entity.Note@476172ea=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:43:51.559 [http-nio-8080-exec-2] GenericDao - Searching for getById 22
+[DEBUG] 2021-10-04 16:43:51.570 [http-nio-8080-exec-2] GenericDao - Deleting: [!!!com.jilleliceiri.mptr.entity.Note@6191f68a=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-10-04 16:43:51.596 [http-nio-8080-exec-2] EditNote - The noteSet [[!!!com.jilleliceiri.mptr.entity.Note@4844824c=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@4e1bcee5=>java.lang.StackOverflowError:null!!!], [!!!com.jilleliceiri.mptr.entity.Note@27085668=>java.lang.StackOverflowError:null!!!]]
+[DEBUG] 2021-10-04 16:44:22.121 [http-nio-8080-exec-5] TripInfo - Getting Trip ID: 2
+[DEBUG] 2021-10-04 16:44:22.121 [http-nio-8080-exec-5] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:44:22.128 [http-nio-8080-exec-5] TripInfo - The list of notes: [Note{id=12, name='12N', description='12NN', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=5, name='Name5', description='Desc5', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=8, name='8', description='8', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=14, name='Add', description='Add', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}]
+[DEBUG] 2021-10-04 16:44:22.128 [http-nio-8080-exec-5] TripInfo - The list of destinations: []
+[DEBUG] 2021-10-04 16:44:46.646 [http-nio-8080-exec-7] TripInfo - Getting Trip ID: 2
+[DEBUG] 2021-10-04 16:44:46.647 [http-nio-8080-exec-7] GenericDao - Searching for getById 2
+[DEBUG] 2021-10-04 16:44:46.653 [http-nio-8080-exec-7] TripInfo - The list of notes: [Note{id=12, name='12N', description='12NN', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=5, name='Name5', description='Desc5', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=8, name='8', description='8', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}, Note{id=14, name='Add', description='Add', trip=Trip{id=2, name='Winter Break', destinationSet=[]}}]
+[DEBUG] 2021-10-04 16:44:46.653 [http-nio-8080-exec-7] TripInfo - The list of destinations: []

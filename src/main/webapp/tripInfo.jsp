@@ -58,5 +58,6 @@
 <button type="submit" name="submit" class="">Add Travel Note</button>
 </form>
 </div>
+<a href="index.jsp">Trips</a>
 </body>
 </html>
