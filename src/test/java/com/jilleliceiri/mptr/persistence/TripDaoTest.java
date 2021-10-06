@@ -24,6 +24,7 @@ class TripDaoTest {
      * The Generic dao.
      */
     GenericDao tripDao;
+    GenericDao noteDao;
     private final Logger logger = LogManager.getLogger(this.getClass());
     /**
      * The Session factory.
@@ -36,6 +37,7 @@ class TripDaoTest {
     @BeforeEach
     void setUp() {
         tripDao = new GenericDao(Trip.class);
+        noteDao = new GenericDao(Note.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -63,8 +65,12 @@ class TripDaoTest {
      */
     @Test
     void deleteSuccess(){
-        tripDao.delete(tripDao.getById(2));
-        assertNull(tripDao.getById(2));
+        tripDao.delete(tripDao.getById(1));
+        assertNull(tripDao.getById(1));
+
+        // check that this notes are deleted also
+        assertNull(noteDao.getById(1));
+        assertNull(noteDao.getById(2));
     }
 
     /**

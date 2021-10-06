@@ -1,12 +1,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@include file="head.jsp"%>
+<c:set var="title" value="Trip Info" />
+
+<script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('#noteTable').DataTable();
+        } );
+</script>
+
 <html>
 <body>
-<h1>${tripInfo.getName()} Info</h1>
+<h1>${tripInfo.getName()}</h1>
 <h2>Destinations</h2>
 <div class="">
     <form action="tripInfo" class="" method="post">
-        <table class="table">
+        <table class="table" id="">
             <thead>
             <th>City</th>
             <th>Placehoder</th>
@@ -23,7 +32,7 @@
     </form>
     <div class="">
         <h2>Travel Notes </h2>
-            <table class="table">
+            <table class="table" id="noteTable">
                 <thead>
 
 

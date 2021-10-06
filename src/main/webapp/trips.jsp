@@ -1,11 +1,20 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@include file="head.jsp"%>
+<c:set var="title" value="Trips" />
+
+<script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('#tripsTable').DataTable();
+    } );
+</script>
+
 <html>
 <body>
 <h1>View Trips</h1>
 <div class="">
 
-    <table class="table">
+    <table class="table" id="tripsTable">
         <thead>
         <!--
         <tr>

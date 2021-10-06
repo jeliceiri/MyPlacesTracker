@@ -94,7 +94,14 @@ public class NoteDaoTest {
      */
     @Test
     void deleteSuccess(){
+        // retrieve a trip
+        Trip trip = (Trip)tripDao.getById(1);
+        // delete a note attached to the trip
         noteDao.delete(noteDao.getById(2));
         assertNull(noteDao.getById(2));
+        // retrieve the trip again to verify it exists
+        Trip retrievedTrip = (Trip)tripDao.getById(1);
+        assertEquals(trip, retrievedTrip);
+
     }
 }
