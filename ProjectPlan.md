@@ -30,7 +30,7 @@
 - [x] Work on edit travel note user story
 - [x] Add JSP to add travel note
 - [x] Add JSP to edit travel note
-- [ ] Add jquery data table
+- [x] Add jquery data table
 - [x] Build travel note entity and DAO
 - [x] Build servlets to add travel note
 - [x] Build servlets to edit travel note
