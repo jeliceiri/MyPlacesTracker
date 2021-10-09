@@ -35,7 +35,6 @@
             <table class="table" id="noteTable">
                 <thead>
 
-
                 <th>Note Name</th>
                 <th>Note Description</th>
                 <th></th>
@@ -43,14 +42,12 @@
                 </thead>
                 <tbody>
                 <c:forEach var="note" items="${noteSet}">
-                <form action="forwardToEditNote" class="" method="post">
+                <form action="editNoteForm" class="" method="post">
                     <tr>
                         <td>${note.getName()}</td>
                         <td>${note.getDescription()}</td>
-
                         <td><input type="hidden" id="noteId" name="noteId" value="${note.getId()}"></td>
                         <td><button type="submit" name="submit" class="">Edit</button></td>
-
                     </tr>
                 </form>
                 </c:forEach>
@@ -62,7 +59,7 @@
 
 
 <div>
-<form action="forwardToAddNote" class="" method="post">
+<form action="addNoteForm" class="" method="post">
 <input type="hidden" class="" id="tripID" name="tripID" value="${tripInfo.getId()}" >
 <button type="submit" name="submit" class="">Add Travel Note</button>
 </form>

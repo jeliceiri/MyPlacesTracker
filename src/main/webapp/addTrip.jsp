@@ -18,6 +18,5 @@
     </div>
     <button type="submit" name="submit" value="addTrip" class="">Add Trip</button>
 </form>
-
 </body>
 </html>
