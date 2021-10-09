@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A servlet to add a trip
+ * A servlet to edit or delete a note
  * @author pwaite
  */
 
@@ -31,12 +31,11 @@ public class EditNote extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    // TODO
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao noteDao = new GenericDao(Note.class);
 
-        // retrieve note
+        // retrieve note to edit or delete
         Note note = (Note)noteDao.getById(Integer.parseInt(req.getParameter("noteId")));
         Trip trip;
         trip = note.getTrip();
@@ -46,11 +45,11 @@ public class EditNote extends HttpServlet {
 
         // check if delete or update button was pressed
         if (req.getParameter("submit").equals("editNote")) {
-            //Note note = (Note)noteDao.getById(Integer.parseInt(req.getParameter("noteId")));
+
             String name = req.getParameter("noteName");
             String description = req.getParameter("noteDescription");
 
-            // if name or description are empty then get stored values
+            // if name or description are empty then retrieve the previously stored values
             if (name == "") {
                 name = note.getName();
             }
@@ -65,7 +64,6 @@ public class EditNote extends HttpServlet {
         }
         if (req.getParameter("submit").equals("deleteNote")) {
             noteDao.delete(note);
-            // do i need to delete more?
             notes.remove(note);
         }
 

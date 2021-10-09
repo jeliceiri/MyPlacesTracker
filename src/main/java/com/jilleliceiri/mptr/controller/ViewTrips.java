@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A servlet to add a trip
+ * A servlet to get all trips
  * @author pwaite
  */
 
@@ -24,9 +24,7 @@ public class ViewTrips extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        //String newTripName = req.getParameter("newTripName");
         GenericDao genericDao = new GenericDao(Trip.class);
-
         req.setAttribute("trips", genericDao.getAll());
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/trips.jsp");

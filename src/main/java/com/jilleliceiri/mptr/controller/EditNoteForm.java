@@ -20,10 +20,10 @@ import java.io.IOException;
  */
 
 @WebServlet(
-        urlPatterns = {"/noteToEditForm"}
+        urlPatterns = {"/editNoteForm"}
 )
 
-public class NoteForm extends HttpServlet {
+public class EditNoteForm extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

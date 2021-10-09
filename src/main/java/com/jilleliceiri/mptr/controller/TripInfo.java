@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A servlet to add a trip
+ * A servlet to view info about a trip
  * @author pwaite
  */
 
@@ -52,6 +52,4 @@ public class TripInfo extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/tripInfo.jsp");
         dispatcher.forward(req, resp);
     }
-
-
 }

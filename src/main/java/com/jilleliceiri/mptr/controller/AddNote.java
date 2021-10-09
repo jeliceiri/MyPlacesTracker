@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * A servlet to add a note
- * @author pwaite
+ * @author jeliceiri
  */
 
 @WebServlet(
@@ -29,10 +29,10 @@ public class AddNote extends HttpServlet {
     @Override
     protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // get the id of the trip and the note information to add a new note
         GenericDao noteDao = new GenericDao(Note.class);
         GenericDao tripDao = new GenericDao(Trip.class);
 
+        // get the id of the trip and the note information to add a new note
         String noteName = req.getParameter("noteName");
         String noteDescription = req.getParameter("noteDescription");
         int id = (Integer.parseInt(req.getParameter("tripID")));
@@ -45,11 +45,10 @@ public class AddNote extends HttpServlet {
         Note newNote = new Note(noteName, noteDescription, trip);
         noteDao.insert(newNote);
 
+        // get list of notes and destinations to send back to trip info page
         List<Note> notes = new ArrayList(trip.getNoteSet());
         notes.add(newNote);
         List<Destination> destinations = new ArrayList(trip.getDestinationSet());
-
-        // go back to tripinfo
         req.setAttribute("tripInfo", trip);
         req.setAttribute("noteSet", notes);
         req.setAttribute("destinationSet", destinations);

@@ -13,14 +13,12 @@ import java.io.IOException;
 
 /**
  * A servlet to add a trip
- * @author pwaite
+ *
+ * @author jeliceiri
  */
-
 @WebServlet(
         urlPatterns = {"/addTrip"}
 )
-
-// TODO write property loader interface like adv java
 
 public class AddTrip extends HttpServlet {
     @Override
@@ -28,7 +26,6 @@ public class AddTrip extends HttpServlet {
 
         GenericDao tripDao = new GenericDao(Trip.class);
         Trip newTrip = new Trip(req.getParameter("addTrip"));
-
         int id = tripDao.insert(newTrip);
         req.setAttribute("trips", tripDao.getAll());
 
