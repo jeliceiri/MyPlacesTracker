@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A servlet to get all trips
+ * A servlet to retrieve all trips to view
  * @author pwaite
  */
 

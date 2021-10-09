@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A servlet to view info about a trip
+ * A servlet to view info about a trip - its destinations and notes
  * @author pwaite
  */
 
