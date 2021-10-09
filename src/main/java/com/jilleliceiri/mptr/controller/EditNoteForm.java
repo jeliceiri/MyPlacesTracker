@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A servlet to forward a note to the edit note servlet
+ * A servlet to retrieve specified note and send it to the Edit Note Form
  * @author pwaite
  */
 
@@ -28,7 +28,7 @@ public class EditNoteForm extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // get the noteId, retrieve note, and send it to the editNote jsp
+        // get the noteId, retrieve the specified note, and send it to the Edit Note form
         GenericDao noteDao = new GenericDao(Note.class);
         int id = (Integer.parseInt(req.getParameter("noteId")));
         logger.debug("ForwardToEditNote the id is {}", id );

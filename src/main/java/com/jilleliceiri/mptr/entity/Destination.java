@@ -12,8 +12,8 @@ import javax.persistence.*;
 public class Destination {
 
     // TODO add new instance variables: zip code, hospital capacity, fips code
-    // TODO add DestinationDao tests, add generic dao,
-    // TODO will need another dao test on entity for delete?
+    // TODO add DestinationDao tests
+    // TODO will need another dao test on entity for delete
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")

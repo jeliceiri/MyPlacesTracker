@@ -12,8 +12,6 @@ import java.util.Objects;
 @Table(name = "notes")
 public class Note {
 
-    //TODO toString redo
-    // mapping not working for testDao
     /**
      * Instantiates a new Note.
      */

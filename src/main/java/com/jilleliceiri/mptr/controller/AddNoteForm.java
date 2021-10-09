@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A servlet to forward the trip id to add note
+ * A servlet to retrieve specified trip and send it to the Add Note Form
  * @author pwaite
  */
 
@@ -24,7 +24,7 @@ public class AddNoteForm extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // get the tripID, turn it into a trip, and send it to the AddNoteJSP
+        // get the tripID, turn it into a trip, and send it to the Add Note Form
         GenericDao genericDao = new GenericDao(Trip.class);
         int id = (Integer.parseInt(req.getParameter("tripID")));
         Trip trip = new Trip();
