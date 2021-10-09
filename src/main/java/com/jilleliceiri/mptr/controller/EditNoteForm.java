@@ -15,17 +15,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A servlet to add a trip
+ * A servlet to forward a note to the edit note servlet
  * @author pwaite
  */
 
 @WebServlet(
-        urlPatterns = {"/forwardToEditNote"}
+        urlPatterns = {"/noteToEditForm"}
 )
 
-// TODO write property loader interface like adv java
-
-public class ForwardToEditNote extends HttpServlet {
+public class NoteForm extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

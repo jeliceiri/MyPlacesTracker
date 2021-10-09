@@ -12,17 +12,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A servlet to add a trip
+ * A servlet to forward the trip id to add note
  * @author pwaite
  */
 
 @WebServlet(
-        urlPatterns = {"/forwardToAddNote"}
+        urlPatterns = {"/addNoteToTripForm"}
 )
 
-// TODO write property loader interface like adv java
-
-public class ForwardToAddNote extends HttpServlet {
+public class AddNoteToTripForm extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -34,7 +32,6 @@ public class ForwardToAddNote extends HttpServlet {
         req.setAttribute("trip", trip);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/addNote.jsp");
         dispatcher.forward(req, resp);
-
     }
 }
 
