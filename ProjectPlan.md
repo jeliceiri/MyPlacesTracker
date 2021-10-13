@@ -11,7 +11,7 @@
 
 ##  Week 4
 - [X] Create Project Plan
-- [ ] Create Application Flow Design Document
+- [x] Create Application Flow Design Document
 - [x] Build initial database with trip table 
 - [x] Build Trip entity and data access object (DAO)
 - [x] Build servlet to view trips
@@ -38,16 +38,14 @@
 - [x] Weekly Time Log
 
 ##  Week 6
-- [ ] Work on add destination user story
-- [ ] Add JSP to add destination
-- [ ] Build servelt to add destination
-- [ ] Build destination entity and DAO
-- [ ] Build JUnit5 tests for destination DAO
-- [ ] Complete Code Reviews with 2 other peers
-- [ ] Complete Professional Development Presentation Review 
-- [ ] Set up AWS account  
-- [ ] Deploy Application
-- [ ] Weekly Time Log
+- [x] Work on add destination user story
+- [x] Build destination entity and DAO
+- [x] Build JUnit5 tests for destination DAO
+- [x] Complete Code Reviews with 2 other peers
+- [x] Complete Professional Development Presentation Review 
+- [x] Set up AWS account  
+- [x] Deploy Application
+- [x] Weekly Time Log
 
 ##  Week 7
 - [ ] Prepare for Checkpoint 2
@@ -55,11 +53,14 @@
 - [ ] Add Java Security: authentication and access control
 - [ ] Research Continuous Deployment Pipeline using AWS CodePipeline
 - [ ] Weekly Time Log
+- [ ] Finish Application Flow document
 
 ##  Week 8
 - [ ] Consume RESTful Web Service: US ZIP Code API Tool
 - [ ] Add dao for API
 - [ ] Add JUnit5 tests for API
+- [ ] Add JSP to add destination 
+- [ ] Build servelt to add destination using APIs
 - [ ] Continue Research for Continuous Deployment Pipeline using AWS CodePipeline
 - [ ] Weekly Time Log
 

@@ -114,11 +114,10 @@ class TripDaoTest {
     @Test
     void insertTripWithDestinationsSuccess() {
         // put destination on trip and trip on destination
-        Trip newTrip = new Trip("Northern Summer");
-        String destinationName = "Minneapolis";
-        Destination destination = new Destination(destinationName, newTrip);
+        Trip newTrip = new Trip("Wisconsin Summer");
+        Destination newDestination = new Destination("Waunakee", "WI", "53597", "55025", "95", newTrip);
         // nice to have method that does the set destinations
-        newTrip.addDestination(destination);
+        newTrip.addDestination(newDestination);
 
         // insert new trip using dao
         int id = tripDao.insert(newTrip);
