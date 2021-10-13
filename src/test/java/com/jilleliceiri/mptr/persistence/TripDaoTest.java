@@ -20,15 +20,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class TripDaoTest {
 
 
-    /**
-     * The Generic dao.
-     */
     GenericDao tripDao;
     GenericDao noteDao;
+    GenericDao destinationDao;
+
     private final Logger logger = LogManager.getLogger(this.getClass());
-    /**
-     * The Session factory.
-     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
@@ -38,6 +34,7 @@ class TripDaoTest {
     void setUp() {
         tripDao = new GenericDao(Trip.class);
         noteDao = new GenericDao(Note.class);
+        destinationDao = new GenericDao(Destination.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -51,6 +48,7 @@ class TripDaoTest {
         assertEquals("Fall  Colour Tour", retrievedTrip.getName());
         assertEquals(2, retrievedTrip.getDestinationSet().size());
     }
+
     /**
      * Verifies getAll trips successfully runs
      */
@@ -71,6 +69,10 @@ class TripDaoTest {
         // check that this notes are deleted also
         assertNull(noteDao.getById(1));
         assertNull(noteDao.getById(2));
+
+        // check that destinations are deleted also
+        assertNull(destinationDao.getById(1));
+        assertNull(destinationDao.getById(2));
     }
 
     /**

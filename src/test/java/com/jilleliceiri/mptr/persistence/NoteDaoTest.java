@@ -13,13 +13,16 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type Note dao test.
+ */
 public class NoteDaoTest {
+
 
     GenericDao noteDao;
     GenericDao tripDao;
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
