@@ -48,8 +48,8 @@
 - [x] Weekly Time Log
 
 ##  Week 7
-- [ ] Prepare for Checkpoint 2
-- [ ] Build trip info jsp
+- [x] Prepare for Checkpoint 2
+- [ ] Build trip info jsp - add destination info
 - [ ] Add Java Security: authentication and access control
 - [ ] Research Continuous Deployment Pipeline using AWS CodePipeline
 - [ ] Weekly Time Log
