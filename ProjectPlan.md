@@ -49,7 +49,6 @@
 
 ##  Week 7
 - [x] Prepare for Checkpoint 2
-- [ ] Build trip info jsp - add destination info
 - [ ] Add Java Security: authentication and access control
 - [ ] Research Continuous Deployment Pipeline using AWS CodePipeline
 - [ ] Weekly Time Log
@@ -59,8 +58,10 @@
 - [ ] Consume RESTful Web Service: US ZIP Code API Tool
 - [ ] Add dao for API
 - [ ] Add JUnit5 tests for API
-- [ ] Add JSP to add destination 
+- [ ] Add JSP to add destination
+- [ ] Build trip info jsp - add destination info
 - [ ] Build servelt to add destination using APIs
+- [ ] Use javabean properties which implicitly call the getters instead of explicit calls
 - [ ] Continue Research for Continuous Deployment Pipeline using AWS CodePipeline
 - [ ] Weekly Time Log
 
