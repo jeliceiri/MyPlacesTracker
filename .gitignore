@@ -47,3 +47,7 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# props files that I do not want shared
+restful.properties
+hibernate.cfg.xml
