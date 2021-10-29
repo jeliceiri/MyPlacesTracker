@@ -49,39 +49,38 @@
 
 ##  Week 7
 - [x] Prepare for Checkpoint 2
-- [ ] Add Java Security: authentication and access control
-- [ ] Research Continuous Deployment Pipeline using AWS CodePipeline
-- [ ] Weekly Time Log
-- [ ] Finish Application Flow document
+- [x] Add Java Security: authentication and access control (LOCALLY)
+- [x] Weekly Time Log
 
 ##  Week 8
-- [ ] Consume RESTful Web Service: US ZIP Code API Tool
-- [ ] Add dao for API
-- [ ] Add JUnit5 tests for API
-- [ ] Add JSP to add destination
-- [ ] Build trip info jsp - add destination info
-- [ ] Build servelt to add destination using APIs
-- [ ] Use javabean properties which implicitly call the getters instead of explicit calls
-- [ ] Continue Research for Continuous Deployment Pipeline using AWS CodePipeline
-- [ ] Weekly Time Log
+- [x] Consume RESTful Web Service: US ZIP Code API Tool
+- [x] Add dao for API
+- [x] Add JUnit5 tests for API
+- [x] Weekly Time Log
 
 ##  Week 9
-- [ ] Consume RESTful Web Service: Federal Information Processing Standards (FIPS)
-- [ ] Add dao for API
-- [ ] Add JUnit5 tests for API
+- [x] Build RESTful services with Java
 - [ ] Prepare for Checkpoint 3
-- [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
-- [ ] Weekly Time Log
+- [ ] Continue Research for Continuous Deployment Pipeline using AWS CodePipeline
+- [x] Weekly Time Log
 
 ##  Week 10
 - [ ] Consume RESTful Web Service: The Covid Act Now API
 - [ ] Add dao for API
 - [ ] Add JUnit5 tests for API
+- [ ] Finish Application Flow document
+- [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
 - [ ] Select CSS framework
 - [ ] Weekly Time Log
 
 ##  Week 11
 - [ ] Add CSS Framework
+- [ ] Add Java Security: authentication and access control (on AWS)
+- [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
+- [ ] Add JSP to add destination
+- [ ] Build trip info jsp - add destination info
+- [ ] Build servelt to add destination using APIs
+- [ ] Use javabean properties which implicitly call the getters instead of explicit calls
 - [ ] Weekly Time Log
 
 ##  Week 12
