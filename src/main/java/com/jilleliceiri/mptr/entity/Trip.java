@@ -15,6 +15,7 @@ import java.util.Set;
 @Table(name = "trips")
 public class Trip {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
@@ -22,6 +23,9 @@ public class Trip {
 
     @Column(name = "trip_name")
     private String name;
+
+    @ManyToOne
+    private User user;
 
     // fetch - careful if have too many destinations on a trip will load all at once (Lazy load as needed)
     @OneToMany(mappedBy = "trip", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
@@ -57,6 +61,10 @@ public class Trip {
         this.name = name;
     }
 
+    public Trip(String name, User user) {
+        this.name = name;
+        this.user = user;
+    }
 
     /**
      * Gets id.
@@ -158,6 +166,14 @@ public class Trip {
     public void addNote(Note newNote) {
         noteSet.add(newNote);
         newNote.setTrip(this);
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override

@@ -10,4 +10,5 @@
 |W6 - 10/4/21 | Deploy to AWS using Elastic Beanstalk, Code Reviews |10 |AWS Elastic Beanstalk, MySQL Workbench |AWS deploy successfully, sending hidden input in forms, placing form element inside EL loop/iteration, untrack folder for gitignore |AWS CI Pipeline research |
 |W7 - 10/11/21 | AWS Cognito |8 |AWS Cognito |smooth implementation |Implement AWS Cognito in Indie Project, AWS CI Pipeline research |
 |W8 - 10/18/21 | Consume RESTful Web Services |10 |Consume RESTful Web Services, RoboPOJOGenerator, Jackson Libraries |Mapping RESTful Json to POJO |team project survey, class survey, AWS CI /
-|W9 - 10/25/21 | Build RESTful Web Services with Java, Team Project |12 |Jax-RS, Jersey |DB connection issue, Implementing Cognito in Indie Project | AWS CI Pipeline research |
+|W9 - 10/25/21 | Build RESTful Web Services with Java, Team Project |13 |Jax-RS, Jersey, Jackson |DB connection issue, Implementing Cognito in Indie Project | AWS CI Pipeline research |
+|W10 - 11/1/21 |Git Branching, Team Work, Individual Project Work  | 5 |  |  | User Table  |

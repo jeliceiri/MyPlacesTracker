@@ -1,10 +1,9 @@
 package com.jilleliceiri.mptr.persistence;
 
+import com.covidactnow.CovidResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.smartystreets.SmartyResponse;
 import com.smartystreets.SmartyResponseItem;
-import com.smartystreets.ZipcodesItem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,17 +15,17 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * The type Smarty streets dao.
+ * The type CovidDao dao.
  */
-public class SmartyStreetsDao {
+public class CovidDao {
 
     private Properties properties;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
-     * Instantiates a new Smarty streets dao.
+     * Instantiates a new CovidDao dao.
      */
-    SmartyStreetsDao() {
+    CovidDao() {
         loadProperties();
     }
 
@@ -35,35 +34,27 @@ public class SmartyStreetsDao {
         try {
             properties.load (this.getClass().getResourceAsStream("/restful.properties"));
         } catch (IOException ioe) {
-            logger.error("SmartyStreets.loadProperties()...Cannot load the properties file");
+            logger.error("CovidDao.loadProperties()...Cannot load the properties file");
         } catch (Exception e) {
-            logger.error("SmartyStreets.loadProperties()..." + e);
+            logger.error("SCovidDao.loadProperties()..." + e);
         }
     }
 
-    /**
-     * Get city response smarty response item [ ].
-     *
-     * @param city  the city
-     * @param state the state
-     * @return the smarty response item [ ]
-     */
-    SmartyResponseItem[] getCityResponse(String city, String state){
+
+    CovidResponse getResponse(String fips){
         Client client = ClientBuilder.newClient();
-        String auth = properties.getProperty("auth");
-        String token = properties.getProperty("token");
-        String url = "https://us-zipcode.api.smartystreets.com/lookup?auth-id=" + auth + "&auth-token=" + token + "&city=" + city + "&state=" + state;
+        String apikey = properties.getProperty("apikey");
+        String url = "https://api.covidactnow.org/v2/county/" + fips + ".json?" + "apiKey=" + apikey;
         WebTarget target = client.target(url);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        SmartyResponseItem[] smartyResponse = null;
+        CovidResponse covidResponse = null;
         ObjectMapper mapper = new ObjectMapper();
         try {
-            smartyResponse = mapper.readValue(response, SmartyResponseItem[].class);
+            covidResponse = mapper.readValue(response, CovidResponse.class);
 
         } catch (JsonProcessingException e) {
-            // TODO set up logging
             logger.error("JsonProcessingException" + e);
         }
-        return smartyResponse ;
+        return covidResponse ;
     }
 }

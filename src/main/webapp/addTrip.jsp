@@ -12,8 +12,10 @@
 </head>
 <body>
 <h1>Add Trip</h1>
+<p>${userId}</p>
 <form action="addTrip" class="" method="post">
     <div class="">
+        <input type="hidden" class="" id="userId" name="userId" value="${userId}" >
         <input type="text" class="" id="addTrip" name="addTrip" aria-describedby="addTrip" placeholder="Trip Name">
     </div>
     <button type="submit" name="submit" value="addTrip" class="">Add Trip</button>

@@ -61,7 +61,6 @@ public class SmartyStreetsDao {
             smartyResponse = mapper.readValue(response, SmartyResponseItem[].class);
 
         } catch (JsonProcessingException e) {
-            // TODO set up logging
             logger.error("JsonProcessingException" + e);
         }
         return smartyResponse ;

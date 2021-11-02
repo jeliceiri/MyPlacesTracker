@@ -23,8 +23,10 @@
             <tbody>
                 <c:forEach var="destination" items="${destinationSet}">
                 <tr>
-                    <td>${destination.getCity()}</td>
-                    <td>Placeholder</td>
+                    <td>${destination.city}</td>
+                    <td>${destination.state}</td>
+                    <td>${destination.countyFipsCode}</td>
+                    <td>${destination.countyHospitalCapacity}</td>
                 </tr>
                 </c:forEach>
             </tbody>
@@ -64,6 +66,12 @@
 <button type="submit" name="submit" class="">Add Travel Note</button>
 </form>
 </div>
-<a href="index.jsp">Trips</a>
+
+<form action="viewTrips" class="" method="post">
+    <input type="hidden" class="" id="userName" name="userName" value="${userName}" >
+    <button type="submit" name="submit" class="">View Trips</button>
+</form>
+
+
 </body>
 </html>

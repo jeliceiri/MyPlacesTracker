@@ -37,6 +37,7 @@
 
 </div>
 <div>
+    <p>${userId}</p>
     <a href="addTrip.jsp">Add Trip</a>
 </div>
 </body>
