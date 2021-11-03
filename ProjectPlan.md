@@ -60,22 +60,24 @@
 
 ##  Week 9
 - [x] Build RESTful services with Java
-- [ ] Prepare for Checkpoint 3
-- [ ] Continue Research for Continuous Deployment Pipeline using AWS CodePipeline
+- [x] Prepare for Checkpoint 3
+- [x] Deploy updated database to AWS
 - [x] Weekly Time Log
 
 ##  Week 10
-- [ ] Consume RESTful Web Service: The Covid Act Now API
-- [ ] Add dao for API
-- [ ] Add JUnit5 tests for API
+- [x] Consume RESTful Web Service: The Covid Act Now API
+- [x] Add dao for API
+- [x] Add JUnit5 tests for API
+- [x] Add Java Security: authentication and access control (AWS)
 - [ ] Finish Application Flow document
-- [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
+- [ ] Research Continuous Deployment Pipeline using AWS CodePipeline
 - [ ] Select CSS framework
 - [ ] Weekly Time Log
 
 ##  Week 11
 - [ ] Add CSS Framework
-- [ ] Add Java Security: authentication and access control (on AWS)
+- [ ] Add User Table, Entity, and Tests
+- [ ] Update Trips Table
 - [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
 - [ ] Add JSP to add destination
 - [ ] Build trip info jsp - add destination info
