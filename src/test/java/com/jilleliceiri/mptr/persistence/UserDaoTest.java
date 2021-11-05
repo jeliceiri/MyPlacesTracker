@@ -16,7 +16,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * The type Trip dao test.
+ * The type User dao test.
  */
 class UserDaoTest {
 
@@ -31,7 +31,6 @@ class UserDaoTest {
      * Sets up.
      */
     @BeforeEach
-    // TODO update test database
     void setUp() {
         userDao = new GenericDao(User.class);
         tripDao = new GenericDao(Trip.class);
@@ -64,6 +63,10 @@ class UserDaoTest {
     void deleteSuccess(){
         userDao.delete(userDao.getById(1));
         assertNull(userDao.getById(1));
+
+        // check that users trips are deleted also
+        assertNull(tripDao.getById(1));
+        assertNull(tripDao.getById(2));
     }
 
     /**
