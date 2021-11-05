@@ -11,7 +11,7 @@
 
 <html>
 <body>
-<h1>${tripInfo.getName()}</h1>
+<h1>${tripInfo.name}</h1>
 <h2>Destinations</h2>
 <div class="">
     <form action="tripInfo" class="" method="post">
@@ -46,8 +46,8 @@
                 <c:forEach var="note" items="${noteSet}">
                 <form action="editNoteForm" class="" method="post">
                     <tr>
-                        <td>${note.getName()}</td>
-                        <td>${note.getDescription()}</td>
+                        <td>${note.name}</td>
+                        <td>${note.description}</td>
                         <td><input type="hidden" id="noteId" name="noteId" value="${note.id}"></td>
                         <td><button type="submit" name="submit" class="">Edit</button></td>
                     </tr>
@@ -59,13 +59,17 @@
     </div>
 </div>
 
+<p>${tripInfo.id}</p>
 
-<div>
-<form action="addNoteForm" class="" method="post">
-<input type="hidden" class="" id="tripID" name="tripID" value="${tripInfo.id}" >
-<button type="submit" name="submit" class="">Add Travel Note</button>
+<form action="addDestinationForm" class="" method="post">
+    <input type="hidden" class="" id="tripIDDestination" name="tripID" value="${tripInfo.id}" >
+    <button type="submit" name="submit" class="">Add Destination</button>
 </form>
-</div>
+
+<form action="addNoteForm" class="" method="post">
+    <input type="hidden" class="" id="tripID" name="tripID" value="${tripInfo.id}" >
+    <button type="submit" name="submit" class="">Add Travel Note</button>
+</form>
 
 <form action="viewTrips" class="" method="post">
     <input type="hidden" class="" id="userName" name="userName" value="${userName}" >

@@ -25,7 +25,7 @@ public class CovidDao {
     /**
      * Instantiates a new CovidDao dao.
      */
-    CovidDao() {
+    public CovidDao() {
         loadProperties();
     }
 
@@ -41,7 +41,7 @@ public class CovidDao {
     }
 
 
-    CovidResponse getResponse(String fips){
+    public CovidResponse getResponse(String fips){
         Client client = ClientBuilder.newClient();
         String apikey = properties.getProperty("apikey");
         String url = "https://api.covidactnow.org/v2/county/" + fips + ".json?" + "apiKey=" + apikey;

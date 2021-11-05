@@ -76,8 +76,8 @@
 
 ##  Week 11
 - [ ] Add CSS Framework
-- [ ] Add User Table, Entity, and Tests
-- [ ] Update Trips Table
+- [x] Add User Table, Entity, and Tests
+- [x] Update Trips Table in Prod and Test databases
 - [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
 - [ ] Add JSP to add destination
 - [ ] Build trip info jsp - add destination info

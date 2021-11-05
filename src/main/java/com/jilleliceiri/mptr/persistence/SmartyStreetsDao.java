@@ -26,7 +26,7 @@ public class SmartyStreetsDao {
     /**
      * Instantiates a new Smarty streets dao.
      */
-    SmartyStreetsDao() {
+    public SmartyStreetsDao() {
         loadProperties();
     }
 
@@ -48,7 +48,7 @@ public class SmartyStreetsDao {
      * @param state the state
      * @return the smarty response item [ ]
      */
-    SmartyResponseItem[] getCityResponse(String city, String state){
+    public SmartyResponseItem[] getCityResponse(String city, String state){
         Client client = ClientBuilder.newClient();
         String auth = properties.getProperty("auth");
         String token = properties.getProperty("token");
