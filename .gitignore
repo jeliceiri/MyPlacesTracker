@@ -51,3 +51,4 @@ fabric.properties
 # props files that I do not want shared
 restful.properties
 hibernate.cfg.xml
+/src/main/resources/cognito.properties

@@ -48,7 +48,7 @@
                     <tr>
                         <td>${note.getName()}</td>
                         <td>${note.getDescription()}</td>
-                        <td><input type="hidden" id="noteId" name="noteId" value="${note.getId()}"></td>
+                        <td><input type="hidden" id="noteId" name="noteId" value="${note.id}"></td>
                         <td><button type="submit" name="submit" class="">Edit</button></td>
                     </tr>
                 </form>
@@ -62,7 +62,7 @@
 
 <div>
 <form action="addNoteForm" class="" method="post">
-<input type="hidden" class="" id="tripID" name="tripID" value="${tripInfo.getId()}" >
+<input type="hidden" class="" id="tripID" name="tripID" value="${tripInfo.id}" >
 <button type="submit" name="submit" class="">Add Travel Note</button>
 </form>
 </div>

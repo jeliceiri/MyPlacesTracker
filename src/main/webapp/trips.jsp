@@ -26,9 +26,9 @@
         <c:forEach var="trip" items="${trips}">
             <form action="tripInfo" class="" method="post">
             <tr>
-                <td><input type="hidden" class="" id="tripID" name="tripID" value="${trip.getId()}" ></td>
+                <td><input type="hidden" class="" id="tripID" name="tripID" value="${trip.id}" ></td>
                 <td><button type="submit" name="submit" class="">View</button></td>
-                <td>${trip.getName()}</td>
+                <td>${trip.name}</td>
             </tr>
             </form>
         </c:forEach>

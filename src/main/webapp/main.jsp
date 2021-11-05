@@ -25,7 +25,7 @@
     <tbody>
     <c:forEach var="trip" items="${trips}">
       <tr>
-        <td>${trip.getName()}</td>
+        <td>${trip.name}</td>
       </tr>
     </c:forEach>
     </tbody>
