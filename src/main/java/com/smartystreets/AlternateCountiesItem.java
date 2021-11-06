@@ -2,10 +2,10 @@ package com.smartystreets;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class CityStatesItem{
+public class AlternateCountiesItem{
 
-	@JsonProperty("city")
-	private String city;
+	@JsonProperty("county_fips")
+	private String countyFips;
 
 	@JsonProperty("state_abbreviation")
 	private String stateAbbreviation;
@@ -13,15 +13,15 @@ public class CityStatesItem{
 	@JsonProperty("state")
 	private String state;
 
-	@JsonProperty("mailable_city")
-	private boolean mailableCity;
+	@JsonProperty("county_name")
+	private String countyName;
 
-	public void setCity(String city){
-		this.city = city;
+	public void setCountyFips(String countyFips){
+		this.countyFips = countyFips;
 	}
 
-	public String getCity(){
-		return city;
+	public String getCountyFips(){
+		return countyFips;
 	}
 
 	public void setStateAbbreviation(String stateAbbreviation){
@@ -40,22 +40,22 @@ public class CityStatesItem{
 		return state;
 	}
 
-	public void setMailableCity(boolean mailableCity){
-		this.mailableCity = mailableCity;
+	public void setCountyName(String countyName){
+		this.countyName = countyName;
 	}
 
-	public boolean isMailableCity(){
-		return mailableCity;
+	public String getCountyName(){
+		return countyName;
 	}
 
 	@Override
  	public String toString(){
 		return 
-			"CityStatesItem{" + 
-			"city = '" + city + '\'' + 
+			"AlternateCountiesItem{" + 
+			"county_fips = '" + countyFips + '\'' + 
 			",state_abbreviation = '" + stateAbbreviation + '\'' + 
 			",state = '" + state + '\'' + 
-			",mailable_city = '" + mailableCity + '\'' + 
+			",county_name = '" + countyName + '\'' + 
 			"}";
 		}
 }

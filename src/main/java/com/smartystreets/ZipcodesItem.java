@@ -2,132 +2,146 @@ package com.smartystreets;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.List;
+
 public class ZipcodesItem{
 
-    @JsonProperty("zipcode")
-    private String zipcode;
+	@JsonProperty("zipcode")
+	private String zipcode;
 
-    @JsonProperty("zipcode_type")
-    private String zipcodeType;
+	@JsonProperty("zipcode_type")
+	private String zipcodeType;
 
-    @JsonProperty("county_fips")
-    private String countyFips;
+	@JsonProperty("county_fips")
+	private String countyFips;
 
-    @JsonProperty("latitude")
-    private double latitude;
+	@JsonProperty("latitude")
+	private double latitude;
 
-    @JsonProperty("precision")
-    private String precision;
+	@JsonProperty("precision")
+	private String precision;
 
-    @JsonProperty("state_abbreviation")
-    private String stateAbbreviation;
+	@JsonProperty("state_abbreviation")
+	private String stateAbbreviation;
 
-    @JsonProperty("state")
-    private String state;
+	@JsonProperty("state")
+	private String state;
 
-    @JsonProperty("county_name")
-    private String countyName;
+	@JsonProperty("county_name")
+	private String countyName;
 
-    @JsonProperty("default_city")
-    private String defaultCity;
+	@JsonProperty("default_city")
+	private String defaultCity;
 
-    @JsonProperty("longitude")
-    private double longitude;
+	@JsonProperty("longitude")
+	private double longitude;
 
-    public void setZipcode(String zipcode){
-        this.zipcode = zipcode;
-    }
+	@JsonProperty("alternate_counties")
+	private List<AlternateCountiesItem> alternateCounties;
 
-    public String getZipcode(){
-        return zipcode;
-    }
+	public void setZipcode(String zipcode){
+		this.zipcode = zipcode;
+	}
 
-    public void setZipcodeType(String zipcodeType){
-        this.zipcodeType = zipcodeType;
-    }
+	public String getZipcode(){
+		return zipcode;
+	}
 
-    public String getZipcodeType(){
-        return zipcodeType;
-    }
+	public void setZipcodeType(String zipcodeType){
+		this.zipcodeType = zipcodeType;
+	}
 
-    public void setCountyFips(String countyFips){
-        this.countyFips = countyFips;
-    }
+	public String getZipcodeType(){
+		return zipcodeType;
+	}
 
-    public String getCountyFips(){
-        return countyFips;
-    }
+	public void setCountyFips(String countyFips){
+		this.countyFips = countyFips;
+	}
 
-    public void setLatitude(double latitude){
-        this.latitude = latitude;
-    }
+	public String getCountyFips(){
+		return countyFips;
+	}
 
-    public double getLatitude(){
-        return latitude;
-    }
+	public void setLatitude(double latitude){
+		this.latitude = latitude;
+	}
 
-    public void setPrecision(String precision){
-        this.precision = precision;
-    }
+	public double getLatitude(){
+		return latitude;
+	}
 
-    public String getPrecision(){
-        return precision;
-    }
+	public void setPrecision(String precision){
+		this.precision = precision;
+	}
 
-    public void setStateAbbreviation(String stateAbbreviation){
-        this.stateAbbreviation = stateAbbreviation;
-    }
+	public String getPrecision(){
+		return precision;
+	}
 
-    public String getStateAbbreviation(){
-        return stateAbbreviation;
-    }
+	public void setStateAbbreviation(String stateAbbreviation){
+		this.stateAbbreviation = stateAbbreviation;
+	}
 
-    public void setState(String state){
-        this.state = state;
-    }
+	public String getStateAbbreviation(){
+		return stateAbbreviation;
+	}
 
-    public String getState(){
-        return state;
-    }
+	public void setState(String state){
+		this.state = state;
+	}
 
-    public void setCountyName(String countyName){
-        this.countyName = countyName;
-    }
+	public String getState(){
+		return state;
+	}
 
-    public String getCountyName(){
-        return countyName;
-    }
+	public void setCountyName(String countyName){
+		this.countyName = countyName;
+	}
 
-    public void setDefaultCity(String defaultCity){
-        this.defaultCity = defaultCity;
-    }
+	public String getCountyName(){
+		return countyName;
+	}
 
-    public String getDefaultCity(){
-        return defaultCity;
-    }
+	public void setDefaultCity(String defaultCity){
+		this.defaultCity = defaultCity;
+	}
 
-    public void setLongitude(double longitude){
-        this.longitude = longitude;
-    }
+	public String getDefaultCity(){
+		return defaultCity;
+	}
 
-    public double getLongitude(){
-        return longitude;
-    }
+	public void setLongitude(double longitude){
+		this.longitude = longitude;
+	}
 
-    @Override
-     public String toString(){
-        return 
-            "ZipcodesItem{" + 
-            "zipcode = '" + zipcode + '\'' + 
-            ",zipcode_type = '" + zipcodeType + '\'' + 
-            ",county_fips = '" + countyFips + '\'' + 
-            ",latitude = '" + latitude + '\'' + 
-            ",precision = '" + precision + '\'' + 
-            ",state_abbreviation = '" + stateAbbreviation + '\'' + 
-            ",state = '" + state + '\'' + 
-            ",county_name = '" + countyName + '\'' + 
-            ",default_city = '" + defaultCity + '\'' + 
-            ",longitude = '" + longitude + '\'' + 
-            "}";
-        }
+	public double getLongitude(){
+		return longitude;
+	}
+
+	public void setAlternateCounties(List<AlternateCountiesItem> alternateCounties){
+		this.alternateCounties = alternateCounties;
+	}
+
+	public List<AlternateCountiesItem> getAlternateCounties(){
+		return alternateCounties;
+	}
+
+	@Override
+ 	public String toString(){
+		return 
+			"ZipcodesItem{" + 
+			"zipcode = '" + zipcode + '\'' + 
+			",zipcode_type = '" + zipcodeType + '\'' + 
+			",county_fips = '" + countyFips + '\'' + 
+			",latitude = '" + latitude + '\'' + 
+			",precision = '" + precision + '\'' + 
+			",state_abbreviation = '" + stateAbbreviation + '\'' + 
+			",state = '" + state + '\'' + 
+			",county_name = '" + countyName + '\'' + 
+			",default_city = '" + defaultCity + '\'' + 
+			",longitude = '" + longitude + '\'' + 
+			",alternate_counties = '" + alternateCounties + '\'' + 
+			"}";
+		}
 }

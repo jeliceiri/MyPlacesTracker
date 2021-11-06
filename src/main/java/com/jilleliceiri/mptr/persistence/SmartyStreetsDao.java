@@ -13,6 +13,10 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
 /**
@@ -48,11 +52,16 @@ public class SmartyStreetsDao {
      * @param state the state
      * @return the smarty response item [ ]
      */
-    public SmartyResponseItem[] getCityResponse(String city, String state){
+    public SmartyResponseItem[] getCityResponse(String city, String state) throws UnsupportedEncodingException {
+
+        // replace spaces in city
+        city = city.replaceAll(" ", "%20");
+
         Client client = ClientBuilder.newClient();
         String auth = properties.getProperty("auth");
         String token = properties.getProperty("token");
         String url = "https://us-zipcode.api.smartystreets.com/lookup?auth-id=" + auth + "&auth-token=" + token + "&city=" + city + "&state=" + state;
+        System.out.println(url);
         WebTarget target = client.target(url);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         SmartyResponseItem[] smartyResponse = null;
