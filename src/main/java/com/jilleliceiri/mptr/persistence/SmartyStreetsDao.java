@@ -52,7 +52,7 @@ public class SmartyStreetsDao {
      * @param state the state
      * @return the smarty response item [ ]
      */
-    public SmartyResponseItem[] getCityResponse(String city, String state) throws UnsupportedEncodingException {
+    public SmartyResponseItem[] getCityResponse(String city, String state)  {
 
         // replace spaces in city
         city = city.replaceAll(" ", "%20");
@@ -61,7 +61,6 @@ public class SmartyStreetsDao {
         String auth = properties.getProperty("auth");
         String token = properties.getProperty("token");
         String url = "https://us-zipcode.api.smartystreets.com/lookup?auth-id=" + auth + "&auth-token=" + token + "&city=" + city + "&state=" + state;
-        System.out.println(url);
         WebTarget target = client.target(url);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         SmartyResponseItem[] smartyResponse = null;

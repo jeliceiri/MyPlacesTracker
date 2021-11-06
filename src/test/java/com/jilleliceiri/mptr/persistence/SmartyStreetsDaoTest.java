@@ -16,7 +16,7 @@ class SmartyStreetsDaoTest {
      * Verifies the getCityResponseSuccess() successfully runs
      */
     @Test
-    void getCityResponseSuccess() throws UnsupportedEncodingException {
+    void getCityResponseSuccess()  {
         SmartyStreetsDao dao = new SmartyStreetsDao();
         SmartyResponseItem[] city = dao.getCityResponse("Green Bay", "WI");
         String fips = "55009";
