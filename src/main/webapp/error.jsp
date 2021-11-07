@@ -6,9 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@include file="contentType.jsp" %>
-<%@include file="head.jsp" %>
-<c:set var="title" value="Error Page"/>
 <html>
+<%@include file="head.jsp" %>
 <body class="container">
 <div class="card-panel">
 <p>Uh oh! Something went wrong.</p>

@@ -1,9 +1,9 @@
 <%@include file="contentType.jsp" %>
 <html>
 <jsp:include page="head.jsp" />
-<c:set var="title" value="My Places Tracker"/>
 <body class="container">
 <div class="card-panel">
+    <h1>My Places Tracker</h1>
 <c:choose>
     <c:when test="${empty userName}">
         <a href="logIn"><button type="button" class="btn waves-effect waves-blue">Log in</button></a>

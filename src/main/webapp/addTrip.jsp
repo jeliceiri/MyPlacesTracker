@@ -6,12 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@include file="contentType.jsp" %>
-
 <html>
 <%@include file="head.jsp" %>
-<c:set var="title" value="Add Trip"/>
 <body class="container">
 <div class="card-panel">
+    <h1>Add Trip</h1>
 <form action="addTrip" class="" method="post">
     <div class="">
         <input type="hidden" class="" id="userId" name="userId" value="${userId}" >

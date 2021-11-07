@@ -6,11 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@include file="contentType.jsp" %>
-<%@include file="head.jsp" %>
-<c:set var="title" value="Add Note"/>
 <html>
+<%@include file="head.jsp" %>
 <body class="container">
 <div class="card-panel">
+    <h1>Add Note</h1>
 <form action="addNote" class="" method="post">
     <input type="hidden" class="" id="tripID" name="tripID" value="${trip.id}" >
     <input type="text" class="" id="noteName" name="noteName" aria-describedby="noteName" placeholder="Note Name">

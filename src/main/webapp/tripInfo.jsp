@@ -12,9 +12,8 @@
 
 <html>
 <%@include file="head.jsp" %>
-<c:set var="title" value="Trip Info"/>
 <body class="container">
-<h1>${tripInfo.name}</h1>
+<h1>Trip Info: ${tripInfo.name}</h1>
 <div class="card-panel">
 <h2>Destinations</h2>
 

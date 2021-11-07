@@ -1,6 +1,4 @@
 <%@include file="contentType.jsp" %>
-<%@include file="head.jsp" %>
-<c:set var="title" value="Trips"/>
 
 <script type="text/javascript" class="init">
     $(document).ready(function () {
@@ -9,11 +7,10 @@
 </script>
 
 <html>
+<%@include file="head.jsp" %>
 <body class="container">
 <div class="card-panel">
-<h1>View Trips</h1>
-
-
+<h1>My Trips</h1>
     <table class="table" id="tripsTable">
         <thead>
         <th>Trip Name</th>

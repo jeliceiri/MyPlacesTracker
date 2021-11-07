@@ -6,9 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@include file="contentType.jsp" %>
-<%@include file="head.jsp" %>
-<c:set var="title" value="Edit Note"/>
 <html>
+<%@include file="head.jsp" %>
 <body class="container">
 <div class="card-panel">
 <h1>Edit Note</h1>
