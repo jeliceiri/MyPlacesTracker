@@ -11,5 +11,5 @@
 |W7 - 10/11/21 | AWS Cognito |8 |AWS Cognito |smooth implementation |Implement AWS Cognito in Indie Project, AWS CI Pipeline research |
 |W8 - 10/18/21 | Consume RESTful Web Services |10 |Consume RESTful Web Services, RoboPOJOGenerator, Jackson Libraries |Mapping RESTful Json to POJO |team project survey, class survey, AWS CI /
 |W9 - 10/25/21 | Build RESTful Web Services with Java, Team Project |14 |Jax-RS, Jersey, Jackson |DB connection issue, Implementing Cognito in Indie Project | AWS CI Pipeline research |
-|W10 - 11/1/21 |Git Branching, Team Work, Individual Project Work  | 15 | Continue with Restful Web Services and Git Branching Team Work | Resolve Bugs in RESTful DAO | User Table, Auth and Logout, CSS Framework  |
+|W10 - 11/1/21 |Git Branching, Team Work, Individual Project Work  | 15 | Continue with Restful Web Services and Git Branching Team Work | Resolve Bugs in RESTful DAO | User Table, Cognito Auth and Logout, CSS Framework  |
 |W11 - 11/8/21 |  |  |  |  |   |

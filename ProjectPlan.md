@@ -69,13 +69,14 @@
 - [x] Add dao for API
 - [x] Add JUnit5 tests for API
 - [x] Add Java Security: authentication and access control (AWS)
-- [ ] Finish Application Flow document
-- [ ] Research Continuous Deployment Pipeline using AWS CodePipeline
-- [ ] Select CSS framework
-- [ ] Weekly Time Log
+- [x] Research Continuous Deployment Pipeline using AWS CodePipeline
+- [x] Select CSS framework
+- [x] Weekly Time Log
 
 ##  Week 11
-- [ ] Add CSS Framework
+- [x] Add CSS Framework
+- [ ] Finish Application Flow document
+- [ ] Research Cognito Logout
 - [x] Add User Table, Entity, and Tests
 - [x] Update Trips Table in Prod and Test databases
 - [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
@@ -87,6 +88,7 @@
 
 ##  Week 12
 - [ ] Add data validation
+- [ ] Add error jsp
 - [ ] Continue to implement CSS
 - [ ] Weekly Time Log
 
