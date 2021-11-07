@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.text.NumberFormat;
+import java.util.*;
 
 /**
  * A servlet to add a note
@@ -38,32 +38,38 @@ public class AddDestination extends HttpServlet {
         SmartyStreetsDao smartyStreetsDao = new SmartyStreetsDao();
         CovidDao covidDao = new CovidDao();
 
-        // get the id of the trip and the note information to add a new note
+        // get the city and state for finding the zip code and fips code along with trip ID
         String city = req.getParameter("destinationCity");
         String state = req.getParameter("destinationState");
         int id = (Integer.parseInt(req.getParameter("tripID")));
 
-        // make trip object
-        // make trip object
-        Trip trip = new Trip();
-        trip = (Trip)tripDao.getById(id);
+        // instantiate trip object
+        Trip trip = (Trip)tripDao.getById(id);
 
-        // get destination info and make Destination object
+        // get destination zip code and county fips code for Destination object
         SmartyResponseItem[] smartyResponseItems = smartyStreetsDao.getCityResponse(city, state);
         String zipCode = smartyResponseItems[0].getZipcodes().get(0).getZipcode();
         String countyFips = smartyResponseItems[0].getZipcodes().get(0).getCountyFips();
 
-        // TODO get the hospitalCapacity as a percentage String.format("%.2f", input)
-        CovidResponse hospitalCapacity = covidDao.getResponse(countyFips);
-        String icuCapacityRatio = String.valueOf(hospitalCapacity.getMetrics().getIcuCapacityRatio());
+        // check if ICU Capacity is null or 0 (data not available), otherwise format as percent
+        CovidResponse localHealthInfo = covidDao.getResponse(countyFips);
+        Double icuCapacityRatio = localHealthInfo.getMetrics().getIcuCapacityRatio();
+        String percentage;
+        if (icuCapacityRatio == null || icuCapacityRatio == 0){
+            percentage = "N/A";
+        } else {
+            NumberFormat format = NumberFormat.getPercentInstance(Locale.US);
+            percentage = format.format(icuCapacityRatio);
+        }
 
         // insert new destination
-        Destination destination = new Destination(city, state, zipCode, countyFips, icuCapacityRatio, trip);
+        Destination destination = new Destination(city, state, zipCode, countyFips, percentage, trip);
         destinationDao.insert(destination);
 
         // get list of notes and destinations to send back to trip info page
-        List<Note> notes = new ArrayList(trip.getNoteSet());
-        List<Destination> destinations = new ArrayList(trip.getDestinationSet());
+        Set<Note> notes = trip.getNoteSet();
+        Set<Destination> destinations = trip.getDestinationSet();
+        //List<Destination> destinations = new ArrayList(trip.getDestinationSet());
         destinations.add(destination);
         req.setAttribute("tripInfo", trip);
         req.setAttribute("noteSet", notes);

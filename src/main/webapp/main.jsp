@@ -12,7 +12,7 @@
     <title>My Places Tracker</title>
 </head>
 
-<body>
+<body class="container">
 <%--Put results in a bootstrap rowusing JSTL--%>
 <div class="">
   <h2>My Trips: </h2>

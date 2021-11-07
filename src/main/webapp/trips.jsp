@@ -1,44 +1,41 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@include file="head.jsp"%>
-<c:set var="title" value="Trips" />
+<%@include file="contentType.jsp" %>
+<%@include file="head.jsp" %>
+<c:set var="title" value="Trips"/>
 
 <script type="text/javascript" class="init">
-    $(document).ready( function () {
+    $(document).ready(function () {
         $('#tripsTable').DataTable();
-    } );
+    });
 </script>
 
 <html>
-<body>
+<body class="container">
+<div class="card-panel">
 <h1>View Trips</h1>
-<div class="">
+
 
     <table class="table" id="tripsTable">
         <thead>
-        <!--
-        <tr>
-            <th scope="">Trip Name</th>
-        </tr>
-        -->
+        <th>Trip Name</th>
         </thead>
         <tbody>
         <c:forEach var="trip" items="${trips}">
             <form action="tripInfo" class="" method="post">
-            <tr>
-                <td><input type="hidden" class="" id="tripID" name="tripID" value="${trip.id}" ></td>
-                <td><button type="submit" name="submit" class="">View</button></td>
-                <td>${trip.name}</td>
-            </tr>
+                <tr>
+                    <td>${trip.name}</td>
+                    <td><input type="hidden" class="" id="tripID" name="tripID" value="${trip.id}"></td>
+                    <td>
+                        <button type="submit" name="submit" class="btn waves-effect waves-blue">View</button>
+                    </td>
+                </tr>
             </form>
         </c:forEach>
         </tbody>
     </table>
 
 </div>
-<div>
-    <p>${userId}</p>
-    <a href="addTrip.jsp">Add Trip</a>
+<div class="card-panel">
+    <a href="addTrip.jsp"><button type="button" class="btn waves-effect waves-blue">Add Trip</button></a>
 </div>
 </body>
 </html>

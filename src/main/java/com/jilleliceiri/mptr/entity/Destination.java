@@ -210,7 +210,7 @@ public class Destination {
                 ", zipCode='" + zipCode + '\'' +
                 ", countyFipsCode='" + countyFipsCode + '\'' +
                 ", countyHospitalCapacity='" + countyHospitalCapacity + '\'' +
-                ", trip=" + trip +
+                // removed trip > stackoverflow error recursive loop
                 '}';
     }
 

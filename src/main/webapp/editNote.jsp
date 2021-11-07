@@ -5,23 +5,22 @@
   Time: 9:28 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="contentType.jsp" %>
+<%@include file="head.jsp" %>
+<c:set var="title" value="Edit Note"/>
 <html>
-<head>
-    <title>Edit Note</title>
-</head>
-<body>
+<body class="container">
+<div class="card-panel">
 <h1>Edit Note</h1>
 <form action="editNote" class="" method="post">
-  <div class="">
-    <p>${note.getId()}</p>
+
     <input type="hidden" class="" id="noteId" name="noteId" value="${note.id}" >
     <input type="text" class="" id="noteName" name="noteName" aria-describedby="noteName" placeholder="${note.name}">
     <input type="text" class="" id="noteDescription" name="noteDescription" aria-describedby="noteDescription" placeholder="${note.description}">
-  </div>
-  <button type="submit" name="submit" value="editNote" class="">Update</button>
-  <button type="submit" name="submit" value="deleteNote" class="">Delete</button>
-</form>
 
+  <button type="submit" name="submit" value="editNote" class="btn waves-effect waves-blue">Update</button>
+  <button type="submit" name="submit" value="deleteNote" class="btn waves-effect waves-blue">Delete</button>
+</form>
+</div>
 </body>
 </html>

@@ -176,12 +176,17 @@ public class Trip {
         this.user = user;
     }
 
+    // TODO regenerate tostring
+
+
     @Override
     public String toString() {
         return "Trip{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", user=" + user +
                 ", destinationSet=" + destinationSet +
+                ", noteSet=" + noteSet +
                 '}';
     }
 

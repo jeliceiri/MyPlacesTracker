@@ -104,7 +104,7 @@ public class Note {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", trip=" + trip +
+                // removed trip > stackoverflow error recursive loop
                 '}';
     }
 

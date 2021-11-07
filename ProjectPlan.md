@@ -79,10 +79,10 @@
 - [x] Add User Table, Entity, and Tests
 - [x] Update Trips Table in Prod and Test databases
 - [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
-- [ ] Add JSP to add destination
-- [ ] Build trip info jsp - add destination info
-- [ ] Build servelt to add destination using APIs
-- [ ] Use javabean properties which implicitly call the getters instead of explicit calls
+- [x] Add JSP to add destination
+- [x] Build trip info jsp - add destination info
+- [x] Build servelt to add destination using APIs
+- [x] Use javabean properties which implicitly call the getters instead of explicit calls
 - [ ] Weekly Time Log
 
 ##  Week 12
