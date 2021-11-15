@@ -13,6 +13,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -40,6 +41,9 @@ import java.util.Properties;
 import java.util.stream.Collectors;
 
 
+/**
+ * The type Auth.
+ */
 @WebServlet(
         urlPatterns = {"/auth"}
 )
@@ -49,7 +53,7 @@ import java.util.stream.Collectors;
  */
 
 public class Auth extends HttpServlet implements PropertiesLoader {
-    Properties properties;
+
     String CLIENT_ID;
     String CLIENT_SECRET;
     String OAUTH_URL;
@@ -58,14 +62,11 @@ public class Auth extends HttpServlet implements PropertiesLoader {
     String REGION;
     String POOL_ID;
     Keys jwks;
-
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     public void init() throws ServletException {
         super.init();
-        loadProperties();
-        loadKey();
     }
 
     /**
@@ -77,12 +78,23 @@ public class Auth extends HttpServlet implements PropertiesLoader {
      */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        // Get the cognito info from ServletContext for authenticating a user.
+        ServletContext servletContext = getServletContext();
+        CLIENT_ID = (String)servletContext.getAttribute("CLIENT_ID");
+        CLIENT_SECRET = (String)servletContext.getAttribute("CLIENT_SECRET");
+        OAUTH_URL = (String)servletContext.getAttribute("OAUTH_URL");
+        LOGIN_URL = (String)servletContext.getAttribute("LOGIN_URL");
+        REDIRECT_URL = (String)servletContext.getAttribute("REDIRECT_URL");
+        REGION = (String)servletContext.getAttribute("REGION");
+        POOL_ID = (String)servletContext.getAttribute("POOL_ID");
+        loadKey();
         logger.debug("Inside the Auth doGet");
         String authCode = req.getParameter("code");
         String userName = null;
 
         if (authCode == null) {
-            //TODO forward to an error page or back to the login
+            // TODO forward to an error page or back to the login
         } else {
             HttpRequest authRequest = buildAuthRequest(authCode);
             try {
@@ -99,7 +111,6 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         }
         RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
         dispatcher.forward(req, resp);
-
     }
 
     /**
@@ -114,7 +125,6 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         HttpResponse<?> response = null;
 
         response = client.send(authRequest, HttpResponse.BodyHandlers.ofString());
-
 
         logger.debug("Response headers: " + response.headers().toString());
         logger.debug("Response body: " + response.body().toString());
@@ -188,6 +198,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
      * @return the constructed oauth request
      */
     private HttpRequest buildAuthRequest(String authCode) {
+
         String keys = CLIENT_ID + ":" + CLIENT_SECRET;
 
         HashMap<String, String> parameters = new HashMap<>();
@@ -232,28 +243,6 @@ public class Auth extends HttpServlet implements PropertiesLoader {
             logger.error("Cannot load json..." + ioException.getMessage(), ioException);
         } catch (Exception e) {
             logger.error("Error loading json" + e.getMessage(), e);
-        }
-    }
-
-    /**
-     * Read in the cognito props file and get/set the client id, secret, and required urls
-     * for authenticating a user.
-     */
-    // TODO This code appears in a couple classes, consider using a startup servlet similar to adv java project
-    private void loadProperties() {
-        try {
-            properties = loadProperties("/cognito.properties");
-            CLIENT_ID = properties.getProperty("client.id");
-            CLIENT_SECRET = properties.getProperty("client.secret");
-            OAUTH_URL = properties.getProperty("oauthURL");
-            LOGIN_URL = properties.getProperty("loginURL");
-            REDIRECT_URL = properties.getProperty("redirectURL");
-            REGION = properties.getProperty("region");
-            POOL_ID = properties.getProperty("poolId");
-        } catch (IOException ioException) {
-            logger.error("Cannot load properties..." + ioException.getMessage(), ioException);
-        } catch (Exception e) {
-            logger.error("Error loading properties" + e.getMessage(), e);
         }
     }
 }

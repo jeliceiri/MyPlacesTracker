@@ -11,6 +11,7 @@
 <body class="container">
 <div class="card-panel">
 <p>Uh oh! Something went wrong.</p>
+    <a href="logIn"><button type="button" class="btn waves-effect waves-blue">Log in</button></a>
 </div>
 </body>
 </html>
