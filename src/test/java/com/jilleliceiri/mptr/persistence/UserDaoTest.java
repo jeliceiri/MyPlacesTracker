@@ -42,7 +42,7 @@ class UserDaoTest {
      * Verifies getById successfully runs
      */
     @Test
-    void getByIdSuccess() {
+    void getByIdSuccess() throws Exception {
         User retrievedUser = (User) userDao.getById(1);
         assertEquals("jilltest", retrievedUser.getUsername());
     }
@@ -51,7 +51,7 @@ class UserDaoTest {
      * Verifies getAll users successfully runs
      */
     @Test
-    void getAllUsersSuccess(){
+    void getAllUsersSuccess()throws Exception {
         List<User> retrievedUsers = userDao.getAll();
         assertEquals(2, retrievedUsers.size());
     }
@@ -60,7 +60,7 @@ class UserDaoTest {
      * Verify delete user successfully runs
      */
     @Test
-    void deleteSuccess(){
+    void deleteSuccess()throws Exception {
         userDao.delete(userDao.getById(1));
         assertNull(userDao.getById(1));
 
@@ -73,7 +73,7 @@ class UserDaoTest {
      * Verify saveOrUpdate successfully runs
      */
     @Test
-    void saveOrUpdateSuccess() {
+    void saveOrUpdateSuccess() throws Exception {
         String userName = "New User Name";
         // retrieve a user to update
         User userToUpdate = (User) userDao.getById(2);
@@ -92,7 +92,7 @@ class UserDaoTest {
      * Verify insert user successfully runs
      */
     @Test
-    void insertUserSuccess() {
+    void insertUserSuccess() throws Exception {
         // create a new user (use the constructor to set all values)
         User newUser = new User("NewUserName");
         // insert new user using dao
@@ -108,7 +108,7 @@ class UserDaoTest {
      * Verify insert a user with a trip successfully runs
      */
     @Test
-    void insertUserWithTripsSuccess() {
+    void insertUserWithTripsSuccess() throws Exception {
         // put trip on user and user on trip
         User newUser = new User("NewUserWithTrips");
         Trip newTrip = new Trip("2021 Road Tour", newUser);
@@ -121,5 +121,17 @@ class UserDaoTest {
         User insertedUser = (User) userDao.getById(id);
         // compare users using all fields of entity
         assertTrue(newUser.equals(insertedUser));
+    }
+
+    /**
+     * Test get all users with last name exact.
+     *
+     * @throws Exception the exception
+     */
+    @Test
+    public void getByPropertyEqual() throws Exception {
+        List<User> users = userDao.getByPropertyEqual("username", "jilltest");
+        assertTrue(users.size() > 0);
+        assertTrue(users.get(0).getId()==1);
     }
 }
