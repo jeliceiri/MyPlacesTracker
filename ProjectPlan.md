@@ -66,6 +66,7 @@
 
 ##  Week 10
 - [x] Consume RESTful Web Service: The Covid Act Now API
+- [x] Deploy updates to AWS
 - [x] Add dao for API
 - [x] Add JUnit5 tests for API
 - [x] Add Java Security: authentication and access control (AWS)
@@ -75,26 +76,27 @@
 
 ##  Week 11
 - [x] Add CSS Framework
-- [ ] Finish Application Flow document
-- [ ] Research Cognito Logout
+- [x] Build Application Startup Servlet
+- [x] Deploy updates to AWS
 - [x] Add User Table, Entity, and Tests
 - [x] Update Trips Table in Prod and Test databases
-- [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
 - [x] Add JSP to add destination
 - [x] Build trip info jsp - add destination info
-- [x] Build servelt to add destination using APIs
+- [x] Build servlet to add destination using APIs
 - [x] Use javabean properties which implicitly call the getters instead of explicit calls
-- [ ] Weekly Time Log
+- [x] Weekly Time Log
 
 ##  Week 12
-- [ ] Add data validation
-- [ ] Add error jsp
-- [ ] Continue to implement CSS
+- [ ] Add User Table
+- [ ] Finish Application Flow document
+- [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
+- [ ] Research Cognito Logout
 - [ ] Weekly Time Log
 
 ##  Week 13
 - [ ] Weekly Time Log
-- [ ] Continue to implement data validation
+- [ ] Add data validation
+- [ ] Add error jsp
 - [ ] Continue to implement CSS
 - [ ] Prepare for code reviews
 

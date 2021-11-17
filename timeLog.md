@@ -8,8 +8,9 @@
 |W4 - 9/20/21|Project Plan, Design Docs|15|Hibernate, DAO, Logging, Testing |Exploring JSoup, Troubleshooting Hibernate, Forwarding Servlets, Linking JSPs | Properties Interface, Improve Project Plan
 |W5 - 9/27/21 | Hibernate many-to-one ER, Improve Unit Testing|13 |Improving tests with generic DAO and equals methods, Hibernate many-to-one relationships  |EL syntax, Github PAT expiring, Change Code Coverage Runner |Look into pages caching while running tomcat |
 |W6 - 10/4/21 | Deploy to AWS using Elastic Beanstalk, Code Reviews |10 |AWS Elastic Beanstalk, MySQL Workbench |AWS deploy successfully, sending hidden input in forms, placing form element inside EL loop/iteration, untrack folder for gitignore |AWS CI Pipeline research |
-|W7 - 10/11/21 | AWS Cognito |8 |AWS Cognito |smooth implementation |Implement AWS Cognito in Indie Project, AWS CI Pipeline research |
-|W8 - 10/18/21 | Consume RESTful Web Services |10 |Consume RESTful Web Services, RoboPOJOGenerator, Jackson Libraries |Mapping RESTful Json to POJO |team project survey, class survey, AWS CI /
+|W7 - 10/11/21 | AWS Cognito |8 |AWS Cognito |smooth implementation |Implement AWS Cognito in Indie Project |
+|W8 - 10/18/21 | Consume RESTful Web Services |10 |Consume RESTful Web Services, RoboPOJOGenerator, Jackson Libraries |Mapping RESTful Json to POJO |team project survey, class survey /
 |W9 - 10/25/21 | Build RESTful Web Services with Java, Team Project |14 |Jax-RS, Jersey, Jackson |DB connection issue, Implementing Cognito in Indie Project | AWS CI Pipeline research |
-|W10 - 11/1/21 |Git Branching, Team Work, Individual Project Work  | 15 | Continue with Restful Web Services and Git Branching Team Work | Resolve Bugs in RESTful DAO | User Table, Cognito Auth and Logout, CSS Framework  |
-|W11 - 11/8/21 |  |  |  |  |   |
+|W10 - 11/1/21 |Git Branching, Team Project Work, Individual Project Work  | 15 | Continue with Restful Web Services and Git Branching Team Work | Resolve Bugs in RESTful DAO | User Table, Cognito Auth and Logout, CSS Framework  |
+|W11 - 11/8/21 |Team Project Work, Individual Project Work  | 15 | Swagger, RESTful Services Endpoints, Response Status Codes, API Exception Handling | Hooking in Swagger, Deploying to AWS | Data validation and error jsp, AWS CI Pipeline    |
+|W12 - 11/15/21 |Submit Team Project, Individual Project Work  | 4 |  |  |   |
