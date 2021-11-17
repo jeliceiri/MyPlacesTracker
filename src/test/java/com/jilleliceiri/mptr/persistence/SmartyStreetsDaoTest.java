@@ -14,9 +14,11 @@ class SmartyStreetsDaoTest {
 
     /**
      * Verifies the getCityResponseSuccess() successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void getCityResponseSuccess()  {
+    void getCityResponseSuccess()  throws Exception {
         SmartyStreetsDao dao = new SmartyStreetsDao();
         SmartyResponseItem[] city = dao.getCityResponse("Green Bay", "WI");
         String fips = "55009";

@@ -19,10 +19,19 @@ import static org.junit.jupiter.api.Assertions.*;
 public class NoteDaoTest {
 
 
+    /**
+     * The Note dao.
+     */
     GenericDao noteDao;
+    /**
+     * The Trip dao.
+     */
     GenericDao tripDao;
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
@@ -38,9 +47,11 @@ public class NoteDaoTest {
 
     /**
      * Verifies getById note successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void getByIdSuccess() {
+    void getByIdSuccess() throws Exception {
         Note retrievedNote = (Note)noteDao.getById(1);
         assertEquals("ABC Hotel", retrievedNote.getName());
         assertEquals("2021 Fall Colour Tour St.", retrievedNote.getDescription());
@@ -49,18 +60,22 @@ public class NoteDaoTest {
 
     /**
      * Verifies getAll notes successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void getAllNotesSuccess(){
+    void getAllNotesSuccess()throws Exception {
         List<Note> notes = noteDao.getAll();
         assertEquals(2, notes.size());
     }
 
     /**
      * Verify saveOrUpdate successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void saveOrUpdateSuccess() {
+    void saveOrUpdateSuccess() throws Exception {
         String noteName = "New Note Name";
         // retrieve a note to update
         Note noteToUpdate = (Note)noteDao.getById(2);
@@ -76,9 +91,11 @@ public class NoteDaoTest {
 
     /**
      * Verify insert note successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void insertNoteWithTripSuccess() {
+    void insertNoteWithTripSuccess() throws Exception {
         // retrieve a trip
         Trip retrievedTrip = (Trip)tripDao.getById(2);
         // create a new note (use the constructor to set all values)
@@ -94,9 +111,11 @@ public class NoteDaoTest {
 
     /**
      * Vefify delete note successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void deleteSuccess(){
+    void deleteSuccess()throws Exception {
         // retrieve a trip
         Trip trip = (Trip)tripDao.getById(1);
         // delete a note attached to the trip

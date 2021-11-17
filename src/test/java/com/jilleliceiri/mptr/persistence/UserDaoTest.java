@@ -21,10 +21,19 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserDaoTest {
 
 
+    /**
+     * The User dao.
+     */
     GenericDao userDao;
+    /**
+     * The Trip dao.
+     */
     GenericDao tripDao;
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
@@ -40,6 +49,8 @@ class UserDaoTest {
 
     /**
      * Verifies getById successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
     void getByIdSuccess() throws Exception {
@@ -49,6 +60,8 @@ class UserDaoTest {
 
     /**
      * Verifies getAll users successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
     void getAllUsersSuccess()throws Exception {
@@ -58,6 +71,8 @@ class UserDaoTest {
 
     /**
      * Verify delete user successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
     void deleteSuccess()throws Exception {
@@ -71,6 +86,8 @@ class UserDaoTest {
 
     /**
      * Verify saveOrUpdate successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
     void saveOrUpdateSuccess() throws Exception {
@@ -90,6 +107,8 @@ class UserDaoTest {
 
     /**
      * Verify insert user successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
     void insertUserSuccess() throws Exception {
@@ -106,6 +125,8 @@ class UserDaoTest {
 
     /**
      * Verify insert a user with a trip successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
     void insertUserWithTripsSuccess() throws Exception {

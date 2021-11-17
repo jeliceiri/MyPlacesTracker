@@ -14,13 +14,25 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type Destination dao test.
+ */
 public class DestinationDaoTest {
 
+    /**
+     * The Destination dao.
+     */
     GenericDao destinationDao;
+    /**
+     * The Trip dao.
+     */
     GenericDao tripDao;
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
@@ -36,20 +48,25 @@ public class DestinationDaoTest {
 
     // TODO: look again at getAllNotes - should be just for a particular trip
     // TODO: look again at getAllDestinations - should be just for a particular trip
+
     /**
      * Verifies getAll destinations successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void getAllDestinationsSuccess(){
+    void getAllDestinationsSuccess()throws Exception {
         List<Destination> destinations = destinationDao.getAll();
         assertEquals(4, destinations.size());
     }
 
     /**
      * Verify saveOrUpdate successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void saveOrUpdateSuccess() {
+    void saveOrUpdateSuccess() throws Exception {
         String city = "Waunakee";
         String state = "WI";
         String zipCode = "53597";
@@ -74,9 +91,11 @@ public class DestinationDaoTest {
 
     /**
      * Verify insert destination successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void insertDestinationWithTripSuccess() {
+    void insertDestinationWithTripSuccess() throws Exception {
         // retrieve a trip
         Trip retrievedTrip = (Trip)tripDao.getById(2);
         // create a new destination (use the constructor to set all values)
@@ -92,9 +111,11 @@ public class DestinationDaoTest {
 
     /**
      * Vefify delete destination successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void deleteSuccess(){
+    void deleteSuccess()throws Exception {
         // retrieve a trip
         Trip trip = (Trip)tripDao.getById(1);
         // delete a destination attached to the trip

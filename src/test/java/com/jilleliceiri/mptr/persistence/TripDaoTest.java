@@ -20,11 +20,23 @@ import static org.junit.jupiter.api.Assertions.*;
 class TripDaoTest {
 
 
+    /**
+     * The Trip dao.
+     */
     GenericDao tripDao;
+    /**
+     * The Note dao.
+     */
     GenericDao noteDao;
+    /**
+     * The Destination dao.
+     */
     GenericDao destinationDao;
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
@@ -41,9 +53,11 @@ class TripDaoTest {
 
     /**
      * Verifies getById successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void getByIdSuccess() {
+    void getByIdSuccess() throws Exception {
         Trip retrievedTrip = (Trip) tripDao.getById(1);
         assertEquals("Fall  Colour Tour", retrievedTrip.getName());
         assertEquals(2, retrievedTrip.getDestinationSet().size());
@@ -51,18 +65,22 @@ class TripDaoTest {
 
     /**
      * Verifies getAll trips successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void getAllTripsSuccess(){
+    void getAllTripsSuccess()throws Exception {
         List<Trip> trips = tripDao.getAll();
         assertEquals(3, trips.size());
     }
 
     /**
      * Vefify delete trip successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void deleteSuccess(){
+    void deleteSuccess()throws Exception {
         tripDao.delete(tripDao.getById(1));
         assertNull(tripDao.getById(1));
 
@@ -77,9 +95,11 @@ class TripDaoTest {
 
     /**
      * Verify saveOrUpdate successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void saveOrUpdateSuccess() {
+    void saveOrUpdateSuccess() throws Exception {
         String tripName = "New Trip Name";
         // retrieve a trip to update
         Trip tripToUpdate = (Trip) tripDao.getById(3);
@@ -96,9 +116,11 @@ class TripDaoTest {
 
     /**
      * Verify insert trip successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void insertTripSuccess() {
+    void insertTripSuccess() throws Exception {
         // create a new trip (use the constructor to set all values)
         Trip newTrip = new Trip("Northern Summer");
         // insert new book using dao
@@ -112,9 +134,11 @@ class TripDaoTest {
 
     /**
      * Verify insert a trip with a destination successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void insertTripWithDestinationsSuccess() {
+    void insertTripWithDestinationsSuccess() throws Exception {
         // put destination on trip and trip on destination
         Trip newTrip = new Trip("Wisconsin Summer");
         Destination newDestination = new Destination("Waunakee", "WI", "53597", "55025", "95", newTrip);
@@ -131,9 +155,11 @@ class TripDaoTest {
 
     /**
      * Verify insert a trip with a note successfully runs
+     *
+     * @throws Exception the exception
      */
     @Test
-    void insertTripWithNotesSuccess() {
+    void insertTripWithNotesSuccess() throws Exception {
         // put note on trip and trip on note
         Trip newTrip = new Trip("New Trip");
         String noteName = "New Note";
