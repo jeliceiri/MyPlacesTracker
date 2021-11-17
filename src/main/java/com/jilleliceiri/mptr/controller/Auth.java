@@ -5,6 +5,8 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jilleliceiri.mptr.entity.User;
+import com.jilleliceiri.mptr.persistence.GenericDao;
 import com.jilleliceiri.mptr.util.PropertiesLoader;
 import com.jilleliceiri.mptr.auth.*;
 import com.jilleliceiri.mptr.util.PropertiesLoader;
@@ -37,6 +39,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.RSAPublicKeySpec;
 import java.util.Base64;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 import java.util.stream.Collectors;
 
@@ -63,6 +66,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
     String POOL_ID;
     Keys jwks;
     private final Logger logger = LogManager.getLogger(this.getClass());
+    GenericDao userDao;
 
     @Override
     public void init() throws ServletException {
@@ -183,12 +187,17 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         DecodedJWT jwt = verifier.verify(tokenResponse.getIdToken());
         String userName = jwt.getClaim("cognito:username").asString();
         logger.debug("here's the username: " + userName);
-
         logger.debug("here are all the available claims: " + jwt.getClaims());
 
-        // TODO decide what you want to do with the info!
-        // for now, I'm just returning username for display back to the browser
-
+        // Check if the user is in User table, if not add them
+        userDao = new GenericDao(User.class);
+        List<User> users = userDao.getByPropertyEqual("username", userName);
+        logger.info("The Users List from database from the username: " + users);
+        if (users.isEmpty()){
+            User newUser = new User("userName");
+            userDao.insert(newUser);
+            logger.info("Inserted a new user: " + newUser);
+        }
         return userName;
     }
 

@@ -75,6 +75,23 @@ public class GenericDao <T> {
     }
 
     /**
+     * Get user by property (exact match)
+     * sample usage: getByPropertyEqual("lastName", "Curry")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return
+     */
+    public List<T> getByPropertyEqual(String propertyName, String value) {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        query.select(root).where(builder.equal(root.get(propertyName),value));
+        return session.createQuery(query).getResultList();
+    }
+
+    /**
      * update Entity
      *
      * @param entity the entity to be inserted or updated
@@ -120,4 +137,8 @@ public class GenericDao <T> {
         session.close();
 
     }
+
+
+
+
 }
