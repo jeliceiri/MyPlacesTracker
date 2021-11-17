@@ -3,6 +3,7 @@ package com.jilleliceiri.mptr.persistence;
 import com.jilleliceiri.mptr.entity.Destination;
 import com.jilleliceiri.mptr.entity.Note;
 import com.jilleliceiri.mptr.entity.Trip;
+import com.jilleliceiri.mptr.entity.User;
 import com.jilleliceiri.mptr.test.util.Database;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -33,6 +34,8 @@ class TripDaoTest {
      */
     GenericDao destinationDao;
 
+    GenericDao userDao;
+
     private final Logger logger = LogManager.getLogger(this.getClass());
     /**
      * The Session factory.
@@ -47,6 +50,7 @@ class TripDaoTest {
         tripDao = new GenericDao(Trip.class);
         noteDao = new GenericDao(Note.class);
         destinationDao = new GenericDao(Destination.class);
+        userDao = new GenericDao(User.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -122,7 +126,8 @@ class TripDaoTest {
     @Test
     void insertTripSuccess() throws Exception {
         // create a new trip (use the constructor to set all values)
-        Trip newTrip = new Trip("Northern Summer");
+        User user = (User)userDao.getById(1);
+        Trip newTrip = new Trip("Northern Summer", user);
         // insert new book using dao
         int id = tripDao.insert(newTrip);
         assertNotEquals(0,id);
@@ -140,7 +145,8 @@ class TripDaoTest {
     @Test
     void insertTripWithDestinationsSuccess() throws Exception {
         // put destination on trip and trip on destination
-        Trip newTrip = new Trip("Wisconsin Summer");
+        User user = (User)userDao.getById(1);
+        Trip newTrip = new Trip("Wisconsin Summer", user);
         Destination newDestination = new Destination("Waunakee", "WI", "53597", "55025", "95", newTrip);
         // nice to have method that does the set destinations
         newTrip.addDestination(newDestination);
@@ -161,13 +167,13 @@ class TripDaoTest {
     @Test
     void insertTripWithNotesSuccess() throws Exception {
         // put note on trip and trip on note
-        Trip newTrip = new Trip("New Trip");
+        User user = (User)userDao.getById(1);
+        Trip newTrip = new Trip("New Trip", user);
         String noteName = "New Note";
         String noteDescription = "New Note Description";
         Note newNote = new Note(noteName, noteDescription, newTrip);
         // nice to have method that does the set destinations
         newTrip.addNote(newNote);
-
         // insert new trip using dao
         int id = tripDao.insert(newTrip);
         // retrieve the inserted trip
