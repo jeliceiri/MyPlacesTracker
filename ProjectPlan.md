@@ -87,22 +87,25 @@
 - [x] Weekly Time Log
 
 ##  Week 12
-- [ ] Add User Table
-- [ ] Finish Application Flow document
-- [ ] Implement Continuous Deployment Pipeline using AWS CodePipeline
-- [ ] Research Cognito Logout
-- [ ] Weekly Time Log
+- [x] Update Unit Tests to include User and throw exception
+- [x] Team Project Work week: build RESTful web service with Java
+- [x] Add method to GenericDao: getByPropertyEqual() for checking if username is in User table
+- [x] Make Professional Development Presentation Continuous Deployment using AWS CodePipeline and AWS Codebuild
+- [x] Weekly Time Log
 
 ##  Week 13
-- [ ] Weekly Time Log
 - [ ] Add data validation
-- [ ] Add error jsp
+- [x] Add login error messages to jsp
 - [ ] Continue to implement CSS
-- [ ] Prepare for code reviews
+- [ ] Research Cognito Logout
+- [ ] Finish Application Flow document
+- [ ] Prepare for code review
+- [ ] Asynchronous Messaging Exercise
+- [ ] Weekly Time Log
 
 ##  Week 14
-- [ ] Weekly Time Log
 - [ ] Individaul project code reviews
+- [ ] Weekly Time Log
 
 ##  Week 15
 - [ ] Create Video Presentation
