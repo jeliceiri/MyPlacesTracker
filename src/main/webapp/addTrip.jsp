@@ -17,6 +17,12 @@
         <input type="text" class="" id="addTrip" name="addTrip" aria-describedby="addTrip" placeholder="Trip Name">
     </div>
     <button type="submit" name="submit" value="addTrip" class="btn waves-effect waves-blue">Add Trip</button>
+    <span class="error">
+    <c:forEach var="err" items="${errMsg}">
+        <c:out value="${err}"/>
+        <br>
+    </c:forEach>
+    </span>
 </form>
 </div>
 </body>

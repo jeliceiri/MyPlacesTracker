@@ -182,4 +182,6 @@ class TripDaoTest {
         assertTrue(insertedTrip.equals(newTrip));
     }
 
+
+
 }

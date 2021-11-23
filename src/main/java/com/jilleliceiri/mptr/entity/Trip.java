@@ -1,5 +1,8 @@
 package com.jilleliceiri.mptr.entity;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -21,7 +24,10 @@ public class Trip {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+
     @Column(name = "trip_name")
+    @NotNull
+    @NotEmpty
     private String name;
 
     @ManyToOne

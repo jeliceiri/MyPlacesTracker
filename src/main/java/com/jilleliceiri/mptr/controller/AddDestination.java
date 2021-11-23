@@ -51,6 +51,7 @@ public class AddDestination extends HttpServlet {
         String zipCode = smartyResponseItems[0].getZipcodes().get(0).getZipcode();
         String countyFips = smartyResponseItems[0].getZipcodes().get(0).getCountyFips();
 
+        // TODO redo CovidActNow - it has changed!
         // check if ICU Capacity is null or 0 (data not available), otherwise format as percent
         CovidResponse localHealthInfo = covidDao.getResponse(countyFips);
         Double icuCapacityRatio = localHealthInfo.getMetrics().getIcuCapacityRatio();
