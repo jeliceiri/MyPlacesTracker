@@ -1,5 +1,6 @@
 package com.jilleliceiri.mptr.entity;
 
+import jakarta.validation.constraints.NotEmpty;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -28,8 +29,9 @@ public class Note {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @NotEmpty
     private String name;
-
+    @NotEmpty
     private String description;
 
     @ManyToOne

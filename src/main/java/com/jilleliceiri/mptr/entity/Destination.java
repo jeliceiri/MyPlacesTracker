@@ -1,5 +1,7 @@
 package com.jilleliceiri.mptr.entity;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -20,9 +22,12 @@ public class Destination {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @NotEmpty
     private String city;
 
     // two digits
+    @NotEmpty
+    @Size(min = 2, max = 2, message = "must be two digits")
     private String state;
 
     // 5 digits https://www.zipcodeapi.com/API#locToZips or https://www.smartystreets.com/products/apis/us-zipcode-api
