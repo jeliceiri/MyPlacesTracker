@@ -14,6 +14,27 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
  * The type Covid dao test.
  */
 public class CovidDaoTest {
+    
+    /**
+     * Verifies the CovidDao getResponse() successfully runs
+     *
+     * @throws Exception the exception
+     */
+    @Test
+    void getLocalHospitalCapacityResponseWaunakee() throws Exception {
+        String localHealthCapacityRatio = getLocalHealthCapacityResponse("55025"); // FIPS - Waunakee
+        assertNotNull(localHealthCapacityRatio);
+    }
+    /**
+     * Verifies the CovidDao getResponse() successfully runs
+     *
+     * @throws Exception the exception
+     */
+    @Test
+    void getLocalHospitalCapacityResponseAspen() throws Exception {
+        String localHealthCapacityRatio = getLocalHealthCapacityResponse("08097"); //Aspen (N/A)
+        assertNotNull(localHealthCapacityRatio);
+    }
 
     /**
      * Verifies the CovidDao getResponse() successfully runs
@@ -21,9 +42,25 @@ public class CovidDaoTest {
      * @throws Exception the exception
      */
     @Test
-    void getLocalHospitalCapacityResponse() throws Exception {
+    void getLocalHospitalCapacityResponseMunising() throws Exception {
+        String localHealthCapacityRatio = getLocalHealthCapacityResponse("26003");//Munising (null)
+        assertNotNull(localHealthCapacityRatio);
+    }
+
+    /**
+     * Verifies the CovidDao getResponse() successfully runs
+     *
+     * @throws Exception the exception
+     */
+    @Test
+    void getLocalHospitalCapacityResponseNegaunee() throws Exception {
+        String localHealthCapacityRatio = getLocalHealthCapacityResponse("26103");//Negaunee
+        assertNotNull(localHealthCapacityRatio);
+    }
+
+    public String getLocalHealthCapacityResponse (String fips){
         CovidDao dao = new CovidDao();
-        CovidResponse localHealthInfo = dao.getResponse("55025");// FIPS - Waunakee: 55025 Aspen (N/A): 08097 Munising (null): 26003
+        CovidResponse localHealthInfo = dao.getResponse(fips);// FIPS - Waunakee: 55025 Aspen (N/A): 08097 Munising (null): 26003
         Double icuCapacityRatio = localHealthInfo.getMetrics().getIcuCapacityRatio();
         String percentage;
         if (icuCapacityRatio == null || icuCapacityRatio == 0){
@@ -32,6 +69,6 @@ public class CovidDaoTest {
             NumberFormat format = NumberFormat.getPercentInstance(Locale.US);
             percentage = format.format(icuCapacityRatio);
         }
-        assertNotNull(icuCapacityRatio);
+        return percentage;
     }
 }

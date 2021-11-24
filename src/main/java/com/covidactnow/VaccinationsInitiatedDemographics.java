@@ -11,10 +11,10 @@ public class VaccinationsInitiatedDemographics{
 	private Ethnicity ethnicity;
 
 	@JsonProperty("sex")
-	private Sex sex;
+	private Object sex;
 
 	@JsonProperty("age")
-	private Age age;
+	private Object age;
 
 	public void setRace(Race race){
 		this.race = race;
@@ -32,19 +32,19 @@ public class VaccinationsInitiatedDemographics{
 		return ethnicity;
 	}
 
-	public void setSex(Sex sex){
+	public void setSex(Object sex){
 		this.sex = sex;
 	}
 
-	public Sex getSex(){
+	public Object getSex(){
 		return sex;
 	}
 
-	public void setAge(Age age){
+	public void setAge(Object age){
 		this.age = age;
 	}
 
-	public Age getAge(){
+	public Object getAge(){
 		return age;
 	}
 

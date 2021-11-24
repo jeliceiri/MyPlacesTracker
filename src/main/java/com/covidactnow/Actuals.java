@@ -20,7 +20,7 @@ public class Actuals{
 	private HospitalBeds hospitalBeds;
 
 	@JsonProperty("vaccinesAdministered")
-	private Object vaccinesAdministered;
+	private int vaccinesAdministered;
 
 	@JsonProperty("newCases")
 	private int newCases;
@@ -89,11 +89,11 @@ public class Actuals{
 		return hospitalBeds;
 	}
 
-	public void setVaccinesAdministered(Object vaccinesAdministered){
+	public void setVaccinesAdministered(int vaccinesAdministered){
 		this.vaccinesAdministered = vaccinesAdministered;
 	}
 
-	public Object getVaccinesAdministered(){
+	public int getVaccinesAdministered(){
 		return vaccinesAdministered;
 	}
 

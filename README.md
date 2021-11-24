@@ -34,21 +34,20 @@ Materialize
 
 ### Data Validation
 Hibernate Validator
+Materialize Validation
 explore Bootstrap Validator
 
 ### Hosting
 Amazon Weg Services (AWS)
 
 ### Independent Research
-AWS Continuous Integration (CI)
+AWS Code Pipeline
 
 ### Unit Testing
 JUnit 5 with 80%+ code coverage
 
 ### Web Services consumed using Java
-US ZIP Code API Tool 
-
-Federal Information Processing Standards (FIPS)
+Smarty Streets
 
 The Covid Act Now API
 

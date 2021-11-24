@@ -38,7 +38,7 @@
             </c:forEach>
             </tbody>
         </table>
-        <p>* Percent Occupied or N/A - data not available</p>
+        <p>* Displays the Percent Occupied or N/A - where data is not available</p>
     </form>
 </div>
     <div class="card-panel">

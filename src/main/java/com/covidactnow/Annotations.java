@@ -20,13 +20,13 @@ public class Annotations{
 	private HospitalBeds hospitalBeds;
 
 	@JsonProperty("vaccinesAdministered")
-	private Object vaccinesAdministered;
+	private VaccinesAdministered vaccinesAdministered;
 
 	@JsonProperty("infectionRate")
 	private InfectionRate infectionRate;
 
 	@JsonProperty("newCases")
-	private Object newCases;
+	private NewCases newCases;
 
 	@JsonProperty("caseDensity")
 	private CaseDensity caseDensity;
@@ -59,7 +59,7 @@ public class Annotations{
 	private TestPositivityRatio testPositivityRatio;
 
 	@JsonProperty("newDeaths")
-	private Object newDeaths;
+	private NewDeaths newDeaths;
 
 	@JsonProperty("vaccinationsCompletedRatio")
 	private Object vaccinationsCompletedRatio;
@@ -107,11 +107,11 @@ public class Annotations{
 		return hospitalBeds;
 	}
 
-	public void setVaccinesAdministered(Object vaccinesAdministered){
+	public void setVaccinesAdministered(VaccinesAdministered vaccinesAdministered){
 		this.vaccinesAdministered = vaccinesAdministered;
 	}
 
-	public Object getVaccinesAdministered(){
+	public VaccinesAdministered getVaccinesAdministered(){
 		return vaccinesAdministered;
 	}
 
@@ -123,11 +123,11 @@ public class Annotations{
 		return infectionRate;
 	}
 
-	public void setNewCases(Object newCases){
+	public void setNewCases(NewCases newCases){
 		this.newCases = newCases;
 	}
 
-	public Object getNewCases(){
+	public NewCases getNewCases(){
 		return newCases;
 	}
 
@@ -211,11 +211,11 @@ public class Annotations{
 		return testPositivityRatio;
 	}
 
-	public void setNewDeaths(Object newDeaths){
+	public void setNewDeaths(NewDeaths newDeaths){
 		this.newDeaths = newDeaths;
 	}
 
-	public Object getNewDeaths(){
+	public NewDeaths getNewDeaths(){
 		return newDeaths;
 	}
 
