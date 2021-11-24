@@ -26,7 +26,6 @@ public class Trip {
 
 
     @Column(name = "trip_name")
-    @NotNull
     @NotEmpty
     private String name;
 

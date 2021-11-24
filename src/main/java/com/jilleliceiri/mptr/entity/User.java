@@ -1,5 +1,6 @@
 package com.jilleliceiri.mptr.entity;
 
+import jakarta.validation.constraints.NotEmpty;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -16,6 +17,7 @@ public class User {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @NotEmpty
     private String username;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
