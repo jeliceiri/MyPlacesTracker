@@ -31,4 +31,6 @@ class SmartyStreetsDaoTest {
         assertEquals(fips, retrievedFips);
         assertEquals(zipCode, retrievedZip);
     }
+
+
 }

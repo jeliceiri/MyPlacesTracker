@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class CovidDaoTest {
     
     /**
-     * Verifies the CovidDao getResponse() successfully runs
+     * Verifies the CovidDao getResponse() successfully runs with city of Waunakee
      *
      * @throws Exception the exception
      */
@@ -26,7 +26,7 @@ public class CovidDaoTest {
         assertNotNull(localHealthCapacityRatio);
     }
     /**
-     * Verifies the CovidDao getResponse() successfully runs
+     * Verifies the CovidDao getResponse() successfully runs with city of Aspen
      *
      * @throws Exception the exception
      */
@@ -37,7 +37,7 @@ public class CovidDaoTest {
     }
 
     /**
-     * Verifies the CovidDao getResponse() successfully runs
+     * Verifies the CovidDao getResponse() successfully runs with city of Munising
      *
      * @throws Exception the exception
      */
@@ -48,7 +48,7 @@ public class CovidDaoTest {
     }
 
     /**
-     * Verifies the CovidDao getResponse() successfully runs
+     * Verifies the CovidDao getResponse() successfully runs with City of Negaunee
      *
      * @throws Exception the exception
      */

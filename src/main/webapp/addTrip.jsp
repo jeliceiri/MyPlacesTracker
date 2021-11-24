@@ -8,7 +8,7 @@
 <%@include file="contentType.jsp" %>
 <html>
 <%@include file="head.jsp" %>
-<body class="container">
+<body class="container" onload="">
 <div class="card-panel">
     <h1>Add Trip</h1>
     <form action="addTrip" class="" method="post">
