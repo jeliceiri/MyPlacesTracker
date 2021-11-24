@@ -30,12 +30,11 @@ MySql 8.0.16
 Tomcat's JDBC Realm Authentication
 
 ### CSS
-tbd: Bootstrap or Materialize
+Materialize
 
 ### Data Validation
-Explore Hibernate's validation
-
-Bootstrap Validator
+Hibernate Validator
+explore Bootstrap Validator
 
 ### Hosting
 Amazon Weg Services (AWS)

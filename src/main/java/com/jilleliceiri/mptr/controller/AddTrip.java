@@ -3,7 +3,9 @@ package com.jilleliceiri.mptr.controller;
 import com.jilleliceiri.mptr.entity.Trip;
 import com.jilleliceiri.mptr.entity.User;
 import com.jilleliceiri.mptr.persistence.GenericDao;
-import com.jilleliceiri.mptr.util.ValidateTrip;
+import com.jilleliceiri.mptr.util.GenericValidator;
+import com.jilleliceiri.mptr.util.ValidatorFactory;
+import jakarta.validation.Validator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -25,6 +27,7 @@ import java.util.List;
 )
 
 public class AddTrip extends HttpServlet {
+    GenericValidator genericValidator = new GenericValidator(Object.class);
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String page = "/trips.jsp";
@@ -33,7 +36,8 @@ public class AddTrip extends HttpServlet {
         int userId = Integer.parseInt(req.getParameter("userId"));
         User user = (User)userDao.getById(userId);
         Trip newTrip = new Trip(req.getParameter("addTrip"), user);
-        List<String> errors = ValidateTrip.validate(newTrip);
+        Validator validator = ValidatorFactory.init();
+        List<String> errors = genericValidator.validate(newTrip, validator);
         if (!errors.isEmpty()) {
             req.setAttribute("errMsg", errors);
             page = "/addTrip.jsp";

@@ -14,11 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ValidatorTest {
 
-    GenericValidator genericTripValidator = new GenericValidator(Trip.class);
-    GenericValidator genericUserValidator = new GenericValidator(User.class);
-    GenericValidator genericDestinationValidator = new GenericValidator(Destination.class);
-    GenericValidator genericNoteValidator = new GenericValidator(Note.class);
-
+    GenericValidator genericValidator = new GenericValidator(Object.class);
 
     @Test
     public void verifyTripNameFieldIsNotEmpty() {
@@ -26,7 +22,7 @@ public class ValidatorTest {
         User user = new User("jilltest");
         Trip newTrip = new Trip("", user);
         Validator validator = ValidatorFactory.init();
-        List<String> errors = genericTripValidator.validate(newTrip, validator);
+        List<String> errors = genericValidator.validate(newTrip, validator);
         assertEquals("[name: must not be empty]", errors.toString());
     }
 
@@ -34,9 +30,10 @@ public class ValidatorTest {
     public void verifyUserNameFieldIsNotEmpty() {
         User user = new User("");
         Validator validator = ValidatorFactory.init();
-        List<String> errors = genericUserValidator.validate(user, validator);
+        List<String> errors = genericValidator.validate(user, validator);
         assertEquals("[username: must not be empty]", errors.toString());
     }
+
 
     @Test
     public void verifyDestinationCityFieldIsNotEmpty() {
@@ -45,7 +42,7 @@ public class ValidatorTest {
 
         Destination destination = new Destination("", "WI", "", "", "", trip);
         Validator validator = ValidatorFactory.init();
-        List<String> errors = genericUserValidator.validate(destination, validator);
+        List<String> errors = genericValidator.validate(destination, validator);
         assertEquals("[city: must not be empty]", errors.toString());
     }
 
@@ -56,9 +53,10 @@ public class ValidatorTest {
 
         Destination destination = new Destination("Waunakee", "", "", "", "", trip);
         Validator validator = ValidatorFactory.init();
-        List<String> errors = genericUserValidator.validate(destination, validator);
+        List<String> errors = genericValidator.validate(destination, validator);
         assertEquals(errors.size(), 2); // state must not be empty and state must be 2 digits
     }
+
 
     @Test
     public void verifyDestinationStateFieldIsTwoDigits() {
@@ -67,7 +65,7 @@ public class ValidatorTest {
 
         Destination destination = new Destination("Waunakee", "W", "", "", "", trip);
         Validator validator = ValidatorFactory.init();
-        List<String> errors = genericDestinationValidator.validate(destination, validator);
+        List<String> errors = genericValidator.validate(destination, validator);
         assertEquals("[state: must be two digits]", errors.toString());
     }
 
@@ -78,7 +76,7 @@ public class ValidatorTest {
 
         Note note = new Note("", "description", trip);
         Validator validator = ValidatorFactory.init();
-        List<String> errors = genericNoteValidator.validate(note, validator);
+        List<String> errors = genericValidator.validate(note, validator);
         assertEquals("[name: must not be empty]", errors.toString());
     }
 
@@ -89,7 +87,8 @@ public class ValidatorTest {
 
         Note note = new Note("new-note-name", "", trip);
         Validator validator = ValidatorFactory.init();
-        List<String> errors = genericNoteValidator.validate(note, validator);
+        List<String> errors = genericValidator.validate(note, validator);
         assertEquals("[description: must not be empty]", errors.toString());
     }
+
 }
