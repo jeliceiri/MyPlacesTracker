@@ -2,12 +2,7 @@
 
 This repository is the individual project for the final Java course at Madison College in the Fall 2021. The project is an innovative, data-driven Java application that solves a real world problem.
 ## Problem Statement
-Travelers need to have important information about the places that they plan to visit. Hotel reservations and means of transportation are important
-to plan, but increasingly important is the local health information and weather forecast of local destinations.
-Trip planner sites like Google Travel provides useful information, but takes you to external sites for health and weather information. 
-What happens if you or your loved one needs to visit a hospital for emergency services? Wouldn't it be useful to know vital information such as nearby hospital ICU capacity?
-MyPlaces will have this current information in one useful location, along with the ability to write, view, and edit travel notes - which contain anything the traveler wants to store in them. 
-MyPlaces can also save information to a file which can be printed or viewed later in case of no internet connection.  
+Travelers need to have important local information about the places that they plan to visit. Most travel sites such as Google Travel focus on how to get there and where to stay but don't directly provide important logistical information in one place. One type of information that is particularly important is local health information in the event of an emergency. For example, what if you or your loved one needs to visit a hospital for emergency services? It would be useful to know the capabilities of nearby hospitals by looking at the current local Intensive Care Unit (ICU) capacity. Another important piece of information is the weather forecast, which is essential for planning. MyPlaces will have this current information in one easy-to-use location. This travel logistics site will also enable the users to write, view, and edit travel notes. MyPlaces can also save information to a file which can be printed or viewed later in case of no internet connection.
 
 ## Project Technologies/Techniques
 
