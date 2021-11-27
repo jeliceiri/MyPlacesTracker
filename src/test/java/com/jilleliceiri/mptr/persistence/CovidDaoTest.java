@@ -58,7 +58,7 @@ public class CovidDaoTest {
         assertNotNull(localHealthCapacityRatio);
     }
 
-    public String getLocalHealthCapacityResponse (String fips){
+    public String getLocalHealthCapacityResponse (String fips) {
         CovidDao dao = new CovidDao();
         CovidResponse localHealthInfo = dao.getResponse(fips);// FIPS - Waunakee: 55025 Aspen (N/A): 08097 Munising (null): 26003
         Double icuCapacityRatio = localHealthInfo.getMetrics().getIcuCapacityRatio();

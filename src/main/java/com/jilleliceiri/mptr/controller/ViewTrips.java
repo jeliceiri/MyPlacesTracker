@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * A servlet to retrieve all trips to view
+ * A servlet to retrieve all of the user's trips to view
  * @author pwaite
  */
 
@@ -31,7 +31,6 @@ public class ViewTrips extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         HttpSession session = req.getSession();
-
         GenericDao tripDao = new GenericDao(Trip.class);
         GenericDao userDao = new GenericDao(User.class);
         int userId = 0;
@@ -51,7 +50,6 @@ public class ViewTrips extends HttpServlet {
         // get all the User's trips
         tripSet = user.getTripSet();
 
-        //req.setAttribute("userId", userId);
         req.setAttribute("trips", tripSet);
         session.setAttribute("userId", userId);
         session.setAttribute("userName", userName);
