@@ -94,17 +94,20 @@
 - [x] Weekly Time Log
 
 ##  Week 13
-- [ ] Add data validation
+- [x] Add data validation
 - [x] Add login error messages to jsp
-- [ ] Continue to implement CSS
-- [ ] Research Cognito Logout
-- [ ] Finish Application Flow document
-- [ ] Prepare for code review
-- [ ] Asynchronous Messaging Exercise
-- [ ] Weekly Time Log
+- [x] Prepare for code review
+- [x] Asynchronous Messaging Exercise
+- [x] Weekly Time Log
 
 ##  Week 14
-- [ ] Individaul project code reviews
+- [ ] Research Code Quality Plugin Tools
+- [ ] Complete data validation
+- [ ] Continue preparation for code review
+- [ ] Complete Code Review for another individual
+- [ ] Continue to implement CS
+- [ ] Research Cognito Logout
+- [ ] Finish Application Flow document
 - [ ] Weekly Time Log
 
 ##  Week 15
