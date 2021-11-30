@@ -25,6 +25,7 @@
             <th>Zip Code</th>
             <th>County Fips Code</th>
             <th>Nearby Hospital ICU Capacity*</th>
+            <th>County Covid Risk Level <br/>Low, Med, High, Very High, or Severe</th>
             </thead>
             <tbody>
             <c:forEach var="destination" items="${destinationSet}">
@@ -34,11 +35,12 @@
                     <td>${destination.zipCode}</td>
                     <td>${destination.countyFipsCode}</td>
                     <td>${destination.countyHospitalCapacity}</td>
+                    <td>${destination.risk}</td>
                 </tr>
             </c:forEach>
             </tbody>
         </table>
-        <p>* Displays the Percent Occupied or N/A - where data is not available</p>
+        <p>* Displays the Percent Occupied or N/A (data is not available)</p>
         <c:if test="${not empty destinationSet}">
             <input type="hidden" class="" id="tripIDUpdate" name="tripID" value="${tripInfo.id}">
             <button type="submit" value="Refresh" name="submit" class="btn waves-effect waves-blue">Refresh</button>

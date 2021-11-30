@@ -39,7 +39,6 @@ public class CovidDao {
         }
     }
 
-
     public CovidResponse getResponse(String fips){
         Client client = ClientBuilder.newClient();
         String apikey = properties.getProperty("apikey");

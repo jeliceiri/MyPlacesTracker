@@ -147,7 +147,7 @@ class TripDaoTest {
         // put destination on trip and trip on destination
         User user = (User)userDao.getById(1);
         Trip newTrip = new Trip("Wisconsin Summer", user);
-        Destination newDestination = new Destination("Waunakee", "WI", "53597", "55025", "95", newTrip);
+        Destination newDestination = new Destination("Waunakee", "WI", "53597", "55025", "95", "high", newTrip);
         // nice to have method that does the set destinations
         newTrip.addDestination(newDestination);
 

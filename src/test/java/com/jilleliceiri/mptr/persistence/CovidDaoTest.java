@@ -58,6 +58,39 @@ public class CovidDaoTest {
         assertNotNull(localHealthCapacityRatio);
     }
 
+    @Test
+    void getRiskLevelNegaunee() throws Exception {
+        String riskLevel = getLocalRiskLevel("26103");//Negaunee
+        assertNotNull(riskLevel);
+        System.out.println(riskLevel);
+    }
+
+    @Test
+    void getRiskLevelAllendaleCo() throws Exception {
+        String riskLevel = getLocalRiskLevel("45005");// Allendale County, SC FIPS 45005
+        assertNotNull(riskLevel);
+        System.out.println(riskLevel);
+    }
+
+    private String getLocalRiskLevel(String fips) {
+        CovidDao dao = new CovidDao();
+        String risk;
+        CovidResponse covidResponse = dao.getResponse(fips);
+        int riskInt = covidResponse.getRiskLevels().getOverall();
+        if (riskInt == 0) {
+            risk = "low";
+        } else if (riskInt == 1) {
+            risk = "medium";
+        } else if (riskInt == 2) {
+            risk = "high";
+        } else if (riskInt == 3) {
+            risk = "very high";
+        } else if (riskInt == 4) {
+            risk = "severe";
+        } else risk = "N/A";
+        return risk;
+    }
+
     public String getLocalHealthCapacityResponse (String fips) {
         CovidDao dao = new CovidDao();
         CovidResponse localHealthInfo = dao.getResponse(fips);// FIPS - Waunakee: 55025 Aspen (N/A): 08097 Munising (null): 26003

@@ -50,7 +50,7 @@ public class AddDestination extends HttpServlet {
         Trip trip = (Trip) tripDao.getById(id);
 
         // validate Destination's city and state fields
-        Destination destination = new Destination(city, state, "", "", "", trip);
+        Destination destination = new Destination(city, state, "", "", "", "", trip);
         Validator validator = ValidatorFactory.init();
         List<String> errors = genericValidator.validate(destination, validator);
         if (!errors.isEmpty()) {
@@ -66,6 +66,7 @@ public class AddDestination extends HttpServlet {
                 destination.setZipCode(smartyResponseItems[0].getZipcodes().get(0).getZipcode());
                 destination.setCountyFipsCode(smartyResponseItems[0].getZipcodes().get(0).getCountyFips());
                 destination.setCountyHospitalCapacity(getLocalHealthInfo(destination.getCountyFipsCode()));
+                destination.setRisk(getLocalRiskLevel(destination.getCountyFipsCode()));
 
                 // insert new destination
                 destinationDao.insert(destination);
@@ -113,5 +114,24 @@ public class AddDestination extends HttpServlet {
             icuPercentage = format.format(icuCapacityRatio);
         }
         return icuPercentage;
+    }
+
+    protected String getLocalRiskLevel(String fips) {
+        CovidDao dao = new CovidDao();
+        String risk;
+        CovidResponse covidResponse = dao.getResponse(fips);
+        int riskInt = covidResponse.getRiskLevels().getOverall();
+        if (riskInt == 0) {
+            risk = "low";
+        } else if (riskInt == 1) {
+            risk = "medium";
+        } else if (riskInt == 2) {
+            risk = "high";
+        } else if (riskInt == 3) {
+            risk = "very high";
+        } else if (riskInt == 4) {
+            risk = "severe";
+        } else risk = "N/A";
+        return risk;
     }
 }

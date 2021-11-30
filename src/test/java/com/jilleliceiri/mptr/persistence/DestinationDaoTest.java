@@ -72,6 +72,7 @@ public class DestinationDaoTest {
         String zipCode = "53597";
         String countyFipsCode = "55025";
         String countyHospitalCapacity = "95";
+        String risk = "high";
 
         // retrieve a destination to update
         Destination destinationToUpdate = (Destination) destinationDao.getById(2);
@@ -81,6 +82,7 @@ public class DestinationDaoTest {
         destinationToUpdate.setZipCode(zipCode);
         destinationToUpdate.setCountyFipsCode(countyFipsCode);
         destinationToUpdate.setCountyHospitalCapacity(countyHospitalCapacity);
+        destinationToUpdate.setRisk(risk);
         // save the changes
         destinationDao.saveOrUpdate(destinationToUpdate);
         // retrieve the same note
@@ -99,7 +101,7 @@ public class DestinationDaoTest {
         // retrieve a trip
         Trip retrievedTrip = (Trip)tripDao.getById(2);
         // create a new destination (use the constructor to set all values)
-        Destination newDestination = new Destination("Waunakee", "WI", "53597", "55025", "95", retrievedTrip);
+        Destination newDestination = new Destination("Waunakee", "WI", "53597", "55025", "95", "high", retrievedTrip);
         // insert new destination using dao
         int id = destinationDao.insert(newDestination);
         assertNotEquals(0,id);

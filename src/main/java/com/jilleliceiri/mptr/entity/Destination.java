@@ -39,7 +39,10 @@ public class Destination {
     // https://api.covidactnow.org/v2/county/26103.json?apiKey=78de86dd6d95400cb27a7bfdbfe4b47d
     private String countyHospitalCapacity;
 
-    // https://covidactnow.org/covid-risk-levels-metrics
+    private String risk;
+
+
+// https://covidactnow.org/covid-risk-levels-metrics
 
     @ManyToOne
     private Trip trip;
@@ -71,12 +74,13 @@ public class Destination {
      * @param countyHospitalCapacity the county hospital capacity
      * @param trip                   the trip
      */
-    public Destination(String city, String state, String zipCode, String countyFipsCode, String countyHospitalCapacity, Trip trip) {
+    public Destination(String city, String state, String zipCode, String countyFipsCode, String countyHospitalCapacity, String risk, Trip trip) {
         this.city = city;
         this.state = state;
         this.zipCode = zipCode;
         this.countyFipsCode = countyFipsCode;
         this.countyHospitalCapacity = countyHospitalCapacity;
+        this.risk = risk;
         this.trip = trip;
     }
 
@@ -206,6 +210,17 @@ public class Destination {
         this.countyHospitalCapacity = countyHospitalCapacity;
     }
 
+    public String getRisk() {
+        return risk;
+    }
+
+    public void setRisk(String risk) {
+        this.risk = risk;
+    }
+
+    // removed trip > stackoverflow error recursive loop
+
+
     @Override
     public String toString() {
         return "Destination{" +
@@ -215,7 +230,7 @@ public class Destination {
                 ", zipCode='" + zipCode + '\'' +
                 ", countyFipsCode='" + countyFipsCode + '\'' +
                 ", countyHospitalCapacity='" + countyHospitalCapacity + '\'' +
-                // removed trip > stackoverflow error recursive loop
+                ", risk='" + risk + '\'' +
                 '}';
     }
 
@@ -224,7 +239,7 @@ public class Destination {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Destination that = (Destination) o;
-        return id == that.id && Objects.equals(city, that.city) && Objects.equals(state, that.state) && Objects.equals(zipCode, that.zipCode) && Objects.equals(countyFipsCode, that.countyFipsCode) && Objects.equals(countyHospitalCapacity, that.countyHospitalCapacity) && Objects.equals(trip, that.trip);
+        return id == that.id && Objects.equals(city, that.city) && Objects.equals(state, that.state) && Objects.equals(zipCode, that.zipCode) && Objects.equals(countyFipsCode, that.countyFipsCode) && Objects.equals(countyHospitalCapacity, that.countyHospitalCapacity) && Objects.equals(risk, that.risk) && Objects.equals(trip, that.trip);
     }
 
     @Override

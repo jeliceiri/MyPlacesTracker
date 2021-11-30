@@ -57,10 +57,13 @@ public class TripInfo extends HttpServlet {
         AddDestination addDestination = new AddDestination();
         GenericDao destinationDao = new GenericDao(Destination.class);
         String refreshed = "Destinations information has been refreshed.";
-        // update the local hospital capacity field data
+        // update the local hospital capacity field and risk field data
         for (Destination destination : destinations) {
-            String icuPercentage = addDestination.getLocalHealthInfo(destination.getCountyFipsCode());
+            String fips = destination.getCountyFipsCode();
+            String icuPercentage = addDestination.getLocalHealthInfo(fips);
+            String risk = addDestination.getLocalRiskLevel(fips);
             destination.setCountyHospitalCapacity(icuPercentage);
+            destination.setRisk(risk);
             destinationDao.saveOrUpdate(destination);
         }
         req.setAttribute("refreshed", refreshed);

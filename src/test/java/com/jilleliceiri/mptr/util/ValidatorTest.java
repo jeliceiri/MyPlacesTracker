@@ -40,7 +40,7 @@ public class ValidatorTest {
         User user = new User("jill-test");
         Trip trip = new Trip("new-trip-test", user);
 
-        Destination destination = new Destination("", "WI", "", "", "", trip);
+        Destination destination = new Destination("", "WI", "", "", "", "", trip);
         Validator validator = ValidatorFactory.init();
         List<String> errors = genericValidator.validate(destination, validator);
         assertEquals("[city: must not be empty]", errors.toString());
@@ -51,7 +51,7 @@ public class ValidatorTest {
         User user = new User("jill-test");
         Trip trip = new Trip("new-trip-test", user);
 
-        Destination destination = new Destination("Waunakee", "", "", "", "", trip);
+        Destination destination = new Destination("Waunakee", "", "", "", "", "", trip);
         Validator validator = ValidatorFactory.init();
         List<String> errors = genericValidator.validate(destination, validator);
         assertEquals(errors.size(), 2); // state must not be empty and state must be 2 digits
@@ -63,7 +63,7 @@ public class ValidatorTest {
         User user = new User("jill-test");
         Trip trip = new Trip("new-trip-test", user);
 
-        Destination destination = new Destination("Waunakee", "W", "", "", "", trip);
+        Destination destination = new Destination("Waunakee", "W", "", "", "", "", trip);
         Validator validator = ValidatorFactory.init();
         List<String> errors = genericValidator.validate(destination, validator);
         assertEquals("[state: must be two digits]", errors.toString());
