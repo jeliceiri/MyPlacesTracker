@@ -7,9 +7,8 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jilleliceiri.mptr.entity.User;
 import com.jilleliceiri.mptr.persistence.GenericDao;
-import com.jilleliceiri.mptr.util.PropertiesLoader;
 import com.jilleliceiri.mptr.auth.*;
-import com.jilleliceiri.mptr.util.PropertiesLoader;
+import com.jilleliceiri.mptr.util.PropertiesLoaderInterface;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -40,7 +39,6 @@ import java.security.spec.RSAPublicKeySpec;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Properties;
 import java.util.stream.Collectors;
 
 
@@ -54,7 +52,7 @@ import java.util.stream.Collectors;
  * Inspired by: https://stackoverflow.com/questions/52144721/how-to-get-access-token-using-client-credentials-using-java-code
  */
 
-public class Auth extends HttpServlet implements PropertiesLoader {
+public class Auth extends HttpServlet implements PropertiesLoaderInterface {
 
     String CLIENT_ID;
     String CLIENT_SECRET;
@@ -125,7 +123,6 @@ public class Auth extends HttpServlet implements PropertiesLoader {
      * @param authRequest the request to the oauth2/token url in cognito
      * @return response from the oauth2/token endpoint which should include id token, access token and refresh token
      * @throws IOException
-     * @throws InterruptedException
      */
     private TokenResponse getToken(HttpRequest authRequest) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();

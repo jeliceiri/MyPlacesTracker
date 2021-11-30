@@ -50,10 +50,10 @@ public class EditNote extends HttpServlet {
             String description = req.getParameter("noteDescription");
 
             // if name or description are empty then retrieve the previously stored values
-            if (name == "") {
+            if (name.equals("")) {
                 name = note.getName();
             }
-            if (description == "") {
+            if (description.equals("")) {
                 description = note.getDescription();
             }
 

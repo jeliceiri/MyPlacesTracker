@@ -1,6 +1,6 @@
 package com.jilleliceiri.mptr.controller;
 
-import com.jilleliceiri.mptr.util.PropertiesLoader;
+import com.jilleliceiri.mptr.util.PropertiesLoaderInterface;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Properties;
 
 /**
  * The type Log in.
@@ -24,7 +23,7 @@ import java.util.Properties;
 /** Begins the authentication process using AWS Cognito
  *
  */
-public class LogIn extends HttpServlet implements PropertiesLoader {
+public class LogIn extends HttpServlet implements PropertiesLoaderInterface {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 

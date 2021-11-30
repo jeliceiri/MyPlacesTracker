@@ -1,10 +1,7 @@
 package com.jilleliceiri.mptr.util;
 
-import com.jilleliceiri.mptr.entity.Trip;
 import jakarta.validation.ConstraintViolation;
-import jakarta.validation.Validation;
 import jakarta.validation.Validator;
-import jakarta.validation.ValidatorFactory;
 
 import java.util.ArrayList;
 import java.util.List;

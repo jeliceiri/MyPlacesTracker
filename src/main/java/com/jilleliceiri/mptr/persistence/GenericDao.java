@@ -1,6 +1,5 @@
 package com.jilleliceiri.mptr.persistence;
 
-import com.jilleliceiri.mptr.entity.Trip;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -113,7 +112,7 @@ public class GenericDao <T> {
      * @return the id int of the inserted entity
      */
     public int insert(T entity) {
-        int id = 0;
+        int id;
         logger.debug("Inserting: {}", entity);
         Session session = getSession();
         Transaction transaction = session.beginTransaction();

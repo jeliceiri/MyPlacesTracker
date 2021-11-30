@@ -27,8 +27,7 @@ public class AddNoteForm extends HttpServlet {
         // get the tripID, turn it into a trip, and send it to the Add Note Form
         GenericDao genericDao = new GenericDao(Trip.class);
         int id = (Integer.parseInt(req.getParameter("tripID")));
-        Trip trip = new Trip();
-        trip = (Trip)genericDao.getById(id);
+        Trip trip = (Trip)genericDao.getById(id);
         req.setAttribute("trip", trip);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/addNote.jsp");
         dispatcher.forward(req, resp);

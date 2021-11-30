@@ -34,7 +34,7 @@ public class ViewTrips extends HttpServlet {
         GenericDao tripDao = new GenericDao(Trip.class);
         GenericDao userDao = new GenericDao(User.class);
         int userId = 0;
-        Set<Trip> tripSet = new HashSet<>();
+        Set<Trip> tripSet;
 
         // get the userName and id
         String userName = req.getParameter("userName");

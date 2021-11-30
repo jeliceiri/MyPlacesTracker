@@ -38,8 +38,7 @@ public class AddNote extends HttpServlet {
         int id = (Integer.parseInt(req.getParameter("tripID")));
 
         // make trip object
-        Trip trip = new Trip();
-        trip = (Trip)tripDao.getById(id);
+        Trip trip = (Trip) tripDao.getById(id);
 
         // insert new note
         Note newNote = new Note(noteName, noteDescription, trip);

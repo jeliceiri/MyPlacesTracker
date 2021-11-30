@@ -39,17 +39,23 @@
             </tbody>
         </table>
         <p>* Displays the Percent Occupied or N/A - where data is not available</p>
+        <c:if test="${not empty destinationSet}">
+            <input type="hidden" class="" id="tripIDUpdate" name="tripID" value="${tripInfo.id}">
+            <button type="submit" value="Refresh" name="submit" class="btn waves-effect waves-blue">Refresh</button>
+        </c:if>
+        <c:if test="${not empty refreshed}">
+            <p><i>${refreshed}</i></p>
+        </c:if>
+
     </form>
 </div>
     <div class="card-panel">
         <h2>Travel Notes </h2>
         <table class="table" id="noteTable">
             <thead>
-
             <th>Note Name</th>
             <th>Note Description</th>
             <th></th>
-
             </thead>
             <tbody>
             <c:forEach var="note" items="${noteSet}">
@@ -66,7 +72,6 @@
             </c:forEach>
             </tbody>
         </table>
-
     </div>
 
 <div class="card-panel">

@@ -1,4 +1,4 @@
-package com.jilleliceiri.mptr.controller;
+package com.jilleliceiri.mptr.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

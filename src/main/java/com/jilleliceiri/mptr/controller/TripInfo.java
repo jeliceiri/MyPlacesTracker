@@ -19,9 +19,9 @@ import java.util.List;
 
 /**
  * A servlet to view info about a trip - its destinations and notes
+ *
  * @author pwaite
  */
-
 @WebServlet(
         urlPatterns = {"/tripInfo"}
 )
@@ -30,26 +30,39 @@ public class TripInfo extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // get the tripID, turn it into a trip, and send it to the TripInfo jsp
+        // get the tripID, instantiate the Trip, get its destinations and notes, and send to trip info jsp
         GenericDao genericDao = new GenericDao(Trip.class);
-
         int id = (Integer.parseInt(req.getParameter("tripID")));
         logger.debug("Getting Trip ID: {}", id);
-        Trip tripInfo = new Trip();
-        tripInfo = (Trip)genericDao.getById(id);
-        req.setAttribute("tripInfo", tripInfo);
+        Trip tripInfo = (Trip)genericDao.getById(id);
         List<Note> notes = new ArrayList(tripInfo.getNoteSet());
         List<Destination> destinations = new ArrayList(tripInfo.getDestinationSet());
         logger.debug("The list of notes: {}", notes);
         logger.debug("The list of destinations: {}", destinations);
+        // check if refresh destinations button was pressed
+        if (req.getParameter("submit").equals("Refresh")) {
+            refreshDestinations(destinations, req);
+        }
+        req.setAttribute("tripInfo", tripInfo);
         req.setAttribute("noteSet", notes);
         req.setAttribute("destinationSet", destinations);
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/tripInfo.jsp");
         dispatcher.forward(req, resp);
+    }
+
+    private void refreshDestinations(List<Destination> destinations, HttpServletRequest req) {
+        AddDestination addDestination = new AddDestination();
+        GenericDao destinationDao = new GenericDao(Destination.class);
+        String refreshed = "Destinations information has been refreshed.";
+        // update the local hospital capacity field data
+        for (Destination destination : destinations) {
+            String icuPercentage = addDestination.getLocalHealthInfo(destination.getCountyFipsCode());
+            destination.setCountyHospitalCapacity(icuPercentage);
+            destinationDao.saveOrUpdate(destination);
+        }
+        req.setAttribute("refreshed", refreshed);
     }
 }

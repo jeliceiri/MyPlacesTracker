@@ -1,6 +1,5 @@
 package com.jilleliceiri.mptr.controller;
 
-import com.jilleliceiri.mptr.entity.Destination;
 import com.jilleliceiri.mptr.entity.Trip;
 import com.jilleliceiri.mptr.persistence.GenericDao;
 

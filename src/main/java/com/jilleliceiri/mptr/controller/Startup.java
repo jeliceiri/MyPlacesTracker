@@ -1,5 +1,7 @@
 package com.jilleliceiri.mptr.controller;
 
+import com.jilleliceiri.mptr.util.PropertiesLoaderInterface;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -16,11 +18,6 @@ import java.util.*;
         urlPatterns = { "/startup" },
         loadOnStartup = 1
 )
-/**
- * This is a servlet performs initialization
- *
- * @author jeliceiri
- */
 public class Startup extends HttpServlet implements PropertiesLoaderInterface {
 
     Properties properties;

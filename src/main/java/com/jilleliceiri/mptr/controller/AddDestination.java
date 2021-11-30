@@ -60,7 +60,7 @@ public class AddDestination extends HttpServlet {
             forwardDispatcher(req, resp, page);
         } else {
             // set the zip code, county fips, and local icu capacity fields on Destination object
-            SmartyResponseItem[] smartyResponseItems = new SmartyResponseItem[0];
+            SmartyResponseItem[] smartyResponseItems;
             try {
                 smartyResponseItems = getSmartyResponse(city, state);
                 destination.setZipCode(smartyResponseItems[0].getZipcodes().get(0).getZipcode());
@@ -96,12 +96,11 @@ public class AddDestination extends HttpServlet {
     // get response from SmartyStreets RESTful API
     private SmartyResponseItem[] getSmartyResponse(String city, String state) {
         SmartyStreetsDao smartyStreetsDao = new SmartyStreetsDao();
-        SmartyResponseItem[] smartyResponseItems = smartyStreetsDao.getCityResponse(city, state);
-        return smartyResponseItems;
+        return smartyStreetsDao.getCityResponse(city, state);
     }
 
     // get response from Covid Act Now RESTful API
-    private String getLocalHealthInfo(String countyFips) {
+    protected String getLocalHealthInfo(String countyFips) {
         CovidDao covidDao = new CovidDao();
         CovidResponse localHealthInfo = covidDao.getResponse(countyFips);
         Double icuCapacityRatio = localHealthInfo.getMetrics().getIcuCapacityRatio();
