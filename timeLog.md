@@ -15,6 +15,6 @@
 |W11 - 11/8/21 |Team Project Work, Individual Project Work  | 15 | Swagger, RESTful Services Endpoints, Response Status Codes, API Exception Handling | Hooking in Swagger, Deploying to AWS | AWS CI Pipeline    |
 |W12 - 11/15/21 |Submit Team Project, Professional Development Presentation - AWS Code Pipeline, Individual Project Work  | 10 | AWS Code Pipeline and Codebuild | Debugging AWS Code Pipeline Build and Deploy errors | Data validation and error jsp  |
 |W13 - 11/22/21 |Asynchronous Messaging	  | 10 | Enterprise Java Beans, Java Message Service (JMS) API  | Hibernate Validator, Rework a changed RESTful service with Jackson POJO ignore annotations  |  Validation  |
-|W14 - 11/29/21 |Code Reviews	  |   |   |   |    |
+|W14 - 11/29/21 |Code Reviews	  |  6 |   |   |    |
 |W15 - 12/6/21 |Individual Project Work	  |   |   |   |    |
 |W16 - 12/13/21 |Individual Project Presentations	  |   |   |   |    |

@@ -79,7 +79,8 @@ public class AddDestination extends HttpServlet {
                 req.setAttribute("noteSet", notes);
                 req.setAttribute("destinationSet", destinations);
             } catch (Exception e) {
-                req.setAttribute("errMsg", "something went wrong, please try again");
+                String errMsg = "Something went wrong please try again";
+                req.setAttribute("errMsg", errMsg);
                 req.setAttribute("trip", trip);
                 page = "/addDestination.jsp";
             } finally {

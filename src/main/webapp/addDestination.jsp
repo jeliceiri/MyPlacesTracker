@@ -26,12 +26,12 @@
         </div>
         <button type="submit" name="submit" value="addDestination" class="btn waves-effect waves-blue">Add Destination
         </button>
-        <span class="error">
+        <p class="error">
         <c:forEach var="err" items="${errMsg}">
             <c:out value="${err}"/>
             <br/>
         </c:forEach>
-        </span>
+        </p>
     </form>
 </div>
 </body>

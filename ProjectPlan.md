@@ -103,6 +103,8 @@
 ##  Week 14
 - [ ] Research Code Quality Plugin Tools
 - [ ] Complete data validation
+- [x] Add ability to refresh Destination data
+- [x] Add risk field to Destination
 - [ ] Continue preparation for code review
 - [ ] Complete Code Review for another individual
 - [ ] Continue to implement CS
