@@ -24,6 +24,7 @@ public class Note {
         this.description = description;
         this.trip = trip;
     }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")

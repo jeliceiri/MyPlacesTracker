@@ -6,6 +6,8 @@ import com.jilleliceiri.mptr.persistence.GenericDao;
 import com.jilleliceiri.mptr.util.GenericValidator;
 import com.jilleliceiri.mptr.util.ValidatorFactory;
 import jakarta.validation.Validator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * A servlet to add a trip
@@ -27,6 +30,7 @@ import java.util.List;
 )
 
 public class AddTrip extends HttpServlet {
+    private final Logger logger = LogManager.getLogger(this.getClass());
     GenericValidator genericValidator = new GenericValidator(Object.class);
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -42,21 +46,13 @@ public class AddTrip extends HttpServlet {
             req.setAttribute("errMsg", errors);
             page = "/addTrip.jsp";
         } else {
-            int id = tripDao.insert(newTrip);
-
-            // get all trips
-            List<Trip> allTrips = new ArrayList<>(tripDao.getAll());
-            // pull trips with that id
-            List<Trip> userIdTrips = new ArrayList<>();
-            for (Trip trip : allTrips){
-                int uid = trip.getUser().getId();
-                System.out.println(uid);
-                if (uid == userId){
-                    userIdTrips.add(trip);
-                }
-            }
+            // insert the new trip and get the users trips
+            tripDao.insert(newTrip);
+            Set<Trip> tripSet = user.getTripSet();
+            tripSet.add(newTrip);
             req.setAttribute("userId", userId);
-            req.setAttribute("trips", userIdTrips);
+            req.setAttribute("trips", tripSet);
+            logger.debug("userId, trips: {} {}", userId, tripSet);
         }
         RequestDispatcher dispatcher = req.getRequestDispatcher(page);
         dispatcher.forward(req, resp);

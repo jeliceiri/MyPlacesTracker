@@ -56,7 +56,6 @@ public class EditNote extends HttpServlet {
             if (description.equals("")) {
                 description = note.getDescription();
             }
-
             // update the note
             note.setName(name);
             note.setDescription(description);
@@ -71,7 +70,7 @@ public class EditNote extends HttpServlet {
         req.setAttribute("tripInfo", trip);
         req.setAttribute("noteSet", notes);
         req.setAttribute("destinationSet", destinations);
-        logger.debug("The noteSet {}", notes);
+        logger.debug("The tripInfo, noteSet, and destinationSet: {} {} {}", trip, notes, destinations);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/tripInfo.jsp");
         dispatcher.forward(req, resp);
     }

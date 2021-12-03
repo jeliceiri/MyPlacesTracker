@@ -27,15 +27,11 @@ public class EditNoteForm extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // get the noteId, retrieve the specified note, and send it to the Edit Note form
+        // Retrieve the specified note and send it to the Edit Note form
         GenericDao noteDao = new GenericDao(Note.class);
         int id = (Integer.parseInt(req.getParameter("noteId")));
-        logger.debug("ForwardToEditNote the id is {}", id );
-
-        Note note;
-        note = (Note)noteDao.getById(id);
-        logger.debug("ForwardToEditNote the note is {}", note );
-
+        Note note = (Note)noteDao.getById(id);
+        logger.debug("The note is: {}", note );
         req.setAttribute("note", note);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/editNote.jsp");
         dispatcher.forward(req, resp);

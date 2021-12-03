@@ -8,6 +8,9 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+/**
+ * The type User.
+ */
 @Entity(name = "User")
 @Table(name = "users")
 public class User {
@@ -23,43 +26,92 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Trip> tripSet = new HashSet<>();
 
+    /**
+     * Instantiates a new User.
+     *
+     * @param username the username
+     */
     public User(String username) {
         this.username = username;
     }
 
+    /**
+     * Instantiates a new User.
+     */
     public User() {
 
     }
 
+    /**
+     * Instantiates a new User.
+     *
+     * @param username the username
+     * @param tripSet  the trip set
+     */
     public User(String username, Set<Trip> tripSet) {
         this.username = username;
         this.tripSet = tripSet;
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets username.
+     *
+     * @return the username
+     */
     public String getUsername() {
         return username;
     }
 
+    /**
+     * Sets username.
+     *
+     * @param username the username
+     */
     public void setUsername(String username) {
         this.username = username;
     }
 
+    /**
+     * Gets trip set.
+     *
+     * @return the trip set
+     */
     public Set<Trip> getTripSet() {
         return tripSet;
     }
 
+    /**
+     * Sets trip set.
+     *
+     * @param tripSet the trip set
+     */
     public void setTripSet(Set<Trip> tripSet) {
         this.tripSet = tripSet;
     }
 
+    /**
+     * Add trip.
+     *
+     * @param newTrip the new trip
+     */
     public void addTrip(Trip newTrip) {
         tripSet.add(newTrip);
         newTrip.setUser(this);

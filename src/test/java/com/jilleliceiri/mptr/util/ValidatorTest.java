@@ -12,10 +12,19 @@ import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * The type Validator test.
+ */
 public class ValidatorTest {
 
+    /**
+     * The Generic validator.
+     */
     GenericValidator genericValidator = new GenericValidator(Object.class);
 
+    /**
+     * Verify trip name field is not empty.
+     */
     @Test
     public void verifyTripNameFieldIsNotEmpty() {
 
@@ -25,7 +34,9 @@ public class ValidatorTest {
         List<String> errors = genericValidator.validate(newTrip, validator);
         assertEquals("[name: must not be empty]", errors.toString());
     }
-
+    /**
+     * Verify user name field is not empty.
+     */
     @Test
     public void verifyUserNameFieldIsNotEmpty() {
         User user = new User("");
@@ -35,6 +46,9 @@ public class ValidatorTest {
     }
 
 
+    /**
+     * Verify destination city field is not empty.
+     */
     @Test
     public void verifyDestinationCityFieldIsNotEmpty() {
         User user = new User("jill-test");
@@ -46,6 +60,9 @@ public class ValidatorTest {
         assertEquals("[city: must not be empty]", errors.toString());
     }
 
+    /**
+     * Verify destination state field is not empty.
+     */
     @Test
     public void verifyDestinationStateFieldIsNotEmpty() {
         User user = new User("jill-test");
@@ -58,6 +75,9 @@ public class ValidatorTest {
     }
 
 
+    /**
+     * Verify destination state field is two digits.
+     */
     @Test
     public void verifyDestinationStateFieldIsTwoDigits() {
         User user = new User("jill-test");
@@ -69,6 +89,9 @@ public class ValidatorTest {
         assertEquals("[state: must be two digits]", errors.toString());
     }
 
+    /**
+     * Verify note name field is not empty.
+     */
     @Test
     public void verifyNoteNameFieldIsNotEmpty() {
         User user = new User("jill-test");
@@ -80,6 +103,9 @@ public class ValidatorTest {
         assertEquals("[name: must not be empty]", errors.toString());
     }
 
+    /**
+     * Verify note description field is not empty.
+     */
     @Test
     public void verifyNoteDescriptionFieldIsNotEmpty() {
         User user = new User("jill-test");

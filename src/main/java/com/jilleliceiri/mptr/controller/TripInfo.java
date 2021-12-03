@@ -36,10 +36,10 @@ public class TripInfo extends HttpServlet {
         // get the tripID, instantiate the Trip, get its destinations and notes, and send to trip info jsp
         GenericDao genericDao = new GenericDao(Trip.class);
         int id = (Integer.parseInt(req.getParameter("tripID")));
-        logger.debug("Getting Trip ID: {}", id);
         Trip tripInfo = (Trip)genericDao.getById(id);
         List<Note> notes = new ArrayList(tripInfo.getNoteSet());
         List<Destination> destinations = new ArrayList(tripInfo.getDestinationSet());
+        logger.debug("The tripInfo: {}", tripInfo);
         logger.debug("The list of notes: {}", notes);
         logger.debug("The list of destinations: {}", destinations);
         // check if refresh destinations button was pressed

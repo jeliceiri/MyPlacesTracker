@@ -46,9 +46,6 @@ public class DestinationDaoTest {
         database.runSQL("cleandb.sql");
     }
 
-    // TODO: look again at getAllNotes - should be just for a particular trip
-    // TODO: look again at getAllDestinations - should be just for a particular trip
-
     /**
      * Verifies getAll destinations successfully runs
      *

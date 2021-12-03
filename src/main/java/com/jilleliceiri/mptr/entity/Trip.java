@@ -64,6 +64,12 @@ public class Trip {
         this.name = name;
     }
 
+    /**
+     * Instantiates a new Trip.
+     *
+     * @param name the name
+     * @param user the user
+     */
     public Trip(String name, User user) {
         this.name = name;
         this.user = user;
@@ -171,16 +177,23 @@ public class Trip {
         newNote.setTrip(this);
     }
 
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
     public User getUser() {
         return user;
     }
 
+    /**
+     * Sets user.
+     *
+     * @param user the user
+     */
     public void setUser(User user) {
         this.user = user;
     }
-
-    // TODO regenerate tostring
-
 
     @Override
     public String toString() {
@@ -205,6 +218,5 @@ public class Trip {
     public int hashCode() {
         return Objects.hash(id, name);
     }
-
 
 }

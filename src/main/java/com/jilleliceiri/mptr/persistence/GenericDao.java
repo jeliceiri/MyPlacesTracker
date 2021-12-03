@@ -45,16 +45,12 @@ public class GenericDao <T> {
      */
     public List<T> getAll() {
         Session session = getSession();
-
         CriteriaBuilder builder = session.getCriteriaBuilder();
-
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from(type);
         List<T> list = session.createQuery(query).getResultList();
-
-        //logger.debug("The list of types " + list);
+        logger.debug("getAll(): {}" + list);
         session.close();
-
         return list;
     }
 
@@ -66,7 +62,7 @@ public class GenericDao <T> {
      * @return the the entity
      */
     public <T>T getById(int id) {
-        logger.debug("Searching for getById {}", id);
+        logger.debug("Searching for getById(): {}", id);
         Session session = getSession();
         T entity = (T) session.get(type, id);
         session.close();
@@ -82,6 +78,7 @@ public class GenericDao <T> {
      * @return
      */
     public List<T> getByPropertyEqual(String propertyName, String value) {
+        logger.debug("getByPropertyEqual(): {} {}", propertyName, value);
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery(type);
@@ -96,7 +93,7 @@ public class GenericDao <T> {
      * @param entity the entity to be inserted or updated
      */
     public void saveOrUpdate(T entity) {
-        logger.debug("SaveOrUpdating: {}", entity);
+        logger.debug("saveOrUpdate(): {}", entity);
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(entity);
@@ -113,7 +110,7 @@ public class GenericDao <T> {
      */
     public int insert(T entity) {
         int id;
-        logger.debug("Inserting: {}", entity);
+        logger.debug("insert(): {}", entity);
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(entity);
@@ -128,16 +125,11 @@ public class GenericDao <T> {
      * @param entity the entity to be deleted
      */
     public void delete(T entity) {
-        logger.debug("Deleting: {}", entity);
+        logger.debug("delete(): {}", entity);
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.delete(entity);
         transaction.commit();
         session.close();
-
     }
-
-
-
-
 }

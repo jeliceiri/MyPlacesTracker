@@ -11,6 +11,8 @@ import com.jilleliceiri.mptr.util.GenericValidator;
 import com.jilleliceiri.mptr.util.ValidatorFactory;
 import com.smartystreets.SmartyResponseItem;
 import jakarta.validation.Validator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -24,6 +26,7 @@ import java.util.*;
 
 /**
  * A servlet that adds a new Destination
+ *
  * @author jeliceiri
  */
 @WebServlet(
@@ -36,6 +39,7 @@ public class AddDestination extends HttpServlet {
      * The Generic validator.
      */
     GenericValidator genericValidator = new GenericValidator(Object.class);
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -78,10 +82,13 @@ public class AddDestination extends HttpServlet {
                 req.setAttribute("tripInfo", trip);
                 req.setAttribute("noteSet", notes);
                 req.setAttribute("destinationSet", destinations);
+                logger.debug("tripInfo, noteSet, and destinationSet: {} {} {}", trip, notes, destinations);
             } catch (Exception e) {
                 String errMsg = "Something went wrong please try again";
                 req.setAttribute("errMsg", errMsg);
                 req.setAttribute("trip", trip);
+                logger.error("error message and trip: {} {}", errMsg, trip);
+                logger.error("exception: {}", e);
                 page = "/addDestination.jsp";
             } finally {
                 forwardDispatcher(req, resp, page);

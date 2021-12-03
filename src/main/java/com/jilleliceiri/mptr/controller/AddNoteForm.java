@@ -2,6 +2,8 @@ package com.jilleliceiri.mptr.controller;
 
 import com.jilleliceiri.mptr.entity.Trip;
 import com.jilleliceiri.mptr.persistence.GenericDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,14 +23,16 @@ import java.io.IOException;
 )
 
 public class AddNoteForm extends HttpServlet {
+    private final Logger logger = LogManager.getLogger(this.getClass());
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // get the tripID, turn it into a trip, and send it to the Add Note Form
+        // retrieve the trip and send it to the Add Note Form
         GenericDao genericDao = new GenericDao(Trip.class);
         int id = (Integer.parseInt(req.getParameter("tripID")));
         Trip trip = (Trip)genericDao.getById(id);
         req.setAttribute("trip", trip);
+        logger.debug("trip: {}", trip);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/addNote.jsp");
         dispatcher.forward(req, resp);
     }

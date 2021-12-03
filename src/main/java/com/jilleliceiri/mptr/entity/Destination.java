@@ -14,9 +14,6 @@ import java.util.Objects;
 @Table(name = "destinations")
 public class Destination {
 
-    // TODO add DestinationDao tests
-    // TODO will need another dao test on entity for delete
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
@@ -29,20 +26,10 @@ public class Destination {
     @NotEmpty
     @Size(min = 2, max = 2, message = "must be two digits")
     private String state;
-
-    // 5 digits https://www.zipcodeapi.com/API#locToZips or https://www.smartystreets.com/products/apis/us-zipcode-api
     private String zipCode;
-
-    // 5 digits https://www.smartystreets.com/products/apis/us-zipcode-api
     private String countyFipsCode;
-
-    // https://api.covidactnow.org/v2/county/26103.json?apiKey=78de86dd6d95400cb27a7bfdbfe4b47d
     private String countyHospitalCapacity;
-
     private String risk;
-
-
-// https://covidactnow.org/covid-risk-levels-metrics
 
     @ManyToOne
     private Trip trip;
@@ -72,6 +59,7 @@ public class Destination {
      * @param zipCode                the zip code
      * @param countyFipsCode         the county fips code
      * @param countyHospitalCapacity the county hospital capacity
+     * @param risk                   the risk
      * @param trip                   the trip
      */
     public Destination(String city, String state, String zipCode, String countyFipsCode, String countyHospitalCapacity, String risk, Trip trip) {
@@ -210,17 +198,25 @@ public class Destination {
         this.countyHospitalCapacity = countyHospitalCapacity;
     }
 
+    /**
+     * Gets risk.
+     *
+     * @return the risk
+     */
     public String getRisk() {
         return risk;
     }
 
+    /**
+     * Sets risk.
+     *
+     * @param risk the risk
+     */
     public void setRisk(String risk) {
         this.risk = risk;
     }
 
     // removed trip > stackoverflow error recursive loop
-
-
     @Override
     public String toString() {
         return "Destination{" +
