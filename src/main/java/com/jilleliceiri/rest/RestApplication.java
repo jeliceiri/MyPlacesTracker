@@ -7,8 +7,12 @@ import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * The type Rest application.
+ * A weekly class exercise for Enterprise Java Class.
+ */
 //Defines the base URI for all resource URIs.
-@ApplicationPath("/services") //You may want to add a value here so that all traffic isn't routed to the class below.
+@ApplicationPath("/services")
 
 //The java class declares root resource and provider classes
 public class RestApplication extends Application {
@@ -17,7 +21,7 @@ public class RestApplication extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
-        h.add(Rest.class );
+        h.add(RestService.class );
         return h;
     }
 }

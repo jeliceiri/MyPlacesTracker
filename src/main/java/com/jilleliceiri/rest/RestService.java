@@ -7,21 +7,37 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jilleliceiri.mptr.entity.Trip;
 import com.jilleliceiri.mptr.persistence.GenericDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.List;
 
+/**
+ * The type Rest service.
+ * A weekly class exercise for Enterprise Java Class.
+ */
 @Path("/trips")
-public class Rest {
+public class RestService {
 
+    /**
+     * The Trip dao.
+     */
     GenericDao tripDao = new GenericDao(Trip.class);
+    private ObjectMapper objectMapper = new ObjectMapper();
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
-    // The Java method will process HTTP GET requests
+    /**
+     * This endpoint returns all of the trips in plain text format.
+     *
+     * @return the trips
+     */
     @GET
-    // The Java method will produce content identified by the MIME Media type "text/plain"
     @Produces("text/plain")
     public Response getTrips() {
         List<Trip> trips = tripDao.getAll();
@@ -32,28 +48,48 @@ public class Rest {
         return Response.status(200).entity(output).build();
     }
 
-    // The Java method will process HTTP GET requests
+    /**
+     * This endpoint returns a particular trip by id in plain text format
+     *
+     * @param id the id
+     * @return the response
+     */
     @GET
     @Path("/{param}")
-    // The Java method will produce content identified by the MIME Media type "text/plain"
     @Produces("text/plain")
     public Response getMessage(@PathParam("param") String id) {
-        // Return a simple message
         int tripID = Integer.parseInt(id);
         Trip trip = (Trip)tripDao.getById(tripID);
         String output = trip.getName();
         return Response.status(200).entity(output).build();
     }
 
+    /**
+     * This endpoint returns all of the trips in JSON format.
+     *
+     * @return the response
+     */
     @GET
     @Path("/json")
     @Produces(MediaType.APPLICATION_JSON)
     public Response produceJSON() {
-        // TODO create a OBJECT to JSON converter class
         List<Trip> trips = tripDao.getAll();
-        return Response.status(200).entity(trips).build();
+        String responseJSON = null;
+        try {
+            responseJSON = objectMapper.writeValueAsString(trips);
+        } catch (JsonProcessingException e) {
+            logger.error("json processing exception", e);
+        }
+
+        return Response.status(200).entity(responseJSON).build();
     }
 
+    /**
+     * Convert fto c response.
+     *
+     * @return the response
+     * @throws JSONException the json exception
+     */
     // Example from: https://crunchify.com/how-to-build-restful-service-with-java-using-jax-rs-and-jersey/
     @GET
     @Path("/json2")
@@ -69,13 +105,4 @@ public class Rest {
         String result = "@Produces(\"application/json\") Output: \n\nF to C Converter Output: \n\n" + jsonObject;
         return Response.status(200).entity(result).build();
     }
-
-    /*
-    @GET
-    @Produces("text/html")
-    public String getHtml() {
-        return "<html><body><h1>Hello, World!!</body></h1></html>";
-    }
-    */
-
 }
