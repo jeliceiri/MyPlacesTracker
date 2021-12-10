@@ -32,29 +32,37 @@ import java.util.Set;
 public class AddTrip extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     GenericValidator genericValidator = new GenericValidator(Object.class);
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String page = "/trips.jsp";
         GenericDao tripDao = new GenericDao(Trip.class);
         GenericDao userDao = new GenericDao(User.class);
+        List<String> errors;
         int userId = Integer.parseInt(req.getParameter("userId"));
-        User user = (User)userDao.getById(userId);
-        Trip newTrip = new Trip(req.getParameter("addTrip"), user);
-        Validator validator = ValidatorFactory.init();
-        List<String> errors = genericValidator.validate(newTrip, validator);
-        if (!errors.isEmpty()) {
-            req.setAttribute("errMsg", errors);
-            page = "/addTrip.jsp";
-        } else {
-            // insert the new trip and get the users trips
-            tripDao.insert(newTrip);
-            Set<Trip> tripSet = user.getTripSet();
-            tripSet.add(newTrip);
-            req.setAttribute("userId", userId);
-            req.setAttribute("trips", tripSet);
-            logger.debug("userId, trips: {} {}", userId, tripSet);
+        try {
+            User user = (User) userDao.getById(userId);
+            Trip newTrip = new Trip(req.getParameter("addTrip"), user);
+            Validator validator = ValidatorFactory.init();
+            errors = genericValidator.validate(newTrip, validator);
+            if (!errors.isEmpty()) {
+                req.setAttribute("errMsg", errors);
+                page = "/addTrip.jsp";
+            } else {
+                // insert the new trip and get the users trips
+                tripDao.insert(newTrip);
+                Set<Trip> tripSet = user.getTripSet();
+                tripSet.add(newTrip);
+                req.setAttribute("userId", userId);
+                req.setAttribute("trips", tripSet);
+                logger.debug("userId, trips: {} {}", userId, tripSet);
+            }
+        } catch (Exception e) {
+            page = "error.jsp";
+            logger.error("Not able to insert new trip", e);
+        } finally {
+            RequestDispatcher dispatcher = req.getRequestDispatcher(page);
+            dispatcher.forward(req, resp);
         }
-        RequestDispatcher dispatcher = req.getRequestDispatcher(page);
-        dispatcher.forward(req, resp);
     }
 }

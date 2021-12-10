@@ -10,8 +10,10 @@
 <%@include file="head.jsp" %>
 <body class="container">
 <div class="card-panel">
-<p>Uh oh! Something went wrong.</p>
-    <a href="logIn"><button type="button" class="btn waves-effect waves-blue">Log in</button></a>
+    <div class="section center">
+        <p><i>Uh oh! Something went wrong.</i></p>
+        <p><strong>Return to the <a href="index.jsp">home page</a></strong></p>
+    </div>
 </div>
 </body>
 </html>
