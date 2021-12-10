@@ -67,7 +67,6 @@ public class CovidDaoTest {
     void getRiskLevelNegaunee() throws Exception {
         String riskLevel = getLocalRiskLevel("26103");//Negaunee
         assertNotNull(riskLevel);
-        System.out.println(riskLevel);
     }
 
     /**
