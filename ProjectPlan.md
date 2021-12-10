@@ -101,18 +101,20 @@
 - [x] Weekly Time Log
 
 ##  Week 14
-- [ ] Research Code Quality Plugin Tools
-- [ ] Complete data validation
+- [x] Research Code Quality Plugin Tools
 - [x] Add ability to refresh Destination data
 - [x] Add risk field to Destination
-- [ ] Continue preparation for code review
-- [ ] Complete Code Review for another individual
-- [ ] Continue to implement CS
-- [ ] Research Cognito Logout
-- [ ] Finish Application Flow document
+- [x] Continue preparation for code review
+- [x] Complete Code Review for another individual
+- [x] Continue to implement CS
+- [x] Start Final Presentation Slides
 - [ ] Weekly Time Log
 
 ##  Week 15
+- [ ] Complete 2nd Final Code Review for another individual
+- [ ] Complete data validation
+- [ ] Finish Application Flow document
+- [ ] Complete Final Presentation Slides
 - [ ] Create Video Presentation
 - [ ] Weekly Time Log
 
