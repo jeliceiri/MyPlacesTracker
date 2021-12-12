@@ -32,7 +32,7 @@ public class Trip {
 
     // fetch - careful if have too many destinations on a trip will load all at once (Lazy load as needed)
     @OneToMany(mappedBy = "trip", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Destination> destinationSet = new HashSet<>(); // each destination has a hospital ICU capacity
+    private Set<Destination> destinationSet = new HashSet<>();
 
     @OneToMany(mappedBy = "trip", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Note> noteSet = new HashSet<>();

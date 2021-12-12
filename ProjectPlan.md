@@ -112,12 +112,12 @@
 
 ##  Week 15
 - [x] Complete 2nd Final Code Review for another individual
-- [ ] Complete data validation
+- [x] Complete data validation
 - [x] Solve Pipeline to Beanstalk issues (EB unable to unpack a war within a zip) 
 - [x] Finish Application Flow document
-- [ ] Complete Final Presentation Slides
-- [ ] Create Video Presentation
-- [ ] Weekly Time Log
+- [x] Complete Final Presentation Slides
+- [x] Create Video Presentation
+- [x] Weekly Time Log
 
 ##  Week 16
 - [ ] Submit Final Project

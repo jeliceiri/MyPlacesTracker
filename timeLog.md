@@ -16,5 +16,5 @@
 |W12 - 11/15/21 |Submit Team Project, Professional Development Presentation - AWS Code Pipeline, Individual Project Work  | 10 | AWS Code Pipeline and Codebuild | Debugging AWS Code Pipeline Build and Deploy errors | Data validation and error jsp  |
 |W13 - 11/22/21 |Asynchronous Messaging	  | 10 | Enterprise Java Beans, Java Message Service (JMS) API  | Hibernate Validator, Rework a changed RESTful service with Jackson POJO ignore annotations  |  Validation  |
 |W14 - 11/29/21 |Code Reviews	  |  13 | Code Quality Tool Plugins  | Materialize Select, Understanding Pipleline to Beanstalk Deployment  |  Finalize Project and Presentation Slides  |
-|W15 - 12/6/21 |Individual Project Work, Additional Code Review	  |  11 | -  | -  | Video Recording    |
+|W15 - 12/6/21 |Individual Project Work, Additional Code Review	  |  14 | Work Week  | Buildspec File  | Video Recording    |
 |W16 - 12/13/21 |Individual Project Presentations	  |   |   |   |    |

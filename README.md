@@ -21,9 +21,12 @@ Travelers need to have important local information about the places that they pl
 | Independent Research           | AWS Code Pipeline and CodeBuild       |
 | Web Services consumed using Java          | SmartyStreets, Covid Act Now, Google Maps and NOAA (future version)       | 
 
-## Design and Planning
-[About MyPlaces Tracker](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/MyPlacesTracker-About.pdf)
+## About
+[YouTube Video Demo](https://youtu.be/eFiF4lzh9iM)
 
+[MyPlaces Tracker - PDF](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/MyPlacesTracker-About.pdf)
+
+## Design and Planning
 [User Stories](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/UserStories.md)
 
 [Screen Design](https://github.com/jeliceiri/MyPlacesTracker/blob/main/DesignDocuments/Screens.md)
