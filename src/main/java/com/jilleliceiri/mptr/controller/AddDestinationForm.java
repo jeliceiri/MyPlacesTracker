@@ -15,6 +15,7 @@ import java.io.IOException;
 
 /**
  * A servlet that retrieves the specified trip and sends it to the Add Destination jsp
+ *
  * @author jeliceiri
  */
 
@@ -24,16 +25,24 @@ import java.io.IOException;
 
 public class AddDestinationForm extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // Retrieve the specified trip and send it to the Add Destination form
         GenericDao tripDao = new GenericDao(Trip.class);
-        // get the tripID, instantiate a trip, and send it to the Add Destination jsp
         int id = (Integer.parseInt(req.getParameter("tripID")));
-        Trip trip = (Trip)tripDao.getById(id);
-        req.setAttribute("trip", trip);
-        logger.debug("trip: {}", trip);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/addDestination.jsp");
-        dispatcher.forward(req, resp);
+        String page = "/addDestination.jsp";
+        try {
+            Trip trip = (Trip) tripDao.getById(id);
+            req.setAttribute("trip", trip);
+            logger.debug("trip: {}", trip);
+        } catch (Exception e) {
+            page = "/error.jsp";
+            logger.error("Error retrieving specified trip", e);
+        } finally {
+            RequestDispatcher dispatcher = req.getRequestDispatcher(page);
+            dispatcher.forward(req, resp);
+        }
     }
 }
 

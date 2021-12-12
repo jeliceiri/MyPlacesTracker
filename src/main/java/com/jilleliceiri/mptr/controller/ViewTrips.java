@@ -56,8 +56,7 @@ public class ViewTrips extends HttpServlet {
             session.setAttribute("userId", userId);
             session.setAttribute("userName", userName);
         } catch (Exception e) {
-            // route to error page
-            page = "error.jsp";
+            page = "/error.jsp";
             logger.error("Error retrieving user and/or trips", e);
         } finally {
             RequestDispatcher dispatcher = req.getRequestDispatcher(page);

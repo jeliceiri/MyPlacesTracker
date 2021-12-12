@@ -29,12 +29,20 @@ public class AddNoteForm extends HttpServlet {
 
         // retrieve the trip and send it to the Add Note Form
         GenericDao genericDao = new GenericDao(Trip.class);
+        Trip trip;
         int id = (Integer.parseInt(req.getParameter("tripID")));
-        Trip trip = (Trip)genericDao.getById(id);
-        req.setAttribute("trip", trip);
-        logger.debug("trip: {}", trip);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/addNote.jsp");
-        dispatcher.forward(req, resp);
+        String page = "/addNote.jsp";
+        try {
+            trip = (Trip)genericDao.getById(id);
+            req.setAttribute("trip", trip);
+            logger.debug("trip: {}", trip);
+        } catch (Exception e){
+            page = "/error.jsp";
+            logger.error("Error retrieving specified trip", e);
+        } finally {
+            RequestDispatcher dispatcher = req.getRequestDispatcher(page);
+            dispatcher.forward(req, resp);
+        }
     }
 }
 

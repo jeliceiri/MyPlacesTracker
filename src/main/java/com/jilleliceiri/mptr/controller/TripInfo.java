@@ -36,21 +36,28 @@ public class TripInfo extends HttpServlet {
         // get the tripID, instantiate the Trip, get its destinations and notes, and send to trip info jsp
         GenericDao genericDao = new GenericDao(Trip.class);
         int id = (Integer.parseInt(req.getParameter("tripID")));
-        Trip tripInfo = (Trip)genericDao.getById(id);
-        List<Note> notes = new ArrayList(tripInfo.getNoteSet());
-        List<Destination> destinations = new ArrayList(tripInfo.getDestinationSet());
-        logger.debug("The tripInfo: {}", tripInfo);
-        logger.debug("The list of notes: {}", notes);
-        logger.debug("The list of destinations: {}", destinations);
-        // check if refresh destinations button was pressed
-        if (req.getParameter("submit").equals("Refresh")) {
-            refreshDestinations(destinations, req);
+        String page = "/tripInfo.jsp";
+        try {
+            Trip tripInfo = (Trip)genericDao.getById(id);
+            List<Note> notes = new ArrayList(tripInfo.getNoteSet());
+            List<Destination> destinations = new ArrayList(tripInfo.getDestinationSet());
+            logger.debug("The tripInfo: {}", tripInfo);
+            logger.debug("The list of notes: {}", notes);
+            logger.debug("The list of destinations: {}", destinations);
+            // check if refresh destinations button was pressed
+            if (req.getParameter("submit").equals("Refresh")) {
+                refreshDestinations(destinations, req);
+            }
+            req.setAttribute("tripInfo", tripInfo);
+            req.setAttribute("noteSet", notes);
+            req.setAttribute("destinationSet", destinations);
+        } catch (Exception e ){
+            page = "/error.jsp";
+            logger.error("Error retrieving Trip Info", e);
+        } finally {
+            RequestDispatcher dispatcher = req.getRequestDispatcher(page);
+            dispatcher.forward(req, resp);
         }
-        req.setAttribute("tripInfo", tripInfo);
-        req.setAttribute("noteSet", notes);
-        req.setAttribute("destinationSet", destinations);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/tripInfo.jsp");
-        dispatcher.forward(req, resp);
     }
 
     private void refreshDestinations(List<Destination> destinations, HttpServletRequest req) {
@@ -58,14 +65,18 @@ public class TripInfo extends HttpServlet {
         GenericDao destinationDao = new GenericDao(Destination.class);
         String refreshed = "Destinations information has been refreshed.";
         // update the local hospital capacity field and risk field data
-        for (Destination destination : destinations) {
-            String fips = destination.getCountyFipsCode();
-            String icuPercentage = addDestination.getLocalHealthInfo(fips);
-            String risk = addDestination.getLocalRiskLevel(fips);
-            destination.setCountyHospitalCapacity(icuPercentage);
-            destination.setRisk(risk);
-            destinationDao.saveOrUpdate(destination);
+        try {
+            for (Destination destination : destinations) {
+                String fips = destination.getCountyFipsCode();
+                String icuPercentage = addDestination.getLocalHealthInfo(fips);
+                String risk = addDestination.getLocalRiskLevel(fips);
+                destination.setCountyHospitalCapacity(icuPercentage);
+                destination.setRisk(risk);
+                destinationDao.saveOrUpdate(destination);
+            }
+            req.setAttribute("refreshed", refreshed);
+        } catch (Exception e) {
+            logger.error("Error refreshing", e);
         }
-        req.setAttribute("refreshed", refreshed);
     }
 }

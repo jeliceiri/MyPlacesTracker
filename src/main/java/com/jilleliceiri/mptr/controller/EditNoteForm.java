@@ -30,11 +30,18 @@ public class EditNoteForm extends HttpServlet {
         // Retrieve the specified note and send it to the Edit Note form
         GenericDao noteDao = new GenericDao(Note.class);
         int id = (Integer.parseInt(req.getParameter("noteId")));
-        Note note = (Note)noteDao.getById(id);
-        logger.debug("The note is: {}", note );
-        req.setAttribute("note", note);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/editNote.jsp");
-        dispatcher.forward(req, resp);
+        String page = "/editNote.jsp";
+        try {
+            Note note = (Note)noteDao.getById(id);
+            logger.debug("The note is: {}", note );
+            req.setAttribute("note", note);
+        } catch (Exception e) {
+            page = "/error.jsp";
+            logger.error("Error retrieving retrieve specified note", e);
+        } finally {
+            RequestDispatcher dispatcher = req.getRequestDispatcher(page);
+            dispatcher.forward(req, resp);
+        }
     }
 }
 

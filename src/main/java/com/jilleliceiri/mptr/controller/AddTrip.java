@@ -58,7 +58,7 @@ public class AddTrip extends HttpServlet {
                 logger.debug("userId, trips: {} {}", userId, tripSet);
             }
         } catch (Exception e) {
-            page = "error.jsp";
+            page = "/error.jsp";
             logger.error("Not able to insert new trip", e);
         } finally {
             RequestDispatcher dispatcher = req.getRequestDispatcher(page);

@@ -108,12 +108,13 @@
 - [x] Complete Code Review for another individual
 - [x] Continue to implement CS
 - [x] Start Final Presentation Slides
-- [ ] Weekly Time Log
+- [x] Weekly Time Log
 
 ##  Week 15
-- [ ] Complete 2nd Final Code Review for another individual
+- [x] Complete 2nd Final Code Review for another individual
 - [ ] Complete data validation
-- [ ] Finish Application Flow document
+- [x] Solve Pipeline to Beanstalk issues (EB unable to unpack a war within a zip) 
+- [x] Finish Application Flow document
 - [ ] Complete Final Presentation Slides
 - [ ] Create Video Presentation
 - [ ] Weekly Time Log

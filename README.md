@@ -17,8 +17,8 @@ Travelers need to have important local information about the places that they pl
 | Security and Authentication           | Amazon Web Services (AWS) Cognito       |  
 | CSS           | Materialize       | 
 | Data Validation           | Hibernate Validator       | 
-| Hosting           | AWS       |
-| Independent Research           | AWS Code Pipeline       |
+| Hosting           | AWS Elastic Beanstalk      |
+| Independent Research           | AWS Code Pipeline and CodeBuild       |
 | Web Services consumed using Java          | SmartyStreets, Covid Act Now, Google Maps and NOAA (future version)       | 
 
 ## Design and Planning

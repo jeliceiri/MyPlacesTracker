@@ -35,64 +35,71 @@ import java.util.*;
 
 public class AddDestination extends HttpServlet {
 
-    /**
-     * The Generic validator.
-     */
     GenericValidator genericValidator = new GenericValidator(Object.class);
+    GenericDao destinationDao = new GenericDao(Destination.class);
+    GenericDao tripDao = new GenericDao(Trip.class);
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         String page = "/tripInfo.jsp";
-        GenericDao destinationDao = new GenericDao(Destination.class);
-        GenericDao tripDao = new GenericDao(Trip.class);
-
+        Trip trip;
+        Destination destination;
         String city = req.getParameter("destinationCity");
         String state = req.getParameter("destinationState");
         int id = (Integer.parseInt(req.getParameter("tripID")));
-        Trip trip = (Trip) tripDao.getById(id);
+        try {
+            trip = (Trip) tripDao.getById(id);
+            // validate Destination's city and state fields
+            destination = new Destination(city, state, "", "", "", "", trip);
+            Validator validator = ValidatorFactory.init();
+            List<String> errors = genericValidator.validate(destination, validator);
+            if (!errors.isEmpty()) {
+                req.setAttribute("errMsg", errors);
+                req.setAttribute("trip", trip);
+                page = "/addDestination.jsp";
+                forwardDispatcher(req, resp, page);
+            } else {
+                setDestinationFields(destination, city, state, req, resp, trip, page);
+            }
+        } catch (Exception e) {
+            page = "/error.jsp";
+            logger.error("Not able to Add Destination", e);
+        } finally {
+            forwardDispatcher(req, resp, page);
+        }
+    }
 
-        // validate Destination's city and state fields
-        Destination destination = new Destination(city, state, "", "", "", "", trip);
-        Validator validator = ValidatorFactory.init();
-        List<String> errors = genericValidator.validate(destination, validator);
-        if (!errors.isEmpty()) {
-            req.setAttribute("errMsg", errors);
+    // set the destination fields: zip code, county fips and local icu capacity
+    private void setDestinationFields(Destination destination, String city, String state, HttpServletRequest req,
+                                      HttpServletResponse resp, Trip trip, String page) throws ServletException, IOException {
+        SmartyResponseItem[] smartyResponseItems;
+        try {
+            smartyResponseItems = getSmartyResponse(city, state);
+            destination.setZipCode(smartyResponseItems[0].getZipcodes().get(0).getZipcode());
+            destination.setCountyFipsCode(smartyResponseItems[0].getZipcodes().get(0).getCountyFips());
+            destination.setCountyHospitalCapacity(getLocalHealthInfo(destination.getCountyFipsCode()));
+            destination.setRisk(getLocalRiskLevel(destination.getCountyFipsCode()));
+
+            // insert new destination
+            destinationDao.insert(destination);
+
+            // get list of notes and destinations to send back to trip info page
+            Set<Note> notes = trip.getNoteSet();
+            Set<Destination> destinations = trip.getDestinationSet();
+            destinations.add(destination);
+            req.setAttribute("tripInfo", trip);
+            req.setAttribute("noteSet", notes);
+            req.setAttribute("destinationSet", destinations);
+            logger.debug("tripInfo, noteSet, and destinationSet: {} {} {}", trip, notes, destinations);
+        } catch (Exception e) {
+            String errMsg = "Something went wrong please try again";
+            req.setAttribute("errMsg", errMsg);
             req.setAttribute("trip", trip);
+            logger.error("error message and trip: {} {}", errMsg, trip);
+            logger.error("exception: {}", e);
             page = "/addDestination.jsp";
             forwardDispatcher(req, resp, page);
-        } else {
-            // set the zip code, county fips, and local icu capacity fields on Destination object
-            SmartyResponseItem[] smartyResponseItems;
-            try {
-                smartyResponseItems = getSmartyResponse(city, state);
-                destination.setZipCode(smartyResponseItems[0].getZipcodes().get(0).getZipcode());
-                destination.setCountyFipsCode(smartyResponseItems[0].getZipcodes().get(0).getCountyFips());
-                destination.setCountyHospitalCapacity(getLocalHealthInfo(destination.getCountyFipsCode()));
-                destination.setRisk(getLocalRiskLevel(destination.getCountyFipsCode()));
-
-                // insert new destination
-                destinationDao.insert(destination);
-
-                // get list of notes and destinations to send back to trip info page
-                Set<Note> notes = trip.getNoteSet();
-                Set<Destination> destinations = trip.getDestinationSet();
-                destinations.add(destination);
-                req.setAttribute("tripInfo", trip);
-                req.setAttribute("noteSet", notes);
-                req.setAttribute("destinationSet", destinations);
-                logger.debug("tripInfo, noteSet, and destinationSet: {} {} {}", trip, notes, destinations);
-            } catch (Exception e) {
-                String errMsg = "Something went wrong please try again";
-                req.setAttribute("errMsg", errMsg);
-                req.setAttribute("trip", trip);
-                logger.error("error message and trip: {} {}", errMsg, trip);
-                logger.error("exception: {}", e);
-                page = "/addDestination.jsp";
-            } finally {
-                forwardDispatcher(req, resp, page);
-            }
         }
     }
 
@@ -108,7 +115,13 @@ public class AddDestination extends HttpServlet {
         return smartyStreetsDao.getCityResponse(city, state);
     }
 
-    // get response from Covid Act Now RESTful API
+    /**
+     * Gets ICU capcacity from Covid Act Now RESTful API
+     *
+     * @param countyFips the county fips
+     * @return the local health info ICU capcacity
+     */
+
     protected String getLocalHealthInfo(String countyFips) {
         CovidDao covidDao = new CovidDao();
         CovidResponse localHealthInfo = covidDao.getResponse(countyFips);
@@ -123,6 +136,13 @@ public class AddDestination extends HttpServlet {
         }
         return icuPercentage;
     }
+
+    /**
+     * Gets local risk level from Covid Act Now RESTful API
+     *
+     * @param fips the fips
+     * @return the local risk level
+     */
 
     protected String getLocalRiskLevel(String fips) {
         CovidDao dao = new CovidDao();

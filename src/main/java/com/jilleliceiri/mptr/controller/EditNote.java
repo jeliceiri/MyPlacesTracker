@@ -34,44 +34,45 @@ public class EditNote extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao noteDao = new GenericDao(Note.class);
+        String page = "/tripInfo.jsp";
+        try {
+            // retrieve note to edit or delete
+            Note note = (Note)noteDao.getById(Integer.parseInt(req.getParameter("noteId")));
+            // retrieve the Trip and its list of notes and destinations to send back to Trip Info jsp
+            Trip trip = note.getTrip();
+            List<Note> notes = new ArrayList(trip.getNoteSet());
+            List<Destination> destinations = new ArrayList(trip.getDestinationSet());
 
-        // retrieve note to edit or delete
-        Note note = (Note)noteDao.getById(Integer.parseInt(req.getParameter("noteId")));
-        Trip trip;
-        trip = note.getTrip();
-
-        List<Note> notes = new ArrayList(trip.getNoteSet());
-        List<Destination> destinations = new ArrayList(trip.getDestinationSet());
-
-        // check if delete or update button was pressed
-        if (req.getParameter("submit").equals("editNote")) {
-
-            String name = req.getParameter("noteName");
-            String description = req.getParameter("noteDescription");
-
-            // if name or description are empty then retrieve the previously stored values
-            if (name.equals("")) {
-                name = note.getName();
+            // check if delete or update button was pressed
+            if (req.getParameter("submit").equals("editNote")) {
+                String name = req.getParameter("noteName");
+                String description = req.getParameter("noteDescription");
+                // if name or description are empty then retrieve the previously stored values
+                if (name.equals("")) {
+                    name = note.getName();
+                }
+                if (description.equals("")) {
+                    description = note.getDescription();
+                }
+                // update the note
+                note.setName(name);
+                note.setDescription(description);
+                noteDao.saveOrUpdate(note);
             }
-            if (description.equals("")) {
-                description = note.getDescription();
+            if (req.getParameter("submit").equals("deleteNote")) {
+                noteDao.delete(note);
+                notes.remove(note);
             }
-            // update the note
-            note.setName(name);
-            note.setDescription(description);
-            noteDao.saveOrUpdate(note);
+            req.setAttribute("tripInfo", trip);
+            req.setAttribute("noteSet", notes);
+            req.setAttribute("destinationSet", destinations);
+            logger.debug("The tripInfo, noteSet, and destinationSet: {} {} {}", trip, notes, destinations);
+        } catch (Exception e){
+            page = "/error.jsp";
+            logger.error("Error editing note", e);
+        } finally {
+            RequestDispatcher dispatcher = req.getRequestDispatcher(page);
+            dispatcher.forward(req, resp);
         }
-        if (req.getParameter("submit").equals("deleteNote")) {
-            noteDao.delete(note);
-            notes.remove(note);
-        }
-
-        // Send the trip's list of notes and destinations to tripsInfo.jsp
-        req.setAttribute("tripInfo", trip);
-        req.setAttribute("noteSet", notes);
-        req.setAttribute("destinationSet", destinations);
-        logger.debug("The tripInfo, noteSet, and destinationSet: {} {} {}", trip, notes, destinations);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/tripInfo.jsp");
-        dispatcher.forward(req, resp);
     }
 }
